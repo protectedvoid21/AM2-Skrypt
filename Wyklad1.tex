@@ -1,0 +1,348 @@
+\documentclass[12pt]{article}
+\usepackage[a4paper, total={6in, 8in}]{geometry}
+\usepackage{amsfonts}
+\usepackage{amsmath,amssymb,trimclip,adjustbox}
+\usepackage{breqn}
+\usepackage{hyperref}
+\usepackage{tabularray}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{flafter} 
+\usepackage{polski}
+\usepackage[utf8]{inputenc}
+
+
+\setlength{\parindent}{0pt}
+\setlength{\textheight}{680pt}
+\setlength{\oddsidemargin}{0pt}
+\setlength{\textwidth}{480pt}
+
+\everymath{\displaystyle}
+
+\author{Skrypt wykładu Krzysztofa Michalika - przepisany przez M.P}
+\title{Wykład 1 - Analiza matematyczna II}
+
+\begin{document}
+\maketitle
+
+\section{Całki niewłaściwe I rodzaju}
+
+Ustalamy liczbę $a \in \mathbb{R}$. Niech $f$ będzie funkcją całkowalną na każdym przedziale \linebreak w postaci $[a, T]$
+gdzie $T > a$. Definiujemy \underline{całkę niewłaściwą pierwszego rodzaju} z $f$ na półprostej $[a, \infty]$ jako
+
+$$ \int\limits_{a}^{\infty} f(x) \,dx = \lim_{T \to \infty} \int\limits_{a}^{T} f(x) \,dx \ \text{,  gdy granica po prawej stronie istnieje} $$
+
+Analogicznie, gdy $f$ jest całkowalna na każdym przedziale postaci $[T, b]$, gdzie $T < b$. Definiujemy całkę niewłaściwą
+pierwszego rodzaju z $f$ na półprostej [$-\infty$, b] jako
+
+$$ \int\limits_{-\infty}^{b} f(x) \,dx = \lim_{T \to -\infty} \int\limits_{T}^{b} f(x) \,dx \ \text{,  gdy granica po prawej stronie istnieje} $$\\
+
+Terminologia dotycząca takich całek jest taka, jak dla ciągów. Są 3 przypadki :
+
+\begin{enumerate}
+    \item Granica z prawej strony jest liczbą. Wtedy mówimy, że całka jest \underline{zbieżna}.
+    \item Granica z prawej strony jest równa $\infty$ lub $-\infty$. Wtedy mówimy, że całka jest \underline{rozbieżna} (odpowiednio do $\infty$ lub $-\infty$).
+    \item Granica z prawej strony nie istnieje. Wtedy mówimy, że całka jest \underline{rozbieżna}.
+\end{enumerate}
+
+Analogicznie dla $ \int\limits_{\infty}^{b} f(x)\,dx $
+
+Przykłady :
+
+$$ \int\limits_{0}^{\infty} \sin x \,dx = \lim_{T \to \infty} \int\limits_{0}^{T} \sin x \,dx = 
+\lim_{T \to \infty} [-\cos x]_0^T = \lim_{T \to \infty} (-\cos T - (- \cos 0)) = \lim_{T \to \infty} (1 - \cos T) $$
+
+Granica ta nie istnieje więc całka jest rozbieżna. \\
+
+$$ \int\limits_{-\infty}^{0} 2^x \,dx = \lim_{T \to -\infty} \int\limits_{T}^{0} 2^x \,dx = 
+\lim_{T \to -\infty} \left[ \frac{2^x}{\ln 2} \right]_T^0 = \lim_{T \to -\infty} 
+\left( \frac{1}{\ln 2} - \frac{2^T}{\ln 2} \right) = \frac{1}{\ln 2} $$
+
+Całka jest zbieżna do $ \frac{1}{\ln 2} $. \\
+
+Pozostaje przypadek $ p = 1 $. Wtedy
+
+$$ \int \frac{1}{x} \,dx = \ln |x| + C, \ \
+\int\limits_{a}^{T} \frac{1}{x} \,dx = [\ln |x|]_a^T = \ln |T| - \ln |a|, \ \
+\int\limits_{a}^{\infty} \frac{1}{x} \,dx = \lim_{T \to \infty} (\ln |T| - \ln |a|) = \infty $$
+
+Udowodniliśmy zatem ważny wynik \\
+
+\textbf{Twierdzenie} 
+
+Gdy $ a > 0 $ to całka $ \int\limits_{a}^{\infty} \frac{1}{x^p} \,dx $
+jest skończona dla $ p > 1 $ oraz nieskończona dla $ p \leq 1 $.
+
+Podobnie można łatwo pokazać poniższy wynik \\
+
+\textbf{Twierdzenie}
+
+Gdy $ a \in \mathbb{R} $ i $ A > 0 $ to całka $ \int\limits_{a}^{\infty} A^x \,dx $
+jest skończona dla $ 0 < A < 1 $ oraz nieskończona \linebreak dla $ A \geq 1 $ \\
+
+Gdy $ \int f(x) \,dx = F(x) + C $ \ to
+
+$$ \int\limits_{-\infty}^{\infty} f(x) \, dx = \lim_{T \to \infty} F(T) - \lim_{S \to \infty} F(S) $$
+
+przy czym przynajmniej jedna z granic z prawej strony nie istnieje lub zachodzi przypadek 
+$ \infty - \infty $ to $ \int\limits_{-\infty}^{\infty} f(x) \,dx $ jest rozbieżna, a w pozostałych
+przypadkach całka ma wartość wynikającą z arytmetyki granic. \\
+
+W przypadku kiedy całki nie da się obliczyć w sposób dokładny można to zrobić w sposób przybliżony, pod warunkiem
+, że wiemy, że jest zbieżna.
+
+Kryteria zbieżności to twierdzenia opisujące warunki dostateczne zbieżności lub rozbieżności danej klasy
+całek. Najczęściej mają postać implikacji ale NIE równoważności. \\
+
+Oznacza to zwykle własności postaci
+
+\quad warunek zachodzi $ \Rightarrow $ całka jest zbieżna/rozbieżna
+
+\quad warunek nie zachodzi $ \Rightarrow $ nic nie wiemy o zbieżności/rozbieżności całki
+
+\subsection*{Popularne kryteria zbieżności całek z $\infty$}
+
+0. Warunek konieczny zbieżności całki
+
+Jeżeli całka $ \int\limits_{a}^{\infty} f(x) \,dx $ jest zbieżna to 
+$ \lim\limits_{x \to \infty} f(x) $ jest równa 0 lub nie istnieje. \\
+
+Transpozycja twierdzenia daje następujący wynik:
+
+Jeżeli $ \lim\limits_{x \to \infty} f(x) $ istnieje i jest różna od 0 to całka 
+$ \int\limits_{a}^{\infty} f(x) \, dx $ nie jest zbieżna, przy czym
+
+\begin{itemize}
+    \item gdy $ \lim\limits_{x \to \infty} f(x) > 0 $ to $ \int\limits_{a}^{\infty} f(x) \,dx = \infty $,
+    \item gdy $ \lim\limits_{x \to \infty} f(x) < 0 $ to $ \int\limits_{a}^{\infty} f(x) \,dx = -\infty $,
+\end{itemize}
+
+\textbf{Uwaga. Warunek konieczny to tylko implikacja!}
+
+Jeżeli $ \lim_{x \to \infty} f(x) $ jest równa 0 lub nie istnieje to jeszcze \textbf{NIC NIE WIEMY} o całce,
+
+Na przykład całki $ \int\limits_{a}^{\infty} \frac{1}{x^p} \,dx, \ a > 0 $, mają
+$ \lim_{x \to \infty} \frac{1}{x^p} = 0 $ dla wszystkich $ p > 0 $ ale niektóre z tych całek są zbieżne,
+a niektóre rozbieżne \\
+
+\subsection*{Ważna klasa całek - całki z funkcji nieujemnych}
+
+$$ \int\limits_{a}^{\infty} f(x) \,dx, \ f \geq 0 $$
+
+Wtedy $ \int\limits_{a}^{T} f(x) \, dx = F(T) - F(a) $ jest funkcją niemalejącą zmiennej T zatem całka
+$ \int\limits_{a}^{\infty} f(x) \, dx = \lim_{T \to \infty} \int\limits_{a}^{T} f(x) \,dx $
+zawsze istnieje. Może być to liczba lub $\infty$.
+
+Zatem brak zbieżności takich całek oznacza rozbieżność do $\infty$. \\
+
+Dla całek z funkcji nieujemnych mamy dwa kolejne kryteria zbieżności.
+
+\begin{enumerate}
+    \item Kryterium porównawcze
+    \item Kryterium ilorazowe
+\end{enumerate}
+
+\subsection*{Twierdzenie(kryterium porównawcze)}
+
+Dane są dwie całki $ \int\limits_{a}^{\infty} f(x) \,dx $ oraz
+$ \int\limits_{a}^{\infty} g(x) \, dx $. Wtedy zachodzą następujące własności
+
+\begin{enumerate}
+    \item (Przypadek zbieżności). Gdy $ \forall x \geq x_0 \geq a \ \ 0 \leq f(x) \leq g(x) $ i $ \int\limits_{a}^{\infty} g(x) \,dx $
+    jest zbieżna to $ \int\limits_{a}^{\infty} f(x) \,dx $ też jest zbieżna. Ponadto \
+    $ 0 \leq \int\limits_{a}^{\infty} f(x) \,dx \leq \int\limits_{a}^{\infty} g(x) \,dx $
+    
+    \item (Przypadek rozbieżności) Gdy $ \forall x \geq x_0 \geq a \ \ 0 \leq g(x) \leq f(x) $ i $ \int\limits_{a}^{\infty} g(x) \,dx $
+    jest rozbieżna (więc równa $\infty$) to $ \int\limits_{a}^{\infty} f(x) \,dx $ też jest rozbieżna (do $\infty$).
+    
+    \item \textbf{(Przypadek wątpliwy)} Gdy $ \forall x \geq x_0 \geq a \ \ 0 \leq f(x) \leq g(x) $ ale $ \int\limits_{a}^{\infty} g(x) \,dx $
+    jest rozbieżna to \textbf{NIC NIE WIEMY} o zbieżności $ \int\limits_{a}^{\infty} f(x) \,dx $.
+    
+    \item \textbf{(Przypadek wątpliwy)} Gdy $ \forall x \geq x_0 \geq a \ \ 0 \leq g(x) \leq f(x) $ ale $ \int\limits_{a}^{\infty} g(x) \,dx $
+    jest zbieżna to \textbf{NIC NIE WIEMY} o zbieżności $ \int\limits_{a}^{\infty} f(x) \,dx $.
+\end{enumerate}
+
+Uwagi:
+
+\begin{itemize}
+    \item $ \int\limits_{a}^{\infty} f(x) \,dx $ jest całką z zadania, $ \int\limits_{a}^{\infty} g(x) \,dx $ tworzymy sami.
+    \item Porównujemy najczęściej z całkami $ \int\limits_{a}^{\infty} A^x \,dx $ lub 
+    $ \int\limits_{a}^{\infty} \frac{1}{x^p} \,dx $. Wtedy $f$ często ma postać ułamków i możemy spróbować
+    wziąć $g$ jako :
+
+    \quad C - iloraz najwyższych potęg z licznika i mianownika $f$
+
+    \item Trzeba uważać aby nierówność między $f$ i $g$ była prawdziwa i nie zapomnieć przypadku wątpliwego, bo wtedy
+    \textbf{trzeba zaczynać od nowa}.
+
+    \item Warto sprawdzić opisany wyżej iloraz najwyższych potęg i na tej podstawie przewidzieć czy chcemy
+    udowodnić zbieżność czy rozbieżność. To pomaga skonstruować odpowiednią nierówność między $f$ i $g$.
+\end{itemize}
+
+\textbf{Popularny błąd} - odpowiedź na podstawie przypadku wątpliwego \\
+
+Na przykład dla całki $ \int\limits_1^\infty \frac{1}{x + \sqrt{x}} \,dx $ : 
+
+"Mamy \ $ 0 \leq \frac{1}{x + \sqrt{x}} \leq \frac{1}{x} $ \ i całka \ $ \int\limits_1^\infty \frac{1}{x} \,dx $
+jest rozbieżna \textcolor{red}{zatem całka $ \int\limits_{1}^{\infty} \frac{1}{x + \sqrt{x}} \,dx $ jest rozbieżna.}"
+
+GAME OVER... To jest przypadek nr 3 (wątpliwy) \\
+
+Przykład
+
+$$ \int\limits_4^\infty \frac{2x - 3}{x^3 - 1} \,dx $$
+
+Przewidywanie zbieżności/rozbieżności
+
+Najwyższe potęgi sugerują, że mając
+
+$$ \frac{x}{x^3} = \frac{1}{x^2}, \quad \textrm{ a} \quad \int\limits_4^\infty \frac{1}{x^2} \,dx < \infty, \quad \textrm{bo} \quad 2 > 1 $$
+
+Dowodzimy zbieżność. Trzeba mieć
+$$ 0 \leq \frac{2x - 3}{x^3 - 1} \leq g(x) = C \cdot \frac{x}{x^3} $$
+
+Jak w twierdzeniu o 3 ciągach
+
+$$ 0 \leq \frac{2x}{x^3 - \frac{1}{2}x^3} = 4 \cdot \frac{x}{x^3} = 4 \cdot \frac{1}{x^2} $$
+
+$$ \int\limits_4^\infty \frac{4}{x^2} \,dx = 4 \int\limits_4^\infty \frac{1}{x^2} \,dx < \infty
+\quad \left(\frac{1}{2}x^3 > 1 \ \mathrm{dla} \ x \geq 4 \right) $$
+
+\subsection*{Twierdzenie(kryterium ilorazowe)}
+
+Dane są dwie całki $ \int\limits_a^\infty f(x) \,dx $ oraz $ \int\limits_{a}^{\infty} g(x) \,dx $. Ponadto
+
+$$ \forall x \geq x_0 \geq a \quad f(x), g(x) > 0 $$
+
+Jeżeli istnieje granica $ \lim_{x \to \infty} \frac{f(x)}{g(x)} $ i jest \underline{liczbą dodatnią} to wtedy obie całki
+są zbieżne albo obie rozbieżne do $\infty$. \\
+
+Uwagi
+\begin{itemize}
+    \item Funkcję $g$ tworzymy podobnie jak dla kryterium porównawczego
+    \item Nie ma problemu z nierównościami :) ale za to trzeba umieć liczyć granice
+    \item Granica nie może być ani 0 ani $\infty$: $ \lim_{x \to \infty} \frac{f(x)}{g(x)} \in (0, \infty) $
+    \item Rozwiązanie \colorbox{yellow}{musi zawierać wniosek} "granica ilorazu jest liczbą dodatnią więc obie całki
+    są zbieżne lub obie rozbieżne" - bez tego będzie niepełne.
+    \item Kryterium zwykle jest wygodniejsze niż porównawcze ale są przykłady, które "idą" z porównawczego ale nie z
+    ilorazowego, bo granica ilorazu nie istnieje
+
+    Np. $ \int\limits_{1}^{\infty} \frac{2 + \sin x}{x} \,dx $
+\end{itemize}
+
+Przykłady \\
+
+Poprzedni przykład raz jeszcze 
+
+$$ \int\limits_4^\infty \frac{2x - 3}{x^3 - 1} \,dx $$
+
+$$ f(x) = \frac{2x - 3}{x^3 - 1}, \quad x \geq 4 $$
+
+$$ g(x) = \frac{x}{x^3} = \frac{1}{x^2} > 0 $$
+
+$$ \lim_{x \to \infty} = \frac{f(x)}{g(x)} = \lim_{x \to \infty} \frac{x^2(2x - 3)}{x^3 - 1} = 2 $$
+
+Obie całki zbieżne lub obie rozbieżne do $\infty$ \\
+
+Przykłady o postaci funkcji złożonej $ \int\limits_{a}^{\infty} f(g(x)) \,dx $
+gdzie $ \lim_{x \to \infty} g(x) = 0^+ $ oraz $ \lim_{x \to 0^+} f(x) = 0^+ $
+
+Nową całką jest całka z funkcji wewnętrznej $ \int\limits_{a}^{\infty} g(x) \,dx $ \\
+
+Liczymy granicę
+
+$$ \lim_{x \to \infty} \frac{f(g(x))}{g(x)} = \lim_{t = g(x) \to 0^+} \frac{f(t)}{t} \left[ \frac{0}{0} \right] $$ \\
+
+przy użyciu granic podstawowych lub reguły de l'Hospitala. \\
+
+Na przykład $ \int\limits_{1}^{\infty} \left( 2^{\frac{1}{\sqrt{x}}} - 1 \right) \,dx$
+
+$$ \int\limits_{1}^{\infty} \left( 2^{\frac{1}{\sqrt{x}}} - 1 \right) \,dx $$
+
+$$ g(x) = \frac{1}{\sqrt{x}} > 0 $$
+
+$$ f(x) = 2^x - 1 > 0 $$
+
+$$ \lim_{x \to \infty} \frac{2^{\frac{1}{\sqrt{x}}} - 1}{\frac{1}{\sqrt{x}}} = \lim_{t \to 0^+} \frac{2^t - 1}{t}
+\left[ \frac{0}{0} \right] = \ln 2 \in (0, \infty) $$
+
+Obie całki zbieżne lub obie rozbieżne
+
+$$ \int\limits_1^\infty \frac{1}{\sqrt{x}} \,dx = \int\limits_1^\infty \frac{1}{x^{\frac{1}{2}}} \,dx = \infty\ \quad
+\textrm{bo} \quad \frac{1}{2} \leq 1 $$
+
+\subsection*{Wartość główna całki niewłaściwej I rodzaju}
+
+Całka $ \int\limits_{-\infty}^{\infty} x \,dx $ jest rozbiezna, gdyż jako suma całek prowadzi do symbolu $ \infty - \infty $:
+
+$$ \int\limits_{-\infty}^{\infty} x \,dx = \int\limits_{-\infty}^{0} x \,dx + \int\limits_{0}^{\infty} x \,dx = -\infty + \infty $$
+
+Intuicyjnie oczekwialibyśmy jednak, że jest ona równa 0 - funkcja podcałkowa jest nieparzysta czyli mamy "tyle funkcji
+na + co na -", a więc wszystko powinno się wzajemnie zrównoważyć.
+
+Aby taka całka miała sens trzeba nieco zmodyfikować jej definicję i wprowadzić pojęcie wartości głównej całki niewłaściwej (obustronnej).
+
+Definicja. Wartość główna całki $ \int\limits_{-\infty}^{\infty} f(x) \,dx $ to wielkość
+
+$$ \textrm{P.V.} \int\limits_{-\infty}^{\infty} f(x) \,dx = \lim_{T \to \infty} \int\limits_{-T}^{T} f(x) \,dx $$
+
+o ile powyższa granica istnieje. \\
+
+Oznacza to, że przybliżamy całkę po $\mathbb{R}$ całkami po przedziale symetrycznym względem 0.
+
+P.V. jest skrótem od angielskiego "Principal Value". \\
+
+Na przykład 
+
+$$ \textrm{P.V.} \int\limits_{-\infty}^{\infty} x \,dx = \lim_{T \to \infty} \int\limits_{-T}^{T} x\,dx
+= \lim_{T \to \infty} 0 = 0 $$
+
+Zauważmy, że gdy $ \int f(x) \,dx = F(x) + C $ to
+
+$$ \textrm{P.V.} \int\limits_{-\infty}^{\infty} f(x) \,dx = \lim_{T \to \infty} \int\limits_{-T}^{T} f(x) \,dx
+= \lim{T \to infty} (F(T) - F(-T)) $$
+
+Jeżeli teraz ma sens wyrażenie $ \lim_{T \to \infty} F(T ) - \lim_{T \to \infty} F(-T) $ to biorąc $ S = -T \to -\infty $ dostajemy
+
+$$ \textrm{P.V.} \int\limits_{-\infty}^{\infty} f(x) \,dx = \lim_{T \to \infty} (F(T) - F(-T)) = 
+\lim_{T \to \infty} F(T) - \lim_{T \to \infty} F(-T) = $$ $$ =  \lim_{T \to \infty} F(T) - \lim_{S \to -\infty} F(S)
+= \int\limits_{-\infty}^{\infty} f(x) \,dx $$
+
+Udowodniliśmy zatem poniższe twierdzenie. \\
+
+Jeżeli całka $ \int\limits_{-\infty}^{\infty} f(x) \,dx $ istnieje w zwykłym sensie (jako suma odpowiednich całek jednostronnych
+jest liczbą lub jedną z nieskończoności) to również jej wartość główna istnieje i jest równa tej całce.
+
+Natomiast może się zdarzyć, że wartość główna całki istnieje ale sama całka jest rozbieżna (był przykład).
+
+W szczególności gdy funkcja jest na $\mathbb{R}$ ciągła i nieparzysta to wartość główna całki z tej funkcji jest zawsze
+0 niezależnie od zbieżności samej całki.
+
+\section{Całki niewłaściwe II rodzaju}
+
+Ustalamy liczby $ a,b \in \mathbb{R}, \ a < b $. Niech $f$ będzie funkcją całkowalną na każdym przedziale postaci $[a, T] $,
+gdzie $ a < T < b $. Definiujemy \underline{całkę niewłaściwą drugiego rodzaju} z $f$ na przedziale $[a, b)$ jako
+
+$$ \int\limits_{a}^{b} f(x) \,dx = \lim_{T \to b^+} \int\limits_{a}^{T} f(x) \,dx, \quad \textrm{gdy granica po prawej stronie istnieje.}$$
+
+Analogicznie, gdy $f$ jest całkowalna na każdym przedziale postaci $[T,b]$, gdzie $ a < T < b $. to definiujemy
+\underline{całkę niewłaściwą pierwszego rodzaju} z $f$ na przedziale $(a, b]$ jako
+
+$$ \int\limits_{a}^{b} f(x) \,dx = \lim_{T \to a^+} \int\limits_{T}^{b} f(x) \,dx, \quad \textrm{gdy granica po prawej stronie istnieje.}$$\\
+
+Terminologia dotycząca takich całek jest taka, jak dla całek niewłaściwych 1 rodzaju. Są 3 przypadki : 
+
+\begin{enumerate}
+    \item Granica z prawej strony jest liczbą. Wtedy całka jest \underline{zbieżna} (do tej granicy).
+    \item Granica z prawej strony jest równa $\infty$ lub $-\infty$. Wtedy całka jest \underline{rozbieżna} do $\infty$ lub $-\infty$.
+    \item Granica z prawej strony nie istnieje. Wtedy mówimy, że całka jest \underline{rozbieżna}. \\
+\end{enumerate}
+
+Interpretacja geometryczna. \\
+
+Podobnie jak dla zwykłej całki oznaczonej, jeżeli $f \geq 0$ na $(a,b]$ lub $[a,b)$ to całka niewłaściwa 2 rodzaju
+$ \int\limits_{a}^{b} f(x) \,dx $ daje pole obszaru ograniczonego osią X, wykresem $f$ oraz prostymi $x=a$ oraz $x=b$.
+
+Najczęściej definiujemy tego typu całkę w przypadku gdy $f$ ma asymptotę pionową $x=a$ lub $x=b$. Wtedy ten obszar
+nie jest ograniczony z góry bądź z dołu.
+
+\end{document}
