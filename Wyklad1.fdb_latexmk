@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1679692567 "c:/Users/niezn/OneDrive/Pulpit/Studia/Skrypt Anal/Wyklad1.tex" "Wyklad1.pdf" "Wyklad1" 1679692568
+["pdflatex"] 1679704714 "c:/Users/niezn/OneDrive/Pulpit/Studia/AnalizaMatematycznaII-Skrypt/Wyklad1.tex" "Wyklad1.pdf" "Wyklad1" 1679704715
   "C:/Users/niezn/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1678633860 86553 91af261fa287312f2fb1f66a097366be ""
   "C:/Users/niezn/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1200.pk" 1668176038 14064 955ff3e66d356ed127f306eca2052983 ""
   "C:/Users/niezn/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1667120980 10788011 3fbf93dcc05db05ca4b82494ec413059 ""
@@ -79,7 +79,6 @@
   "C:/Users/niezn/AppData/Local/Programs/MiKTeX/tex/latex/base/article.cls" 1657037832 20144 7555b7429d80bef287ebb82117811acc ""
   "C:/Users/niezn/AppData/Local/Programs/MiKTeX/tex/latex/base/atbegshi-ltx.sty" 1657037832 3122 8df402c6591ccc8ed35ce64c1c49c50b ""
   "C:/Users/niezn/AppData/Local/Programs/MiKTeX/tex/latex/base/atveryend-ltx.sty" 1657037832 2462 2ab3964e30f8e7a2977395016edcbbc6 ""
-  "C:/Users/niezn/AppData/Local/Programs/MiKTeX/tex/latex/base/flafter.sty" 1657037832 9829 d8aec7dfef770f506c435d267dfee087 ""
   "C:/Users/niezn/AppData/Local/Programs/MiKTeX/tex/latex/base/inputenc.sty" 1657037832 5048 84b05796b49b69e2d4257d537721c960 ""
   "C:/Users/niezn/AppData/Local/Programs/MiKTeX/tex/latex/base/ot4enc.def" 1657037832 4782 864a985e649116707c74e7b5d0c3dcc6 ""
   "C:/Users/niezn/AppData/Local/Programs/MiKTeX/tex/latex/base/size12.clo" 1657037832 8449 7fbdc9c8596083427317c1e525489c81 ""
@@ -128,10 +127,11 @@
   "C:/Users/niezn/AppData/Local/Programs/MiKTeX/tex/latex/varwidth/varwidth.sty" 1238465940 10894 d359a13923460b2a73d4312d613554c8 ""
   "C:/Users/niezn/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1656233290 56148 51a9a8571c07b9921892ae11063ae853 ""
   "C:/Users/niezn/AppData/Local/Programs/MiKTeX/tex/latex/xkeyval/xkeyval.sty" 1656233319 4937 4ce600ce9bd4ec84d0250eb6892fcf4f ""
-  "Wyklad1.aux" 1679692568 846 5dc29e3e737166365ae77ce891551efc "pdflatex"
-  "Wyklad1.out" 1679692568 397 75535b8bcb10a260f13dba17af100f49 "pdflatex"
-  "Wyklad1.tex" 1679692566 16262 d3896c6e5f600148d9b24a204f1fdac5 ""
-  "c:/Users/niezn/OneDrive/Pulpit/Studia/Skrypt Anal/Wyklad1.tex" 1679692566 16262 d3896c6e5f600148d9b24a204f1fdac5 ""
+  "Wyklad1.aux" 1679704715 961 1c320043070a2eda2465721625a3eaa9 "pdflatex"
+  "Wyklad1.out" 1679704715 523 e560a59b7fd566bfe2a62b461e1696d2 "pdflatex"
+  "Wyklad1.tex" 1679704713 26974 1cf712a4fcd050e6c6cc9cd3a4851ddc ""
+  "c:/Users/niezn/OneDrive/Pulpit/Studia/AnalizaMatematycznaII-Skrypt/Wyklad1.tex" 1679704713 26974 1cf712a4fcd050e6c6cc9cd3a4851ddc ""
+  "rozbiezneirozbiezne.png" 1679697151 77199 88736f0eb11087006f3208264b83a45c ""
   (generated)
   "Wyklad1.aux"
   "Wyklad1.log"

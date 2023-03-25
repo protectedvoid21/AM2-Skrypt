@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2022.10.30)  24 MAR 2023 22:16
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2022.10.30)  25 MAR 2023 01:38
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"c:/Users/niezn/OneDrive/Pulpit/Studia/Skrypt Anal/Wyklad1.tex"
-(c:/Users/niezn/OneDrive/Pulpit/Studia/Skrypt Anal/Wyklad1.tex
+**c:/Users/niezn/OneDrive/Pulpit/Studia/AnalizaMatematycznaII-Skrypt/Wyklad1.tex
+(c:/Users/niezn/OneDrive/Pulpit/Studia/AnalizaMatematycznaII-Skrypt/Wyklad1.tex
 LaTeX2e <2022-06-01> patch level 5
 L3 programming layer <2022-09-28> (C:\Users\niezn\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
 Document Class: article 2021/10/04 v1.4n Standard LaTeX document class
@@ -511,11 +511,7 @@ Package xcolor Info: Model `Gray' substituted by `gray' on input line 1375.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1376.
  (C:\Users\niezn\AppData\Local\Programs\MiKTeX\tex/latex/graphics\dvipsnam.def
 File: dvipsnam.def 2016/06/17 v3.0m Driver-dependent file (DPC,SPQR)
-)) (C:\Users\niezn\AppData\Local\Programs\MiKTeX\tex/latex/base\flafter.sty
-Package: flafter 2021/07/31 v1.4e Standard LaTeX floats after reference (FMi)
-Applying: [2015/01/01] float order in 2-column on input line 49.
-Already applied: [0000/00/00] float order in 2-column on input line 151.
-) (C:\Users\niezn\AppData\Local\Programs\MiKTeX\tex/latex/polski\polski.sty
+)) (C:\Users\niezn\AppData\Local\Programs\MiKTeX\tex/latex/polski\polski.sty
 Package: polski 2021/08/25 v1.3.6 Polish language package
 
    Switching to Polish text encoding and Polish maths fonts.
@@ -565,26 +561,26 @@ Package: inputenc 2021/02/14 v1.3d Input encoding file
 ) (Wyklad1.aux)
 \openout1 = `Wyklad1.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for OT4/cmr/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OT4/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -645,7 +641,7 @@ Package grfext Info: Graphics extension search list:
  (C:\Users\niezn\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-Package hyperref Info: Link coloring OFF on input line 24.
+Package hyperref Info: Link coloring OFF on input line 23.
  (Wyklad1.out) (Wyklad1.out)
 \@outlinefile=\write3
 \openout3 = `Wyklad1.out'.
@@ -655,186 +651,281 @@ Package: ninecolors 2022-02-13 vv2022D Select colors with proper color contrast
  (C:\Users\niezn\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/xparse\xparse.sty
 Package: xparse 2022-06-22 L3 Experimental document command parser
 ))
-LaTeX Font Info:    Trying to load font information for OML+plm on input line 26.
+LaTeX Font Info:    Trying to load font information for OML+plm on input line 25.
  (C:\Users\niezn\AppData\Local\Programs\MiKTeX\tex/latex/polski\omlplm.fd
 File: omlplm.fd 2008/02/24 v1.2.1 Font defs for fonts PL (MW)
 )
-LaTeX Font Info:    Trying to load font information for OMS+plsy on input line 26.
+LaTeX Font Info:    Trying to load font information for OMS+plsy on input line 25.
  (C:\Users\niezn\AppData\Local\Programs\MiKTeX\tex/latex/polski\omsplsy.fd
 File: omsplsy.fd 2008/02/24 v1.2.1 Font defs for fonts PL (MW)
 )
-LaTeX Font Info:    Trying to load font information for OMX+plex on input line 26.
+LaTeX Font Info:    Trying to load font information for OMX+plex on input line 25.
  (C:\Users\niezn\AppData\Local\Programs\MiKTeX\tex/latex/polski\omxplex.fd
 File: omxplex.fd 2008/02/24 v1.2.1 Font defs for fonts PL (MW)
 )
 LaTeX Font Info:    External font `plex10' loaded for size
-(Font)              <14.4> on input line 26.
+(Font)              <14.4> on input line 25.
 LaTeX Font Info:    External font `plex10' loaded for size
-(Font)              <10> on input line 26.
+(Font)              <10> on input line 25.
 LaTeX Font Info:    External font `plex10' loaded for size
-(Font)              <7> on input line 26.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 26.
+(Font)              <7> on input line 25.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 25.
  (C:\Users\niezn\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 26.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 25.
  (C:\Users\niezn\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    External font `plex10' loaded for size
-(Font)              <12> on input line 29.
+(Font)              <12> on input line 28.
 LaTeX Font Info:    External font `plex10' loaded for size
-(Font)              <8> on input line 29.
+(Font)              <8> on input line 28.
 LaTeX Font Info:    External font `plex10' loaded for size
-(Font)              <6> on input line 29.
+(Font)              <6> on input line 28.
 
-Underfull \hbox (badness 1609) in paragraph at lines 29--31
+Underfull \hbox (badness 1609) in paragraph at lines 28--30
 \OT4/cmr/m/n/12 Ustalamy licz-b¦ $\OML/plm/m/it/12 a \OMS/plsy/m/n/12 2 \U/msb/m/n/12 R$\OT4/cmr/m/n/12 . Niech $\OML/plm/m/it/12 f$ \OT4/cmr/m/n/12 b¦-dzie funk-cj¡ caª-ko-wal-n¡ na ka»-dym prze-dzia-le
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 37--38
+Underfull \hbox (badness 10000) in paragraph at lines 36--37
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 54--55
+Underfull \hbox (badness 10000) in paragraph at lines 53--54
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 60--61
+Underfull \hbox (badness 10000) in paragraph at lines 59--60
 
  []
 
 [1
 
 {C:/Users/niezn/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
-Underfull \hbox (badness 10000) in paragraph at lines 68--69
+Underfull \hbox (badness 10000) in paragraph at lines 67--68
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 75--76
+Underfull \hbox (badness 10000) in paragraph at lines 74--75
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 79--81
+Underfull \hbox (badness 10000) in paragraph at lines 78--80
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 86--89
+Underfull \hbox (badness 10000) in paragraph at lines 85--88
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 93--95
+Underfull \hbox (badness 10000) in paragraph at lines 92--94
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 106--108
+Underfull \hbox (badness 10000) in paragraph at lines 105--107
 
  []
 
 [2]
-Underfull \hbox (badness 10000) in paragraph at lines 123--126
+Underfull \hbox (badness 10000) in paragraph at lines 122--125
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 135--136
+Underfull \hbox (badness 10000) in paragraph at lines 134--135
 
  []
 
 [3]
-Underfull \hbox (badness 10000) in paragraph at lines 181--182
+Underfull \hbox (badness 10000) in paragraph at lines 180--181
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 188--189
+Underfull \hbox (badness 10000) in paragraph at lines 187--188
 
  []
 
 [4]
-Underfull \hbox (badness 10000) in paragraph at lines 216--218
+Underfull \hbox (badness 10000) in paragraph at lines 215--217
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 232--233
+Underfull \hbox (badness 10000) in paragraph at lines 231--232
 
  []
 
 [5]
-Underfull \hbox (badness 10000) in paragraph at lines 244--245
+Underfull \hbox (badness 10000) in paragraph at lines 243--244
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 249--250
+Underfull \hbox (badness 10000) in paragraph at lines 248--249
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 253--254
+Underfull \hbox (badness 10000) in paragraph at lines 252--253
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 255--256
+Underfull \hbox (badness 10000) in paragraph at lines 254--255
 
  []
 
 [6]
-Underfull \hbox (badness 10000) in paragraph at lines 288--289
+Underfull \hbox (badness 10000) in paragraph at lines 287--288
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 292--293
+Underfull \hbox (badness 10000) in paragraph at lines 291--292
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 310--311
+Underfull \hbox (badness 10000) in paragraph at lines 309--310
 
  []
 
 [7]
-Underfull \hbox (badness 10000) in paragraph at lines 330--331
+Underfull \hbox (badness 10000) in paragraph at lines 329--330
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 337--338
+Underfull \hbox (badness 10000) in paragraph at lines 336--337
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 340--341
+Underfull \hbox (badness 10000) in paragraph at lines 339--340
 
  []
 
-[8] (Wyklad1.aux)
+
+Underfull \hbox (badness 10000) in paragraph at lines 344--346
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 352--353
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 354--355
+
+ []
+
+[8]
+Underfull \hbox (badness 10000) in paragraph at lines 362--364
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 365--366
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 380--381
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 388--390
+
+ []
+
+[9]
+Underfull \hbox (badness 10000) in paragraph at lines 405--406
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 413--418
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 430--431
+
+ []
+
+<rozbiezneirozbiezne.png, id=84, 602.25pt x 353.06906pt>
+File: rozbiezneirozbiezne.png Graphic file (type png)
+<use rozbiezneirozbiezne.png>
+Package pdftex.def Info: rozbiezneirozbiezne.png  used on input line 438.
+(pdftex.def)             Requested size: 361.35278pt x 211.84306pt.
+[10]
+Underfull \hbox (badness 10000) in paragraph at lines 461--463
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 469--470
+
+ []
+
+[11 <./rozbiezneirozbiezne.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 481--482
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 489--490
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 512--513
+
+ []
+
+[12]
+Underfull \hbox (badness 10000) in paragraph at lines 530--531
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 541--543
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 554--556
+
+ []
+
+[13] [14] (Wyklad1.aux)
 Package rerunfilecheck Info: File `Wyklad1.out' has not changed.
-(rerunfilecheck)             Checksum: 75535B8BCB10A260F13DBA17AF100F49;397.
+(rerunfilecheck)             Checksum: E560A59B7FD566BFE2A62B461E1696D2;523.
  ) 
 Here is how much of TeX's memory you used:
- 14988 strings out of 475385
- 258406 string characters out of 2776906
- 620382 words of memory out of 3000000
- 36112 multiletter control sequences out of 15000+600000
+ 14989 strings out of 475385
+ 258186 string characters out of 2776906
+ 619399 words of memory out of 3000000
+ 36100 multiletter control sequences out of 15000+600000
  482030 words of font info for 66 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 72i,6n,85p,308b,529s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ 72i,9n,85p,323b,586s stack positions out of 10000i,1000n,20000p,200000b,80000s
 {C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/pl/plmi.enc}{C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/pl/plms.enc}{C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/pl/plrm.enc} <C:\Users\niezn\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk>{C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/pl/plme.enc}<C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plbx12.pfb><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plex10.pfb><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plmi12.pfb><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plmi6.pfb><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plmi8.pfb><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plr12.pfb><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plr17.pfb><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plr6.pfb><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plr8.pfb><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plsy10.pfb><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plsy6.pfb><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plsy8.pfb>
-Output written on Wyklad1.pdf (8 pages, 115166 bytes).
+Output written on Wyklad1.pdf (14 pages, 208476 bytes).
 PDF statistics:
- 146 PDF objects out of 1000 (max. 8388607)
- 28 named destinations out of 1000 (max. 500000)
- 17 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 189 PDF objects out of 1000 (max. 8388607)
+ 42 named destinations out of 1000 (max. 500000)
+ 30 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,6 +1,6 @@
-PWD c:\Users\niezn\OneDrive\Pulpit\Studia\Skrypt Anal
+PWD c:\Users\niezn\OneDrive\Pulpit\Studia\AnalizaMatematycznaII-Skrypt
 INPUT C:\Users\niezn\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
-INPUT c:\Users\niezn\OneDrive\Pulpit\Studia\Skrypt Anal\Wyklad1.tex
+INPUT c:\Users\niezn\OneDrive\Pulpit\Studia\AnalizaMatematycznaII-Skrypt\Wyklad1.tex
 OUTPUT Wyklad1.log
 INPUT C:\Users\niezn\AppData\Local\Programs\MiKTeX\tex\latex\base\article.cls
 INPUT C:\Users\niezn\AppData\Local\Programs\MiKTeX\tex\latex\base\article.cls
@@ -698,17 +698,6 @@ INPUT C:\Users\niezn\AppData\Local\Programs\MiKTeX\tex\latex\graphics\dvipsnam.d
 INPUT C:\Users\niezn\AppData\Local\Programs\MiKTeX\tex\latex\graphics\dvipsnam.def
 INPUT C:\Users\niezn\AppData\Local\Programs\MiKTeX\tex\latex\graphics\dvipsnam.def
 INPUT C:\Users\niezn\AppData\Local\Programs\MiKTeX\tex\latex\graphics\dvipsnam.def
-INPUT C:\Users\niezn\AppData\Local\Programs\MiKTeX\tex\latex\base\flafter.sty
-INPUT C:\Users\niezn\AppData\Local\Programs\MiKTeX\tex\latex\base\flafter.sty
-INPUT C:\Users\niezn\AppData\Local\Programs\MiKTeX\tex\latex\base\flafter.sty
-INPUT C:\Users\niezn\AppData\Local\Programs\MiKTeX\tex\latex\base\flafter.sty
-INPUT C:\Users\niezn\AppData\Local\Programs\MiKTeX\tex\latex\base\flafter.sty
-INPUT C:\Users\niezn\AppData\Local\Programs\MiKTeX\tex\latex\base\flafter.sty
-INPUT C:\Users\niezn\AppData\Local\Programs\MiKTeX\tex\latex\base\flafter.sty
-INPUT C:\Users\niezn\AppData\Local\Programs\MiKTeX\tex\latex\base\flafter.sty
-INPUT C:\Users\niezn\AppData\Local\Programs\MiKTeX\tex\latex\base\flafter.sty
-INPUT C:\Users\niezn\AppData\Local\Programs\MiKTeX\tex\latex\base\flafter.sty
-INPUT C:\Users\niezn\AppData\Local\Programs\MiKTeX\tex\latex\base\flafter.sty
 INPUT C:\Users\niezn\AppData\Local\Programs\MiKTeX\tex\latex\polski\polski.sty
 INPUT C:\Users\niezn\AppData\Local\Programs\MiKTeX\tex\latex\polski\polski.sty
 INPUT C:\Users\niezn\AppData\Local\Programs\MiKTeX\tex\latex\polski\polski.sty
@@ -871,6 +860,13 @@ INPUT C:\Users\niezn\AppData\Local\MiKTeX\fonts\map\pdftex\pdftex.map
 INPUT C:\Users\niezn\AppData\Local\Programs\MiKTeX\fonts\tfm\public\pl\plbx12.tfm
 INPUT C:\Users\niezn\AppData\Local\Programs\MiKTeX\fonts\tfm\public\pl\plbx12.tfm
 INPUT C:\Users\niezn\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\tcrm1200.tfm
+INPUT .\rozbiezneirozbiezne.png
+INPUT .\rozbiezneirozbiezne.png
+INPUT rozbiezneirozbiezne.png
+INPUT .\rozbiezneirozbiezne.png
+INPUT .\rozbiezneirozbiezne.png
+INPUT .\rozbiezneirozbiezne.png
+INPUT .\rozbiezneirozbiezne.png
 INPUT Wyklad1.aux
 INPUT .\Wyklad1.out
 INPUT .\Wyklad1.out

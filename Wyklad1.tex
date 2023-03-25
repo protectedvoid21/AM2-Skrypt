@@ -5,8 +5,7 @@
 \usepackage{breqn}
 \usepackage{hyperref}
 \usepackage{tabularray}
-\usepackage[dvipsnames]{xcolor}
-\usepackage{flafter} 
+\usepackage[dvipsnames]{xcolor} 
 \usepackage{polski}
 \usepackage[utf8]{inputenc}
 
@@ -18,7 +17,7 @@
 
 \everymath{\displaystyle}
 
-\author{Skrypt wykładu Krzysztofa Michalika - przepisany przez M.P}
+\author{Skrypt wykładu Krzysztofa Michalika}
 \title{Wykład 1 - Analiza matematyczna II}
 
 \begin{document}
@@ -343,6 +342,227 @@ Podobnie jak dla zwykłej całki oznaczonej, jeżeli $f \geq 0$ na $(a,b]$ lub $
 $ \int\limits_{a}^{b} f(x) \,dx $ daje pole obszaru ograniczonego osią X, wykresem $f$ oraz prostymi $x=a$ oraz $x=b$.
 
 Najczęściej definiujemy tego typu całkę w przypadku gdy $f$ ma asymptotę pionową $x=a$ lub $x=b$. Wtedy ten obszar
-nie jest ograniczony z góry bądź z dołu.
+nie jest ograniczony z góry bądź z dołu. \\
+
+Na przykład
+
+$$ \int\limits_{0}^{1} \frac{1}{\sqrt{x}} \,dx = \lim_{T \to 0^+} \int\limits_{T}^{1} \frac{1}{\sqrt{x}} \,dx
+\lim_{T \to 0^+} [2\sqrt{x}]_T^1 = \lim_{T \to 0^+} (2 - 2\sqrt{T}) = 2 $$
+
+Całka jest zbieżna do 2. \\
+
+\underline{Wersja całki obustronnej} \\
+
+Ustalamy liczby $ a,b,c \in \mathbb{R}, \ a < c < b $. Niech $f$ będzie funkcją całkowalną na każdym przedziale postaci
+$[a,T]$, $T < c$, oraz $ [T, b] $, $ T > c $. Definiujemy całkę niewłaściwą 2 rodzaju z $f$ na zbiorze $[a, c)\cup(c, b] $
+jako sumę dwóch całek niewłaściwych. tzn.
+
+$$ \int\limits_{a}^{b} f(x) \,dx = \int\limits_{a}^{c} f(x) \,dx + \int\limits_{c}^{b} f(x) \,dx $$
+
+przy czym gdy przynajmniej jedna z całek z prawej strony nie istnieje lub zachodzi przypadek $ \infty - \infty $ to
+$ \int\limits_{a}^{b} f(x) \,dx $ jest rozbieżna, a w pozostałych przypadkach całka ma wartość wynikającą z arytmetyki granic. \\
+
+Najczęściej takie całki pojawiają się, gdy $f$ ma asymptotę w $x = c$. \\
+
+\textbf{Twierdzenie}
+
+Istnieją podstawienia, które każdą całkę niewłaściwą 2 rodzaju sprowadzają do przypadku całki niewłaściwej 1 rodzaju.
+
+W szczególności
+
+\begin{itemize}
+    \item dla całki $(a,b]$ możemy wziąć $ t = \frac{1}{x - a} $ co daje $ x = a + \frac{1}{t} $ oraz
+    $$ \int\limits_{a}^{b} f(x) \,dx = \int\limits_{C}^{\infty} \frac{1}{t^2} f \left(a + \frac{1}{t} \right) dt \quad
+    \textrm{, gdzie} \quad C = \frac{1}{b - a} $$
+
+    \item dla całki na $[a,b)$ możemy wziąć $t = \frac{1}{b - x}$ co daje $ t = b - \frac{1}{t} $ oraz
+    $$ \int\limits_{a}^{b} f(x) \,dx = \int\limits_{C}^{\infty} \frac{1}{t^2} f \left(b - \frac{1}{t} \right) dt \quad
+    \textrm{, gdzie} \quad C = \frac{1}{b - a} $$ \\
+\end{itemize}
+
+Na przykład dla $ p > 0 $ biorąc $ t = \frac{1}{x} $ mamy 
+
+$$ \int\limits_{0}^{b} \frac{1}{x^p} \,dx = \int\limits_{\frac{1}{b}}^{\infty} \frac{1}{t^2} \cdot \frac{1}{ \left( \frac{1}{t} \right)^p } dt
+= \int\limits_{\frac{1}{b}}^{\infty} \frac{1}{t^{2 - p}} \,dt $$
+
+Podstawienie to oznacza też, że mamy analogiczne kryteria zbieżności dla całek 2 rodzaju - porównawcze i ilorazowe, przy
+czym dla kryterium ilorazowego liczymy granicę ilorazu funkcji w odpowiednim końcu zadanego przedziału. \\
+
+Na koniec, wartość główna całki $ \int\limits_{a}^{b} f(x) \,dx $ na $[a,c)\cup(c,b]$ to wielkość
+
+$$ \textrm{P.V.} \int\limits_{a}^{b} f(x) \,dx = \lim_{T \to 0^+} 
+\left( \int\limits_{a}^{c - T} f(x) \,dx + \int\limits_{c + T}^{b} f(x) \,dx \right) $$
+
+o ile powyższa granica istnieje.
+
+Oznacza to, że odpowiednie końce przedziałów całkowania są w jednakowej odległości od c i zbiegają do c.
+
+\subsection*{Zbieżność bezwględna całek niewłaściwych}
+
+Definicja. Całka $ \int\limits_{a}^{\infty} f(x) \,dx $ jest \underline{zbieżna bezwględnie}, gdy zbieżna jest całka
+$ \int\limits_{a}^{\infty} |f(x)| \,dx $.
+
+Analogiczne definicje mamy dla pozostałych całek 1 rodzaju oraz dla całek 2 rodzaju. \\
+
+Uwagi
+
+\begin{itemize}
+    \item Gdy $f$ jest nieujemna to mamy $ \int\limits_{a}^{\infty} f(x) \,dx = \int\limits_{a}^{\infty} |f(x)| \,dx $
+    i definicja nie wnosi nic nowego. Sytuacja się zmienia, gdy są przedziały na którym $f$ ma różne znaki.
+    
+    \item Nierówność $ \left| \int\limits_{a}^{T} f(x) \,dx \right| \leq \int\limits_{a}^{T} |f(x)| \,dx $ daje
+    $ \left| \int\limits_{a}^{\infty} f(x) \,dx \right| \leq \int\limits_{a}^{\infty} |f(x)| dx $ ale gdy są przedziały
+    na którym $f$ ma różne znaki to równość nie zachodzi.
+    Zatem, ogólnie, $ \left| \int\limits_{a}^{\infty} f(x) \,dx \right| $ i $ \int\limits_{a}^{\infty} |f(x)| \,dx $
+    \colorbox{yellow}{to nie to samo}. \\
+\end{itemize}
+
+\textbf{Twierdzenie}
+
+Jeżeli całka niewłaściwa jest bezwględnie zbieżna to jest zbieżna (w zwykłym sensie).
+
+Transpozycja tego twierdzenia daje warunek równoważny : 
+
+Jeżeli całka $ \int\limits_{a}^{\infty} f(x) \,dx $ nie jest zbieżna to również nie jest zbieżna bezwględnie,
+
+co oznacza $ \int\limits_{a}^{\infty} |f(x)| \,dx = \infty $.
+
+Analogicznie dla pozostałych typów całek niewłaściwych. \\
+
+Twierdzenie odwrotne nie jest prawdziwe. Są całki zbieżne ale nie bezwględnie, np. $ \int\limits_{1}^{\infty} \frac{\sin x}{x} \,dx $.
+Takie całki to tzw. całki \underline{zbieżne warunkowo}.
+
+Są więc 3 możliwe sytuacje - 3 rozłączne podzbiory całek niewłaściwych:
+
+\begin{center}
+\includegraphics[scale=0.6]{rozbiezneirozbiezne.png}
+\end{center}
+
+Przykład 
+
+Całka $ \int\limits_{1}^{\infty} \frac{\sin x}{\sqrt[3]{x^4}} \,dx $ jest zbieżna bezwględnie, bo biorąc
+$ \int\limits_{1}^{\infty} \left| \frac{\sin x}{\sqrt[3]{x^4}} \right| \,dx $ i używając kryterium porównawczego mamy
+
+$$ 0 \leq \left| \frac{\sin x}{\sqrt[3]{x^4}} \right| = \frac{|\sin x|}{x^{\frac{4}{3}}} \leq \frac{1}{x^{\frac{4}{3}}} $$
+
+a całka $ \int\limits_{1}^{\infty} \frac{1}{x^{\frac{4}{3}}} \,dx $ jest zbieżna bo $ \frac{4}{3} > 1 $.
+Zatem $ \int\limits_{1}^{\infty} \left| \frac{\sin x}{\sqrt[3]{x^4}} \right| \,dx $ jest zbieżna, a stąd
+$ \int\limits_{1}^{\infty} \frac{\sin x}{\sqrt[3]{x^4}} \,dx $ też jest zbieżna.
+
+
+\section{Szeregi liczbowe}
+
+Dany jest ciąg liczbowy $ a_1, a_2, ..., a_n, ... $
+
+Tworzymy jego ciąg sum częściowych :
+
+$$ S_1 = a_1, \ \ S_2 = a_1 + a_2, \ \ S_n = a_1 + a_2 + ... + a_n = \sum\limits_{k = 1}^{n} a_k $$
+
+Jeżeli istnieje granica $ S = \lim_{n \to \infty} S_n $ (skończona lub nieskończona) to oznaczamy ją symbolem 
+$ \sum_{k = 1}^{\infty} a_k $. \\
+
+W ogólnym przypadku możemy wziąć ciąg, który zaczyna się od dowolnej liczby całkowitej \linebreak $ n_0 $ : $ a_{n_0}, a_{n_0 + 1}, ..., a_n, ... $
+i jego sum częściowych
+
+$$ S_n = a_{n_0}, \ \ S_{n_0 + 1} = a_{n_0} + a_{n_0 + 1}, \ \ S_n = a_{n_0} + a_{n_0 + 1} + ... + a_n = \sum\limits_{k = n_0}^{n} a_k, \ n \geq n_0 $$
+
+$ S = \lim_{n \to \infty} S_n $ jest oznaczana przez $ \sum\limits_{k = n_0}^{\infty} a_k $. \\
+
+Definicja. Dla ustalonego $ n_0 \in \mathbb{Z} $ obiekt $ \sum\limits_{k = n_0}^{\infty} a_k $ nazywamy \underline{szeregiem liczbowym},
+a wartość S (gdy istnieje) jego \underline{sumą}, oznaczaną także przez $ \sum\limits_{k = n_0}^{\infty} a_k $. Mamy wtedy
+
+$$ S_n = a_{n_0}, \ \ S_{n_0 + 1} = a_{n_0} + a_{n_0 + 1}. \ \ S_n = a_{n_0} + a_{n_0 + 1} + ... + a_n + ... = 
+\sum\limits_{k = n_0}^{\infty} a_k = \lim_{n \to \infty} \sum\limits_{k = n_0}^{n} a_k = \lim_{n \to \infty} S_n $$
+
+gdzie
+
+\begin{itemize}
+    \item $ S_n $ to $n$ - ta suma szeregu,
+    \item $ a_n $ to $n$ - ty wyraz szeregu. \\
+\end{itemize}
+
+Terminologia dotycząca sumy $S$ jest taka, jak dla ciągów. Są 3 przypadki : 
+
+\begin{enumerate}
+    \item $S$ jest liczbą. Wtedy dany szereg jest \underline{zbieżny} (do $S$).
+    \item $S = \infty$ lub $S = -\infty$. Wtedy dany szereg jest \underline{rozbieżny} (do $\infty$ lub $-\infty$).
+    \item $ S = \lim_{n \to \infty} S_n $ nie istnieje. Wtedy dany szereg jest \underline{rozbieżny}. \\
+\end{enumerate}
+
+Przykłady
+
+$$ \frac{1}{2^1} + \frac{1}{2^2} + \frac{1}{2^3} + ... + \frac{1}{2^n} + ... = \sum\limits_{n = 1}^{\infty} \frac{1}{2^n} 
+\textrm { - szereg zbieżny do 1}$$
+
+$$ \frac{1}{2} + \frac{1}{3} + ... + \frac{1}{n} + ... = \sum\limits_{n = 2}^{\infty} \frac{1}{n} 
+\textrm { - szereg rozbieżny do } \infty$$
+
+$$ 1 - 1 + 1 - 1 + 1 - 1 + ... = \sum\limits_{n = 0}^{\infty} (-1)^n \textrm{ - szereg rozbieżny} $$
+
+Uwaga. Każdy szereg zaczynający się od indeksu $ n_0 \in \mathbb{Z} $ można przekształcić tak, by zaczynał się od indeksu 1.
+Wynika to z równości
+
+$$ \sum\limits_{n = n_0}^{\infty} a_n = \sum\limits_{n = 1}^{\infty} a_{n + n_0 - 1} $$
+
+$$ \frac{1}{2} + \frac{1}{3} + ... + \frac{1}{n} + ... = \sum\limits_{n = 2}^{\infty} \frac{1}{n} = \sum\limits_{n = 2}^{\infty} a_n
+= \sum\limits_{n = 1}^{\infty} a_{n + 1} = \sum\limits_{n = 1}^{\infty} \frac{1}{n + 1} $$
+
+\subsection*{Obliczanie sum szeregów}
+
+Jest to zadanie trudne, a najczęściej niemożliwe, gdyż trudno jest znaleźć bezpośredni wzór na sumy częściowe $S_n$. \\
+
+Niektóre przypadki szczególne.
+
+\begin{enumerate}
+    \item Ciąg geometryczny i szereg geometryczny.
+    \begin{itemize}
+        \item 
+        $ a_n = a_1 \cdot q^{n-1} $, gdzie $q$ jest ilorazem ciągu (czyli $a_{n+1} = a_n \cdot q , \ n \geq 1$).
+        
+        Wtedy
+
+        $$ S_n = a_1 + a_2 + ... + a_n = a_1 \cdot \frac{1 - q^n}{1 - q}, q \neq 1 \ oraz \ S_n = na_1, \ q = 1 $$
+
+        To oznacza, że dla $ a_1 \neq 0 $,
+
+        \item szereg jest zbieżny dla $ -1 < q < 1 $ i jego suma jest $ S = \frac{a_1}{1 - q} $,
+        \item szereg jest rozbieżny do $\infty$ lub $-\infty$ dla $ q \geq 1 $, znak zależy od znaku $a_1$,
+        \item szereg jest rozbieżny (suma nie istnieje) dla $ q \leq -1 $ \\
+    \end{itemize}
+
+    Stąd np.
+
+    $$ \frac{1}{2^1} + \frac{1}{2^2} + \frac{1}{2^3} + ... + \frac{1}{2^n} + ... = \sum\limits_{n = 1}^{\infty} \frac{1}{2^n} =
+    \frac{ \frac{1}{2} }{ 1 - \frac{1}{2} } = 1 \ \textrm{, bo tutaj} \ a_1 = q = \frac{1}{2} $$
+
+    \item Szeregi o wyrazie ogólnym postaci \\
+    $ a_n = f(n + 1) - f(n)$ lub $ a_n = f(n) - f(n + 1) $, gdzie $f$ jest pewną funkcją.
+
+    W bardziej ogólnej postaci \\
+    \quad $ a_n = f(n + k) - f(n) $ lub $ a_n = f(n) - f(n + k) $, gdzie $ k \in \mathbb{N}^+ $ to tzw. krok. \\
+    
+    Takie szeregi to tzw. szeregi \underline{teleskopowe} (telescoping series).
+
+    Przykłady
+
+    $$ \sum\limits_{n = 1}^{\infty} \left( \frac{1}{n} - \frac{1}{n + 1} \right) \ \textrm{- tutaj} \ f(x) = \frac{1}{x} $$
+
+    $$ \sum\limits_{n = 1}^{\infty} \left( \sqrt{n + 1} - \sqrt{n} \right) \ \textrm{- tutaj} \ f(x) = \sqrt{x} $$
+
+    $$ \sum\limits_{n = 1}^{\infty} \left( \arctan(n) - \arctan(n+2) \right) \ \textrm{- tutaj} \ f(x) = \arctan x $$
+
+    Dla takich szeregów łatwo wyznacza się wzór na $S_n$. Wyrazy wewnętrzne się upraszczają i zostaje: \\
+    suma $k$ pierwszych wartości, \ $f$ suma $k$ ostatnich wartości $f$ (lub na odwrót) \\
+
+\end{enumerate}
+
+Na przykład dla $ \sum\limits{n = 1}^{\infty} \left( f(n) - f(n + 1)) \right) $ mamy
+
+$$ S_n = f(1) - \textcolor{red}{f(2)} + \textcolor{red}{f(2)} - \textcolor{blue}{f(3)} + \textcolor{blue}{f(3)} - 
+\textcolor{green}{f(4)} + ... + \textcolor{purple}{f(n)} - f(n + 1) = f(1) - f(n + 1) $$.
+
+Jeżeli istnieje granica $ G = \lim_{x \to \infty} f(x) $ to mamy
+
+$$ S = \lim_{n \to \infty} S_n = \lim_{n \to \infty} \left( f(1) - f(n + 1) \right) = f(1) - G $$
 
 \end{document}
