@@ -1,0 +1,537 @@
+\section{Szeregi liczbowe}
+
+Dany jest ciąg liczbowy $ a_1, a_2, ..., a_n, ... $
+
+Tworzymy jego ciąg sum częściowych :
+
+$$ S_1 = a_1, \ \ S_2 = a_1 + a_2, \ \ S_n = a_1 + a_2 + ... + a_n = \sum\limits_{k = 1}^{n} a_k $$
+
+Jeżeli istnieje granica $ S = \lim_{n \to \infty} S_n $ (skończona lub nieskończona) to oznaczamy ją symbolem 
+$ \sum_{k = 1}^{\infty} a_k $. \\
+
+W ogólnym przypadku możemy wziąć ciąg, który zaczyna się od dowolnej liczby całkowitej \linebreak $ n_0 $ : $ a_{n_0}, a_{n_0 + 1}, ..., a_n, ... $
+i jego sum częściowych
+
+$$ S_n = a_{n_0}, \ \ S_{n_0 + 1} = a_{n_0} + a_{n_0 + 1}, \ \ S_n = a_{n_0} + a_{n_0 + 1} + ... + a_n = \sum\limits_{k = n_0}^{n} a_k, \ n \geq n_0 $$
+
+$ S = \lim_{n \to \infty} S_n $ jest oznaczana przez $ \sum\limits_{k = n_0}^{\infty} a_k $. \\
+
+Definicja. Dla ustalonego $ n_0 \in \mathbb{Z} $ obiekt $ \sum\limits_{k = n_0}^{\infty} a_k $ nazywamy \underline{szeregiem liczbowym},
+a wartość S (gdy istnieje) jego \underline{sumą}, oznaczaną także przez $ \sum\limits_{k = n_0}^{\infty} a_k $. Mamy wtedy
+
+$$ S_n = a_{n_0}, \ \ S_{n_0 + 1} = a_{n_0} + a_{n_0 + 1}. \ \ S_n = a_{n_0} + a_{n_0 + 1} + ... + a_n + ... = 
+\sum\limits_{k = n_0}^{\infty} a_k = \lim_{n \to \infty} \sum\limits_{k = n_0}^{n} a_k = \lim_{n \to \infty} S_n $$
+
+gdzie
+
+\begin{itemize}
+    \item $ S_n $ to $n$ - ta suma szeregu,
+    \item $ a_n $ to $n$ - ty wyraz szeregu. \\
+\end{itemize}
+
+Terminologia dotycząca sumy $S$ jest taka, jak dla ciągów. Są 3 przypadki : 
+
+\begin{enumerate}
+    \item $S$ jest liczbą. Wtedy dany szereg jest \underline{zbieżny} (do $S$).
+    \item $S = \infty$ lub $S = -\infty$. Wtedy dany szereg jest \underline{rozbieżny} (do $\infty$ lub $-\infty$).
+    \item $ S = \lim_{n \to \infty} S_n $ nie istnieje. Wtedy dany szereg jest \underline{rozbieżny}. \\
+\end{enumerate}
+
+Przykłady
+
+$$ \frac{1}{2^1} + \frac{1}{2^2} + \frac{1}{2^3} + ... + \frac{1}{2^n} + ... = \sum\limits_{n = 1}^{\infty} \frac{1}{2^n} 
+\textrm { - szereg zbieżny do 1}$$
+
+$$ \frac{1}{2} + \frac{1}{3} + ... + \frac{1}{n} + ... = \sum\limits_{n = 2}^{\infty} \frac{1}{n} 
+\textrm { - szereg rozbieżny do } \infty$$
+
+$$ 1 - 1 + 1 - 1 + 1 - 1 + ... = \sum\limits_{n = 0}^{\infty} (-1)^n \textrm{ - szereg rozbieżny} $$
+
+Uwaga. Każdy szereg zaczynający się od indeksu $ n_0 \in \mathbb{Z} $ można przekształcić tak, by zaczynał się od indeksu 1.
+Wynika to z równości
+
+$$ \sum\limits_{n = n_0}^{\infty} a_n = \sum\limits_{n = 1}^{\infty} a_{n + n_0 - 1} $$
+
+$$ \frac{1}{2} + \frac{1}{3} + ... + \frac{1}{n} + ... = \sum\limits_{n = 2}^{\infty} \frac{1}{n} = \sum\limits_{n = 2}^{\infty} a_n
+= \sum\limits_{n = 1}^{\infty} a_{n + 1} = \sum\limits_{n = 1}^{\infty} \frac{1}{n + 1} $$
+
+\subsection*{Obliczanie sum szeregów}
+\addcontentsline{toc}{subsection}{Obliczanie sum szeregów}
+
+Jest to zadanie trudne, a najczęściej niemożliwe, gdyż trudno jest znaleźć bezpośredni wzór na sumy częściowe $S_n$. \\
+
+Niektóre przypadki szczególne.
+
+\begin{enumerate}
+    \item Ciąg geometryczny i szereg geometryczny.
+    \begin{itemize}
+        \item 
+        $ a_n = a_1 \cdot q^{n-1} $, gdzie $q$ jest ilorazem ciągu (czyli $a_{n+1} = a_n \cdot q , \ n \geq 1$).
+        
+        Wtedy
+
+        $$ S_n = a_1 + a_2 + ... + a_n = a_1 \cdot \frac{1 - q^n}{1 - q}, q \neq 1 \ oraz \ S_n = na_1, \ q = 1 $$
+
+        To oznacza, że dla $ a_1 \neq 0 $,
+
+        \item szereg jest zbieżny dla $ -1 < q < 1 $ i jego suma jest $ S = \frac{a_1}{1 - q} $,
+        \item szereg jest rozbieżny do $\infty$ lub $-\infty$ dla $ q \geq 1 $, znak zależy od znaku $a_1$,
+        \item szereg jest rozbieżny (suma nie istnieje) dla $ q \leq -1 $ \\
+    \end{itemize}
+
+    Stąd np.
+
+    $$ \frac{1}{2^1} + \frac{1}{2^2} + \frac{1}{2^3} + ... + \frac{1}{2^n} + ... = \sum\limits_{n = 1}^{\infty} \frac{1}{2^n} =
+    \frac{ \frac{1}{2} }{ 1 - \frac{1}{2} } = 1 \ \textrm{, bo tutaj} \ a_1 = q = \frac{1}{2} $$
+
+    \item Szeregi o wyrazie ogólnym postaci \\
+    $ a_n = f(n + 1) - f(n)$ lub $ a_n = f(n) - f(n + 1) $, gdzie $f$ jest pewną funkcją.
+
+    W bardziej ogólnej postaci \\
+    \quad $ a_n = f(n + k) - f(n) $ lub $ a_n = f(n) - f(n + k) $, gdzie $ k \in \mathbb{N}^+ $ to tzw. krok. \\
+    
+    Takie szeregi to tzw. szeregi \underline{teleskopowe} (telescoping series).
+
+    Przykłady
+
+    $$ \sum\limits_{n = 1}^{\infty} \left( \frac{1}{n} - \frac{1}{n + 1} \right) \ \textrm{- tutaj} \ f(x) = \frac{1}{x} $$
+
+    $$ \sum\limits_{n = 1}^{\infty} \left( \sqrt{n + 1} - \sqrt{n} \right) \ \textrm{- tutaj} \ f(x) = \sqrt{x} $$
+
+    $$ \sum\limits_{n = 1}^{\infty} \left( \arctan(n) - \arctan(n+2) \right) \ \textrm{- tutaj} \ f(x) = \arctan x $$
+
+    Dla takich szeregów łatwo wyznacza się wzór na $S_n$. Wyrazy wewnętrzne się upraszczają i zostaje: \\
+    suma $k$ pierwszych wartości, \ $f$ suma $k$ ostatnich wartości $f$ (lub na odwrót) \\
+
+\end{enumerate}
+
+Na przykład dla $ \sum\limits_{n = 1}^{\infty} \left( f(n) - f(n + 1)) \right) $ mamy
+
+$$ S_n = f(1) - \textcolor{red}{f(2)} + \textcolor{red}{f(2)} - \textcolor{blue}{f(3)} + \textcolor{blue}{f(3)} - 
+\textcolor{green}{f(4)} + ... + \textcolor{purple}{f(n)} - f(n + 1) = f(1) - f(n + 1) $$.
+
+Jeżeli istnieje granica $ G = \lim_{x \to \infty} f(x) $ to mamy
+
+$$ S = \lim_{n \to \infty} S_n = \lim_{n \to \infty} \left( f(1) - f(n + 1) \right) = f(1) - G $$ \\
+
+Przykład. Wyznaczyć sumę $ \sum\limits_{n = 1}^{\infty} \frac{1}{n^2 + n} $
+
+Wyraz ogólny nie ma postaci różnicy więc trzeba ją stworzyć.
+
+Używając rozkładu na ułamki proste dostajemy
+
+$$ \frac{1}{n^2 + n} = \frac{1}{n(n+1)} = \frac{A}{n} + \frac{B}{n+1} = ... = \frac{1}{n} - \frac{1}{n+1} $$
+
+Zatem 
+
+$$ \sum\limits_{n = 1}^{\infty} \frac{1}{n^2 + n} = \sum\limits_{n=1}^{\infty} \left( \frac{1}{n} - \frac{1}{n+1} \right) $$
+
+I to daje
+
+$$ S_n = \left( \frac{1}{1} - \frac{1}{2} \right) + \left( \frac{1}{2} - \frac{1}{3} \right) + \left( \frac{1}{3} - \frac{1}{4} \right)
++ ... + \left( \frac{1}{n} - \frac{1}{n+1} \right) = \frac{1}{1} - \frac{1}{n+1}  $$ 
+
+$$ \lim_{n \to \infty} S_n = 1 = \sum\limits_{n = 1}^{\infty} \frac{1}{n^2 + n} $$
+
+\subsection*{Własności szeregów zbieżnych}
+\addcontentsline{toc}{subsection}{Własności szeregów zbieżnych}
+
+\textbf{Twierdzenie}
+
+Jeżeli szeregi $ \sum\limits_{n = n_0}^{\infty} a_n $ oraz $ \sum\limits_{n = n_0}^{\infty} b_n $ są zbieżne to zbieżne są szeregi
+$ \sum\limits_{n = n_0}^{\infty} (a_n + b_n) $ \linebreak oraz $ \sum\limits_{n = n_0}^{\infty} (c \cdot a_n), \ c \in \mathbb{R} $. \\
+
+Ponadto
+
+\begin{itemize}
+    \item $ \sum\limits_{n = n_0}^{\infty} (a_n \pm b_n) = \sum\limits_{n = n_0}^{\infty} a_n \pm \sum\limits_{n = n_0}^{\infty} b_n $
+    \item $ \sum\limits_{n = n_0}^{\infty} (c \cdot a_n) = c \sum\limits_{n = n_0}^{\infty} a_n $ \\
+\end{itemize}
+
+Prawdziwe są także analogiczne twierdzenia prowadzące do arytmetyki granic nieskończonych, gdy nie pojawiają się symbole nieoznaczone.
+Na przykład gdy $ \sum\limits_{n = n_0}^{\infty} a_n = \infty $ oraz $ \sum\limits_{n = n_0}^{\infty} b_n = b \in \mathbb{R} $ to 
+
+$$ \sum\limits_{n = n_0}^{\infty} (a_n \pm b_n) = \sum\limits_{n = n_0}^{\infty} a_n \pm \sum\limits_{n = n_0}^{\infty} b_n = \infty $$ \\
+
+Natomiast gdy $ \sum\limits_{n = n_0}^{\infty} a_n = \sum\limits_{n = n_0}^{\infty} b_n = \infty $ to
+$ \sum\limits_{n = n_0}^{\infty} (a_n - b_n) $ może być zarówno zbieżny jak i rozbieżny i nie ma sensu równość
+
+$$ \sum\limits_{n = n_0}^{\infty} (a_n - b_n) = \sum\limits_{n = n_0}^{\infty} a_n - \sum\limits_{n = n_0}^{\infty} b_n $$ \\
+
+\textbf{Twierdzenie}
+
+Zmiana wartości $n_0$ nie wpływa na zbieżność/rozbieżność szeregu $ \sum\limits_{n = n_0}^{\infty} a_n $.
+
+Może mieć wpływ na wartość jego sumy. \\
+
+Stąd wynika np., że szeregi $ \sum\limits_{n = 1}^{\infty} a_n $ i $ \sum\limits_{n = 100}^{\infty} a_n $ są albo oba zbieżne
+albo oba rozbieżne do $ \infty $ lub $-\infty$ albo oba rozbieżne.
+
+To też oznacza, że na podstawie kilku pierwszych wyrazów ciągu/szeregu
+
+\colorbox{yellow}{NIC NIE MOŻNA POWIEDZIEĆ} o jego zbieżności \\
+
+\colorbox{red}{Popularny błąd}
+
+"Liczymy wartości $ a_1, a_2, a_3, a_4, a_5$ . Wychodzi ciąg malejący i dodatni.
+
+\textcolor{red}{Zatem szereg jest zbieżny}". \textbf{GAME OVER...} \\
+
+\textbf{Twierdzenie}
+
+Dla ustalonego $ n_0 \in \mathbb{N}^+ $ i $ p \in \mathbb{R} $ szereg $ \sum\limits_{n = n_0}^{\infty} \frac{1}{n^p} $
+jest zbieżny dla $ p > 1 $ i rozbieżny do $\infty$ dla $p \leq 1$.  \\
+
+W przypadku kiedy sumy szeregu nie da się wyznaczyć w sposób dokładny można to zrobić w sposób przybliżony, pod warunkiem, że wiemy,
+że szereg jest zbiezny. \\
+
+Kryteria zbieżności to twierdzenia opisujące warunki dostateczne zbieżności lub rozbieżności danej klasy szeregów. Najczęściej mają postać
+implikacji ale \textbf{NIE} równoważności. \\
+
+Oznacza to zwykle własności postaci
+
+\quad warunek zachodzi $ \Rightarrow $ szereg jest zbieżny/rozbieżny,
+
+\quad warunek nie zachodzi $\Rightarrow$ nic nie wiemy o zbieżności/rozbieżności szeregu \\
+
+\subsection*{Popularne kryteria zbieżności szeregów}
+\addcontentsline{toc}{subsection}{Popularne kryteria zbieżności szeregów}
+
+0. Warunek konieczny zbieżności szeregów \\ 
+
+\textbf{Twierdzenie}
+
+Jeżeli szereg $ \sum\limits_{n = n_0}^{\infty} a_n $ jest zbieżny to $ \lim_{n \to \infty} a_n = 0 $. \\
+
+Dowód 
+
+Dla $ n \geq n_0 + 1 $ mamy $ S_n = a_{n_0} + a_{n_0 + 1} + ... + a_{n - 1} + a_n $ oraz 
+$ S_{n - 1} = a_{n_0} + a_{n_0 + 1} + ... + a_{n - 1} $,
+
+Stąd
+
+$$ S_n - S_{n - 1} = a_n $$ \\
+
+Jeżeli szereg $ \sum\limits_{n = n_0}^{\infty} a_n $ jest zbieżny to $ \lim_{n \to \infty} S_n = \lim_{n \to \infty} S_{n - 1} = S \in \mathbb{R} $.
+To daje
+
+$$ \lim_{n \to \infty} a_n = \lim_{n \to \infty} (S_n - S_{n - 1}) = \lim_{n \to \infty} S_n - \lim_{n \to \infty} S_{n - 1} = S - S = 0 $$ \\
+
+Transpozycja tego twierdzenia daje warunek równoważny do zastosowania praktycznego :
+
+Jeżeli $ \lim_{n \to \infty} a_n \neq 0 $ to szereg $ \sum\limits_{n = n_0}^{\infty} a_n $ nie jest zbiezny przy czym
+
+\begin{itemize}
+    \item gdy $ \lim_{n \to \infty} a_n > 0 $ to $ \sum\limits_{n = n_0}^{\infty} a_n = \infty $
+    \item gdy $ \lim_{n \to \infty} a_n < 0 $ to $ \sum\limits_{n = n_0}^{\infty} a_n = -\infty $ 
+\end{itemize}
+
+\colorbox{yellow}{Uwaga. To jest tylko implikacja!}
+
+Jeżeli $ \lim_{n \to \infty} a_n = 0 $ to jeszcze \colorbox{yellow}{NIC NIE WIEMY} o szeregu.
+
+Na przykład szeregi $ \sum\limits_{n = n_0}^{\infty} \frac{1}{n^p} $ mają $ \lim_{n \to \infty} \frac{1}{n^p} = 0 $
+dla wszystkich $ p > 0 $ ale niektóre z tych szeregów są zbieżne, a niektóre rozbieżne. \\
+
+\colorbox{red}{Popularny błąd}
+
+"$\lim_{n \to \infty} a_n = 0 $ \textcolor{red}{zatem szereg jest zbieżny}". \textbf{GAME OVER...} \\
+
+Szeregi o wyrazach nieujemnych
+
+$$ \sum\limits_{n = n_0}^{\infty} a_n, \ a_n \geq 0 $$
+
+Wtedy $ S_n = a_{n_0} + a_{n_0 + 1} + ... + a_{n - 1} + a_n $ jest ciągiem niemalejącym zatem suma szeregu
+$ \sum\limits_{n = n_0}^{\infty} a_n = \lim_{n \to \infty} S_n $ zawsze istnieje. Może być to liczba lub $\infty$.
+
+Podobnie dla szeregów o wyrazach niedodatnich $ \sum\limits_{n = n_0}^{\infty} a_n, \ a_n \leq 0 $, suma zawsze istnieje
+i rozbieżność oznacza rozbieżność do $-\infty$. \\
+
+Przykład. Następujące szeregi nie są zbieżne
+
+$$ \sum\limits_{n = 1}^{\infty} 1, \ \ \sum\limits_{n = 1}^{\infty} (n^2 + 2n), \ \
+\sum\limits_{n = 1}^{\infty} \frac{n+1}{n+2}, \ \ \sum\limits_{n = 1}^{\infty} \left(1 + \frac{1}{n} \right)^n , \ \ 
+\sum\limits_{n = 1}^{\infty} (-1)^n , \ \ \sum\limits_{n = 1}^{\infty} \sin n$$
+
+Dla szeregów o wyrazach nieujemnych mamy dwa kolejne kryteria zbieżności.
+
+\begin{enumerate}
+    \item Kryterium porównawcze
+    \item Kryterium ilorazowe \\
+\end{enumerate} 
+
+\subsection*{Twierdzenie (kryterium porównawcze)}
+\addcontentsline{toc}{subsection}{Twierdzenie (kryterium porównawcze)}
+
+Dane są dwa szeregi $ \sum\limits_{n = n_0}^{\infty} a_n $ oraz $ \sum\limits_{n = n_0}^{\infty} b_n $. Wtedy zachodzą nastepujące
+własności.
+
+\begin{enumerate}
+    \item (Przypadek zbieżności) Gdy $ \forall n \geq k \geq n_0 \quad 0 \leq a_n \leq b_n $ i $ \sum\limits_{n = n_0}^{\infty} b_n $
+    jest zbieżny to $ \sum\limits_{n = n_0}^{\infty} a_n $ też jest zbieżny. Ponadto
+    $ 0 \leq \sum\limits_{n = n_0}^{\infty} a_n \leq \sum\limits_{n = n_0}^{\infty} b_n $
+    
+    \item (Przypadek rozbieżności) Gdy $ \forall n \geq k \geq n_0 \quad 0 \leq b_n \leq a_n $ i $ \sum\limits_{n = n_0}^{\infty} b_n $
+    jest rozbieżny to $ \sum\limits_{n = n_0}^{\infty} a_n $ też jest rozbieżny. Ponadto
+    $ \sum\limits_{n = n_0}^{\infty} a_n = \sum\limits_{n = n_0}^{\infty} b_n = \infty $
+
+    \item (Przypadek wątpliwy). Gdy $ \forall n \geq k \geq n_0 \quad 0 \leq a_n \leq b_n $ ale $ \sum\limits_{n = n_0}^{\infty} b_n $ jest
+    rozbieżny to \textbf{NIC NIE WIEMY} o zbieżności $ \sum\limits_{n = n_0}^{\infty} a_n $
+
+    \item (Przypadek wątpliwy). Gdy $ \forall n \geq k \geq n_0 \quad 0 \leq b_n \leq a_n $ ale $ \sum\limits_{n = n_0}^{\infty} b_n $ jest
+    zbieżny to \textbf{NIC NIE WIEMY} o zbieżności $ \sum\limits_{n = n_0}^{\infty} a_n $ \\
+\end{enumerate}
+
+Uwagi
+
+\begin{itemize}
+    \item $ \sum\limits_{n = n_0}^{\infty} a_n $ jest szeregiem z zadania, $ \sum\limits_{n = n_0}^{\infty} b_n $ tworzymy sami
+    \item Porównujemy najczęściej z szeregiem geometrycznym $ \sum\limits_{n = n_0}^{\infty} q^n $ lub z szeregami
+    $ \sum\limits_{n = n_0}^{\infty} \frac{1}{n^p} $. Wtedy $a_n$ często ma postać ułamków i możemy spróbować wziąć $b_n$ jako
+
+    \quad \colorbox{yellow}{C $\cdot$ iloraz najwyższych potęg z licznika i mianownika $a_n$} 
+
+    \item Trzeba uważać aby nierówność między $a_n$ i $b_n$ była prawdziwa i nie zapomnieć o dolnym ograniczeniu (0). Ma być
+    tak jak w \underline{twierdzeniu o trzech ciągach}
+
+    \item Kryterium nie zawsze jest wygodne w użyciu i trzeba uważać, by nie dostać przypadku wątpliwego, bo wtedy \textbf{trzeba zaczynać od nowa}
+    
+    \item Warto sprawdzić opisany wyżej iloraz najwyższych potęg i na tej podstawie przewidzieć czy chcemy udowodnić zbieżność
+    czy rozbieżność. To pomaga skonstruować odpowiednią nierówność między $a_n$ i $b_n$.
+\end{itemize}
+
+\colorbox{red}{Popularny błąd : } odpowiedź na podstawie przypadku wątpliwego
+
+Na przykład dla szeregu $ \sum\limits_{n = 1}^{\infty} \frac{1}{n + \sqrt{n}} : $
+
+"Mamy $ 0 \leq \frac{1}{n + \sqrt{n}} \leq \frac{1}{n} $ i szereg $ \sum\limits_{n = 1}^{\infty} \frac{1}{n} $
+jest rozbieżny \textcolor{red}{zatem szereg $\sum\limits_{n = 1}^{\infty} \frac{1}{n + \sqrt{n}}$ jest rozbieżny}". \\
+
+\textbf{GAME OVER...} To jest przypadek nr 3 (wątpliwy) \\
+
+Przykład
+
+$$ \sum\limits_{n = 4}^{\infty} \frac{2n - 3}{n^3 - 1} $$
+
+Przewidywanie zbieżności/rozbieżności:
+
+Iloraz najwyższych potęg licznika i mianownika to $ \frac{n}{n^3} = \frac{1}{n^2} $, a szereg $ \sum\limits_{n = 4}^{\infty} \frac{1}{n^2} $
+jest zbieżny, bo $ 2 > 1 $. Zatem chcemy udowodnić zbieżność (przypadek 1).
+
+Potrzebujemy więc $ \sum\limits_{n = 4}^{\infty} b_n $ i nierówności $ 0 \leq \frac{2n - 3}{n^3 - 1} \leq b_n $.
+
+Chcemy zwiększyć wyrażenie $ \frac{2n - 3}{n^3 - 1} $ ale tak, by \colorbox{yellow}{zostały najwyższe potęgi}.
+
+Można zwiększyć \underline{licznik} oraz \underline{zmniejszyć mianownik}.
+
+Zwiększamy licznik poprzez wyrzucenie 3.
+
+Zmniejszamy mianownik poprzez zastąpienie 1 czymś większym : wyrażeniem z najwyższą potęgą. Nie można jednak wziąć całego $n^3$
+, bo będzie 0 w mianowniku.
+
+Wygrywa wzięcie $ C \cdot n^3 $ np. $ \frac{1}{2} n^3 $, bo dla $ n \geq 4 $ mamy $ \frac{1}{2} n^3 \geq 1 $.
+
+To wszystko daje dla $ n \geq 4 $
+
+$$ 0 \leq \frac{2n - 3}{n^3 - 1} \leq \frac{2n}{n^3 - \frac{1}{2} n^3} $$
+
+Czyli
+
+$$ b_n = \frac{2n}{n^3 - \frac{1}{2}n^3} = 4 \cdot \frac{1}{n^2} $$
+
+\textbf{DZIURA W SKRYPCIE}
+
+\subsection*{Twierdzenie (kryterium ilorazowe)}
+\addcontentsline{toc}{subsection}{Twierdzenie (kryterium ilorazowe)}
+
+Dane są dwa szeregi $ \sum\limits_{n = n_0}^{\infty} a_n $ oraz $ \sum\limits_{n = n_0}^{\infty} b_n $.
+Ponadto $ \forall n \geq n_0 \ a_n, b_n > 0 $.
+
+Jeżeli istnieje granica $ \lim_{n \to \infty} \frac{a_n}{b_n} $ i jest \colorbox{yellow}{liczbą dodatnią} to wtedy oba
+szeregi są zbieżne albo oba rozbieżne do $\infty$. \\
+
+Uwagi
+
+\begin{itemize}
+    \item Ciąg $b_n$ tworzymy podobnie jak dla kryterium porównawczego.
+    \item Nie ma problemu z nierównościami :) ale za to trzeba umiećl liczyć granice.
+    \item Granica nie może być ani 0 ani $\infty$: \ $ \lim_{n \to \infty} \frac{a_n}{b_n} = L \in (0, \infty) $.
+    
+    \colorbox{yellow}{Nie wystarczy warunek $L > 0$ bo $\infty$ także jest $ > 0$.}
+    \item Rozwiązanie \colorbox{yellow}{musi zawierać wniosek} "granica ilorazu jest liczbą dodatnią więc oba
+    \colorbox{yellow}{szeregi} są zbieżne lub oba rozbieżne" - bez tego będzie niepełne
+    
+    \item Kryterium zwykle jest wygodniejsze niż porównawcze ale są przykłady, które pójdą z porównawczego ale nie z
+    ilorazowego, bo granica ilorazu nie istnieje
+    
+    Np. \ $ \sum\limits_{n = 1}^{\infty} \frac{2 + \sin n}{n} $.
+\end{itemize}
+
+Przykłady
+
+Poprzedni przykład raz jeszcze 
+
+$$ \sum\limits_{n = 4}^{\infty} \frac{2n - 3}{n^3 - 1} $$
+
+Bierzemy $ b_n = \frac{n}{n^3} = \frac{1}{n^2} $
+
+$$ \dfrac{a_n}{b_n} = \dfrac{\dfrac{2n - 3}{n^3 - 1}}{\dfrac{1}{n^2}} = \dfrac{2n^3 - 3n^2}{n^3 - 1}
+= \dfrac{2 - \dfrac{3}{n}}{1 - \dfrac{1}{n^3}} $$ \\
+
+Stąd $ \lim_{n \to \infty} \frac{a_n}{b_n} = 2 $ - liczba dodatnia.
+
+Zatem oba szeregi są zbieżne lub oba są rozbieżne.
+
+Dalej już analiza $ \sum\limits_{n = 4}^{\infty} \frac{1}{n^2} $ i wniosek jak w kryterium porównawczym :
+
+$ \sum\limits_{n = 4}^{\infty} b_n = \sum\limits_{n = 4}^{\infty} \frac{1}{n^2} $ jest zbieżny bo $ 2 > 1 $.
+Zatem $ \sum\limits_{n = 4}^{\infty} \frac{2n - 3}{n^3 - 1} $ też jest zbieżny. \\
+
+Przykłady o postaci funkcji złożonej $ \sum\limits_{n = n_0}^{\infty} f(b_n) $,
+
+gdzie $ \lim_{n \to \infty} b_n = 0^+ $ oraz $ \lim_{x \to 0^+} f(x) = 0^+ $.
+
+Nowym szeregiem jest szereg z funkcji wewnętrznej $ \sum\limits_{n = n_0}^{\infty} b_n $.
+
+Liczymy granicę 
+
+$$ \lim_{n \to \infty} \frac{f(b_n)}{b_n} = \lim_{x=b \to 0^+} \frac{f(x)}{x} \left[ \frac{0}{0} \right] $$
+
+przy użyciu granic podstawowych lub reguły de l'Hospitala. \\
+
+Na przykład
+
+$$ \sum\limits_{n = 1}^{\infty} \left( \sqrt[n]{2} - 1 \right) $$
+
+Mamy $$ \sum\limits_{n = 1}^{\infty} \left( \sqrt[n]{2} - 1 \right) = \sum\limits_{n = 1}^{\infty} \left( 2^{\frac{1}{n}} - 1 \right) $$
+
+Więc bierzemy $ b_n = \frac{1}{n} > 0 $.
+
+Liczymy granicę
+
+$$ \lim_{n \to \infty} \frac{2^{\frac{1}{n}} - 1}{\frac{1}{n}} = \lim_{x = \frac{1}{n} \to 0^+} \frac{2^x - 1}{x} = \ln 2 $$ \\
+
+Jest to liczba dodatnia więc oba szeregi są zbieżne lub oba są rozbieżne.
+
+$ \sum\limits_{n = 1}^{\infty} \frac{1}{n} = \infty $ więc $ \sum\limits_{n = 1}^{\infty} \left( \sqrt[n]{2} - 1 \right) = \infty $. \\ \\
+
+3. Kryterium Cauchy'ego.
+
+4. Kryterium d'Alemberta \\
+
+Działają dla szeregów o dowolnych wyrazach. Teza obu kryteriów jest taka sama ale liczymy granice innych wyrażeń.
+
+
+\subsection*{Twierdzenie (kryterium Cauchy'ego)}
+\addcontentsline{toc}{subsection}{Twierdzenie (kryterium Cauchy'ego)}
+
+Dany jest szereg $ \sum\limits_{n = n_0}^{\infty} a_n $ taki, że istnieje granica $ q = \lim_{n \to \infty} \sqrt[n]{|a_n|} $. Wtedy
+
+\begin{enumerate}
+    \item Gdy $ 0 \leq q < 1 $ to szereg jest zbieżny.
+    \item Gdy $ q > 1 $ to szereg jest rozbieżny
+    \item \textbf{(Przypadek wątpliwy)}. Gdy q = 1 to \colorbox{yellow}{NIC NIE WIEMY} o zbieżności szeregu. \\
+\end{enumerate}
+
+\textbf{Uwagi}
+
+\begin{itemize}
+    \item Do wyznaczenia $q$ przydają się następujące właśności granic
+    
+    a) Gdy $ \lim_{n \to \infty} a_n $ jest \textbf{liczbą dodatnią} to $ \lim_{n \to \infty} \sqrt[n]{a_n} = 1 $.
+
+    b) $ \forall p \in \mathbb{R} \ \lim_{n \to \infty} \sqrt[n]{n^p} = 1 $.
+
+    \item \textbf{$q$ nie może być ujemne}. $q$ ujemne zwykle oznacza brak modułu na $a_n$.
+\end{itemize}
+
+
+\subsection*{Twierdzenie (kryterium d'Alemberta)}
+\addcontentsline{toc}{subsection}{Twierdzenie (kryterium d'Alemberta)}
+
+Dany jest szereg $ \sum\limits_{n = n_0}^{\infty} a_n, \ a_n \neq 0 $, taki, że istnieje granica
+$ q = \lim_{n \to \infty} \left| \frac{a_{n + 1}}{a_n} \right| $. Wtedy
+
+\begin{enumerate}
+    \item Gdy $ 0 \leq q < 1 $ to szereg jest zbieżny.
+    \item Gdy $ q > 1 $ to szereg jest rozbieżny
+    \item \textbf{(Przypadek wątpliwy)}. Gdy q = 1 to \colorbox{yellow}{NIC NIE WIEMY} o zbieżności szeregu. \\
+\end{enumerate}
+
+\begin{itemize}
+    \item \textbf{$q$ nie może być ujemne}. $q$ ujemne zwykle oznacza brak modułu na $a_n$.
+    
+    \item W obu kryteriach szerergi $ \sum\limits_{n = n_0}^{\infty} \frac{1}{n^p} $ pokazują, że $ q = 1$ nic nie daje. \\
+\end{itemize}
+
+Przykłady
+
+$$ \sum\limits_{n = 1}^{\infty} \frac{20^n}{n!} $$
+
+Tutaj $ a_n = \frac{20^n}{n!} > 0 $ oraz $ a_{n + 1} = \frac{20^{n + 1}}{(n + 1)!} $. Zatem z kryterium d'Alemberta
+
+$$ q = \lim_{n \to \infty} \left| \frac{a_{n + 1}}{a_n} \right| = \frac{ \dfrac{20^{n + 1}}{(n+1)!} }{ \dfrac{20^n}{n!} } $$ \\
+
+$$ \sum\limits_{n = 1}^{\infty} \left( 2\arcsin \frac{1 - n}{2n + 1} \right)^n $$
+
+Tutaj chcemy użyć kryterium Cauchy'ego.
+
+$$ \sqrt[n]{|a_n|} = \sqrt[n]{ \left| \left( 2\arcsin \frac{1-n}{2n+1} \right)^n \right| } 
+= \sqrt[n]{ \left| 2\arcsin \frac{1-n}{2n+1} \right|^n } = \left| 2\arcsin \frac{1-n}{2n+1} \right|
+= \left| 2\arcsin \frac{ \dfrac{1}{n} - 1  }{ 2 + \dfrac{1}{n} } \right| $$
+
+Stąd 
+
+$$ q = \lim_{n \to \infty} \sqrt[n]{|a_n|} = \left| 2\arcsin \left( -\frac{1}{2} \right) \right|
+= \left| 2 \left( - \frac{\pi}{6} \right) \right| = \frac{\pi}{3} $$
+
+$q > 1$ więc szereg jest rozbieżny.
+
+
+\subsection*{Twierdzenie (kryterium całkowe)}
+\addcontentsline{toc}{subsection}{Twierdzenie (kryterium całkowe)}
+
+Dany jest szereg $ \sum\limits_{n = n_0}^{\infty} a_n $. Jeżeli na $ [x_0, \infty), \ x_0 \geq n_0 $ istnieje funkcja $f$
+taka, że 
+
+\begin{itemize}
+    \item $ f(n) = a_n, \ n \geq x_0 $,\
+    \item $f$ jest nieujemna na $[x_0, \infty)$,
+    \item $f$ jest nierosnąca na $[x_0, \infty)$,
+\end{itemize}
+
+to całka niewłaściwa $ \int\limits_{x_0}^{\infty} f(x) \,dx $ i szereg $ \sum\limits_{n = n_0}^{\infty} a_n $ są
+jednocześnie skończone lub jednocześnie rozbieżne do $\infty$. \\
+
+Uwagi do kryterium
+
+\begin{itemize}
+    \item Najczęściej $ x_0 = n_0 $.
+    \item Kryterium jest ważne z punktu widzenia teorii, gdyż wiele innych własności szeregów z niego wynika.
+    Na przykład, gdy $x_0 = n_0$ to
+    $$ \int\limits_{n_0}^{\infty} f(x) \,dx \leq \sum\limits_{n = n_0}^{\infty} a_n \leq 
+    a_{n_0} + \int\limits_{n_0}^{\infty} f(x) \,dx $$
+    To pozwala oszacować sumę szeregu.
+
+    \item Sens użycia kryterium: nie umiemy policzyć sumy szeregu ale umiemy \textbf{obliczyć} całkę
+    $ \int\limits_{x_0}^{\infty} f(x) \,dx = \lim_{T \to \infty} \int\limits_{x_0}^{T} f(x) \,dx $. Stosujemy to
+    kryterium tylko wtedy, gdy zamierzamy liczyć tę całkę.
+
+    \item Z praktycznego punktu widzenia kryterium jest najczęściej \colorbox{yellow}{najmniej wygodnie} do zastosowania.
+    Opłaca się je stosować głównie wtedy, gdy szereg zawiera wyrażenie $\ln n$. \\
+\end{itemize}
+
+Przykład
+
+Dla ustalonego $ n_0 \in \mathbb{N}^+ $ i $p > 0$ dowodzimy znany już wynik dla szeregu $ \sum\limits_{n = n_0}^{\infty} \frac{1}{n^p} $
+zbieżny dla $p > 1$ oraz rozbieżny do $\infty$ dla $p \leq 1$. \\
+
+Tutaj bierzemy po prostu $ f(x) = \frac{1}{x^p}, \ x \in [n_0, \infty) $.
+
+Dla $p > 0 f$ jest malejąca i nieujemna oraz $ f(n) = \frac{1}{n^p} $ 
+
+Spełnione są wiec warunki użycia kryterium. Liczymy całkę $ \int\limits_{n_0}^{\infty} \frac{1}{x^p} \,dx $.
+
+Było to już robione wcześniej i wiemy, że dla $p > 1$ jest liczbą, a dla $p \leq 1$ jest równa $\infty$.
+Stąd szereg jest zbieżny dla $p > 1$ oraz rozbieżny do $\infty$ dla $0 < p \leq 1$. Dla $p \leq 0$ szereg jest rozbieżny,
+bo nie spełnia warunku koniecznego zbieżności.

@@ -1,0 +1,133 @@
+\section{Całki niewłaściwe II rodzaju}
+
+Ustalamy liczby $ a,b \in \mathbb{R}, \ a < b $. Niech $f$ będzie funkcją całkowalną na każdym przedziale postaci $[a, T] $,
+gdzie $ a < T < b $. Definiujemy \underline{całkę niewłaściwą drugiego rodzaju} z $f$ na przedziale $[a, b)$ jako
+
+$$ \int\limits_{a}^{b} f(x) \,dx = \lim_{T \to b^+} \int\limits_{a}^{T} f(x) \,dx, \quad \textrm{gdy granica po prawej stronie istnieje.}$$
+
+Analogicznie, gdy $f$ jest całkowalna na każdym przedziale postaci $[T,b]$, gdzie $ a < T < b $. to definiujemy
+\underline{całkę niewłaściwą pierwszego rodzaju} z $f$ na przedziale $(a, b]$ jako
+
+$$ \int\limits_{a}^{b} f(x) \,dx = \lim_{T \to a^+} \int\limits_{T}^{b} f(x) \,dx, \quad \textrm{gdy granica po prawej stronie istnieje.}$$\\
+
+Terminologia dotycząca takich całek jest taka, jak dla całek niewłaściwych 1 rodzaju. Są 3 przypadki : 
+
+\begin{enumerate}
+    \item Granica z prawej strony jest liczbą. Wtedy całka jest \underline{zbieżna} (do tej granicy).
+    \item Granica z prawej strony jest równa $\infty$ lub $-\infty$. Wtedy całka jest \underline{rozbieżna} do $\infty$ lub $-\infty$.
+    \item Granica z prawej strony nie istnieje. Wtedy mówimy, że całka jest \underline{rozbieżna}. \\
+\end{enumerate}
+
+Interpretacja geometryczna. \\
+
+Podobnie jak dla zwykłej całki oznaczonej, jeżeli $f \geq 0$ na $(a,b]$ lub $[a,b)$ to całka niewłaściwa 2 rodzaju
+$ \int\limits_{a}^{b} f(x) \,dx $ daje pole obszaru ograniczonego osią X, wykresem $f$ oraz prostymi $x=a$ oraz $x=b$.
+
+Najczęściej definiujemy tego typu całkę w przypadku gdy $f$ ma asymptotę pionową $x=a$ lub $x=b$. Wtedy ten obszar
+nie jest ograniczony z góry bądź z dołu. \\
+
+Na przykład
+
+$$ \int\limits_{0}^{1} \frac{1}{\sqrt{x}} \,dx = \lim_{T \to 0^+} \int\limits_{T}^{1} \frac{1}{\sqrt{x}} \,dx
+\lim_{T \to 0^+} [2\sqrt{x}]_T^1 = \lim_{T \to 0^+} (2 - 2\sqrt{T}) = 2 $$
+
+Całka jest zbieżna do 2. \\
+
+\underline{Wersja całki obustronnej} \\
+
+Ustalamy liczby $ a,b,c \in \mathbb{R}, \ a < c < b $. Niech $f$ będzie funkcją całkowalną na każdym przedziale postaci
+$[a,T]$, $T < c$, oraz $ [T, b] $, $ T > c $. Definiujemy całkę niewłaściwą 2 rodzaju z $f$ na zbiorze $[a, c)\cup(c, b] $
+jako sumę dwóch całek niewłaściwych. tzn.
+
+$$ \int\limits_{a}^{b} f(x) \,dx = \int\limits_{a}^{c} f(x) \,dx + \int\limits_{c}^{b} f(x) \,dx $$
+
+przy czym gdy przynajmniej jedna z całek z prawej strony nie istnieje lub zachodzi przypadek $ \infty - \infty $ to
+$ \int\limits_{a}^{b} f(x) \,dx $ jest rozbieżna, a w pozostałych przypadkach całka ma wartość wynikającą z arytmetyki granic. \\
+
+Najczęściej takie całki pojawiają się, gdy $f$ ma asymptotę w $x = c$. \\
+
+\textbf{Twierdzenie}
+
+Istnieją podstawienia, które każdą całkę niewłaściwą 2 rodzaju sprowadzają do przypadku całki niewłaściwej 1 rodzaju.
+
+W szczególności
+
+\begin{itemize}
+    \item dla całki $(a,b]$ możemy wziąć $ t = \frac{1}{x - a} $ co daje $ x = a + \frac{1}{t} $ oraz
+    $$ \int\limits_{a}^{b} f(x) \,dx = \int\limits_{C}^{\infty} \frac{1}{t^2} f \left(a + \frac{1}{t} \right) dt \quad
+    \textrm{, gdzie} \quad C = \frac{1}{b - a} $$
+
+    \item dla całki na $[a,b)$ możemy wziąć $t = \frac{1}{b - x}$ co daje $ t = b - \frac{1}{t} $ oraz
+    $$ \int\limits_{a}^{b} f(x) \,dx = \int\limits_{C}^{\infty} \frac{1}{t^2} f \left(b - \frac{1}{t} \right) dt \quad
+    \textrm{, gdzie} \quad C = \frac{1}{b - a} $$ \\
+\end{itemize}
+
+Na przykład dla $ p > 0 $ biorąc $ t = \frac{1}{x} $ mamy 
+
+$$ \int\limits_{0}^{b} \frac{1}{x^p} \,dx = \int\limits_{\frac{1}{b}}^{\infty} \frac{1}{t^2} \cdot \frac{1}{ \left( \frac{1}{t} \right)^p } dt
+= \int\limits_{\frac{1}{b}}^{\infty} \frac{1}{t^{2 - p}} \,dt $$
+
+Podstawienie to oznacza też, że mamy analogiczne kryteria zbieżności dla całek 2 rodzaju - porównawcze i ilorazowe, przy
+czym dla kryterium ilorazowego liczymy granicę ilorazu funkcji w odpowiednim końcu zadanego przedziału. \\
+
+Na koniec, wartość główna całki $ \int\limits_{a}^{b} f(x) \,dx $ na $[a,c)\cup(c,b]$ to wielkość
+
+$$ \textrm{P.V.} \int\limits_{a}^{b} f(x) \,dx = \lim_{T \to 0^+} 
+\left( \int\limits_{a}^{c - T} f(x) \,dx + \int\limits_{c + T}^{b} f(x) \,dx \right) $$
+
+o ile powyższa granica istnieje.
+
+Oznacza to, że odpowiednie końce przedziałów całkowania są w jednakowej odległości od c i zbiegają do c.
+
+\subsection*{Zbieżność bezwględna całek niewłaściwych}
+\addcontentsline{toc}{subsection}{Zbieżność bezwględna całek niewłaściwych}
+
+Definicja. Całka $ \int\limits_{a}^{\infty} f(x) \,dx $ jest \underline{zbieżna bezwględnie}, gdy zbieżna jest całka
+$ \int\limits_{a}^{\infty} |f(x)| \,dx $.
+
+Analogiczne definicje mamy dla pozostałych całek 1 rodzaju oraz dla całek 2 rodzaju. \\
+
+Uwagi
+
+\begin{itemize}
+    \item Gdy $f$ jest nieujemna to mamy $ \int\limits_{a}^{\infty} f(x) \,dx = \int\limits_{a}^{\infty} |f(x)| \,dx $
+    i definicja nie wnosi nic nowego. Sytuacja się zmienia, gdy są przedziały na którym $f$ ma różne znaki.
+    
+    \item Nierówność $ \left| \int\limits_{a}^{T} f(x) \,dx \right| \leq \int\limits_{a}^{T} |f(x)| \,dx $ daje
+    $ \left| \int\limits_{a}^{\infty} f(x) \,dx \right| \leq \int\limits_{a}^{\infty} |f(x)| dx $ ale gdy są przedziały
+    na którym $f$ ma różne znaki to równość nie zachodzi.
+    Zatem, ogólnie, $ \left| \int\limits_{a}^{\infty} f(x) \,dx \right| $ i $ \int\limits_{a}^{\infty} |f(x)| \,dx $
+    \colorbox{yellow}{to nie to samo}. \\
+\end{itemize}
+
+\textbf{Twierdzenie}
+
+Jeżeli całka niewłaściwa jest bezwględnie zbieżna to jest zbieżna (w zwykłym sensie).
+
+Transpozycja tego twierdzenia daje warunek równoważny : 
+
+Jeżeli całka $ \int\limits_{a}^{\infty} f(x) \,dx $ nie jest zbieżna to również nie jest zbieżna bezwględnie,
+
+co oznacza $ \int\limits_{a}^{\infty} |f(x)| \,dx = \infty $.
+
+Analogicznie dla pozostałych typów całek niewłaściwych. \\
+
+Twierdzenie odwrotne nie jest prawdziwe. Są całki zbieżne ale nie bezwględnie, np. $ \int\limits_{1}^{\infty} \frac{\sin x}{x} \,dx $.
+Takie całki to tzw. całki \underline{zbieżne warunkowo}.
+
+Są więc 3 możliwe sytuacje - 3 rozłączne podzbiory całek niewłaściwych:
+
+\begin{center}
+\includegraphics[scale=0.6]{rozbiezneirozbiezne.png}
+\end{center}
+
+Przykład 
+
+Całka $ \int\limits_{1}^{\infty} \frac{\sin x}{\sqrt[3]{x^4}} \,dx $ jest zbieżna bezwględnie, bo biorąc
+$ \int\limits_{1}^{\infty} \left| \frac{\sin x}{\sqrt[3]{x^4}} \right| \,dx $ i używając kryterium porównawczego mamy
+
+$$ 0 \leq \left| \frac{\sin x}{\sqrt[3]{x^4}} \right| = \frac{|\sin x|}{x^{\frac{4}{3}}} \leq \frac{1}{x^{\frac{4}{3}}} $$
+
+a całka $ \int\limits_{1}^{\infty} \frac{1}{x^{\frac{4}{3}}} \,dx $ jest zbieżna bo $ \frac{4}{3} > 1 $.
+Zatem $ \int\limits_{1}^{\infty} \left| \frac{\sin x}{\sqrt[3]{x^4}} \right| \,dx $ jest zbieżna, a stąd
+$ \int\limits_{1}^{\infty} \frac{\sin x}{\sqrt[3]{x^4}} \,dx $ też jest zbieżna.
