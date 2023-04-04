@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2022.10.30)  2 APR 2023 01:01
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2022.10.30)  4 APR 2023 15:48
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -692,14 +692,14 @@ Underfull \hbox (badness 1609) in paragraph at lines 3--5
 \OT4/cmr/m/n/12 Ustalamy licz-b¦ $\OML/plm/m/it/12 a \OMS/plsy/m/n/12 2 \U/msb/m/n/12 R$\OT4/cmr/m/n/12 . Niech $\OML/plm/m/it/12 f$ \OT4/cmr/m/n/12 b¦-dzie funk-cj¡ caª-ko-wal-n¡ na ka»-dym prze-dzia-le
  []
 
+[1
 
+{C:/Users/niezn/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
 Underfull \hbox (badness 10000) in paragraph at lines 11--12
 
  []
 
-[1
 
-{C:/Users/niezn/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
 Underfull \hbox (badness 10000) in paragraph at lines 28--29
 
  []
@@ -724,12 +724,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 53--55
 
  []
 
-
+[2]
 Underfull \hbox (badness 10000) in paragraph at lines 60--63
 
  []
 
-[2]
+
 Underfull \hbox (badness 10000) in paragraph at lines 67--69
 
  []
@@ -869,7 +869,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 113--114
 
  []
 
-<rozbiezneirozbiezne.png, id=149, 602.25pt x 353.06906pt>
+<rozbiezneirozbiezne.png, id=164, 602.25pt x 353.06906pt>
 File: rozbiezneirozbiezne.png Graphic file (type png)
 <use rozbiezneirozbiezne.png>
 Package pdftex.def Info: rozbiezneirozbiezne.png  used on input line 121.
@@ -1055,6 +1055,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 387--389
  []
 
 
+Underfull \hbox (badness 10000) in paragraph at lines 387--389
+
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 400--401
 
  []
@@ -1064,17 +1069,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 412--413
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 416--417
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 416--417
-
- []
-
 [20]
+Underfull \hbox (badness 10000) in paragraph at lines 416--417
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 416--417
+
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 420--421
 
  []
@@ -1114,22 +1119,107 @@ Underfull \hbox (badness 10000) in paragraph at lines 526--528
 
  []
 
-) [23] (Wyklad.aux)
+
+Underfull \hbox (badness 10000) in paragraph at lines 535--538
+
+ []
+
+[23]
+Underfull \hbox (badness 10000) in paragraph at lines 560--562
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 580--582
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 595--596
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 607--609
+
+ []
+
+[24]
+File: rozbiezneirozbiezne.png Graphic file (type png)
+<use rozbiezneirozbiezne.png>
+Package pdftex.def Info: rozbiezneirozbiezne.png  used on input line 610.
+(pdftex.def)             Requested size: 361.35278pt x 211.84306pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 610--611
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 631--633
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 636--637
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 642--643
+
+ []
+
+[25]
+Underfull \hbox (badness 10000) in paragraph at lines 649--651
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 654--655
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 667--670
+
+ []
+
+
+Underfull \hbox (badness 4328) in paragraph at lines 678--680
+[]\OT4/cmr/m/n/12 GAME OVER...  Ta-kie "roz-wi¡-za-nie" jest jak [][][][][][] --- nie mu-si mie¢
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 681--682
+
+ []
+
+[26]
+Underfull \hbox (badness 10000) in paragraph at lines 706--707
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 717--718
+
+ []
+
+[27]) (Wyklad4.tex) [28] (Wyklad.aux)
 Package rerunfilecheck Info: File `Wyklad.out' has not changed.
-(rerunfilecheck)             Checksum: AD87AB03EC45C96E0D36FABD3EDCDF10;3399.
+(rerunfilecheck)             Checksum: 54154D39DD3C1ACF7FFDFBFC00DFD831;3908.
  ) 
 Here is how much of TeX's memory you used:
- 15051 strings out of 475385
- 259070 string characters out of 2776906
- 620404 words of memory out of 3000000
- 36121 multiletter control sequences out of 15000+600000
+ 15068 strings out of 475385
+ 259315 string characters out of 2776906
+ 621405 words of memory out of 3000000
+ 36127 multiletter control sequences out of 15000+600000
  482030 words of font info for 66 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 72i,9n,85p,413b,531s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ 72i,12n,85p,413b,531s stack positions out of 10000i,1000n,20000p,200000b,80000s
 {C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/pl/plmi.enc}{C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/pl/plms.enc}{C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/pl/plrm.enc} <C:\Users\niezn\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk>{C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/pl/plme.enc}<C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plbx12.pfb><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plex10.pfb><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plmi12.pfb><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plmi6.pfb><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plmi8.pfb><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plr12.pfb><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plr17.pfb><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plr6.pfb><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plr8.pfb><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plsy10.pfb><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plsy6.pfb><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plsy8.pfb>
-Output written on Wyklad.pdf (23 pages, 250134 bytes).
+Output written on Wyklad.pdf (28 pages, 270058 bytes).
 PDF statistics:
- 302 PDF objects out of 1000 (max. 8388607)
- 71 named destinations out of 1000 (max. 500000)
- 126 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 341 PDF objects out of 1000 (max. 8388607)
+ 79 named destinations out of 1000 (max. 500000)
+ 150 words of extra memory for PDF output out of 10000 (max. 10000000)
 

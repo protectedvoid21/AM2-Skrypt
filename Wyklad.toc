@@ -13,3 +13,6 @@
 \contentsline {subsection}{Twierdzenie (kryterium Cauchy'ego)}{21}{section*.13}%
 \contentsline {subsection}{Twierdzenie (kryterium d'Alemberta)}{21}{section*.14}%
 \contentsline {subsection}{Twierdzenie (kryterium całkowe)}{22}{section*.15}%
+\contentsline {subsection}{Zbieżność bezwględna szeregów}{24}{section*.16}%
+\contentsline {subsection}{Szeregi naprzemienne}{25}{section*.17}%
+\contentsline {section}{\numberline {4}Szeregi potęgowe}{28}{section.4}%

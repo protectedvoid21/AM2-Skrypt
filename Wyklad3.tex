@@ -385,7 +385,7 @@ Zatem oba szeregi są zbieżne lub oba są rozbieżne.
 Dalej już analiza $ \sum\limits_{n = 4}^{\infty} \frac{1}{n^2} $ i wniosek jak w kryterium porównawczym :
 
 $ \sum\limits_{n = 4}^{\infty} b_n = \sum\limits_{n = 4}^{\infty} \frac{1}{n^2} $ jest zbieżny bo $ 2 > 1 $.
-Zatem $ \sum\limits_{n = 4}^{\infty} \frac{2n - 3}{n^3 - 1} $ też jest zbieżny. \\
+Zatem $ \sum\limits_{n = 4}^{\infty} \frac{2n - 3}{n^3 - 1} $ też jest zbieżny. \\\\
 
 Przykłady o postaci funkcji złożonej $ \sum\limits_{n = n_0}^{\infty} f(b_n) $,
 
@@ -528,10 +528,232 @@ zbieżny dla $p > 1$ oraz rozbieżny do $\infty$ dla $p \leq 1$. \\
 
 Tutaj bierzemy po prostu $ f(x) = \frac{1}{x^p}, \ x \in [n_0, \infty) $.
 
-Dla $p > 0 f$ jest malejąca i nieujemna oraz $ f(n) = \frac{1}{n^p} $ 
+Dla $p > 0$ $f$ jest malejąca i nieujemna oraz $ f(n) = \frac{1}{n^p} $ 
 
 Spełnione są wiec warunki użycia kryterium. Liczymy całkę $ \int\limits_{n_0}^{\infty} \frac{1}{x^p} \,dx $.
 
 Było to już robione wcześniej i wiemy, że dla $p > 1$ jest liczbą, a dla $p \leq 1$ jest równa $\infty$.
 Stąd szereg jest zbieżny dla $p > 1$ oraz rozbieżny do $\infty$ dla $0 < p \leq 1$. Dla $p \leq 0$ szereg jest rozbieżny,
-bo nie spełnia warunku koniecznego zbieżności.
+bo nie spełnia warunku koniecznego zbieżności. \\
+
+Uwaga do szeregów z wyrażeniem $\ln n$.
+
+Dla dowolnego $p>0$ funkcja $\frac{\ln x}{x^p}, \ x \geq 2$, ma zbiór wartości $\left( 0, \frac{1}{p \cdot e} \right]$. Zatem
+
+$$ \frac{\ln x}{x^p} \leq \frac{1}{p \cdot e} \Leftrightarrow \ln x \leq \frac{1}{p \cdot e} x^p $$
+
+a stąd
+
+$$ \ln n \leq \frac{1}{p \cdot e} n^p $$
+
+Z oszacowaniem dolnym jest gorzej, bo nie ma pojedynczej funkcji elementarnej mniejszej od $\ln x$ i pozostaje oszacowanie
+przez stałą np.
+
+$$ \ln n \geq \frac{1}{2}, \quad n \geq 2  $$
+
+To daje oszacowanie dla dowolnego $p>0$:
+
+$$ \frac{1}{2} \leq \ln n \leq C \cdot n^p, \quad n \geq 2 $$
+
+Tutaj $ C = \frac{1}{p \cdot e} $, a dla $ p \geq \frac{1}{e} $ wystarczy wziąć $C = 1$.
+
+Często to oszacowanie pozwala uniknąć kryterium całkowego i zastąpienie go porównawczym, potrzeba tylko wziąć
+odpowiednio małe p. \\
+
+Przykład
+
+Dla szeregu $ \sum\limits_{n = 2}^{\infty} \frac{\ln n}{n \sqrt[5]{n}} $ z kryterium porównawczego mamy
+
+$$ 0 < \frac{\ln n}{n \sqrt[5]{n}} \leq \frac{Cn^p}{n \sqrt[5]{n}} = \frac{Cn^p}{n \cdot n^{0,2}} = \frac{C}{n^{1,2 - p}} $$
+
+Wystarczy teraz wziąć $p < 0,2$ czyli np. $p = 0,1$ i zbadać szereg
+
+$$ \sum\limits_{n=2}^{\infty} \frac{C}{n^{1,2 - 0,1}} = C \sum\limits_{n=2}^{\infty} \frac{C}{n^{1,1}} 
+\ \ \textrm{--- zbieżny, bo} \ 1,1 > 1$$
+
+Zatem wyjściowy szereg jest zbieżny
+
+
+\subsection*{Zbieżność bezwględna szeregów}
+\addcontentsline{toc}{subsection}{Zbieżność bezwględna szeregów}
+
+Definicja. Szereg $ \sum\limits_{n=n_0}^{\infty} a_n$ jest \underline{zbieżny bezwględnie}, gdy zbieżny jest szereg
+$ \sum\limits_{n=n_0}^{\infty} |a_n|$. \\
+
+Uwagi
+
+\begin{itemize}
+    \item Gdy wszystkie wyrazy $a_n$ są nieujemne to mamy $\sum\limits_{n=n_0}^{\infty} a_n = \sum\limits_{n=n_0}^{\infty} |a_n|$
+    i definicja nie wnosi nic nowego. Sytuacja się zmienia gdy szereg ma zarówno wyrazy dodatnie jak i ujemne.
+    \item Z nierówności $|S_n|= |a_{n_0} + a_{n_0+1} + ... + a_n| \leq |a_{n_0}| + |a_{n_0 + 1}| + ... + |a_n| $
+    wynika nierówność $ \left| \sum\limits_{n=n_0}^{\infty} a_n \right| \leq \sum\limits_{n=n_0}^{\infty} |a_n| $
+    ale równość nie musi zachodzić.
+
+    Np. dla $ a_n = \left( -\frac{1}{2} \right)^n $ mamy $ \left| \sum\limits_{n=0}^{\infty} a_n \right| = \frac{2}{3} $
+    \ ale \ $  \sum\limits_{n=0}^{\infty} |a_n| = 2 $
+
+    Zatem $ \left| \sum\limits_{n=n_0}^{\infty} a_n \right| $ \ i \ $ \sum\limits_{n=n_0}^{\infty} |a_n| $ \textbf{to nie to samo}. \\
+\end{itemize}
+
+\textbf{Twierdzenie}
+
+Jeżeli szereg jest bezwględnie zbieżny to jest zbieżny (w zwykłym sensie).
+
+Transpozycja tego twierdzenia daje warunek równoważny:
+
+Jeżeli szereg $ \sum\limits_{n = n_0}^{\infty} a_n $ nie jest zbieżny to również nie jest zbieżny bezwględnie, co oznacza
+$ \sum\limits_{n=n_0}^{\infty} |a_n| = \infty $.
+
+Twierdzenie odwrotne nie jest prawdziwe. Są szeregi zbieżne ale nie bezwględnie, np.
+$ \sum\limits_{n=1}^{\infty} \frac{(-1)^n}{n} $. Takie szeregi to tzw. szeregi \underline{zbieżne warunkowo}. \\
+
+\includegraphics[scale=0.6]{rozbiezneirozbiezne.png} \\
+
+Przykład 
+
+Szereg $ \sum\limits_{n=1}^{\infty} \frac{\sin n}{\sqrt[3]{n^4}} $ jest zbieżny bezwględnie, bo biorąc
+$ \sum\limits_{n=1}^{\infty} \left| \frac{\sin n}{\sqrt[3]{n^4}} \right| $ i używając kryterium porównwawczego mamy
+
+$$ 0 \leq \left| \frac{\sin n}{\sqrt[3]{n^4}} \right| = \frac{|\sin n|}{n^{\frac{4}{3}}} \leq \frac{1}{n^{\frac{4}{3}}} $$
+
+a szereg $ \sum\limits_{n=1}^{\infty} \frac{1}{n^{\frac{4}{3}}} $ jest zbieżny, bo $ \frac{4}{3} > 1 $. 
+
+Zatem
+$ \sum\limits_{n=1}^{\infty} \left| \frac{\sin n}{\sqrt[3]{n^4}} \right| $, a stąd
+$\sum\limits_{n=1}^{\infty} \frac{\sin n}{\sqrt[3]{n^4}}$ też jest zbieżny.
+
+
+\subsection*{Szeregi naprzemienne}
+\addcontentsline{toc}{subsection}{Szeregi naprzemienne}
+
+Są to szeregi, w których na zmianę dodajemy i odejmujemy wyrazy dodatnie:
+
+$ a_{n_0} - a_{n_0 + 1} + a_{n_0 + 2} - a_{n_0 + 3} + ... $ \ lub \ $ -a_{n_0} + a_{n_0 + 1} - a_{n_0 + 2} + a_{n_0 + 3} + ...  $ \
+gdzie $a_n > 0$. \\
+
+Postać ogólna :
+
+$ \sum\limits_{n = n_0}^{\infty} (-1)^n \cdot a_n $ \ lub \ $ \sum\limits_{n = n_0}^{\infty} (-1)^{n+1} \cdot a_n $ \\
+
+Przykłady
+
+$$ \sqrt{2} - \sqrt{3} + \sqrt{4} - \sqrt{5} + ... = \sum\limits_{n=2}^{\infty} (-1)^n \sqrt{n} $$
+
+$$ 1 - \frac{1}{2} + \frac{1}{3} - \frac{1}{4} + ... = \sum\limits_{n=1}^{\infty} \frac{(-1)^{n+1}}{n} $$ \\
+
+Definicja
+
+Szereg naprzemienny $ \sum\limits_{n = n_0}^{\infty} (-1)^n \cdot a_n $ \ lub \ $ \sum\limits_{n = n_0}^{\infty} (-1)^{n+1} \cdot a_n $
+nazywany jest \underline{szeregiem Leibnitza}, jeżeli $a_n$ jest ciągiem nierosnącym i zbieżnym do 0.
+
+Na przykład $ 1 - \frac{1}{2} + \frac{1}{3} - \frac{1}{4} + ... = \sum\limits_{n=1}^{\infty} \frac{(-1)^{n+1}}{n} $
+jest szeregiem Leibnitza, bo tutaj $ a_n = \frac{1}{n} $ jest malejący i zbieżny do 0. \\
+
+\textbf{Twierdzenie (Leibnitz)}
+
+Każdy szereg Leibnitza jest zbieżny. \\
+
+Uwagi
+
+\begin{itemize}
+    \item Tiwerdzenie to daje tylko zbieżność warunkową, nie gwarantuje bezwględnej
+    \item Gdy ciąg $a_n$ nie dąży do 0 to szereg naprzemienny $ \sum\limits_{n = n_0}^{\infty} (-1)^n \cdot a_n $ jest
+    rozbieżny, gdyż $(-1)^n a_n$ też nie dąży do 0. Wynika to z twierdzenia
+
+    $$ \lim_{n \to \infty} a_n = 0 \Leftrightarrow \lim_{n \to \infty} (-1)^n a_n = 0 \Leftrightarrow \lim_{n \to \infty} |a_n| = 0$$
+
+    \item Wystarczy, by ciąg $a_n$ był nierosnący dla $ \forall n \geq k \geq n_0$.
+    \item Gdy ciąg $a_n$ zbiega do 0 ale nie jest nierosnący to \textbf{NIC NIE WIEMY} o zbieżności szeregu.
+    \item Do badania czy $a_n$ jest nierosnący można próbować rozszerzyć $a_n$ do funkcji $f$ tak by $f(n) = a_n$.
+    Potem --- pochodna itd.
+    Gdy szereg naprzemienny jest zbieżny bezwględnie to tw. Leibnitza nie jest potrzebne. \\
+\end{itemize}
+
+\textbf{Popularny błąd : } opisowanie "badanie" monotoniczności ciągu, bez obliczeń.
+
+Na przykład dla ciągu $ a_n = \frac{n}{1000n + 1} $ :
+
+"Ciąg $a_n$ jest \textcolor{red}{malejący}, bo mianownik \textcolor{red}{szybciej rośnie niż licznik}."
+
+GAME OVER... \ Takie "rozwiązanie" jest jak \colorbox{yellow}{pisanie bajek} --- nie musi mieć \linebreak
+\colorbox{yellow}{nic wspólnego z prawdą}.
+
+Dla powyższego ciągu mianownik rzeczywiście szybciej rośnie niż licznik (i to 1000 razy!), a mimo to ciąg ten jest rosnący. \\
+
+Przykład
+
+$$ \sum\limits_{n=2}^{\infty} \frac{(-1)^n \cdot \ln n}{n} $$
+
+Tutaj $ a_n = \frac{\ln n}{n} $. Rozszerzamy go do funkcji $ f(x) = \frac{\ln x}{x}, \ x \geq 2 $.
+
+$$ f'(x) = \frac{1 - \ln x}{x^2} < 0 \Leftrightarrow x > e \approx 2,72 $$
+
+Zatem $f$ jest malejąca dla $ x \in (e, \infty) $ czyli $a_n$ jest malejący dla $n \geq 3$.
+
+Ponadto
+
+$$ \lim_{x \to \infty} f(x) = \lim_{x \to \infty} \frac{\ln x}{x} = \left[ \frac{\infty}{\infty} \right][H]
+= \lim_{x \to \infty} \frac{\frac{1}{x}}{1} = 0 $$
+
+Zatem $ \lim_{n \to \infty} a_n = 0 $.
+
+Mamy więc szereg naprzemienny, który z tw. Leibnitza jest zbieżny.
+
+Nie jest jednak zbieżny bezwględnie bo dla $ \sum\limits_{n=2}^{\infty} \left| \frac{(-1)^n \cdot \ln n}{n} \right|
+= \sum\limits_{n=2}^{\infty} \frac{\ln n}{n} $ mamy z kryterium porównawczego $0 < \frac{0,5}{n} < \frac{\ln n}{n}$,
+a szereg $ \sum\limits_{n=2}^{\infty} \frac{0,5}{n} $ jest rozbieżny.
+
+Jest to więc szereg zbieżny warunkowo. \\
+
+Podsumowanie : które kryterium zbieżności kiedy?
+
+\begin{itemize}
+    \item P --- porównawcze
+    \item I --- ilorazowe
+    \item C - Cauchy'ego
+    \item A - d'Alemberta
+    \item $\int$ --- całkowe
+    \item ZB --- zbieżność bezwględna
+    \item L - twierdzenie Leibnitza \\
+\end{itemize}
+
+\begin{table}[!htbp]
+    \centering
+    \begin{adjustbox}{width=0.9\textwidth}
+    \begin{tabular}{|c|c|}
+    \hline
+    Wyrażenia występujące w $a_n$ & Sugerowane kryterium dla $ \sum\limits_{n=n_0}^{\infty} a_n $ \\[15pt] \hline
+    Tylko potęgi $n$ lub pierwiastki z potęg $n$ & P \ \colorbox{yellow}{I} \ ale \colorbox{red}{NIGDY C A} \\[10pt] \hline 
+    \underline{Te same} najwyższe potęgi $a_n$ w \underline{liczniku i mianowniku} & P \ \colorbox{yellow}{I} \ ale \colorbox{red}{NIGDY C A} \\[10pt] \hline
+    \underline{Różne} najwyższe potęgi $a_n$ w \underline{liczniku i mianowniku} & P \ I \ \colorbox{yellow}{C \ A} \\[10pt] \hline
+    funkcja złożona $ f(b_n), \ b_n \to 0 $ & \colorbox{yellow}{I} \ P \\[10pt] \hline
+    n! & \colorbox{yellow}{A} \ P \\[10pt] \hline
+    $n$ - ta sama potęga: $(...)^n$ & C \\[10pt] \hline
+    Ciągi bez granicy, np. $\sin n$ & P \ (+ inne, gdy trzeba) \\[10pt] \hline
+    $\ln n$ & \colorbox{yellow}{P} \ $\int$ \\[10pt] \hline
+    $(-1)^n$ i ogólne $a_n$, o różnych znakach & ZB \ (+ inne, gdy trzeba) \ L \\[10pt] \hline
+    \end{tabular}
+\end{adjustbox}
+\end{table}
+
+\pagebreak
+
+Przykłady do samodzielnego policzenia :
+
+$ \sum\limits_{n = 1}^{\infty} \frac{\sqrt{n^2 + 3}}{n^3 + 2} $
+
+$ \sum\limits_{n = 1}^{\infty} \frac{2^n + 7 \cdot 3^n}{5^n - 4^n} $
+
+$ \sum\limits_{n = 1}^{\infty} \frac{3 + \cos (n^2)}{\sqrt[3]{n}} $
+
+$ \sum\limits_{n = 1}^{\infty} \frac{n^3 + 5}{n!} $
+
+$ \sum\limits_{n = 1}^{\infty} \left( \frac{2n+3}{3n+2} \right)^n $
+
+$ \sum\limits_{n = 1}^{\infty} \frac{(-1)^n \cdot n}{n^2 + 2} $
+
+$ \sum\limits_{n = 1}^{\infty} \frac{2^n + 3^n}{n^2 \cdot 3^n + 1} $
+
+$ \sum\limits_{n = 1}^{\infty} \frac{\cos (n^2)}{2^n} $
+
+$ \sum\limits_{n = 1}^{\infty} \arctan \frac{1}{\sqrt{n}} $
