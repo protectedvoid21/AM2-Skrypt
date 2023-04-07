@@ -1,1 +1,308 @@
 \section{Szeregi potęgowe}
+
+Definicja
+
+Szereg potęgowy zmiennej $x$ to szereg postaci
+
+$$ c_0 + c_1(x - x_0) + c_2(x- x_0)^2 + ... + c_n(x - x_0)^n + ... $$
+
+gdzie $x_0 \in \mathbb{R} $ to tzw. środek/centrum a $ c_1, c_2, ..., c_n, ... $ to \underline{współczynniki} szeregu.
+
+Dla $x \neq x_0$ mamy zapis sumy jako $ \sum\limits_{n = 0}^{\infty} c_n(x - x_0)^n $. Dla $x = x_0$ przyjmujemy
+$ \sum\limits_{n = 0}^{\infty} c_n(x - x_0)^n = c_0 $ i wtedy wyjściowa suma jest równa $ \sum\limits_{n = 0}^{\infty} c_n(x - x_0)^n $
+dla wszystkich $x$
+
+Gdy $x_0 = 0$ to szereg nazywamy \underline{szeregiem Maclaurina}. \\
+
+Przykłady
+
+$$ 1 + x + x^2 + x^3 + ... + x^n + ... = \sum\limits_{n = 0}^{\infty} x^n $$
+
+Jest to szereg geometryczny o ilorazie $x$. Tutaj $ \forall \, n \in \mathbb{N} \quad c_n = 1 $ oraz $x_0 = 0$.
+
+$$ (x - 1) - \frac{(x-1)^3}{3} + \frac{(x-1)^5}{5} - \frac{(x-1)^7}{7} + ... 
+= \sum\limits_{n=0}^{\infty} \frac{ (-1)^n }{ 2n+1 } \cdot (x-1)^{2n+1} $$
+
+Tutaj $x_0 = 1$ oraz $ c_{2n+1} = \frac{ (-1)^n }{ 2n+1 }, \quad c_{2n} = 0 $ \\
+
+Uwaga. Indeks współcznynnika \textbf{musi się zgadzać} (być równy) z wykładnikiem potęgi o podstawie $x-x_0$.
+
+
+\subsection*{Zbieżność szeregów potęgowych}
+\addcontentsline{toc}{subsection}{Zbieżność szeregów potęgowych}
+
+Szereg $ \sum\limits_{n=0}^{\infty} c_n(x-x_0)^n $ jest zawsze zbieżny dla $x=x_0$ i wtedy jego suma to $c_0$.
+
+Dla pozostałych $x \neq x_0$ szereg może być zbieżny lub nie. Są 3 przypadki
+
+\begin{enumerate}
+    \item Szereg jest zbieżny tylko dla $x=x_0$ np. $ \sum\limits_{n=0}^{\infty} n!x^n $ -- zbieżny tylko dla $x=0$.
+    Jest to szereg bezużyteczny w praktyce.
+    \item Szereg jest bezwględnie zbieżny dla wszystkich $x$, np. $ \sum\limits_{n = 0}^{\infty} \frac{x^n}{n!} $.
+    Jest to najlepsza sytuacja.
+    \item Szereg jest bezwględnie zbieżny na przedziale otwartym postaci $(x_0 - R, x_0 + R)$ oraz -- być może -- zbieżny
+    także na końcach tego przedziału. Dla pozostałych $x$ nie jest zbieżny.
+
+    Np. $ \sum\limits_{n=1}^{\infty} \frac{x^n}{n} $ jest zbieżny dla $x \in [-1, 1)$. \\
+\end{enumerate}
+
+Liczbę $R > 0$ nazywamy \underline{promieniem zbieżności} szeregu potęgowego, a zbiór $x$ dla których szereg
+jest zbieżny -- \underline{przedziałem zbieżności} szeregu.
+
+R -- połowa długości przedziału zbieżności.
+
+Aby mieć promień zbieżności dla wszystkich szeregów definiujemy dodatkowo $R = 0$ dla szeregów z przypadku 1 oraz
+$R = \infty$ dla szeregów z przypadku 2.
+
+
+\subsection*{Wyznaczanie promienia zbieżności i przedziału zbieżności}
+\addcontentsline{toc}{subsection}{Wyznaczanie promienia zbieżności i przedziału zbieżności}
+
+Szereg jest zbieżny dla $x = x_0$ i pytanie co dla pozostałych $x$.
+
+Metoda jak najbardziej ogólna, działająca dla wszystkich typów szeregów potęgowych :
+
+dla szeregu $ \sum\limits_{n=0}^{\infty} c_n(x-x_0)^n $ przyjmujemy $ a_n = c_n(x - x_0)^n, \quad x \neq x_0 $.
+Zmienna $x$ staje się parametrem.
+
+Ponieważ $a_n$ zawiera $n$ -- tą potęgę więc korzystamy z kryterium Cauchy'ego lub d'Alemberta. Liczymy
+
+$$ q = q(x) = \lim_{n \to \infty} \left| \frac{a_{n+1}}{a_n} \right| \quad \textrm{lub} \quad 
+q = q(x) = \lim_{n \to \infty} \sqrt[n]{|a_n|} $$
+
+W zdecydowanej większości przypadków granica ta istnieje i prowadzi do najczęstszych sytuacji
+
+\begin{enumerate}
+    \item $q$ nie zależy od $x$ i jest $> 1$. Wtedy szereg jest zbieżny tylko dla $x = x_0$.
+    \item $q$ nie zależy od $x$ i jest $< 1$. Wtedy szereg jest zbieżny dla wszystkich $x$.
+    \item $q$ zależy od $x$. Wtedy mamy zbieżność dla $q < 1$ i rozbieżność dla $q > 1$ oraz
+    
+    \begin{itemize}
+        \item $$ q < 1 \Leftrightarrow |x - x_0| < R \Leftrightarrow x \in (x_0 - R, x_0 + R) $$
+        "wstępny" przedział zbieżności, R -- promień zbieżności
+        \item $$ q > 1 \Leftrightarrow |x - x_0| > R \Leftrightarrow x \in (-\infty, x_0 - R)\cup(x_0 + R, \infty) $$
+        rozbieżność poza głównym przedziałem
+        \item $$ q = 1 \Leftrightarrow |x - x_0| = R \Leftrightarrow x = x_0 \pm R $$
+        przypadek "wątpliwy" na końcach przedziału. Dla tych $x$ trzeba użyć \textbf{innego kryterium} \\
+    \end{itemize}
+\end{enumerate}
+
+\textbf{Zastosowanie metody w praktyce}
+
+\begin{itemize}
+    \item Liczymy $q$ i rozwiązujemy nierówność $q < 1$. Dostajemy wstępny (otwarty) przedział zbieżności.
+    \item Zbieżność na końcach analizujemy osobno -- wstawiamy każdy z końców i dostajemy szereg liczbowy, który analizujemy
+    ale \colorbox{yellow}{NIGDY} z kryterium Cauchy'ego lub d'Alemberta bo \colorbox{yellow}{ZAWSZE wyjdzie $q = 1$}. \\
+\end{itemize}
+
+\colorbox{red}{Popularny błąd :} \\
+
+" ... wstępny przedział zbieżności to $(-1, 1)$.
+
+Badam zbieżność dla $x=1$ z \textcolor{red}{kryterium d'Alemberta}"
+
+\colorbox{yellow}{STRATA CZASU I ENERGII}. Będzie przypadek wątpliwy i $q = 1$ a jeżeli przypadkiem wyjdzie
+$q \neq 1$ to na pewno \textbf{gdzieś jest błąd}.
+
+Przykłady
+
+$$ \sum\limits_{n=0}^{\infty} \frac{x^n}{n!} $$
+
+Tutaj $ a_n = \frac{x^n}{n!} $ oraz $ x_0 = 0 $. Używamy kryterium d'Alemberta $ a_{n+1} = \frac{x^{n+1}}{(n+1)!} $ oraz
+dla $x \neq 0$
+
+$$ \left| \frac{a_{n+1}}{a_n} \right| = \left| \frac{ \dfrac{x^{ n+1 }}{ (n+1)! } }{ \dfrac{ x^n }{ n! } } \right| 
+= \left| \frac{x^{n+1}}{(n+1)!} \cdot \frac{n!}{x^n} \right| = \left| \frac{x}{n+1} \right| $$
+
+Stąd
+
+$$ q = \lim_{n \to \infty} \left| \frac{a_{n+1}}{a_n} \right| = 0 < 1 $$ \\
+
+$$ \sum\limits_{n = 1}^{\infty} \frac{(x - 1)^n}{\sqrt{n}} $$
+
+Tutaj $ a_n = \frac{(x - 1)^n}{\sqrt{n}} $ oraz $ x_0 = 1 $. Korzystając z kryterium Cauchy'ego mamy dla $x \neq 1$
+
+$$ \sqrt[n]{|a_n|} = \sqrt[n]{ \left| \frac{(x-1)^n}{\sqrt{n}} \right| } = \sqrt[n]{ \frac{\left|(x-1)^n \right|}{\sqrt{n}} }
+= \frac{ \sqrt[n]{|x-1|^n} }{ \sqrt[n]{\sqrt{n}} } = \frac{|x-1|}{\sqrt[n]{n^{\frac{1}{2}}}}$$
+
+Stąd
+
+$$ q = \lim_{n \to \infty} \sqrt[n]{|a_n|} = |x-1| $$
+
+Teraz
+
+$$ q < 1 \Leftrightarrow |x - 1| \leq 1 \Leftrightarrow x \in (0, 2) $$
+
+Zatem wstępny przedział zbieżności to $(0, 2)$, a $R = 1$.
+
+Badamy zbieżność na końcach tego przedziału. \\
+
+$x = 2$ daje $ \sum\limits_{n = 1}^{\infty} \frac{(2n - 1)^n}{\sqrt{n}} = \sum\limits_{n = 1}^{\infty} \frac{1}{n^{\frac{1}{2}}} $
+-- rozbieżny bo $ \frac{1}{2} \leq 1 $.
+
+$x = 0$ daje $ \sum\limits_{n = 1}^{\infty} \frac{(0 - 1)^n}{\sqrt{n}} = \sum\limits_{n = 1}^{\infty} (-1)^n \cdot \frac{1}{\sqrt{n}} $
+-- zbieżny z twierdzeniem Leibnitza, bo jest naprzemienny a ciąg $ \frac{1}{\sqrt{n}} $ jest malejący i dąży do $0$. \\
+
+Zatem przedział zbieżności tego szeregu to $[0, 2)$. \\
+
+\textbf{Twierdzenie}
+
+Gdy szereg $ \sum\limits_{n = 0}^{\infty} c_n(x - x_0)^n $ ma wszystkie współczynnki $ c_n \neq 0 $ i istnieje granica
+
+$ q = \lim_{n \to \infty} \left| \frac{c_{n + 1}}{c_n} \right| $ lub $ q = \lim_{n \to \infty} \sqrt[n]{|c_n|} $
+to promień zbieżności wynosi 
+
+\begin{itemize}
+    \item $ R = \frac{1}{q} $ gdy $q$ jest liczbą dodatnią,
+    \item $ R = 0$, gdy $q = \infty$,
+    \item $ R = \infty $, gdy $ q = 0 $. \\
+\end{itemize}
+
+Uwaga. Twierdzenie to bywa \textbf{źle stosowane.}
+
+Nie można go bezpośrednio stosować do np. szeregów potęgowych gdzie występują tylko potęgi parzyste lub tylko
+potęgi nieparzyste, bo wtedy \textbf{$q$ nie istnieje}. \\
+
+\textbf{Popularny błąd:}
+
+"Dla szeregu $ \sum\limits_{n = 0}^{\infty} \frac{1}{2^n} \cdot x^{2n + 1} $ mamy 
+$ \lim_{n \to \infty} \sqrt[n]{|c_n|} = \lim_{n \to \infty} \sqrt[n]{ \left| \textcolor{red}{\frac{1}{2^n}} \right| } $
+
+Stąd \textcolor{red}{$ R = 2, \ x \in (-2, 2) $}" \\
+
+\textbf{Źle jest wyznaczony $c_n$}. Tutaj $ \frac{1}{2^n} = c_{2n + 1} $ ale $ c_{2n} = 0 $ i
+$ \lim_{n \to \infty} \sqrt[n]{|c_n|} $ nie istnieje.
+
+Ten szereg jest szeregiem geometrycznym o ilorazie $ \frac{x^2}{2} $ i jest zbieżny dla $ x \in (-\sqrt{2}, \sqrt{2}) $
+czyli $ R = \sqrt{2} $. \\
+
+\textbf{Definicja}
+
+Jeżeli szereg $ \sum\limits_{n = 0}^{\infty} c_n(x - x_0)^n $ jest zbieżny przynajmniej na $ (x_0 - R, x_0 + R), \ R > 0 $ to
+jego sumę $ f(x) = \sum\limits_{n = 0}^{\infty} c_n(x - x_0)^n $ nazywamy rzeczywistą \underline{funkcją analityczną}, a szereg
+-- szeregiem Taylora.
+
+
+\subsection*{Własności szeregów potęgowych}
+\addcontentsline{toc}{subsection}{Własności szeregów potęgowych}
+
+\begin{enumerate}
+    \item Gdy
+    $$ f(x) = \sum\limits_{n=0}^{\infty} c_n(x - x_0)^n \ x \in (x_0 - R, x_0 + R) $$ to $f$ ma pochodne dowolnego rzędu w $x_0$
+    oraz $$ c_0 = f(x_0), \ c_1 = \frac{f'(x_0)}{1!}, \ c_2 = \frac{f''(x_0)}{2!}, ... , c_n = \frac{f^{(n)}(x_0)}{n!} $$
+    Stąd wynikają rozwinięcia popularnych funkcji w szereg Maclaurina $(x_0 = 0)$.
+
+    $$ e^x = \sum\limits_{n=0}^{\infty} \frac{x^n}{n!} = 1 + x + \frac{x^2}{2!} + \frac{x^3}{3!} + ... , \ x \in \mathbb{R} $$
+    
+    $$ \sin x = \sum\limits_{n=0}^{\infty} \frac{(-1)^n x^{2n+1}}{(2n + 1)!} = x - \frac{x^3}{3!} + \frac{x^5}{5!} - \frac{x^7}{7!} + ... , \ x \in \mathbb{R} $$
+
+    $$ \cos x = \sum\limits_{n=0}^{\infty} \frac{(-1)^n x^{2n}}{(2n)!} = 1 - \frac{x^2}{2!} + \frac{x^4}{4!} - \frac{x^6}{6!} + ... , \ x \in \mathbb{R} $$
+    
+    $$ \ln (1+x) = \sum\limits_{n=0}^{\infty} \frac{(-1)^n x^{n+1}}{n+1} = x - \frac{x^2}{2} + \frac{x^3}{3} - \frac{x^4}{4} + ... , \ x \in (-1, 1] $$
+    
+    $$ (1+x)^p = \sum\limits_{n=0}^{\infty} \binom{p}{n} x^n = 1 + px + \frac{p(p-1)}{2!}x^2 + \frac{p(p-1)(p-2)}{3!}x^3 + ... , \ x \in (-1, 1)  $$
+
+    $$ \frac{1}{1-x} = \sum\limits_{n=0}^{\infty} x^n = 1 + x + x^2 + x^3 + ... , \ x \in [-1, 1] $$
+
+    $$ \arctan x = \sum\limits_{n=0}^{\infty} \frac{(-1)^n x^{2n+1}}{2n+1} = x - \frac{x^3}{3} + \frac{x^5}{5} - \frac{x^7}{7} + ... , \ x \in [-1, 1] $$ \\
+
+    \item Jeżeli mamy dwa szeregi o tym samym środku i przedziałach zbieżności $I_1$ i $I_2$:
+    
+    $ \sum\limits_{n=0}^{\infty} c_n(x - x_0)^n, \ x \in I_1 $ oraz $ \sum\limits_{n=0}^{\infty} d_n(x - x_0)^n, \ x \in I_2 $
+
+    to
+
+    \begin{itemize}
+        \item dla dowolnego $c \in \mathbb{R}$ zachodzi $ c \cdot \sum\limits_{n=0}^{\infty} c_n(x - x_0)^n = 
+        \sum\limits_{n=0}^{\infty} c \cdot c_n(x - x_0)^n $
+        \item dla $ x \in I_1 \cap I_2 $ mamy
+        $$ \sum\limits_{n=0}^{\infty} c_n(x - x_0)^n \pm \sum\limits_{n=0}^{\infty} d_n(x - x_0)^n = 
+        \sum\limits_{n=0}^{\infty} (c_n \pm d_n)(x - x_0)^n $$ \\
+    \end{itemize}
+
+    Mamy
+
+    $$ \cos x = \sum\limits_{n=0}^{\infty} \frac{(-1)^n x^{2n}}{(2n)!}, \ x \in \mathbb{R} $$
+
+    $$ \arctan x = \sum\limits_{n=0}^{\infty} \frac{(-1)^n x_{2n+1}}{2n+1}, \ x \in [-1, 1] $$
+
+    Stąd
+
+    $$ x \cos x = x \sum\limits_{n=0}^{\infty} \frac{(-1)^n x^{2n}}{(2n)!} = \sum\limits_{n=0}^{\infty} x \cdot \frac{(-1)^n x^{2n}}{(2n)!} 
+    = \sum\limits_{n=0}^{\infty} \frac{(-1)^n x^{2n+1}}{(2n)!}$$
+
+    oraz dla $ x \in \mathbb{R} \cap [-1, 1] = [-1, 1] $
+
+    $$ x \cos x + \arctan x = \sum\limits_{n=0}^{\infty} \frac{(-1)^n x^{2n+1}}{(2n)!} + \sum\limits_{n=0}^{\infty} \frac{(-1)^n x_{2n+1}}{2n+1} = 
+    \sum\limits_{n=0}^{\infty} \left( \frac{(-1)^n}{(2n)!} + \frac{(-1)^n}{2n+1} \right) x^{2n+1} $$ 
+
+    \item W miejsce $x$ w szeregu Maclaurina można podstawić wyrażenie potęgowe $ ax^k, \ k \in \mathbb{N}^+ $.
+    Daje to nowy szereg nowej funkcji z nowym przedziałem zbieżności. Ten nowy przedział można wyznaczyć na podstawie
+    przedziału zbieżności wyjściowego szeregu
+
+    \textbf{Przykłady} \\
+
+    a) Szereg Maclaurina dla funkcji $ \ln (1+3x) $.
+
+    Używamy rozwinięcia 
+    $$ \ln (1+x) = \sum\limits_{n=0}^{\infty} \frac{(-1)^n x^{n+1}}{n+1} = x - \frac{x^2}{2} + \frac{x^3}{3} - \frac{x^4}{4} + ... , \ x \in (-1, 1] $$
+
+    Aby dostać $ \ln(1+3x) $ w miejsce $x$ trzeba wstawić $ 3x ( x := 3x)$. To daje
+
+    $$ \ln(1+3x) = \sum\limits_{n=0}^{\infty} \frac{(-1)^n (3x)^{n+1}}{n+1}, \ 3x \in (-1, 1] $$
+    Po uproszczeniu 
+    $$ \ln(1+3x) = \sum\limits_{n=0}^{\infty} \frac{(-1)^n \cdot 3^{n+1}}{n+1} x^{n+1} $$
+
+    $$ 3x \in (-1, 1] \Leftrightarrow -1 < 3x \leq 1 \Leftrightarrow -\frac{1}{3} < x \leq \frac{1}{3} \Leftrightarrow x \in \left( -\frac{1}{3}, \frac{1}{3} \right] $$ \\
+
+    b) Szereg Maclaurina dla funkcji $ \sinh x = \frac{e^x - e^{-x}}{2} $
+
+    Używamy rozwinięcia
+    $$ e^x = \sum\limits_{n=0}^{\infty} = \frac{x^n}{n!} = 1 + x + \frac{x^2}{2!} + \frac{x^3}{3!} + ... , \ x \in \mathbb{R} $$
+    Wstawiając $ x:=(-x) $ dostajemy 
+    $$ e^{-x} = \sum\limits_{n=0}^{\infty} \frac{(-x)^n}{n!} = \sum\limits_{n=0}^{\infty} \frac{(-1)^n x^n}{n!}, \ x \in \mathbb{R} $$
+    To daje
+    $$ \sin h = \frac{e^x - e^{-x}}{2} = \frac{1}{2}e^x - \frac{1}{2}e^{-x} =
+    \frac{1}{2} \sum\limits_{n=0}^{\infty} \frac{x^n}{n!} - \frac{1}{2} \sum\limits_{n=0}^{\infty} \frac{(-1)^n x^n}{n!} 
+    =$$ $$ =  \sum\limits_{n=0}^{\infty} \frac{1}{2n!} x^n - \sum\limits_{n=0}^{\infty} \frac{(-1)^n}{2n!} x^n
+    = \sum\limits_{n=0}^{\infty} \left( \frac{1}{2n!} - \frac{(-1)^n}{2n!} \right) x^n 
+    = \sum\limits_{n=0}^{\infty} \left( \frac{1 - (-1)^n}{2n!} \right) x^n $$
+
+    Współczynnikiem tego szeregu jest więc 
+    $$ c_n = \frac{1-(-1)^n}{2n!} =\left\{ \begin{array}{cll}
+        0, & n = 2k, & k \in \mathbb{N} \\
+        \frac{1}{n!} = \frac{1}{(2k+1)!}, & n = 2k + 1, & k \in \mathbb{N} \\
+    \end{array} \right. $$
+
+    Stąd
+    $$ \sinh x = \sum\limits_{n=0}^{\infty} \frac{1}{(2k+1)!} x^{2k+1} = x + \frac{x^3}{3!} + \frac{x^5}{5!} + ..., \ x \in \mathbb{R} $$ \\
+
+    c) Szereg Maclaurina dla funkcji $ \frac{x}{3 + x^4} $
+
+    W przypadku funkcji wymiernej \textbf{zawsze} korzystamy z szeregu geometrycznego
+    $$ \frac{1}{1-x} = \sum\limits_{n=0}^{\infty} x^n = 1 + x + x^2 + x^3 + ..., \ x \in (-1, 1) $$
+
+    Doprowadzamy wyrażenie do postaci \colorbox{yellow}{$\textrm{stała} \cdot \frac{1}{1 - \textrm{"coś"}}$}
+    i za $x$ wstawiamy to "coś".
+
+    Zatem
+    $$ \frac{x}{3 + x^4} = \frac{x}{3} \cdot \frac{1}{1 + \frac{x^4}{3}} = \frac{x}{3} \cdot \frac{1}{1 - \left( - \frac{x^4}{3} \right)} $$
+
+    Czyli $ \textrm{"coś"} = -\frac{x^4}{3} $ i to daje
+    $$ \frac{x}{3+x^4} = \frac{x}{3} \sum\limits_{n=0}^{\infty} \left(-\frac{x^4}{3} \right)^n =
+    \frac{x}{3} \sum\limits_{n=0}^{\infty} \frac{(-1)^n}{3^n} x^{4n} = \sum\limits_{n=0}^{\infty} \frac{x}{3} \cdot \frac{(-1)^n}{3^n} x^{4n} 
+    = \sum\limits_{n=0}^{\infty} \frac{(-1)^n}{3^{n+1}} x^{4n+1} $$
+
+    Przedział zbieżności wynika z warunku
+    $$ -1 < -\frac{x^4}{3} < 1 \Leftrightarrow -3 < x^4 < 3 \Leftrightarrow -3 < x^4 \ \land \ x^4 < 3 $$
+
+    Pierwsza z tych nierówności jest zawsze prawdziwa. Rozwiązanie drugiej daje $ -\sqrt[4]{3} < x < \sqrt[4]{3} $.
+    Czyli przedział zbieżności to $ (-\sqrt[4]{3}, \sqrt[4]{3}) $. \\
+
+    \item Gdy $ f(x) = \sum\limits_{n=0}^{\infty} c_n(x - x_0)^n, \ x \in (x_0 - R, x_0 + R) $ to $f$ ma pochodną
+    dowolnego rzędu i zachodzi wzór
+    $$ f'(x) = \left( \sum\limits_{n=0}^{\infty} c_n(x - x_0)^n \right) = \sum\limits_{n=0}^{\infty} \left( c_n \left( x - x_0 \right)^{n} \right) 
+    = \sum\limits_{n=0}^{\infty} c_n n (x - x_0)^{n - 1} = \sum\limits_{n=1}^{\infty} c_n n (x - x_0)^{n - 1}$$
+
+    Jest to rozszerzenie wzoru "pochodna sumy = suma pochodnych" na nieskończoną ilość składników
+\end{enumerate}

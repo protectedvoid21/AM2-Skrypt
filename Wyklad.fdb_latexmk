@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1680616105 "c:/Users/niezn/OneDrive/Pulpit/Studia/AnalizaMatematycznaII-Skrypt/Wyklad.tex" "Wyklad.pdf" "Wyklad" 1680616107
+["pdflatex"] 1680807028 "c:/Users/niezn/OneDrive/Pulpit/Studia/AnalizaMatematycznaII-Skrypt/Wyklad.tex" "Wyklad.pdf" "Wyklad" 1680807029
   "C:/Users/niezn/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1678637460 86553 91af261fa287312f2fb1f66a097366be ""
   "C:/Users/niezn/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1200.pk" 1668179638 14064 955ff3e66d356ed127f306eca2052983 ""
   "C:/Users/niezn/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1667124580 10788011 3fbf93dcc05db05ca4b82494ec413059 ""
@@ -127,15 +127,15 @@
   "C:/Users/niezn/AppData/Local/Programs/MiKTeX/tex/latex/varwidth/varwidth.sty" 1238469540 10894 d359a13923460b2a73d4312d613554c8 ""
   "C:/Users/niezn/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1656236890 56148 51a9a8571c07b9921892ae11063ae853 ""
   "C:/Users/niezn/AppData/Local/Programs/MiKTeX/tex/latex/xkeyval/xkeyval.sty" 1656236919 4937 4ce600ce9bd4ec84d0250eb6892fcf4f ""
-  "Wyklad.aux" 1680616106 2784 9fe4fab9078b4b2dade3bcd2e3d50662 "pdflatex"
-  "Wyklad.out" 1680616106 3908 54154d39dd3c1acf7ffdfbfc00dfd831 "pdflatex"
-  "Wyklad.tex" 1680616083 713 5016e448645126bbd5912ead79a43213 ""
-  "Wyklad.toc" 1680616106 1454 55954e06eab6309c34a39ac304fdc775 "pdflatex"
+  "Wyklad.aux" 1680807029 3177 bd930ae916af1a36dce56a2f2bc8ac5c "pdflatex"
+  "Wyklad.out" 1680807029 4717 f9c46e9fd0a1b3ebb9d7554edde33620 "pdflatex"
+  "Wyklad.tex" 1680807025 713 5016e448645126bbd5912ead79a43213 ""
+  "Wyklad.toc" 1680807029 1724 259be127ec01ed31aeb339ba15f2b475 "pdflatex"
   "Wyklad1.tex" 1680385122 14098 7249cdbb6f87ed6640111afd170f02cd ""
-  "Wyklad2.tex" 1680385258 7131 391507d43b3a129b1566b4c9b918cd2e ""
-  "Wyklad3.tex" 1680615297 34569 e5f9d53022ee45736f4bc2ead3bd63c8 ""
-  "Wyklad4.tex" 1680616103 27 fabe6df595fc5719cde79d8824ea83be ""
-  "c:/Users/niezn/OneDrive/Pulpit/Studia/AnalizaMatematycznaII-Skrypt/Wyklad.tex" 1680616083 713 5016e448645126bbd5912ead79a43213 ""
+  "Wyklad2.tex" 1680646781 7138 dc20cd288e5ee3bf4149a761a45c5979 ""
+  "Wyklad3.tex" 1680774643 34734 1eb6e3bfc7df465b678c7cdc47358c22 ""
+  "Wyklad4.tex" 1680777032 15623 52d63b62ca0384a4a4b46c656f6580e3 ""
+  "c:/Users/niezn/OneDrive/Pulpit/Studia/AnalizaMatematycznaII-Skrypt/Wyklad.tex" 1680807025 713 5016e448645126bbd5912ead79a43213 ""
   "rozbiezneirozbiezne.png" 1679700751 77199 88736f0eb11087006f3208264b83a45c ""
   (generated)
   "Wyklad.aux"
