@@ -39,7 +39,7 @@ Terminologia dotycząca sumy $S$ jest taka, jak dla ciągów. Są 3 przypadki :
 
 Przykłady
 
-$$ \frac{1}{2^1} + \frac{1}{2^2} + \frac{1}{2^3} + ... + \frac{1}{2^n} + ... = \sum\limits_{n = 1}^{\infty} \frac{1}{2^n} 
+$$ \frac{1}{2^1} + \frac{1}{2^2} + \frac{1}{2^3} + ... + \frac{1}{2^n} + ... = \suminfty{1} \frac{1}{2^n} 
 \textrm { - szereg zbieżny do 1}$$
 
 $$ \frac{1}{2} + \frac{1}{3} + ... + \frac{1}{n} + ... = \sum\limits_{n = 2}^{\infty} \frac{1}{n} 
@@ -50,10 +50,10 @@ $$ 1 - 1 + 1 - 1 + 1 - 1 + ... = \sum\limits_{n = 0}^{\infty} (-1)^n \textrm{ - 
 Uwaga. Każdy szereg zaczynający się od indeksu $ n_0 \in \mathbb{Z} $ można przekształcić tak, by zaczynał się od indeksu 1.
 Wynika to z równości
 
-$$ \sum\limits_{n = n_0}^{\infty} a_n = \sum\limits_{n = 1}^{\infty} a_{n + n_0 - 1} $$
+$$ \sum\limits_{n = n_0}^{\infty} a_n = \suminfty{1} a_{n + n_0 - 1} $$
 
 $$ \frac{1}{2} + \frac{1}{3} + ... + \frac{1}{n} + ... = \sum\limits_{n = 2}^{\infty} \frac{1}{n} = \sum\limits_{n = 2}^{\infty} a_n
-= \sum\limits_{n = 1}^{\infty} a_{n + 1} = \sum\limits_{n = 1}^{\infty} \frac{1}{n + 1} $$
+= \suminfty{1} a_{n + 1} = \suminfty{1} \frac{1}{n + 1} $$
 
 \subsection*{Obliczanie sum szeregów}
 \addcontentsline{toc}{subsection}{Obliczanie sum szeregów}
@@ -81,7 +81,7 @@ Niektóre przypadki szczególne.
 
     Stąd np.
 
-    $$ \frac{1}{2^1} + \frac{1}{2^2} + \frac{1}{2^3} + ... + \frac{1}{2^n} + ... = \sum\limits_{n = 1}^{\infty} \frac{1}{2^n} =
+    $$ \frac{1}{2^1} + \frac{1}{2^2} + \frac{1}{2^3} + ... + \frac{1}{2^n} + ... = \suminfty{1} \frac{1}{2^n} =
     \frac{ \frac{1}{2} }{ 1 - \frac{1}{2} } = 1 \ \textrm{, bo tutaj} \ a_1 = q = \frac{1}{2} $$
 
     \item Szeregi o wyrazie ogólnym postaci \\
@@ -94,18 +94,18 @@ Niektóre przypadki szczególne.
 
     Przykłady
 
-    $$ \sum\limits_{n = 1}^{\infty} \left( \frac{1}{n} - \frac{1}{n + 1} \right) \ \textrm{- tutaj} \ f(x) = \frac{1}{x} $$
+    $$ \suminfty{1} \left( \frac{1}{n} - \frac{1}{n + 1} \right) \ \textrm{- tutaj} \ f(x) = \frac{1}{x} $$
 
-    $$ \sum\limits_{n = 1}^{\infty} \left( \sqrt{n + 1} - \sqrt{n} \right) \ \textrm{- tutaj} \ f(x) = \sqrt{x} $$
+    $$ \suminfty{1} \left( \sqrt{n + 1} - \sqrt{n} \right) \ \textrm{- tutaj} \ f(x) = \sqrt{x} $$
 
-    $$ \sum\limits_{n = 1}^{\infty} \left( \arctan(n) - \arctan(n+2) \right) \ \textrm{- tutaj} \ f(x) = \arctan x $$
+    $$ \suminfty{1} \left( \arctan(n) - \arctan(n+2) \right) \ \textrm{- tutaj} \ f(x) = \arctan x $$
 
     Dla takich szeregów łatwo wyznacza się wzór na $S_n$. Wyrazy wewnętrzne się upraszczają i zostaje: \\
     suma $k$ pierwszych wartości, \ $f$ suma $k$ ostatnich wartości $f$ (lub na odwrót) \\
 
 \end{enumerate}
 
-Na przykład dla $ \sum\limits_{n = 1}^{\infty} \left( f(n) - f(n + 1)) \right) $ mamy
+Na przykład dla $ \suminfty{1} \left( f(n) - f(n + 1)) \right) $ mamy
 
 $$ S_n = f(1) - \textcolor{red}{f(2)} + \textcolor{red}{f(2)} - \textcolor{blue}{f(3)} + \textcolor{blue}{f(3)} - 
 \textcolor{green}{f(4)} + ... + \textcolor{purple}{f(n)} - f(n + 1) = f(1) - f(n + 1) $$.
@@ -114,7 +114,7 @@ Jeżeli istnieje granica $ G = \lim_{x \to \infty} f(x) $ to mamy
 
 $$ S = \lim_{n \to \infty} S_n = \lim_{n \to \infty} \left( f(1) - f(n + 1) \right) = f(1) - G $$ \\
 
-Przykład. Wyznaczyć sumę $ \sum\limits_{n = 1}^{\infty} \frac{1}{n^2 + n} $
+Przykład. Wyznaczyć sumę $ \suminfty{1} \frac{1}{n^2 + n} $
 
 Wyraz ogólny nie ma postaci różnicy więc trzeba ją stworzyć.
 
@@ -124,14 +124,14 @@ $$ \frac{1}{n^2 + n} = \frac{1}{n(n+1)} = \frac{A}{n} + \frac{B}{n+1} = ... = \f
 
 Zatem 
 
-$$ \sum\limits_{n = 1}^{\infty} \frac{1}{n^2 + n} = \sum\limits_{n=1}^{\infty} \left( \frac{1}{n} - \frac{1}{n+1} \right) $$
+$$ \suminfty{1} \frac{1}{n^2 + n} = \sum\limits_{n=1}^{\infty} \left( \frac{1}{n} - \frac{1}{n+1} \right) $$
 
 I to daje
 
 $$ S_n = \left( \frac{1}{1} - \frac{1}{2} \right) + \left( \frac{1}{2} - \frac{1}{3} \right) + \left( \frac{1}{3} - \frac{1}{4} \right)
 + ... + \left( \frac{1}{n} - \frac{1}{n+1} \right) = \frac{1}{1} - \frac{1}{n+1}  $$ 
 
-$$ \lim_{n \to \infty} S_n = 1 = \sum\limits_{n = 1}^{\infty} \frac{1}{n^2 + n} $$
+$$ \lim_{n \to \infty} S_n = 1 = \suminfty{1} \frac{1}{n^2 + n} $$
 
 \subsection*{Własności szeregów zbieżnych}
 \addcontentsline{toc}{subsection}{Własności szeregów zbieżnych}
@@ -164,7 +164,7 @@ Zmiana wartości $n_0$ nie wpływa na zbieżność/rozbieżność szeregu $ \sum
 
 Może mieć wpływ na wartość jego sumy. \\
 
-Stąd wynika np., że szeregi $ \sum\limits_{n = 1}^{\infty} a_n $ i $ \sum\limits_{n = 100}^{\infty} a_n $ są albo oba zbieżne
+Stąd wynika np., że szeregi $ \suminfty{1} a_n $ i $ \sum\limits_{n = 100}^{\infty} a_n $ są albo oba zbieżne
 albo oba rozbieżne do $ \infty $ lub $-\infty$ albo oba rozbieżne.
 
 To też oznacza, że na podstawie kilku pierwszych wyrazów ciągu/szeregu
@@ -249,9 +249,9 @@ i rozbieżność oznacza rozbieżność do $-\infty$. \\
 
 Przykład. Następujące szeregi nie są zbieżne
 
-$$ \sum\limits_{n = 1}^{\infty} 1, \ \ \sum\limits_{n = 1}^{\infty} (n^2 + 2n), \ \
-\sum\limits_{n = 1}^{\infty} \frac{n+1}{n+2}, \ \ \sum\limits_{n = 1}^{\infty} \left(1 + \frac{1}{n} \right)^n , \ \ 
-\sum\limits_{n = 1}^{\infty} (-1)^n , \ \ \sum\limits_{n = 1}^{\infty} \sin n$$
+$$ \suminfty{1} 1, \ \ \suminfty{1} (n^2 + 2n), \ \
+\suminfty{1} \frac{n+1}{n+2}, \ \ \suminfty{1} \left(1 + \frac{1}{n} \right)^n , \ \ 
+\suminfty{1} (-1)^n , \ \ \suminfty{1} \sin n$$
 
 Dla szeregów o wyrazach nieujemnych mamy dwa kolejne kryteria zbieżności.
 
@@ -302,10 +302,10 @@ Uwagi
 
 \colorbox{red}{Popularny błąd : } odpowiedź na podstawie przypadku wątpliwego
 
-Na przykład dla szeregu $ \sum\limits_{n = 1}^{\infty} \frac{1}{n + \sqrt{n}} : $
+Na przykład dla szeregu $ \suminfty{1} \frac{1}{n + \sqrt{n}} : $
 
-"Mamy $ 0 \leq \frac{1}{n + \sqrt{n}} \leq \frac{1}{n} $ i szereg $ \sum\limits_{n = 1}^{\infty} \frac{1}{n} $
-jest rozbieżny \textcolor{red}{zatem szereg $\sum\limits_{n = 1}^{\infty} \frac{1}{n + \sqrt{n}}$ jest rozbieżny}". \\
+"Mamy $ 0 \leq \frac{1}{n + \sqrt{n}} \leq \frac{1}{n} $ i szereg $ \suminfty{1} \frac{1}{n} $
+jest rozbieżny \textcolor{red}{zatem szereg $\suminfty{1} \frac{1}{n + \sqrt{n}}$ jest rozbieżny}". \\
 
 \textbf{GAME OVER...} To jest przypadek nr 3 (wątpliwy) \\
 
@@ -364,7 +364,7 @@ Uwagi
     \item Kryterium zwykle jest wygodniejsze niż porównawcze ale są przykłady, które pójdą z porównawczego ale nie z
     ilorazowego, bo granica ilorazu nie istnieje
     
-    Np. \ $ \sum\limits_{n = 1}^{\infty} \frac{2 + \sin n}{n} $.
+    Np. \ $ \suminfty{1} \frac{2 + \sin n}{n} $.
 \end{itemize}
 
 Przykłady
@@ -401,9 +401,9 @@ przy użyciu granic podstawowych lub reguły de l'Hospitala. \\
 
 Na przykład
 
-$$ \sum\limits_{n = 1}^{\infty} \left( \sqrt[n]{2} - 1 \right) $$
+$$ \suminfty{1} \left( \sqrt[n]{2} - 1 \right) $$
 
-Mamy $$ \sum\limits_{n = 1}^{\infty} \left( \sqrt[n]{2} - 1 \right) = \sum\limits_{n = 1}^{\infty} \left( 2^{\frac{1}{n}} - 1 \right) $$
+Mamy $$ \suminfty{1} \left( \sqrt[n]{2} - 1 \right) = \suminfty{1} \left( 2^{\frac{1}{n}} - 1 \right) $$
 
 Więc bierzemy $ b_n = \frac{1}{n} > 0 $.
 
@@ -413,7 +413,7 @@ $$ \lim_{n \to \infty} \frac{2^{\frac{1}{n}} - 1}{\frac{1}{n}} = \lim_{x = \frac
 
 Jest to liczba dodatnia więc oba szeregi są zbieżne lub oba są rozbieżne.
 
-$ \sum\limits_{n = 1}^{\infty} \frac{1}{n} = \infty $ więc $ \sum\limits_{n = 1}^{\infty} \left( \sqrt[n]{2} - 1 \right) = \infty $. \\ \\
+$ \suminfty{1} \frac{1}{n} = \infty $ więc $ \suminfty{1} \left( \sqrt[n]{2} - 1 \right) = \infty $. \\ \\
 
 3. Kryterium Cauchy'ego.
 
@@ -466,13 +466,13 @@ $ q = \lim_{n \to \infty} \left| \frac{a_{n + 1}}{a_n} \right| $. Wtedy
 
 Przykłady
 
-$$ \sum\limits_{n = 1}^{\infty} \frac{20^n}{n!} $$
+$$ \suminfty{1} \frac{20^n}{n!} $$
 
 Tutaj $ a_n = \frac{20^n}{n!} > 0 $ oraz $ a_{n + 1} = \frac{20^{n + 1}}{(n + 1)!} $. Zatem z kryterium d'Alemberta
 
 $$ q = \lim_{n \to \infty} \left| \frac{a_{n + 1}}{a_n} \right| = \frac{ \dfrac{20^{n + 1}}{(n+1)!} }{ \dfrac{20^n}{n!} } $$ \\
 
-$$ \sum\limits_{n = 1}^{\infty} \left( 2\arcsin \frac{1 - n}{2n + 1} \right)^n $$
+$$ \suminfty{1} \left( 2\arcsin \frac{1 - n}{2n + 1} \right)^n $$
 
 Tutaj chcemy użyć kryterium Cauchy'ego.
 
@@ -742,11 +742,11 @@ Przykłady do samodzielnego policzenia : \\
 
 \begin{adjustbox}{width=0.7\textwidth}
     \begin{tabular}{ccc}
-        $ \sum\limits_{n = 1}^{\infty} \frac{\sqrt{n^2 + 3}}{n^3 + 2} $ & $ \sum\limits_{n = 1}^{\infty} \frac{n^3 + 5}{n!} $ & $ \sum\limits_{n = 1}^{\infty} \frac{2^n + 3^n}{n^2 \cdot 3^n + 1} $ \\
+        $ \suminfty{1} \frac{\sqrt{n^2 + 3}}{n^3 + 2} $ & $ \suminfty{1} \frac{n^3 + 5}{n!} $ & $ \suminfty{1} \frac{2^n + 3^n}{n^2 \cdot 3^n + 1} $ \\
         \\
-        $ \sum\limits_{n = 1}^{\infty} \frac{2^n + 7 \cdot 3^n}{5^n - 4^n} $ & $ \sum\limits_{n = 1}^{\infty} \left( \frac{2n+3}{3n+2} \right)^n $ & $ \sum\limits_{n = 1}^{\infty} \arctan \frac{1}{\sqrt{n}} $ \\
+        $ \suminfty{1} \frac{2^n + 7 \cdot 3^n}{5^n - 4^n} $ & $ \suminfty{1} \left( \frac{2n+3}{3n+2} \right)^n $ & $ \suminfty{1} \arctan \frac{1}{\sqrt{n}} $ \\
         \\
-        $ \sum\limits_{n = 1}^{\infty} \frac{3 + \cos (n^2)}{\sqrt[3]{n}} $ & $ \sum\limits_{n = 1}^{\infty} \frac{(-1)^n \cdot n}{n^2 + 2} $ & $ \sum\limits_{n = 1}^{\infty} \frac{\cos (n^2)}{2^n} $
+        $ \suminfty{1} \frac{3 + \cos (n^2)}{\sqrt[3]{n}} $ & $ \suminfty{1} \frac{(-1)^n \cdot n}{n^2 + 2} $ & $ \suminfty{1} \frac{\cos (n^2)}{2^n} $
         \\
     \end{tabular}    
 \end{adjustbox}

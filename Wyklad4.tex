@@ -21,7 +21,7 @@ $$ 1 + x + x^2 + x^3 + ... + x^n + ... = \sum\limits_{n = 0}^{\infty} x^n $$
 Jest to szereg geometryczny o ilorazie $x$. Tutaj $ \forall \, n \in \mathbb{N} \quad c_n = 1 $ oraz $x_0 = 0$.
 
 $$ (x - 1) - \frac{(x-1)^3}{3} + \frac{(x-1)^5}{5} - \frac{(x-1)^7}{7} + ... 
-= \sum\limits_{n=0}^{\infty} \frac{ (-1)^n }{ 2n+1 } \cdot (x-1)^{2n+1} $$
+= \suminfty{0} \frac{ (-1)^n }{ 2n+1 } \cdot (x-1)^{2n+1} $$
 
 Tutaj $x_0 = 1$ oraz $ c_{2n+1} = \frac{ (-1)^n }{ 2n+1 }, \quad c_{2n} = 0 $ \\
 
@@ -31,12 +31,12 @@ Uwaga. Indeks współcznynnika \textbf{musi się zgadzać} (być równy) z wykł
 \subsection*{Zbieżność szeregów potęgowych}
 \addcontentsline{toc}{subsection}{Zbieżność szeregów potęgowych}
 
-Szereg $ \sum\limits_{n=0}^{\infty} c_n(x-x_0)^n $ jest zawsze zbieżny dla $x=x_0$ i wtedy jego suma to $c_0$.
+Szereg $ \suminfty{0} c_n(x-x_0)^n $ jest zawsze zbieżny dla $x=x_0$ i wtedy jego suma to $c_0$.
 
 Dla pozostałych $x \neq x_0$ szereg może być zbieżny lub nie. Są 3 przypadki
 
 \begin{enumerate}
-    \item Szereg jest zbieżny tylko dla $x=x_0$ np. $ \sum\limits_{n=0}^{\infty} n!x^n $ -- zbieżny tylko dla $x=0$.
+    \item Szereg jest zbieżny tylko dla $x=x_0$ np. $ \suminfty{0} n!x^n $ -- zbieżny tylko dla $x=0$.
     Jest to szereg bezużyteczny w praktyce.
     \item Szereg jest bezwględnie zbieżny dla wszystkich $x$, np. $ \sum\limits_{n = 0}^{\infty} \frac{x^n}{n!} $.
     Jest to najlepsza sytuacja.
@@ -62,7 +62,7 @@ Szereg jest zbieżny dla $x = x_0$ i pytanie co dla pozostałych $x$.
 
 Metoda jak najbardziej ogólna, działająca dla wszystkich typów szeregów potęgowych :
 
-dla szeregu $ \sum\limits_{n=0}^{\infty} c_n(x-x_0)^n $ przyjmujemy $ a_n = c_n(x - x_0)^n, \quad x \neq x_0 $.
+dla szeregu $ \suminfty{0} c_n(x-x_0)^n $ przyjmujemy $ a_n = c_n(x - x_0)^n, \quad x \neq x_0 $.
 Zmienna $x$ staje się parametrem.
 
 Ponieważ $a_n$ zawiera $n$ -- tą potęgę więc korzystamy z kryterium Cauchy'ego lub d'Alemberta. Liczymy
@@ -106,7 +106,7 @@ $q \neq 1$ to na pewno \textbf{gdzieś jest błąd}.
 
 Przykłady
 
-$$ \sum\limits_{n=0}^{\infty} \frac{x^n}{n!} $$
+$$ \suminfty{0} \frac{x^n}{n!} $$
 
 Tutaj $ a_n = \frac{x^n}{n!} $ oraz $ x_0 = 0 $. Używamy kryterium d'Alemberta $ a_{n+1} = \frac{x^{n+1}}{(n+1)!} $ oraz
 dla $x \neq 0$
@@ -188,53 +188,53 @@ jego sumę $ f(x) = \sum\limits_{n = 0}^{\infty} c_n(x - x_0)^n $ nazywamy rzecz
 
 \begin{enumerate}
     \item Gdy
-    $$ f(x) = \sum\limits_{n=0}^{\infty} c_n(x - x_0)^n \ x \in (x_0 - R, x_0 + R) $$ to $f$ ma pochodne dowolnego rzędu w $x_0$
+    $$ f(x) = \suminfty{0} c_n(x - x_0)^n \ x \in (x_0 - R, x_0 + R) $$ to $f$ ma pochodne dowolnego rzędu w $x_0$
     oraz $$ c_0 = f(x_0), \ c_1 = \frac{f'(x_0)}{1!}, \ c_2 = \frac{f''(x_0)}{2!}, ... , c_n = \frac{f^{(n)}(x_0)}{n!} $$
     Stąd wynikają rozwinięcia popularnych funkcji w szereg Maclaurina $(x_0 = 0)$.
 
-    $$ e^x = \sum\limits_{n=0}^{\infty} \frac{x^n}{n!} = 1 + x + \frac{x^2}{2!} + \frac{x^3}{3!} + ... , \ x \in \mathbb{R} $$
+    $$ e^x = \suminfty{0} \frac{x^n}{n!} = 1 + x + \frac{x^2}{2!} + \frac{x^3}{3!} + ... , \ x \in \mathbb{R} $$
     
-    $$ \sin x = \sum\limits_{n=0}^{\infty} \frac{(-1)^n x^{2n+1}}{(2n + 1)!} = x - \frac{x^3}{3!} + \frac{x^5}{5!} - \frac{x^7}{7!} + ... , \ x \in \mathbb{R} $$
+    $$ \sin x = \suminfty{0} \frac{(-1)^n x^{2n+1}}{(2n + 1)!} = x - \frac{x^3}{3!} + \frac{x^5}{5!} - \frac{x^7}{7!} + ... , \ x \in \mathbb{R} $$
 
-    $$ \cos x = \sum\limits_{n=0}^{\infty} \frac{(-1)^n x^{2n}}{(2n)!} = 1 - \frac{x^2}{2!} + \frac{x^4}{4!} - \frac{x^6}{6!} + ... , \ x \in \mathbb{R} $$
+    $$ \cos x = \suminfty{0} \frac{(-1)^n x^{2n}}{(2n)!} = 1 - \frac{x^2}{2!} + \frac{x^4}{4!} - \frac{x^6}{6!} + ... , \ x \in \mathbb{R} $$
     
-    $$ \ln (1+x) = \sum\limits_{n=0}^{\infty} \frac{(-1)^n x^{n+1}}{n+1} = x - \frac{x^2}{2} + \frac{x^3}{3} - \frac{x^4}{4} + ... , \ x \in (-1, 1] $$
+    $$ \ln (1+x) = \suminfty{0} \frac{(-1)^n x^{n+1}}{n+1} = x - \frac{x^2}{2} + \frac{x^3}{3} - \frac{x^4}{4} + ... , \ x \in (-1, 1] $$
     
-    $$ (1+x)^p = \sum\limits_{n=0}^{\infty} \binom{p}{n} x^n = 1 + px + \frac{p(p-1)}{2!}x^2 + \frac{p(p-1)(p-2)}{3!}x^3 + ... , \ x \in (-1, 1)  $$
+    $$ (1+x)^p = \suminfty{0} \binom{p}{n} x^n = 1 + px + \frac{p(p-1)}{2!}x^2 + \frac{p(p-1)(p-2)}{3!}x^3 + ... , \ x \in (-1, 1)  $$
 
-    $$ \frac{1}{1-x} = \sum\limits_{n=0}^{\infty} x^n = 1 + x + x^2 + x^3 + ... , \ x \in [-1, 1] $$
+    $$ \frac{1}{1-x} = \suminfty{0} x^n = 1 + x + x^2 + x^3 + ... , \ x \in [-1, 1] $$
 
-    $$ \arctan x = \sum\limits_{n=0}^{\infty} \frac{(-1)^n x^{2n+1}}{2n+1} = x - \frac{x^3}{3} + \frac{x^5}{5} - \frac{x^7}{7} + ... , \ x \in [-1, 1] $$ \\
+    $$ \arctan x = \suminfty{0} \frac{(-1)^n x^{2n+1}}{2n+1} = x - \frac{x^3}{3} + \frac{x^5}{5} - \frac{x^7}{7} + ... , \ x \in [-1, 1] $$ \\
 
     \item Jeżeli mamy dwa szeregi o tym samym środku i przedziałach zbieżności $I_1$ i $I_2$:
     
-    $ \sum\limits_{n=0}^{\infty} c_n(x - x_0)^n, \ x \in I_1 $ oraz $ \sum\limits_{n=0}^{\infty} d_n(x - x_0)^n, \ x \in I_2 $
+    $ \suminfty{0} c_n(x - x_0)^n, \ x \in I_1 $ oraz $ \suminfty{0} d_n(x - x_0)^n, \ x \in I_2 $
 
     to
 
     \begin{itemize}
-        \item dla dowolnego $c \in \mathbb{R}$ zachodzi $ c \cdot \sum\limits_{n=0}^{\infty} c_n(x - x_0)^n = 
-        \sum\limits_{n=0}^{\infty} c \cdot c_n(x - x_0)^n $
+        \item dla dowolnego $c \in \mathbb{R}$ zachodzi $ c \cdot \suminfty{0} c_n(x - x_0)^n = 
+        \suminfty{0} c \cdot c_n(x - x_0)^n $
         \item dla $ x \in I_1 \cap I_2 $ mamy
-        $$ \sum\limits_{n=0}^{\infty} c_n(x - x_0)^n \pm \sum\limits_{n=0}^{\infty} d_n(x - x_0)^n = 
-        \sum\limits_{n=0}^{\infty} (c_n \pm d_n)(x - x_0)^n $$ \\
+        $$ \suminfty{0} c_n(x - x_0)^n \pm \suminfty{0} d_n(x - x_0)^n = 
+        \suminfty{0} (c_n \pm d_n)(x - x_0)^n $$ \\
     \end{itemize}
 
     Mamy
 
-    $$ \cos x = \sum\limits_{n=0}^{\infty} \frac{(-1)^n x^{2n}}{(2n)!}, \ x \in \mathbb{R} $$
+    $$ \cos x = \suminfty{0} \frac{(-1)^n x^{2n}}{(2n)!}, \ x \in \mathbb{R} $$
 
-    $$ \arctan x = \sum\limits_{n=0}^{\infty} \frac{(-1)^n x_{2n+1}}{2n+1}, \ x \in [-1, 1] $$
+    $$ \arctan x = \suminfty{0} \frac{(-1)^n x^{2n+1}}{2n+1}, \ x \in [-1, 1] $$
 
     Stąd
 
-    $$ x \cos x = x \sum\limits_{n=0}^{\infty} \frac{(-1)^n x^{2n}}{(2n)!} = \sum\limits_{n=0}^{\infty} x \cdot \frac{(-1)^n x^{2n}}{(2n)!} 
-    = \sum\limits_{n=0}^{\infty} \frac{(-1)^n x^{2n+1}}{(2n)!}$$
+    $$ x \cos x = x \suminfty{0} \frac{(-1)^n x^{2n}}{(2n)!} = \suminfty{0} x \cdot \frac{(-1)^n x^{2n}}{(2n)!} 
+    = \suminfty{0} \frac{(-1)^n x^{2n+1}}{(2n)!}$$
 
     oraz dla $ x \in \mathbb{R} \cap [-1, 1] = [-1, 1] $
 
-    $$ x \cos x + \arctan x = \sum\limits_{n=0}^{\infty} \frac{(-1)^n x^{2n+1}}{(2n)!} + \sum\limits_{n=0}^{\infty} \frac{(-1)^n x_{2n+1}}{2n+1} = 
-    \sum\limits_{n=0}^{\infty} \left( \frac{(-1)^n}{(2n)!} + \frac{(-1)^n}{2n+1} \right) x^{2n+1} $$ 
+    $$ x \cos x + \arctan x = \suminfty{0} \frac{(-1)^n x^{2n+1}}{(2n)!} + \suminfty{0} \frac{(-1)^n x^{2n+1}}{2n+1} = 
+    \suminfty{0} \left( \frac{(-1)^n}{(2n)!} + \frac{(-1)^n}{2n+1} \right) x^{2n+1} $$ 
 
     \item W miejsce $x$ w szeregu Maclaurina można podstawić wyrażenie potęgowe $ ax^k, \ k \in \mathbb{N}^+ $.
     Daje to nowy szereg nowej funkcji z nowym przedziałem zbieżności. Ten nowy przedział można wyznaczyć na podstawie
@@ -245,28 +245,28 @@ jego sumę $ f(x) = \sum\limits_{n = 0}^{\infty} c_n(x - x_0)^n $ nazywamy rzecz
     a) Szereg Maclaurina dla funkcji $ \ln (1+3x) $.
 
     Używamy rozwinięcia 
-    $$ \ln (1+x) = \sum\limits_{n=0}^{\infty} \frac{(-1)^n x^{n+1}}{n+1} = x - \frac{x^2}{2} + \frac{x^3}{3} - \frac{x^4}{4} + ... , \ x \in (-1, 1] $$
+    $$ \ln (1+x) = \suminfty{0} \frac{(-1)^n x^{n+1}}{n+1} = x - \frac{x^2}{2} + \frac{x^3}{3} - \frac{x^4}{4} + ... , \ x \in (-1, 1] $$
 
     Aby dostać $ \ln(1+3x) $ w miejsce $x$ trzeba wstawić $ 3x ( x := 3x)$. To daje
 
-    $$ \ln(1+3x) = \sum\limits_{n=0}^{\infty} \frac{(-1)^n (3x)^{n+1}}{n+1}, \ 3x \in (-1, 1] $$
+    $$ \ln(1+3x) = \suminfty{0} \frac{(-1)^n (3x)^{n+1}}{n+1}, \ 3x \in (-1, 1] $$
     Po uproszczeniu 
-    $$ \ln(1+3x) = \sum\limits_{n=0}^{\infty} \frac{(-1)^n \cdot 3^{n+1}}{n+1} x^{n+1} $$
+    $$ \ln(1+3x) = \suminfty{0} \frac{(-1)^n \cdot 3^{n+1}}{n+1} x^{n+1} $$
 
     $$ 3x \in (-1, 1] \Leftrightarrow -1 < 3x \leq 1 \Leftrightarrow -\frac{1}{3} < x \leq \frac{1}{3} \Leftrightarrow x \in \left( -\frac{1}{3}, \frac{1}{3} \right] $$ \\
 
     b) Szereg Maclaurina dla funkcji $ \sinh x = \frac{e^x - e^{-x}}{2} $
 
     Używamy rozwinięcia
-    $$ e^x = \sum\limits_{n=0}^{\infty} = \frac{x^n}{n!} = 1 + x + \frac{x^2}{2!} + \frac{x^3}{3!} + ... , \ x \in \mathbb{R} $$
+    $$ e^x = \suminfty{0} = \frac{x^n}{n!} = 1 + x + \frac{x^2}{2!} + \frac{x^3}{3!} + ... , \ x \in \mathbb{R} $$
     Wstawiając $ x:=(-x) $ dostajemy 
-    $$ e^{-x} = \sum\limits_{n=0}^{\infty} \frac{(-x)^n}{n!} = \sum\limits_{n=0}^{\infty} \frac{(-1)^n x^n}{n!}, \ x \in \mathbb{R} $$
+    $$ e^{-x} = \suminfty{0} \frac{(-x)^n}{n!} = \suminfty{0} \frac{(-1)^n x^n}{n!}, \ x \in \mathbb{R} $$
     To daje
     $$ \sin h = \frac{e^x - e^{-x}}{2} = \frac{1}{2}e^x - \frac{1}{2}e^{-x} =
-    \frac{1}{2} \sum\limits_{n=0}^{\infty} \frac{x^n}{n!} - \frac{1}{2} \sum\limits_{n=0}^{\infty} \frac{(-1)^n x^n}{n!} 
-    =$$ $$ =  \sum\limits_{n=0}^{\infty} \frac{1}{2n!} x^n - \sum\limits_{n=0}^{\infty} \frac{(-1)^n}{2n!} x^n
-    = \sum\limits_{n=0}^{\infty} \left( \frac{1}{2n!} - \frac{(-1)^n}{2n!} \right) x^n 
-    = \sum\limits_{n=0}^{\infty} \left( \frac{1 - (-1)^n}{2n!} \right) x^n $$
+    \frac{1}{2} \suminfty{0} \frac{x^n}{n!} - \frac{1}{2} \suminfty{0} \frac{(-1)^n x^n}{n!} 
+    =$$ $$ =  \suminfty{0} \frac{1}{2n!} x^n - \suminfty{0} \frac{(-1)^n}{2n!} x^n
+    = \suminfty{0} \left( \frac{1}{2n!} - \frac{(-1)^n}{2n!} \right) x^n 
+    = \suminfty{0} \left( \frac{1 - (-1)^n}{2n!} \right) x^n $$
 
     Współczynnikiem tego szeregu jest więc 
     $$ c_n = \frac{1-(-1)^n}{2n!} =\left\{ \begin{array}{cll}
@@ -275,12 +275,12 @@ jego sumę $ f(x) = \sum\limits_{n = 0}^{\infty} c_n(x - x_0)^n $ nazywamy rzecz
     \end{array} \right. $$
 
     Stąd
-    $$ \sinh x = \sum\limits_{n=0}^{\infty} \frac{1}{(2k+1)!} x^{2k+1} = x + \frac{x^3}{3!} + \frac{x^5}{5!} + ..., \ x \in \mathbb{R} $$ \\
+    $$ \sinh x = \suminfty{0} \frac{1}{(2k+1)!} x^{2k+1} = x + \frac{x^3}{3!} + \frac{x^5}{5!} + ..., \ x \in \mathbb{R} $$ \\
 
     c) Szereg Maclaurina dla funkcji $ \frac{x}{3 + x^4} $
 
     W przypadku funkcji wymiernej \textbf{zawsze} korzystamy z szeregu geometrycznego
-    $$ \frac{1}{1-x} = \sum\limits_{n=0}^{\infty} x^n = 1 + x + x^2 + x^3 + ..., \ x \in (-1, 1) $$
+    $$ \frac{1}{1-x} = \suminfty{0} x^n = 1 + x + x^2 + x^3 + ..., \ x \in (-1, 1) $$
 
     Doprowadzamy wyrażenie do postaci \colorbox{yellow}{$\textrm{stała} \cdot \frac{1}{1 - \textrm{"coś"}}$}
     i za $x$ wstawiamy to "coś".
@@ -289,9 +289,9 @@ jego sumę $ f(x) = \sum\limits_{n = 0}^{\infty} c_n(x - x_0)^n $ nazywamy rzecz
     $$ \frac{x}{3 + x^4} = \frac{x}{3} \cdot \frac{1}{1 + \frac{x^4}{3}} = \frac{x}{3} \cdot \frac{1}{1 - \left( - \frac{x^4}{3} \right)} $$
 
     Czyli $ \textrm{"coś"} = -\frac{x^4}{3} $ i to daje
-    $$ \frac{x}{3+x^4} = \frac{x}{3} \sum\limits_{n=0}^{\infty} \left(-\frac{x^4}{3} \right)^n =
-    \frac{x}{3} \sum\limits_{n=0}^{\infty} \frac{(-1)^n}{3^n} x^{4n} = \sum\limits_{n=0}^{\infty} \frac{x}{3} \cdot \frac{(-1)^n}{3^n} x^{4n} 
-    = \sum\limits_{n=0}^{\infty} \frac{(-1)^n}{3^{n+1}} x^{4n+1} $$
+    $$ \frac{x}{3+x^4} = \frac{x}{3} \suminfty{0} \left(-\frac{x^4}{3} \right)^n =
+    \frac{x}{3} \suminfty{0} \frac{(-1)^n}{3^n} x^{4n} = \suminfty{0} \frac{x}{3} \cdot \frac{(-1)^n}{3^n} x^{4n} 
+    = \suminfty{0} \frac{(-1)^n}{3^{n+1}} x^{4n+1} $$
 
     Przedział zbieżności wynika z warunku
     $$ -1 < -\frac{x^4}{3} < 1 \Leftrightarrow -3 < x^4 < 3 \Leftrightarrow -3 < x^4 \ \land \ x^4 < 3 $$
@@ -299,10 +299,10 @@ jego sumę $ f(x) = \sum\limits_{n = 0}^{\infty} c_n(x - x_0)^n $ nazywamy rzecz
     Pierwsza z tych nierówności jest zawsze prawdziwa. Rozwiązanie drugiej daje $ -\sqrt[4]{3} < x < \sqrt[4]{3} $.
     Czyli przedział zbieżności to $ (-\sqrt[4]{3}, \sqrt[4]{3}) $. \\
 
-    \item Gdy $ f(x) = \sum\limits_{n=0}^{\infty} c_n(x - x_0)^n, \ x \in (x_0 - R, x_0 + R) $ to $f$ ma pochodną
+    \item Gdy $ f(x) = \suminfty{0} c_n(x - x_0)^n, \ x \in (x_0 - R, x_0 + R) $ to $f$ ma pochodną
     dowolnego rzędu i zachodzi wzór
-    $$ f'(x) = \left( \sum\limits_{n=0}^{\infty} c_n(x - x_0)^n \right) = \sum\limits_{n=0}^{\infty} \left( c_n \left( x - x_0 \right)^{n} \right) 
-    = \sum\limits_{n=0}^{\infty} c_n n (x - x_0)^{n - 1} = \sum\limits_{n=1}^{\infty} c_n n (x - x_0)^{n - 1}$$
+    $$ f'(x) = \left( \suminfty{0} c_n(x - x_0)^n \right) = \suminfty{0} \left( c_n \left( x - x_0 \right)^{n} \right) 
+    = \suminfty{0} c_n n (x - x_0)^{n - 1} = \suminfty{1} c_n n (x - x_0)^{n - 1}$$
 
     Jest to rozszerzenie wzoru "pochodna sumy = suma pochodnych" na nieskończoną ilość składników
 \end{enumerate}
