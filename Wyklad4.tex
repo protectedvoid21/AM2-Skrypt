@@ -78,12 +78,19 @@ W zdecydowanej większości przypadków granica ta istnieje i prowadzi do najcz�
     \item $q$ zależy od $x$. Wtedy mamy zbieżność dla $q < 1$ i rozbieżność dla $q > 1$ oraz
     
     \begin{itemize}
-        \item $$ q < 1 \Leftrightarrow |x - x_0| < R \Leftrightarrow x \in (x_0 - R, x_0 + R) $$
+        \item $ q < 1 \Leftrightarrow |x - x_0| < R \Leftrightarrow x \in (x_0 - R, x_0 + R) $
+        
         "wstępny" przedział zbieżności, R -- promień zbieżności
-        \item $$ q > 1 \Leftrightarrow |x - x_0| > R \Leftrightarrow x \in (-\infty, x_0 - R)\cup(x_0 + R, \infty) $$
+
+        \item $ q > 1 \Leftrightarrow |x - x_0| > R \Leftrightarrow x \in (-\infty, x_0 - R)\cup(x_0 + R, \infty) $
+
         rozbieżność poza głównym przedziałem
-        \item $$ q = 1 \Leftrightarrow |x - x_0| = R \Leftrightarrow x = x_0 \pm R $$
-        przypadek "wątpliwy" na końcach przedziału. Dla tych $x$ trzeba użyć \textbf{innego kryterium} \\
+        
+        \item $ q = 1 \Leftrightarrow |x - x_0| = R \Leftrightarrow x = x_0 \pm R $
+        
+        przypadek "wątpliwy" na końcach przedziału.
+        
+        Dla tych $x$ trzeba użyć \textbf{innego kryterium} \\
     \end{itemize}
 \end{enumerate}
 
@@ -238,9 +245,9 @@ jego sumę $ f(x) = \sum\limits_{n = 0}^{\infty} c_n(x - x_0)^n $ nazywamy rzecz
 
     \item W miejsce $x$ w szeregu Maclaurina można podstawić wyrażenie potęgowe $ ax^k, \ k \in \mathbb{N}^+ $.
     Daje to nowy szereg nowej funkcji z nowym przedziałem zbieżności. Ten nowy przedział można wyznaczyć na podstawie
-    przedziału zbieżności wyjściowego szeregu
+    przedziału zbieżności wyjściowego szeregu \\
 
-    \textbf{Przykłady} \\
+    \textbf{Przykłady} 
 
     a) Szereg Maclaurina dla funkcji $ \ln (1+3x) $.
 
@@ -304,5 +311,52 @@ jego sumę $ f(x) = \sum\limits_{n = 0}^{\infty} c_n(x - x_0)^n $ nazywamy rzecz
     $$ f'(x) = \left( \suminfty{0} c_n(x - x_0)^n \right) = \suminfty{0} \left( c_n \left( x - x_0 \right)^{n} \right) 
     = \suminfty{0} c_n n (x - x_0)^{n - 1} = \suminfty{1} c_n n (x - x_0)^{n - 1}$$
 
-    Jest to rozszerzenie wzoru "pochodna sumy = suma pochodnych" na nieskończoną ilość składników
+    Jest to rozszerzenie wzoru "pochodna sumy = suma pochodnych" na nieskończoną ilość składników \\
+
+    \textbf{Przykład}
+
+    Znaleźć szereg Maclaurina dla funkcji $ f(x) = \frac{1}{(x+1)^2} $
+
+    Używamy rozwinięcia $ \frac{1}{1-x} = \suminfty{0} x^n, \ x \in (-1, 1) $.
+    
+    Mamy
+    $$ \frac{1}{1+x} = \frac{1}{1-(-x)} = \suminfty{0} (-x)^n = \suminfty{0} (-1)^n x^n $$
+    $$ \left( \frac{1}{1+x} \right) = - \frac{1}{(1+x)^2} = \suminfty{1} ((-1)^n n x^{n-1}) = \suminfty{1} (-1)^n n x^{n-1} $$
+
+    Stąd
+
+    $$ \frac{1}{(1+x)^2} = - \suminfty{1} (-1)^n n x^{n-1} = \suminfty{1} (-1)^{n-1} n x^{n-1} = 1 - 2x + 3x^2 - 4x^3 + ..., \ x \in (-1, 1) $$ \\
+
+    \item Gdy $$ f(x) = \suminfty{0} c_n(x - x_0)^n, \ x\in (x_0 - R, x_0 + R) $$ \ 
+    to dla $ a,b \in (x_0 - R, x_0 + R) $ mamy
+    $$ \int\limits_a^b f(x) \,dx = \int\limits_a^b \left( \suminfty{0} c_n(x - x_0)^n \right) \,dx = \suminfty{0} \int\limits_a^b c_n(x - x_0)^n \,dx = $$ 
+    $$ \suminfty{0} c_n \left[ \frac{(x - x_0)^{n+1}}{n+1} \right]_a^b = \suminfty{0} c_n \frac{(b - x_0)^{n+1} - (a - x_0)^{n+1}}{n+1} $$
+
+    Jest to rozszerzenie wzoru "całka sumy = suma całek" na nieskończoną ilość składników
+
+    W szczególności biorąc $ a = x_0, \ b = x, \ F(x) = \int f(x) \,dx $ oraz przyjmując 
+
+    $$ \int (x - x_0)^n \,dx = \frac{(x - x_0)^{n+1}}{n+1} \quad \textrm{(stała całkowania = 0)} $$
+
+    Dostajemy ten wzór z całką nieoznaczoną
+
+    $$ F(x) = \int f(x) \,dx = F(x) + \suminfty{0} c_n \int (x - x_0)^n \,dx, \quad \textrm{a więc} $$
+
+    $$ F(x) = F(x_0) + \suminfty{0} c_n \frac{(x - x_0)^{n+1}}{n+1}, \ x\in (x_0 - R, x_0 + R) $$ \\
+
+    \textbf{Przykład}
+
+    Wyprowadzić wzór na szereg Maclaurina dla $\arctan x$ na przedziale $(-1, 1)$. \\
+
+    Mamy $ \int \frac{1}{1+x^2} \,dx = \arctan x + C $. Wystarczy zatem rozwinąć w szereg funkcję $ \frac{1}{1+x^2} $, a potem obliczyć całkę.
+
+    Korzystając z rozwinięcia $ \frac{1}{1-x} = \suminfty{0} x^n, \ x\in(-1, 1) $
+    $$ \frac{1}{1+x^2} = \frac{1}{1 - (-x^2)} = \suminfty{0} (-x^2)^n = \suminfty{0} (-1)^n x^{2n}$$
+
+    Przedział zbieżności: $ x^2\in(-1, 1) \Leftrightarrow x\in(-1, 1) $.
+
+    Zatem
+
+    $$ \arctan x = \int \frac{1}{1+x^2} \,dx = \arctan 0 + \suminfty{0} \int (-1)^n x^{2n} \,dx
+    = \suminfty{0} (-1)^n \frac{x^{2n+1}}{2n+1}, \ x\in(-1, 1) $$
 \end{enumerate}
