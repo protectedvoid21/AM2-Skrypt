@@ -359,4 +359,101 @@ jego sumę $ f(x) = \sum\limits_{n = 0}^{\infty} c_n(x - x_0)^n $ nazywamy rzecz
 
     $$ \arctan x = \int \frac{1}{1+x^2} \,dx = \arctan 0 + \suminfty{0} \int (-1)^n x^{2n} \,dx
     = \suminfty{0} (-1)^n \frac{x^{2n+1}}{2n+1}, \ x\in(-1, 1) $$
+
+    \item Twierdzenie Abela o rozszerzaniu szeregu na końce przedziału zbieżności
+    
+    Niech
+    $$ f(x) = \suminfty{0} c_n (x - x_0)^n, \ x\in (x_0 - R, x_0 + R)$$
+
+    Jeżeli
+    \begin{itemize}
+        \item szereg jest zbieżny również dla $ x = x_0 + R $
+        \item $f$ jest ciągła dla $ x = x_0 + R $
+    \end{itemize}
+
+    to wzór zachodzi także dla $ x = x_0 + R $ czyli
+    $$ f(x) = \suminfty{0} c_n (x - x_0)^n, \ x\in (x_0 - R, x_0 + R] $$
+
+    Analogicznie dla $ x = x_0 - R $
+
+    \textbf{Przykład}
+
+    Pokazaliśmy, że $ \arctan x = \suminfty{0} (-1)^n \frac{x^{2n+1}}{2n+1}, \ x\in (-1, 1) $
+
+    Teraz
+
+    \begin{itemize}
+        \item dla $x = 1$ mamy $ \suminfty{0} (-1)^n \frac{x^{2n+1}}{2n+1} = \suminfty{0} (-1)^n \frac{1}{2n+1} $ -- zbieżny bo Leibnitza
+        \item $ \arctan x $ jest ciągła w $x = 1$
+    \end{itemize}
+
+    Analogicznie dla $ x = -1$.
+
+    Zatem rozwinięcie jest prawdziwe również dla $x \pm 1$ czyli
+    $$ \arctan x = \suminfty{0} (-1)^n \frac{x^{2n+1}}{2n+1}, \ x\in [-1, 1] $$ \\
 \end{enumerate}
+
+Inne zastosowania szeregów potęgowych:
+
+\begin{itemize}
+    \item przybliżanie funkcji -- bierzemy rozwinięcie do ustalonej potęgi,
+    \item obliczanie całek nieelementarnych w przybliżeniu,
+    \item wyznaczanie sum niektórych szeregów oraz wartości pochodnych wysokiego rzędu.
+\end{itemize}
+
+\textbf{Przykłady}
+
+Jaka jest siedemdziesiąta piąta pochodna $\arctan x$ w $x = 0$? \\
+
+Niech $f(x) = \arctan x $. 
+
+Bierzemy rozwinięcie $f$ ze środkiem \textbf{(koniecznie)} w $0$:
+$$ \arctan x = \suminfty{0} (-1)^n \frac{x^{2n+1}}{2n+1}, \ x\in [-1, 1] $$
+
+Ogólny wzór daje
+$$ c_n = \frac{f^{(n)}(0)}{n!} \quad \textrm{czyli} \quad c_{75} = \frac{f^{(75)}(0)}{75!} \Leftrightarrow f^{(75)}(0) = 75! \cdot c_{75} $$
+
+Pozostaje wyznaczyć $c_{75}$. Jest to współczynnik przy $ x_{75} $ co oznacza, że
+$$ c_{75} x^{75} = (-1)^n \frac{x^{2n+1}}{2n+1} $$
+Stąd
+$$ n = 37, \ c_{75} = \frac{(-1)^{37}}{2 \cdot 37 + 1} = - \frac{1}{75} $$
+Oraz
+$$ f^{(75)}(0) = 75! \cdot \left( - \frac{1}{75} \right) = -74! $$ \\
+
+Wyznaczyć sumę $ \suminfty{1} \frac{n}{2^{n + 1}} $
+
+Jest to szereg zbieżny na podstawie np. kryterium d'Alemberta.
+
+Zapisujemy sumę tak, by potęga była w iloczynie:
+$$ \suminfty{1} \frac{n}{2^{n+1}} = \suminfty{1} n \cdot \left( \frac{1}{2} \right)^{n+1} $$
+Biorąc $ x = \frac{1}{2} $ mamy szereg potęgowy $ \suminfty{1} n \cdot x^{n+1} $
+
+Dla $ x\in (-1, 1) $ jest on zbieżny. Wyznaczamy jego sumę przez różniczkowanie lub całkowanie.
+
+\begin{itemize}
+    \item Pochodna $ (n \cdot x^{n+1}) = n(n+1)x^n $ -- pogarsza się wzór.
+    \item Całka $ \int n \cdot x^{n+1} \,dx = \frac{n}{n+2}x^{n+2} $. Jest lepiej ale problem w tym, że $n+2$ nie uprościło $n$ z licznika.
+\end{itemize}
+
+Stąd drugie pytanie:
+
+Jaką wziąć potęgę $nx^p$ aby po scałkowaniu uprościł się współczynnik $n$? \\
+
+Potrzeba
+$$ x^{n-1}, \quad bo \quad \int nx^{n-1} \,dx = \frac{n}{n} x^n + C = x^n + C $$
+Zatem bierzemy
+$$ f(x) = \suminfty{1} nx^{n-1}, \ x\in (-1, 1) $$
+Całkując obie strony mamy
+$$ F(x) = \int f(x) \,dx = F(0) + \suminfty{1} x^n $$
+
+Szereg $ \suminfty{1} x^n $ jest szeregiem geometrycznym o sumie $ \frac{x}{1-x}, \ x\in (-1, 1) $.
+
+Stąd aby odzyskać $f$ liczymy pochodną obu stron:
+$$ F(x) = f(x) = \left( \frac{x}{1-x} \right) = \frac{1}{(1-x)^2} $$
+
+Czyli
+$$ \suminfty{1} nx^{n-1} = \frac{1}{(1-x)^2} $$
+I na koniec
+$$ \suminfty{1} nx^{n+1} = \suminfty{1} nx^{n-1} \cdot x^2 = x^2 \suminfty{1} nx^{n-1} = \frac{x^2}{(1-x)^2} $$
+Dla $ x = \frac{1}{2} $ to daje
+$$ \suminfty{1} n \left( \frac{1}{2} \right)^{n+1} = 1 = \suminfty{1} \frac{n}{2^{n+1}} $$
