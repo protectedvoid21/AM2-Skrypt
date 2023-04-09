@@ -1,0 +1,279 @@
+\section{Funkcje wielu zmiennych}
+
+Na początek kilka definicji dotyczących zbiorów w $ \mathbb{R}^n $.
+
+\begin{itemize}
+    \item \underline{Otoczenie} punktu $ P = (x_1, x_2, ..., x_n) \in \mathbb{R}^n $ to $n$ -- wymiarowa kula otwarta o środku
+    w $P$ i promienu $r > 0$, tzn. zbiór
+    $$ K(P, r) = \{ Q = (y_1, y_2, ..., y_n) \in \mathbb{R}^n : |PQ|^2 = (x_1 - y_1)^2 + (x_2 - y_2)^2 + ... + (x_n - y_n)^2 < r^2 \} $$
+
+    Dla $n=2$ jest to koło o środku w $P$ bez brzegowego okręgu.
+
+    Dla $n=3$ jest to kula o środku w $P$ bez brzegowej sfery.
+    \item \underline{Sąsiedztwo} punktu $x_0 \in \mathbb{R}^n$ to zbiór postaci $ S = S(P, r) = K(P,r) \backslash P $
+    \item Zbiór $ A \subset \mathbb{R}^n $ jest zbiorem \underline{otwartym}, gdy każdy punkt z $A$ posiada pewne otoczenie zawarte w $A$, tzn.
+    $$ \forall P \!\in\! A \ \exists K(P, r) \quad P\in K(P,r) \subset A $$
+    \item Zbiór $ A \subset \mathbb{R}^n $ jest zbiorem \underline{domkniętym}, gdy jego dopełnienie $ A = \mathbb{R}^n \backslash A $ jest zbiorem otwartym. \\
+\end{itemize}
+
+\textbf{Definicja}
+
+Funkcja wielu zmiennych ma postać
+$$ f: D \to \mathbb{R} $$
+gdzie $ D \subset \mathbb{R}^n $ jest dziedziną $f$.
+
+Zatem dla $ (x_1, x_2, ..., x_n) \in D $ \quad $ f(x_1, x_2, ..., x_n) \in \mathbb{R} $
+
+Gdy mamy funkcje dwóch zmiennych to zwykle piszemy $ z = f(x, y) $ a dla trzech zmiennych $ t = f(x, y, z) $.
+
+Będziemy analizować głównie funkcje dwóch zmiennych $ z = f(x, y) $.
+
+Dla takich funkcji można narysować wykres -- gdy $D$ jest otwarty to wykresem jest powierzchnia w $3$ wymiarach dana wzorem
+$ (x, y, f(x,y)) $, gdzie $ (x,y) \in D_f $.
+
+\begin{center}
+\includegraphics[scale=0.6]{wykres_wieluzm1.png}
+
+Wykres funkcji $ f(x,y) = x^3 + 3xy^2 - 51x - 24y, \quad -5 \leq x \leq 5, \ -5 \leq y \leq 5 $
+\end{center}
+
+\textbf{Wykresy niektórych popularnych funkcji}
+
+\begin{itemize}
+    \item $ z = Ax + By + C $ -- płaszczyzna o wektorze normalnym $ \vec{n} = [A, B, -1] $ i przechodząca przez punkt $ (0,0,C) $.
+    \item $ z = z_0 + \sqrt{r^2 - (x-x_0)^2 - (y-y_0)^2} $ -- górna półsfera o środku w $(x_0, y_0, z_0)$ i promieniu $r > 0$. Np.
+    $ z = 3 + \sqrt{7 - x^2 - (y-1)^2} : \ S(0,1,3), \ r=\sqrt{7} $
+
+    $ z = z_0 - \sqrt{r^2 - (x-x_0)^2 - (y-y_0)^2} $ -- analogiczna półsfera ale dolna.
+
+    Obie pochodzą z równania całej sfery: $ (x - x_0)^2 + (y - y_0)^2 + (z - z_0)^2 = r^2 $.
+    \item $ z = z_0 + a\sqrt{r^2 - (x-x_0)^2 - (y-y_0)^2}, \ a \neq 0 $ -- powierzchnia stożkowa o wierzchołku w $ P = (x_0,y_0,z_0) $
+    i osi symetrii równoległej do osi $Z$.
+
+    $a > 0$ -- wierzchołek w dół, $a < 0$ -- wierzchołek w górę.
+
+    $|a| = \tan \alpha $, gdzie $\alpha$ jest kątem między prostą będącą tworzącą stożka
+
+    \includegraphics[scale=0.5]{stozek_wlzm.png}
+\end{itemize}
+
+Powierzchnia stożkowa i półsfera są szczególnymi przypadkami tzw. \underline{powierzchni obrotowych} w $\mathbb{R}^3$. \\
+
+Powierzchnią obrotową w $\mathbb{R}^3$ wokół osi $Z$ będziemy nazywali zbiór wszystkich możliwych punktów
+$(x,y,z)$ taki, że podstawienie $r = \sqrt{x^2 + y^2}$ wyznacza zbiór $z$ jako współrzędne wszystkich par $(z,r)$
+tworzących pewną krzywą na płaszczyźnie, przy czym zbiór wszystkich $r \geq 0$ jest zbiorem otwartym.
+
+Zatem jeżeli ta powierzchnia jest dana przez pewne równanie postaci
+$$ F(x,y,z) = 0 $$
+to podstawienie $ r = \sqrt{x^2 + y^2} $ usuwa wszystkie $x$ i $y$ i prowadzi do równania zależnego tylko od $z$ oraz $r$.
+
+W szczególności gdy mamy $z = f(x,y)$ i podstawienie $r$ powoduje, że $f$ zależy tylko od $r$ to wykresem $f$ jest powierzchnia
+obrotowa wokół osi $Z$. \\
+
+\textbf{Geometryczne własności takiej powierzchni}
+
+\begin{itemize}
+    \item Niepuste przecięcie powierzchni z dowolną płaszczyzną prostopadłą do osi $Z$ jest punktem, okręgiem lub sumą tych zbiorów.
+    \item Niepuste przecięcie powierzchni z dowolną płasczyzną zawierającą oś $Z$ jest krzywą o tym samym kształcie. \\
+\end{itemize}
+
+Na przykład dla powierzchni stożkowej $ z = a\sqrt{x^2 + y^2}, \ a > 0 $, przecięcie płasczyzną prostopadłą do osi $Z$ jest okręgiem
+lub wierzchołkiem, a przecięcie płaszczyzną zawierającą oś $Z$ jest sumą dwóch półprostych wychodzących z wierzchołka.
+
+\begin{center}
+\includegraphics[scale=0.6]{stozek_wlzm_2.png}
+\end{center}
+
+Sposób rysowania takich powierzchni opiera się na spotstrzeżeniu, że dla $x = 0$ i $y \geq 0$ mamy $ r = \sqrt{y^2} = y \geq 0 $.
+Zatem rysujemy w płaszczyźnie $YZ$ wykres odpowiedniej krzywej dla $y \geq 0$, a następnie obracamy go wokół osi $Z$. Tworzy to
+żądaną powierzchnię obrotową. \\
+
+Poprzedni przykład raz jeszcze: $ z = a\sqrt{x^2 + y^2}, \ a > 0 $.
+
+Tutaj dla $ r = \sqrt{x^2 + y^2} \geq 0 $ mamy $z =ar$. Zatem biorąc $ r = y \geq 0 $ w płaszczyźnie $YZ$ dostajemy wykres
+funkcji liniowej $ z = f(0, y) = ay, \ y \geq 0 $. Jest to półprosta
+
+\begin{center}
+\includegraphics[scale=0.6]{stozek_wlzm_3.png}
+\end{center}
+
+Rozszerzanie powyższego przypadku -- powierzchnia obrotowa wokół osi równoległej do osi $Z$.
+
+Jeżeli dla pewnych $x_0, y_0 \in \mathbb{R}$ podstawienie $ r = \sqrt{(x - x_0)^2 + (y - y_0)^2} $ usuwa wszystkie $x$ i $y$ i prowadzi
+do równania zależnego tylko od $z$ oraz $r$ to dana powierzchnia jest powierzchnią obrotową wokół prostej
+$ L : x = x_0, \ y = y_0, \ z\in \mathbb{R} $.
+
+Jest to zatem przypadek powierczhni opisanej poprzednio (czyli dla $x_0 = y_0 = 0$) ale przesunięty następnie o wektor $ \vec{v} = [x_0, y_0, 0] $. \\
+
+\textbf{Przykład}
+
+Powierzchnia dana równaniem $ z = (x+2)^2 + (y-1)^2 $
+Tutaj mamy $ x_0 = -2 $ oraz $ y_0 = 1 $ i podstawienie $ r = \sqrt{(x+2)^2 + (y-1)^2} $ daje równanie $ z = r^2, \ r \geq 0 $.
+Zatem biorąc $ r = y \geq 0 $ w płaszczyźnie $YZ$ dostajemy wykres funkcji $ z = f(0, y) = y^2, \ y \geq 0 $. Jest to prawa gałąź
+paraboli.
+
+Obracając ją następnie wokół osi $Z$ dostajemy powierzchnię zwaną paraboloidą.
+
+\includegraphics[scale=0.6]{paraboloida.png}
+
+Na koniec przesuwamy powyższą powierzchnię o wektor $ \vec{v} = [x_0, y_0, 0] = [-2, 1, 0] $ i to daje naszą powierzchnię.
+
+\subsection*{Inny typ powierzchni -- tzw. powierzchnie walcowe}
+\addcontentsline{toc}{subsection}{Powierzchnie walcowe}
+
+Powierzchnia jest nazywana powierzchnią walcową równoległą do osi $Z$ jeżeli z faktu, że punkt $ (x_0,y_0,z_0) $
+należy do powierzchni wynika, że dla dowolnego $z$ każdy punkt postaci $(x_0, y_0, z_0)$ też należy do tej powierzchni.
+
+To oznacza, że jeżeli taka powierzchnia jest dana przez pewne wyrażenie to równanie to \textbf{nie zawiera} zmiennej $z$.
+
+Geometrycznie -- niepuste przecięcie powierzchni z dowolną płaszczyzną równoległą do osi $Z$ daje krzywą o tym samym kształcie.
+
+Stąd sposób tworzenia wykresów takich powierzchni -- rysujemy w płaszczyźnie $XY$ (czyli dla $z=0$) krzywą zadaną wyjściową relacją,
+a potem wykres tej krzywej przesuwamy wzdłuż osi $Z$ i to generuje daną powierzchnię. \\ 
+
+Dwa pozostałe przypadki są analogiczne:
+
+\begin{itemize}
+    \item gdy relacja definiująca powierzchnię nie zawiera $x$ to rysujemy odpowiednią krzywą w płaszczyźnie $YZ$
+    , a potem jej wykres przesuwamy wzdłuż osi $X$,
+    \item gdy relacja definiująca powierzchnię nie zawiera $y$ to rysujemy odpowiednią krzywą w płaszczyźnie $XZ$,
+    a potem jej wykres przesuwamy wzdłuż osi $Y$.
+\end{itemize}
+
+Stąd prosta reguła -- odpowiednią krzywą przesuwamy zawsze wzdłuż tej osi, która odpowiada zmiennej \textbf{nieobecnej} w równaniu. \\
+
+\textbf{Przykład}
+
+Powierzchnia o równaniu $ x^2 + y^2 = 1 $.
+
+Nie występuje $z$, a więc jest to powierzchnia walcowa równoległa do osi $Z$.
+
+Wyznaczamy krzywą daną powyższą relacją w płaszczyźnie $XY$ -- jest to okrąg o środku w układzie współrzędnych i promieniu równym $1$.
+
+Po przesunięciu tego okręgu wzdłuż osi $Z$ zostaje wygenerowana powierzchnia -- jest to powierzchnia boczna walca o nieskończonej długości.
+Stąd bierze się nazwa tego typu krzywych.
+
+\begin{center}
+\includegraphics[scale=0.6]{walec.png}
+\end{center}
+
+\textbf{Definicja}
+
+Poziomica funkcji $ z = f(x,y) $ na wysokości $h$ to zbiór
+$$ D_h = \{ (x,y): f(x,y) = h \} $$
+Jest to rzut na płasczyznę $XY$ zbioru -- najczęściej krzywej -- będącego przekrojem wykresu $f$ płaszczyzną o równaniu $z = h$. \\
+
+\textbf{Interpretacja geograficzna}
+
+Jeśli płaszczyzna $XY$ jest "mapą" i wyznacza "poziom morza", $z$ -- wysokością nad "poziomem morza", a wykres $f$ jest "rzeźbą terenu"
+to poziomica jest krzywą na "mapie" która łączy punkty odpowiadające tej samej "wysokości" $h$.
+
+Na podstawie zagęszczenia poziomic dla odpowiednio dobranych $h$ możemy przewidzieć kształt wykresu $f$ -- czy jest stromy czy płaski.
+
+
+\subsection*{Pochodne cząstkowe pierwszego rzędu funkcji wielu zmiennych}
+\addcontentsline{toc}{subsection}{Pochodne cząstkowe pierwszego rzędu funkcji wielu zmiennych}
+
+Są to pochodne danej funkcji liczone względem jednej zmiennej, a pozostałe zmienne są stałe i przyjmują rolę parametrów.
+
+Oznaczenie dla $ f = f(x,y) $:
+
+$$ \dpartial{f}{x} \ \textrm{lub} \ f_x \ \textrm{-- pochodna po} \ x $$
+$$ \dpartial{f}{y} \ \textrm{lub} \ f_y \ \textrm{-- pochodna po} \ y $$
+
+Formalna definicja: 
+$$ \dpartial{f}{x} (x_0,y_0) = \lim_{h \to 0} \frac{f(x_0 + h, y_0) - f(x_0, y_0)}{h} $$
+
+$$ \dpartial{f}{y} (x_0,y_0) = \lim_{h \to 0} \frac{f(x_0, y_0 + h) - f(x_0, y_0)}{h} $$
+
+Dla funkcji $n$ zmiennych $ f = f(x_1, x_2, ..., x_n) $:
+$$ \dpartial{f}{x_i} (x_1, x_2, ..., x_n) = \lim_{h \to 0} \frac{f(x_1, x_2, ..., x_{i - 1}, 
+\textcolor{blue}{x_i + h}, x_{i + 1}, ..., x_n) - f(x_1, x_2, ..., \textcolor{blue}{x_i}, ..., x_n)}{h} $$ \\
+
+
+\subsection*{Interpretacja geometryczna dla funkcji 2 zmiennych}
+\addcontentsline{toc}{subsection}{Interpretacja geometryczna dla funkcji 2 zmiennych}
+
+Wykres każdej funkcji $f$ dwóch zmiennych można przeciąć płaszczyzną równoległą do osi $Z$. Powstaje wtedy pewna krzywa, któraj jest częścią wspólną wykresu $f$
+oraz płaszczyzny. Jest to szczególny przypadek tzw. funkcji \underline{warunkowej} o której wkrótce powiemy więcej. \\
+
+Gdy taka krzywa jest regularna to możemy liczyć dla niej pochodną.
+
+Gdy płaszczyzna przekroju przechodzi przez punkt $ P=(x_0, y_0, f(x_0, y_0)) $ to pochodna tej krzywej jest równa
+
+\begin{itemize}
+    \item $ \dpartial{f}{x} (x_0, y_0) $, gdy płaszczyzna jest $\parallel XZ $,
+    \item $ \dpartial{f}{y} (x_0, y_0) $, gdy płaszczyzna jest $\parallel YZ $. 
+\end{itemize}
+
+\begin{center}
+\includegraphics[scale=0.4]{interpretacja_geom.png}
+\end{center}
+
+\textbf{Sposób wyznaczania pochodnych cząstkowych w praktyce}
+
+Ponieważ tylko jedna zmienna jest w użyciu, a pozostałe stają się parametrami to korzystamy z reguł różniczkowania
+funkcji $1$ zmiennej.
+
+Pamiętać należy, że dla wybranej zmiennej dowolne wyrażenie z każdą inną zmienną \textbf{staje się stałą} i jej pochodna
+po wybranej zmiennej jest \textbf{równa 0}.
+
+Czyli np.
+$$ \dpartial{}{y} (4x^2 + 3 \sin x + 5) = 0, \quad \dpartial{}{x} (ye^{z + 2y}) = 0 \quad \textrm{itd.} $$ \\
+
+\textbf{Przykład}
+
+$$ f(x,y) = x \sin (xy^3) $$
+Wtedy różniczkując po $x$ mamy pochodną iloczynu:
+$$ \dpartial{f}{x} = f_x = ((x)_x \cdot \sin(xy^3))_y = x \cdot (\sin(xy^3))_y = x \cdot \cos(xy^3) \cdot 3y^2 x$$ \\
+
+
+\subsection*{Pochodne drugiego rzędu}
+\addcontentsline{toc}{subsection}{Pochodne drugiego rzędu}
+
+Mając pochodne $1$ rzędu definiujemy pochodne drugiego rzędu jako pochodne pierwszego rzędu z pochodnych pierwszego rzędu.
+W szczególności, dla $ f = f(x,y) $ mamy $4$ pochodne drugiego rzędu. \\
+
+Pochodne \underline{jednorodne} po danej zmiennej:
+\begin{itemize}
+    \item $ \frac{\partial^2 f}{\partial x^2} = \dpartial{}{x} \left( \dpartial{f}{x} \right) $ -- dwukrotne różniczkowanie $f$ po $x$,
+    \item $ \frac{\partial^2 f}{\partial y^2} = \dpartial{}{y} \left( \dpartial{f}{y} \right) $ -- dwukrotne różniczkowanie $f$ po $y$,
+    \item $ \frac{\partial^2 f}{\partial y \partial x} = \dpartial{}{y} \left( \dpartial{f}{x} \right) $ -- różniczkowanie wpierw po $x$, potem po $y$,
+    \item $ \frac{\partial^2 f}{\partial x \partial y} = \dpartial{}{x} \left( \dpartial{f}{y} \right) $ -- różniczkowanie wpierw po $y$, potem po $x$, \\
+\end{itemize}
+
+Inne oznaczenia to $ f_{xx}, f_{yy}, f_{xy}, f_{yx} $, gdzie indeks dolny oznacza zmienne, po których kolejno różniczkujemy.
+
+W przypadku pochodnych mieszanych $ f_{xy}, f_{yx} $, trzeba ustalić kolejność różniczkowania.
+
+Przyjmujemy naturalną kolejność, wtedy mamy $ f_{xy} = (f_x)_y $ \ oraz \ $ f_{yx} = (f_y)_x $,
+
+co oznacza, że $ \frac{\partial^2 f}{\partial y \partial x} = f_{xy} $ \ i \ $ \frac{\partial^2 f}{\partial x \partial y} = f_{yx} $. \\
+
+Dla funkcji $n$ zmiennych $ f = f(x_1, x_2, ..., x_n) $:
+$$ \frac{\partial^2 f}{\partial x_j \partial x_i} = \dpartial{}{x_j} \left( \dpartial{f}{x_i} \right) = (f_{x_i})_{x_j} = f_{x_i x_j} $$ \\
+
+\textbf{Przykład}
+
+$$ f(x,y) = \frac{2^y}{x+1} $$
+
+$$ \textrm{Tutaj} \quad  f_x = -\frac{2^y}{(x+1)^2}, \ f_y = \frac{2^y \ln 2}{x+1} \quad \textrm{oraz} $$
+
+$$ f_{xx} = (f_x)_x = \left( - \frac{2^y}{(x+1)^2} \right)_x = -2^y \left( \frac{1}{(x+1)^2} \right)_x = 2^y \cdot \frac{2}{(x+1)^3} $$
+
+$$ f_{yy} = (f_y)_y = \left( \frac{2^y \ln 2}{x+1} \right)_y = \frac{\ln2}{x+1} \cdot (2^y)_y = \frac{2^y \cdot (\ln2)^2}{x+1} $$
+
+$$ f_{xy} = (f_x)_y = \left( - \frac{2^y}{(x+1)^2} \right)_y = \left( \frac{-1}{(x+1)^2} \right) \cdot (2^y)_y = - \frac{2^y \ln2}{(x+1)^2} $$
+
+$$ f_{yx} = (f_y)_x = \left( \frac{2^y \ln2}{x+1} \right)_x = 2^y \ln2 \left( \frac{1}{x+1} \right)_x = 2^y \ln2 \left( \frac{-1}{(x+1)^2} \right) = - \frac{2^y \ln2}{(x+1)^2} $$ \\
+
+Otrzymaliśmy $ f_{xy} = f_{yx} $.
+
+Jest to szczególny przypadek znanego twierdzenia. \\
+
+\textbf{Twierdzenie Schwarza o pochodnych mieszanych}
+
+Gdy pochodne mieszane drugiego rzędu są funkcjami ciągłymi w danym punkcie to są w tym punkcie równe.
+
+W praktyce dla funkcji regularnych warunek ciągłości drugiego rzędu występuje zawsze na całych dziedzinach
+stąd prawie zawsze zobaczymy równość wzorów pochodnych mieszanych.

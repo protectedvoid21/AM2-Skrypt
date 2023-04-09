@@ -1,4 +1,4 @@
-\contentsline {section}{\numberline {1}Całki niewłaściwe I rodzaju}{1}{section.1}%
+\contentsline {section}{\numberline {1}Całki niewłaściwe I rodzaju}{2}{section.1}%
 \contentsline {subsection}{Twierdzenie(kryterium porównawcze)}{4}{section*.4}%
 \contentsline {subsection}{Twierdzenie(kryterium ilorazowe)}{6}{section*.5}%
 \contentsline {subsection}{Wartość główna całki niewłaściwej I rodzaju}{7}{section*.6}%
@@ -19,3 +19,8 @@
 \contentsline {subsection}{Zbieżność szeregów potęgowych}{29}{section*.18}%
 \contentsline {subsection}{Wyznaczanie promienia zbieżności i przedziału zbieżności}{29}{section*.19}%
 \contentsline {subsection}{Własności szeregów potęgowych}{32}{section*.20}%
+\contentsline {section}{\numberline {5}Funkcje wielu zmiennych}{39}{section.5}%
+\contentsline {subsection}{Powierzchnie walcowe}{43}{section*.21}%
+\contentsline {subsection}{Pochodne cząstkowe pierwszego rzędu funkcji wielu zmiennych}{44}{section*.22}%
+\contentsline {subsection}{Interpretacja geometryczna dla funkcji 2 zmiennych}{45}{section*.23}%
+\contentsline {subsection}{Pochodne drugiego rzędu}{46}{section*.24}%
