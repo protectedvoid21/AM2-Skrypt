@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2022.10.30)  9 APR 2023 12:23
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2022.10.30)  9 APR 2023 12:37
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1039,11 +1039,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 350--352
 
  []
 
-
-Overfull \hbox (8.61867pt too wide) in paragraph at lines 361--363
-[]\OT4/cmr/m/n/12 Rozwi¡zanie [][][][][][] "gra-ni-ca ilo-ra-zu jest licz-b¡ do-dat-ni¡ wi¦c oba [][][][][][]
- []
-
 [19]
 Underfull \hbox (badness 10000) in paragraph at lines 379--380
 
@@ -1064,12 +1059,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 400--401
 
  []
 
-[20]
+
 Underfull \hbox (badness 10000) in paragraph at lines 412--413
 
  []
 
-
+[20]
 Underfull \hbox (badness 10000) in paragraph at lines 416--417
 
  []
@@ -1185,8 +1180,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 667--670
  []
 
 
-Underfull \hbox (badness 4328) in paragraph at lines 678--680
-[]\OT4/cmr/m/n/12 GAME OVER...  Ta-kie "roz-wi¡-za-nie" jest jak [][][][][][] --- nie mu-si mie¢
+Underfull \hbox (badness 2735) in paragraph at lines 678--680
+[]\OT4/cmr/m/n/12 GAME OVER...  Ta-kie "roz-wi¡-za-nie" jest jak \OT4/cmr/bx/n/12 pi-sa-nie ba-jek \OT4/cmr/m/n/12 --- nie mu-si mie¢
  []
 
 
@@ -1404,15 +1399,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 106--107
 <paraboloida.png, id=376, 639.5895pt x 377.61075pt>
 File: paraboloida.png Graphic file (type png)
 <use paraboloida.png>
-Package pdftex.def Info: paraboloida.png  used on input line 117.
+Package pdftex.def Info: paraboloida.png  used on input line 118.
 (pdftex.def)             Requested size: 383.75665pt x 226.56819pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 131--133
+Underfull \hbox (badness 10000) in paragraph at lines 133--135
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 143--144
+Underfull \hbox (badness 10000) in paragraph at lines 145--146
 
  []
 
@@ -1420,65 +1415,65 @@ Underfull \hbox (badness 10000) in paragraph at lines 143--144
 <walec.png, id=383, 408.3255pt x 353.52075pt>
 File: walec.png Graphic file (type png)
 <use walec.png>
-Package pdftex.def Info: walec.png  used on input line 157.
+Package pdftex.def Info: walec.png  used on input line 159.
 (pdftex.def)             Requested size: 244.99718pt x 212.11407pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 163--165
+Underfull \hbox (badness 10000) in paragraph at lines 165--167
 
  []
 
 [44 <./walec.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 191--192
+Underfull \hbox (badness 10000) in paragraph at lines 193--194
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 197--199
+Underfull \hbox (badness 10000) in paragraph at lines 199--201
 
  []
 
 <interpretacja_geom.png, id=389, 850.67813pt x 602.25pt>
 File: interpretacja_geom.png Graphic file (type png)
 <use interpretacja_geom.png>
-Package pdftex.def Info: interpretacja_geom.png  used on input line 210.
+Package pdftex.def Info: interpretacja_geom.png  used on input line 212.
 (pdftex.def)             Requested size: 340.26523pt x 240.89572pt.
-[45 <./interpretacja_geom.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 222--223
+[45]
+Underfull \hbox (badness 10000) in paragraph at lines 224--225
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 228--229
+Underfull \hbox (badness 10000) in paragraph at lines 230--231
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 234--236
+Underfull \hbox (badness 10000) in paragraph at lines 236--238
+
+ []
+
+[46 <./interpretacja_geom.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 244--245
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 242--243
+Underfull \hbox (badness 10000) in paragraph at lines 253--254
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 251--252
+Underfull \hbox (badness 10000) in paragraph at lines 256--257
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 254--255
-
- []
-
-[46]
-Underfull \hbox (badness 10000) in paragraph at lines 268--269
+Underfull \hbox (badness 10000) in paragraph at lines 270--271
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 272--273
+Underfull \hbox (badness 10000) in paragraph at lines 274--275
 
  []
 
@@ -1493,9 +1488,9 @@ Here is how much of TeX's memory you used:
  36181 multiletter control sequences out of 15000+600000
  482030 words of font info for 66 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 72i,14n,85p,484b,537s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ 72i,14n,85p,484b,533s stack positions out of 10000i,1000n,20000p,200000b,80000s
 {C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/pl/plmi.enc}{C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/pl/plms.enc}{C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/pl/plrm.enc} <C:\Users\niezn\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk>{C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/pl/plme.enc}<C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plbx12.pfb><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plex10.pfb><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plmi12.pfb><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plmi6.pfb><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plmi8.pfb><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plr12.pfb><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plr17.pfb><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plr6.pfb><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plr8.pfb><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plsy10.pfb><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plsy6.pfb><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plsy8.pfb>
-Output written on Wyklad.pdf (47 pages, 1410151 bytes).
+Output written on Wyklad.pdf (47 pages, 1409483 bytes).
 PDF statistics:
  493 PDF objects out of 1000 (max. 8388607)
  118 named destinations out of 1000 (max. 500000)
