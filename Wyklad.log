@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2022.10.30)  9 APR 2023 12:37
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2022.10.30)  15 APR 2023 11:42
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -561,26 +561,26 @@ Package: inputenc 2021/02/14 v1.3d Input encoding file
 ) (Wyklad.aux)
 \openout1 = `Wyklad.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for OT4/cmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OT4/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -641,7 +641,7 @@ Package grfext Info: Graphics extension search list:
  (C:\Users\niezn\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-Package hyperref Info: Link coloring OFF on input line 26.
+Package hyperref Info: Link coloring OFF on input line 27.
  (Wyklad.out) (Wyklad.out)
 \@outlinefile=\write3
 \openout3 = `Wyklad.out'.
@@ -651,29 +651,29 @@ Package: ninecolors 2022-02-13 vv2022D Select colors with proper color contrast
  (C:\Users\niezn\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/xparse\xparse.sty
 Package: xparse 2022-06-22 L3 Experimental document command parser
 ))
-LaTeX Font Info:    Trying to load font information for OML+plm on input line 28.
+LaTeX Font Info:    Trying to load font information for OML+plm on input line 29.
  (C:\Users\niezn\AppData\Local\Programs\MiKTeX\tex/latex/polski\omlplm.fd
 File: omlplm.fd 2008/02/24 v1.2.1 Font defs for fonts PL (MW)
 )
-LaTeX Font Info:    Trying to load font information for OMS+plsy on input line 28.
+LaTeX Font Info:    Trying to load font information for OMS+plsy on input line 29.
  (C:\Users\niezn\AppData\Local\Programs\MiKTeX\tex/latex/polski\omsplsy.fd
 File: omsplsy.fd 2008/02/24 v1.2.1 Font defs for fonts PL (MW)
 )
-LaTeX Font Info:    Trying to load font information for OMX+plex on input line 28.
+LaTeX Font Info:    Trying to load font information for OMX+plex on input line 29.
  (C:\Users\niezn\AppData\Local\Programs\MiKTeX\tex/latex/polski\omxplex.fd
 File: omxplex.fd 2008/02/24 v1.2.1 Font defs for fonts PL (MW)
 )
 LaTeX Font Info:    External font `plex10' loaded for size
-(Font)              <14.4> on input line 28.
+(Font)              <14.4> on input line 29.
 LaTeX Font Info:    External font `plex10' loaded for size
-(Font)              <10> on input line 28.
+(Font)              <10> on input line 29.
 LaTeX Font Info:    External font `plex10' loaded for size
-(Font)              <7> on input line 28.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 28.
+(Font)              <7> on input line 29.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 29.
  (C:\Users\niezn\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 28.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 29.
  (C:\Users\niezn\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) (Wyklad.toc
@@ -869,7 +869,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 113--114
 
  []
 
-<rozbiezneirozbiezne.png, id=204, 602.25pt x 353.06906pt>
+<rozbiezneirozbiezne.png, id=224, 602.25pt x 353.06906pt>
 File: rozbiezneirozbiezne.png Graphic file (type png)
 <use rozbiezneirozbiezne.png>
 Package pdftex.def Info: rozbiezneirozbiezne.png  used on input line 121.
@@ -1135,6 +1135,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 595--596
  []
 
 
+Overfull \hbox (4.33705pt too wide) in paragraph at lines 607--609
+[]\OT4/cmr/m/n/12 Twierdzenie od-wrot-ne nie jest praw-dzi-we. S¡ sze-re-gi zbie»-ne ale nie bez-wzgl¦d-nie, np. $[] []$.
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 607--609
 
  []
@@ -1350,12 +1355,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 16--17
  []
 
 [39]
-<wykres_wieluzm1.png, id=357, 346.896pt x 305.943pt>
+<wykres_wieluzm1.png, id=377, 346.896pt x 305.943pt>
 File: wykres_wieluzm1.png Graphic file (type png)
 <use wykres_wieluzm1.png>
 Package pdftex.def Info: wykres_wieluzm1.png  used on input line 35.
 (pdftex.def)             Requested size: 208.13919pt x 183.5672pt.
-<stozek_wlzm.png, id=358, 755.07094pt x 534.49687pt>
+<stozek_wlzm.png, id=378, 755.07094pt x 534.49687pt>
 File: stozek_wlzm.png Graphic file (type png)
 <use stozek_wlzm.png>
 Package pdftex.def Info: stozek_wlzm.png  used on input line 57.
@@ -1375,7 +1380,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 77--78
 
  []
 
-<stozek_wlzm_2.png, id=364, 384.2355pt x 333.04425pt>
+<stozek_wlzm_2.png, id=384, 384.2355pt x 333.04425pt>
 File: stozek_wlzm_2.png Graphic file (type png)
 <use stozek_wlzm_2.png>
 Package pdftex.def Info: stozek_wlzm_2.png  used on input line 84.
@@ -1385,7 +1390,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 87--90
 
  []
 
-<stozek_wlzm_3.png, id=369, 424.58624pt x 341.47575pt>
+<stozek_wlzm_3.png, id=389, 424.58624pt x 341.47575pt>
 File: stozek_wlzm_3.png Graphic file (type png)
 <use stozek_wlzm_3.png>
 Package pdftex.def Info: stozek_wlzm_3.png  used on input line 97.
@@ -1396,7 +1401,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 106--107
  []
 
 [42 <./stozek_wlzm_2.png> <./stozek_wlzm_3.png>]
-<paraboloida.png, id=376, 639.5895pt x 377.61075pt>
+<paraboloida.png, id=396, 639.5895pt x 377.61075pt>
 File: paraboloida.png Graphic file (type png)
 <use paraboloida.png>
 Package pdftex.def Info: paraboloida.png  used on input line 118.
@@ -1412,7 +1417,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 145--146
  []
 
 [43 <./paraboloida.png>]
-<walec.png, id=383, 408.3255pt x 353.52075pt>
+<walec.png, id=403, 408.3255pt x 353.52075pt>
 File: walec.png Graphic file (type png)
 <use walec.png>
 Package pdftex.def Info: walec.png  used on input line 159.
@@ -1432,7 +1437,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 199--201
 
  []
 
-<interpretacja_geom.png, id=389, 850.67813pt x 602.25pt>
+<interpretacja_geom.png, id=409, 850.67813pt x 602.25pt>
 File: interpretacja_geom.png Graphic file (type png)
 <use interpretacja_geom.png>
 Package pdftex.def Info: interpretacja_geom.png  used on input line 212.
@@ -1477,22 +1482,136 @@ Underfull \hbox (badness 10000) in paragraph at lines 274--275
 
  []
 
-) [47] (Wyklad.aux)
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 285.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 285.
+
+[47]
+Underfull \hbox (badness 10000) in paragraph at lines 304--305
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 306--307
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 313--314
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 323--324
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 334--335
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 336--337
+
+ []
+
+[48]
+Underfull \hbox (badness 10000) in paragraph at lines 340--342
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 379--380
+
+ []
+
+[49]
+Underfull \hbox (badness 10000) in paragraph at lines 391--392
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 400--401
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 417--418
+
+ []
+
+[50]
+Underfull \hbox (badness 10000) in paragraph at lines 429--431
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 441--442
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 443--444
+
+ []
+
+[51]
+Underfull \hbox (badness 10000) in paragraph at lines 491--492
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 493--494
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 496--498
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 501--502
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 514--515
+
+ []
+
+[52]
+Underfull \hbox (badness 10000) in paragraph at lines 533--534
+
+ []
+
+
+Package amsmath Warning: Bracket group [flalign] at formula start!
+(amsmath)                It could be a misspelled positional argument.
+(amsmath)                If it belongs to the formula add a \relax in
+(amsmath)                front to hide it on input line 557.
+
+) [53] (Wyklad.aux)
 Package rerunfilecheck Info: File `Wyklad.out' has not changed.
-(rerunfilecheck)             Checksum: 5EA6076E5508D7739C8275D40FF5599D;5913.
+(rerunfilecheck)             Checksum: 75486621B9FE5810E682933CB85C44A9;7074.
  ) 
 Here is how much of TeX's memory you used:
- 15171 strings out of 475385
- 261306 string characters out of 2776906
- 622456 words of memory out of 3000000
- 36181 multiletter control sequences out of 15000+600000
+ 15192 strings out of 475385
+ 261498 string characters out of 2776906
+ 624466 words of memory out of 3000000
+ 36187 multiletter control sequences out of 15000+600000
  482030 words of font info for 66 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  72i,14n,85p,484b,533s stack positions out of 10000i,1000n,20000p,200000b,80000s
-{C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/pl/plmi.enc}{C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/pl/plms.enc}{C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/pl/plrm.enc} <C:\Users\niezn\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk>{C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/pl/plme.enc}<C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plbx12.pfb><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plex10.pfb><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plmi12.pfb><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plmi6.pfb><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plmi8.pfb><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plr12.pfb><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plr17.pfb><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plr6.pfb><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plr8.pfb><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plsy10.pfb><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plsy6.pfb><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plsy8.pfb>
-Output written on Wyklad.pdf (47 pages, 1409483 bytes).
+{C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/pl/plmi.enc}{C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/pl/plms.enc}{C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/pl/plrm.enc} <C:\Users\niezn\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk>{C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/pl/plme.enc}<C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plbx12.pfb><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plex10.pfb><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plmi10.pfb><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plmi12.pfb><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plmi6.pfb><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plmi8.pfb><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plr12.pfb><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plr17.pfb><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plr6.pfb><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plr8.pfb><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plsy10.pfb><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plsy6.pfb><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plsy8.pfb>
+Output written on Wyklad.pdf (53 pages, 1437894 bytes).
 PDF statistics:
- 493 PDF objects out of 1000 (max. 8388607)
- 118 named destinations out of 1000 (max. 500000)
- 249 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 551 PDF objects out of 1000 (max. 8388607)
+ 133 named destinations out of 1000 (max. 500000)
+ 281 words of extra memory for PDF output out of 10000 (max. 10000000)
 

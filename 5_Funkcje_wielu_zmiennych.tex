@@ -279,3 +279,280 @@ Gdy pochodne mieszane drugiego rzędu są funkcjami ciągłymi w danym punkcie t
 
 W praktyce dla funkcji regularnych warunek ciągłości drugiego rzędu występuje zawsze na całych dziedzinach
 stąd prawie zawsze zobaczymy równość wzorów pochodnych mieszanych.
+
+
+\subsection*{Zbieżność w $\mathbb{R}^k$ i granice funkcji wielu zmiennych}
+\addcontentsline{toc}{subsection}{Zbieżność w $R^k$  i granice funkcji wielu zmiennych}
+
+Rozpatrujemy ciąg wielu punktów $ P_n = (x_n, y_n) \in \mathbb{R}^2 $.
+
+Równoważnie możemy myśleć o wektorach $ \vec{v} \in \mathbb{R}^2 $ biorąc wektory pozycyjne punktów $P_n$ czyli $\vec{v} = \vec{OP}_n$.
+
+Niech teraz $ P_0 = (x_0, y_0) \in \mathbb{R}^2 $. Mówimy, że $ P_n \to P_0 $, gdy odległość między $P_n$ i $P_0$ zbiega $0$.
+
+Formalnie
+$$ \limn P_n = P_0 \ \Leftrightarrow \ \limn |\overrightarrow{P_0 P_n}| = 0
+\ \Leftrightarrow \ \limn \sqrt{(x_n - x_0)^2 + (y_n - y_0)^2} = 0 $$
+
+Podobnie, gdy
+$$ P_n = (x_n, y_n, z_n) \in \mathbb{R}^3 \quad \textrm{i} \quad P_0 = (x_0, y_0, z_0) \in \mathbb{R}^3 $$
+
+To definiujemy
+$$ \limn P_n = P_0 \ \Leftrightarrow \ \limn |\overrightarrow{P_0 P_n}| = 0
+\ \Leftrightarrow \ \limn \sqrt{(x_n - x_0)^2 + (y_n - y_0)^2 + (z_n - z_0)^2} = 0 $$
+
+Analogicznie rozszerzamy tę definicję na przypadek $k$ -- wymiarowy. \\
+
+Poniższe twierdzenie pokazuje, że zbieżność $ P_n \to P_0 $ może być zdefiniowana w równoważny sposób. \\
+
+\textbf{Twierdzenie(zbieżność po współrzędnych)}
+
+Gdy
+$$ P_n = (x_n, y_n) \in \mathbb{R}^2 \quad \textrm{i} \quad P_0 = (x_0, y_0) \in \mathbb{R}^2 $$
+to mamy równoważność
+$$ \limn P_n = P_0 \ \Leftrightarrow \ \limn x_n = x_0 \ \land \ \limn y_n = y_0 $$ \\
+
+Dowód 
+
+Implikacja $ \Leftarrow $ wynika bezpośrednio z arytmetyki granic :
+
+Jeżeli $ \limn x_n = x_0 \ \land \ \limn y_n = y_0 $ to
+$$ \limn |\overrightarrow{P_0 P_n}| = \limn \sqrt{(x_n - x_0)^2 + (y_n - y_0)^2} = \sqrt{(x_n - x_0)^2 + (y_n - y_0)^2} = 0 $$
+
+Zatem
+$$ \limn P_n = P_0 $$ \\
+
+Implikacja $ \Rightarrow $ wynika z kolei z twierdzenia o 3 funkcjach. 
+
+Mamy bowiem
+$$ 0 \leq |x_n - x_0| = \sqrt{(x_n - x_0)^2} \leq \sqrt{(x_n - x_0)^2 + (y_n - y_0)^2} = |\overrightarrow{P_0 P_n}| $$
+
+Teraz, gdy $ \limn P_n = P_0 \quad \textrm{to} \quad \limn |\overrightarrow{P_0 P_n}| = 0 $
+i z twierdzenia o 3 ciągach dostajemy $ \limn |x_n - x_0| = 0 $ a to daje
+$ \limn (x_n - x_0) = 0 \ \Leftrightarrow \ \limn x_n = x_0 $
+
+Analogicznie otrzymujemy $ \limn y_n = y_0 $ \\
+
+Jak łatwo zauważyć, twierdzenie ma analogiczną postać w przypadku wyższych wymiarów. \\
+
+\textbf{Definicja granicy funkcji dwóch zmiennych w punkcie}
+
+$ \lim_{(x,y) \to (x_0,y_0)} f(x,y) = L \ \Leftrightarrow $ dla dowolnych ciągów punktów $ (x_n, y_n) \neq (x_0, y_0) $
+i takich, że $ \limn (x_n, y_n) = (x_0, y_0) $ zachodzi równość $ \limn f(x_n, y_n) = L $. \\
+
+Definicja jest analogiczna w przypadku funkcji większej ilości zmiennych.
+
+Równoważny zapis tej granicy, zgodny ze znaczeniem twierdzenia o zbieżności po współrzędnych to
+$$ \lim_{\substack{x \to x_0 \\ y \to y_0}} f(x,y) = L $$
+
+Twierdzenie o granicach znane dla funkcji jednej zmiennej (arytmetyka granic, symbole nieoznaczone itd.) pozostają prawdziwe.
+
+Główny problem -- nie da się bezpośrednio zastosować niektórych popularnych technik, np. reguły de l'Hospitala.
+
+\subsection*{Popularne techniki liczenia granic funkcji wielu zmiennych}
+\addcontentsline{toc}{subsection}{Popularne techniki liczenia granic funkcji wielu zmiennych}
+
+\begin{enumerate}
+    \item Twierdzenie o 3 funkcjach. Jeżeli dla wszystkich punktów $ P \in \mathbb{R}^k $ z pewnego sąsiedztwa punktu
+    $ P_0 \in \mathbb{R}^k $ zachodzi nierówność 
+    $$ d(P) \leq f(P) \leq g(P) \quad \textrm{i} \quad \lim_{P \to P_0} d(P) = \lim_{P \to P_0} g(P) = L \quad \textrm{to} \quad \lim_{P \to P_0} f(P) = L $$
+
+    \item Sprowadzenie granicy do przypadku jednej zmiennej.
+    
+    Jeżeli istnieje nowa zmienna $ t = t(P) $ takie, że $ f(P) = g(t) $ oraz 
+    $ \lim_{P \to P_0} t = t_0 $ \ i \linebreak \ $ \lim_{t \to t_0} g(t) = L $ \ to \ $ \lim_{P \to P_0} f(P) = L $ 
+
+    \item \textbf{COŚ O BRAKU GRANICY XD}
+    $ \lim_{P \to P_0} f(P) $ nie istnieje
+\end{enumerate}
+
+Przypadek 3 jest szczególnie częsty, gdy pojawia się symbol nieoznaczony.
+
+W przypadku funkcji dwóch zmiennych najczęściej wybiera się ciągi punktów $P_n$ i $Q_n$ z dwóch różnych krzywych.
+
+$P$ jest wtedy z wykresu jakiejś krzywej: $ y=g(x)$ \ lub \ $x=g(y)$.
+
+$Q$ jest z wykresu innej krzywej: $y=h(x)$ \ lub \ $x=h(y)$.
+
+Obie krzywe muszą spotykać się w punkcie granicznym $P_0$.
+
+Wtedy granice \ $ \lim_{P \to P_0} f(P) $ \quad i \quad $ \lim_{Q \to P_0} f(Q) $ \ stają się granicami funkcji jednej zmiennej. \\
+
+\textbf{Przykłady}
+
+$$ \lim_{\substack{x \to 0 \\ y \to 0}} (x^2 + 4y^2) \cos \left( x - 5y + \frac{2}{x} \right) $$
+
+Wiemy, że \ $ x^2 + 4y^2 \geq 0 $ \ oraz \ $ -1 \leq \cos \left( x - 5y \frac{2}{x} \right) \leq 1 $, \ a stąd
+$$ -(x^2 + 4y^2) \leq (x^2 + 4y^2) \cos \left( x - 5y + \frac{2}{x} \right) \leq x^2 + 4y^2 $$
+
+Ponieważ 
+$$ \lim_{\substack{x \to 0 \\ y \to 0}} (x^2 + 4y^2) = 0 = \lim_{\substack{x \to 0 \\ y \to 0}} (-(x^2 + 4y^2)) $$
+z twiedzenia o 3 ciągach otrzymujemy
+$$ \lim_{\substack{x \to 0 \\ y \to 0}} (x^2 + 4y^2) \cos \left( x - 5y + \frac{2}{x} \right) = 0 $$ \\
+
+$$ \lim_{\substack{x \to 1 \\ y \to 1 \\ z \to 0}} \frac{2x - y + z - 1 - \ln(2x - y + z)}{(2x - y + z - 1)^2} $$
+
+Tutaj możemy podstawić $ t = 2x - y + z $. Wtedy $ \lim_{\substack{x \to 1 \\ y \to 1 \\ z \to 0}} t = 1 $
+
+i mamy
+
+$$ \lim_{\substack{x \to 1 \\ y \to 1 \\ z \to 0}} \frac{2x - y + z - 1 - \ln(2x - y + z)}{(2x - y + z - 1)^2}
+= \lim_{t \to 1} \frac{t - 1 - \ln t}{(t-1)^2} \left[ \frac{0}{0} \right] \stackrel{[H]}{=} \frac{1}{2}$$ \\
+
+$$ \lim_{\substack{x \to 0 \\ y \to 0}} \frac{\tan (x^2 - y^2)}{x - y} $$
+
+Tutaj znów jest granica typu $ \frac{0}{0} $. Po podstawieniu \ $ t = x^2 - y^2 $ \ mamy granicę podstawową
+$ \lim_{t \to 0} \frac{\tan t}{t} = 1 $.
+
+Stąd wniosek, że trzeba nasze wyrażenie rozbić na iloczyn: 
+$ \lim_{\substack{x \to 0 \\ y \to 0}} \frac{\tan (x^2 - y^2)}{x^2 - y^2} \cdot \frac{x^2 - y^2}{x - y} $
+
+Mamy wtedy
+$$ \lim_{\substack{x \to 0 \\ y \to 0}} \frac{\tan (x^2 - y^2)}{x^2 - y^2} = \lim_{t \to 0} \frac{\tan t}{t} = 1 $$
+Oraz
+$$ \lim_{\substack{x \to 0 \\ y \to 0}} \frac{x^2 - y^2}{x - y} = \lim_{\substack{x \to 0 \\ y \to 0}} \frac{(x - y)(x + y)}{x - y}
+= \lim_{\substack{x \to 0 \\ y \to 0}} (x + y) = 0 $$
+
+Stąd 
+$$ \lim_{\substack{x \to 0 \\ y \to 0}} \frac{\tan (x^2 - y^2)}{x - y} = 1 \cdot 0 = 0 $$ \\
+
+
+$$ \lim_{\substack{x \to 0 \\ y \to 0}} \frac{x}{y} $$
+
+Tutaj wykażemy brak granicy
+
+Rozpatrujemy 2 krzywe przechodzące przez $(0,0)$. Na przykład \ $ y = x $ \ oraz \ $ y = 2x $.
+
+Biorąc \ $ y = x $ \ mamy
+$$ \lim_{\substack{x \to 0 \\ y \to 0}} \frac{x}{y} = \lim_{x \to 0} \frac{x}{x} = 1 $$
+Natomiast dla \ $ y = 2x $ mamy
+$$ \lim_{\substack{x \to 0 \\ y \to 0}} \frac{x}{y} = \lim_{x \to 0} \frac{x}{2x} = \frac{1}{2} \neq 1 $$
+Zatem granica nie istnieje \\
+
+\subsection*{Ciągłość funkcji wielu zmiennych}
+\addcontentsline{toc}{subsection}{Ciągłość funkcji wielu zmiennych}
+
+Definicja jest analogiczna jak dla funkcji jednej zmiennej -- granica funkcji jest równa wartości.
+
+Formalnie,
+
+$f$ jest ciągła w punkcie $ P_0 \in D_f $, \ gdy \ $ \lim_{P \to P_0} f(P) = f(P_0) $,
+
+$f$ jest ciągła na zbiorze $ A \subset D_f $ jeżeli jest ciągła we wszystkich punktach z $A$. \\
+
+Twierdzenia dotyczące arytmetyki funkcji ciągłych są analogiczne jak w przypadku jednej zmiennej. \\
+
+\textbf{Przykład}
+
+Wyznaczyć zbiór punktów ciągłości funkcji
+
+$$ f(x,y) = \left\{ \begin{aligned} 2x + y + 1, & \ x \geq 0 \\ 2y + x, & \ x < 0 \end{aligned} \right. $$
+
+Tutaj rozpatrujemy dwa obszary -- dane warunkami $ x \geq 0 $ \ oraz \ $x < 0$.
+
+Brzegiem obu obszarów jest prosta $ x = 0 $ (oś $Y$).
+
+W punktach \ $ (x,y), \ x > 0 $, \ funkcja jest ciągła, bo jest równa elementarnej na zbiorze otwartym.
+
+Podobnie dla $ x < 0 $..
+
+Pozostaje zbadać ciągłość w punktach brzegowych czyli w $ P_0  = (0, y_0) $.
+
+Ze względu na warunek definiujący zbiór, dla takich punktów zbieżności trzeba rozpatrzeć 2 możliwe typy punktów
+$$ P = (x,y) \to P_0 \quad \textrm{dla} \quad x \geq 0 \ \textrm{oraz} \ x < 0 $$
+
+Dla \ $ x \geq 0 $ \ mamy
+$$ \lim_{\substack{x \to 0 \\ y \to y_0}} f(x,y) = \lim_{\substack{x \to 0 \\ y \to y_0}} (2x + y - 1) = y_0 - 1 $$
+
+Dla \ $ x < 0 $ \ mamy
+$$ \lim_{\substack{x \to 0 \\ y \to y_0}} f(x,y) = \lim_{\substack{x \to 0 \\ y \to y_0}} (2y + x) = 2y_0 $$
+
+Ponadto $ f(0,y_0) = y_0 - 1 $
+
+Stąd ciągłość w \ $ P_0 = (0,y_0) $ \ ma miejsce, gdy \ $ y_0 - 1 = 2y_0 $, \ a więc dla \ $ y_0 = -1$.
+
+Wtedy dla dowolnego ciągu punktów \ $ P = (x,y) \to (0, -1) $ \ mamy
+$$ \lim_{\substack{x \to 0 \\ y \to -1}} f(x,y) = f(0,-1) = -2 $$
+
+Zatem zbiorem punktów ciągłości $f$ jest zbiór
+$$ D = \{ (x,y) : x \neq 0 \} \cup \{ (0,-1) \} $$
+
+Interpretacja geometryczna wykresu -- składa się z dwóch osobnych ukośnych półpłaszczyzn, które spotykają
+się w punkcie $(0, -1) $.
+
+
+\subsection*{Ekstrema funkcji dwóch zmiennych}
+\addcontentsline{toc}{subsection}{Ekstrema funkcji dwóch zmiennych}
+
+\textbf{Definicja}
+
+$f$ ma w $ P = (x_0, y_0) \in D_f $ minimum lokalne gdy $ f(x_0, y_0) $ jest najmniejszą wartością $f$ na pewnym kole o środku w $P$.
+
+$f$ ma w $ P = (x_0, y_0) \in D_f $ minimum lokalne gdy $ f(x_0, y_0) $ jest największą wartością $f$ na pewnym kole o środku w $P$. \\
+
+Gdy ta wartość jest najmniejsza/największa na całej dziedzinie $f$ to mówimy o ekstremum (minimum, maksimum) \underline{globalnym}. \\
+
+Na przykład funkcja $ f(x,y) = x^4 + y^6 $ ma w $(0,0)$ minimum i jest ono globalne, bo
+$$ f(0,0) = 0 $$
+a dla dowolnego $ (x,y) \neq (0,0) $ mamy $ f(x,y) = x^4 + y^6 > 0 $. \\
+
+Wyznaczenie ekstremów z definicji rzadko kiedy się udaje, najczęściej szukamy ich z użyciem pochodnych cząstkowych.
+
+Daje się to robić dla funkcji regularnych: na badanym zbiorze \textbf{pochodne pierwszego i drugiego rzędu istnieją i są ciągłe}. \\
+
+\underline{Warunek konieczny istnienia ekstremum}: tzw. \underline{punkt stacjonarny} czyli
+
+$ P = (x_0, y_0) $ taki, że 
+
+$$ \left\{ \begin{aligned} f_x(x_0, y_0) = 0 \\ f_y(x_0, y_0) = 0  \end{aligned} \right. $$
+
+\textbf{To jeszcze nie wystarcza!} To tylko mówi, że płaszczyzna styczna (gdy istnieje) jest równoległa do płaszczyzny $XY$.
+
+\underline{Warunek dostateczny}. Liczymy w $P$ specjalny wyznacznik -- tzw. \underline{hesjan}.
+$$ W = H(P) = H(x_0, y_0) = \begin{vmatrix} f_{xx}(x_0, y_0), & f_{xy}(x_0, y_0) \\ f_{yx}(x_0, y_0) & f_{yy}(x_0, y_0) \end{vmatrix} $$
+
+Interpretacja: $H$ to "wykrywacz" ekstremum: mówi czy ekstremum jest czy nie. \\
+
+\textbf{Twierdzenie}
+
+Jeżeli w pewnym otoczeniu $ P = (x_0, y_0) $ pochodne pierwszego i drugiego rzędu funkcji $f$ istnieją i są ciągłe oraz
+$ f_x(x_0, y_0) = f_y(x_0, y_0) = 0 $ to zachodzą poniższe własności.
+
+\begin{itemize}
+    \item Gdy $ H(x_0, y_0) > 0 $ to \textbf{jest ekstremum}. Wtedy gdy $ f_{xx}(x_0, y_0) > 0 $ to jest minimum,
+    a gdy $ f_{xx}(x_0, y_0) < 0 $ to jest maksimum.
+    \item Gdy $ H(x_0, y_0) < 0 $ to \textbf{nie ma ekstremum}.
+    \item Gdy $ H(x_0, y_0) = 0 $ to \textbf{nic nie wiemy} -- metoda nie działa.
+\end{itemize}
+
+\textbf{Uwaga}
+
+Można udowodnić, że gdy $ H(x_0, y_0) > 0 $ to $ f_{xx}(x_0, y_0) $ oraz $ f_{yy}(x_0, y_0) $ są jednocześnie obie dodatnie
+lub obie ujemne.
+
+Zatem przy sprawdzaniu typu ekstremum (minimum/maksimum) możemy patrzeć na dowolną z tych pochodnych. \\
+
+\textbf{Przykłady}
+
+\begin{enumerate}
+    \item $ f(x,y) = 2x^2 + 3y^2 $
+    
+    Mamy $ D_f = \mathbb{R}^2 $ oraz
+    $$ f_x = 4x, \quad f_y = 6y $$
+    Stąd
+    $$ f_x = f_y = 0 \ \Leftrightarrow \ x = y = 0 \quad \textrm{czyli punkt standardowy to} \quad P = (0,0) $$
+    Teraz
+    $$ f_{xx} = 4, \ f_{yy} = 6, \ f_{xy} = f_{yx} = 0 $$
+    To daje
+    $$ W = H(0,0) = \begin{vmatrix} 4 & 0 \\ 0 & 6 \end{vmatrix} = 24 > 0 \quad \textrm{-- jest ekstremum} $$
+    $ f_{xx}(0,0) = 4 > 0 $ więc w $(0,0)$ jest minimum $ f(0,0) = 0 $.
+
+    \item $ f(x,y) = (x^2 - y^2)e^x $
+    
+    Mamy $ D_f = \mathbb{R}^2 $ oraz
+    $$ f_x = 2xe^x + (x^2 - y^2)e^x = e^x(x^2 - y^2 + 2x) $$
+    $$ f_y = -2ye^x $$
+
+    Stąd
+    $$ f_x = f_y = 0 \ \Leftrightarrow \ \left\{ \begin{aligned}[flalign] x^2 - y^2 + 2x = 0 \\ y = 0 \end{aligned} \right. $$
+\end{enumerate}

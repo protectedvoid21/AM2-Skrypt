@@ -38,9 +38,9 @@ Dla pozostałych $x \neq x_0$ szereg może być zbieżny lub nie. Są 3 przypadk
 \begin{enumerate}
     \item Szereg jest zbieżny tylko dla $x=x_0$ np. $ \suminfty{0} n!x^n $ -- zbieżny tylko dla $x=0$.
     Jest to szereg bezużyteczny w praktyce.
-    \item Szereg jest bezwględnie zbieżny dla wszystkich $x$, np. $ \sum\limits_{n = 0}^{\infty} \frac{x^n}{n!} $.
+    \item Szereg jest bezwzględnie zbieżny dla wszystkich $x$, np. $ \sum\limits_{n = 0}^{\infty} \frac{x^n}{n!} $.
     Jest to najlepsza sytuacja.
-    \item Szereg jest bezwględnie zbieżny na przedziale otwartym postaci $(x_0 - R, x_0 + R)$ oraz -- być może -- zbieżny
+    \item Szereg jest bezwzględnie zbieżny na przedziale otwartym postaci $(x_0 - R, x_0 + R)$ oraz -- być może -- zbieżny
     także na końcach tego przedziału. Dla pozostałych $x$ nie jest zbieżny.
 
     Np. $ \sum\limits_{n=1}^{\infty} \frac{x^n}{n} $ jest zbieżny dla $x \in [-1, 1)$. \\
@@ -144,7 +144,7 @@ Zatem wstępny przedział zbieżności to $(0, 2)$, a $R = 1$.
 
 Badamy zbieżność na końcach tego przedziału. \\
 
-$x = 2$ daje $ \sum\limits_{n = 1}^{\infty} \frac{(2n - 1)^n}{\sqrt{n}} = \sum\limits_{n = 1}^{\infty} \frac{1}{n^{\frac{1}{2}}} $
+$x = 2$ daje $ \sum\limits_{n = 1}^{\infty} \frac{(2 - 1)^n}{\sqrt{n}} = \sum\limits_{n = 1}^{\infty} \frac{1}{n^{\frac{1}{2}}} $
 -- rozbieżny bo $ \frac{1}{2} \leq 1 $.
 
 $x = 0$ daje $ \sum\limits_{n = 1}^{\infty} \frac{(0 - 1)^n}{\sqrt{n}} = \sum\limits_{n = 1}^{\infty} (-1)^n \cdot \frac{1}{\sqrt{n}} $

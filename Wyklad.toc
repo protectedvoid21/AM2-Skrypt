@@ -13,7 +13,7 @@
 \contentsline {subsection}{Twierdzenie (kryterium Cauchy'ego)}{21}{section*.13}%
 \contentsline {subsection}{Twierdzenie (kryterium d'Alemberta)}{21}{section*.14}%
 \contentsline {subsection}{Twierdzenie (kryterium całkowe)}{22}{section*.15}%
-\contentsline {subsection}{Zbieżność bezwględna szeregów}{24}{section*.16}%
+\contentsline {subsection}{Zbieżność bezwzględna szeregów}{24}{section*.16}%
 \contentsline {subsection}{Szeregi naprzemienne}{25}{section*.17}%
 \contentsline {section}{\numberline {4}Szeregi potęgowe}{28}{section.4}%
 \contentsline {subsection}{Zbieżność szeregów potęgowych}{29}{section*.18}%
@@ -24,3 +24,7 @@
 \contentsline {subsection}{Pochodne cząstkowe pierwszego rzędu funkcji wielu zmiennych}{44}{section*.22}%
 \contentsline {subsection}{Interpretacja geometryczna dla funkcji 2 zmiennych}{45}{section*.23}%
 \contentsline {subsection}{Pochodne drugiego rzędu}{46}{section*.24}%
+\contentsline {subsection}{Zbieżność w $R^k$ i granice funkcji wielu zmiennych}{48}{section*.25}%
+\contentsline {subsection}{Popularne techniki liczenia granic funkcji wielu zmiennych}{49}{section*.26}%
+\contentsline {subsection}{Ciągłość funkcji wielu zmiennych}{51}{section*.27}%
+\contentsline {subsection}{Ekstrema funkcji dwóch zmiennych}{52}{section*.28}%

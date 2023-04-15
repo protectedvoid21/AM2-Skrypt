@@ -574,10 +574,10 @@ $$ \sum\limits_{n=2}^{\infty} \frac{C}{n^{1,2 - 0,1}} = C \sum\limits_{n=2}^{\in
 Zatem wyjściowy szereg jest zbieżny
 
 
-\subsection*{Zbieżność bezwględna szeregów}
-\addcontentsline{toc}{subsection}{Zbieżność bezwględna szeregów}
+\subsection*{Zbieżność bezwzględna szeregów}
+\addcontentsline{toc}{subsection}{Zbieżność bezwzględna szeregów}
 
-Definicja. Szereg $ \sum\limits_{n=n_0}^{\infty} a_n$ jest \underline{zbieżny bezwględnie}, gdy zbieżny jest szereg
+Definicja. Szereg $ \sum\limits_{n=n_0}^{\infty} a_n$ jest \underline{zbieżny bezwzględnie}, gdy zbieżny jest szereg
 $ \sum\limits_{n=n_0}^{\infty} |a_n|$. \\
 
 Uwagi
@@ -597,21 +597,21 @@ Uwagi
 
 \textbf{Twierdzenie}
 
-Jeżeli szereg jest bezwględnie zbieżny to jest zbieżny (w zwykłym sensie).
+Jeżeli szereg jest bezwzględnie zbieżny to jest zbieżny (w zwykłym sensie).
 
 Transpozycja tego twierdzenia daje warunek równoważny:
 
-Jeżeli szereg $ \sum\limits_{n = n_0}^{\infty} a_n $ nie jest zbieżny to również nie jest zbieżny bezwględnie, co oznacza
+Jeżeli szereg $ \sum\limits_{n = n_0}^{\infty} a_n $ nie jest zbieżny to również nie jest zbieżny bezwzględnie, co oznacza
 $ \sum\limits_{n=n_0}^{\infty} |a_n| = \infty $.
 
-Twierdzenie odwrotne nie jest prawdziwe. Są szeregi zbieżne ale nie bezwględnie, np.
+Twierdzenie odwrotne nie jest prawdziwe. Są szeregi zbieżne ale nie bezwzględnie, np.
 $ \sum\limits_{n=1}^{\infty} \frac{(-1)^n}{n} $. Takie szeregi to tzw. szeregi \underline{zbieżne warunkowo}. \\
 
 \includegraphics[scale=0.6]{rozbiezneirozbiezne.png} \\
 
 Przykład 
 
-Szereg $ \sum\limits_{n=1}^{\infty} \frac{\sin n}{\sqrt[3]{n^4}} $ jest zbieżny bezwględnie, bo biorąc
+Szereg $ \sum\limits_{n=1}^{\infty} \frac{\sin n}{\sqrt[3]{n^4}} $ jest zbieżny bezwzględnie, bo biorąc
 $ \sum\limits_{n=1}^{\infty} \left| \frac{\sin n}{\sqrt[3]{n^4}} \right| $ i używając kryterium porównwawczego mamy
 
 $$ 0 \leq \left| \frac{\sin n}{\sqrt[3]{n^4}} \right| = \frac{|\sin n|}{n^{\frac{4}{3}}} \leq \frac{1}{n^{\frac{4}{3}}} $$
@@ -666,7 +666,7 @@ Uwagi
     \item Gdy ciąg $a_n$ zbiega do 0 ale nie jest nierosnący to \textbf{NIC NIE WIEMY} o zbieżności szeregu.
     \item Do badania czy $a_n$ jest nierosnący można próbować rozszerzyć $a_n$ do funkcji $f$ tak by $f(n) = a_n$.
     Potem --- pochodna itd.
-    Gdy szereg naprzemienny jest zbieżny bezwględnie to tw. Leibnitza nie jest potrzebne. \\
+    Gdy szereg naprzemienny jest zbieżny bezwzględnie to tw. Leibnitza nie jest potrzebne. \\
 \end{itemize}
 
 \textbf{Popularny błąd : } opisowanie "badanie" monotoniczności ciągu, bez obliczeń.
@@ -699,7 +699,7 @@ Zatem $ \lim_{n \to \infty} a_n = 0 $.
 
 Mamy więc szereg naprzemienny, który z tw. Leibnitza jest zbieżny.
 
-Nie jest jednak zbieżny bezwględnie bo dla $ \sum\limits_{n=2}^{\infty} \left| \frac{(-1)^n \cdot \ln n}{n} \right|
+Nie jest jednak zbieżny bezwzględnie bo dla $ \sum\limits_{n=2}^{\infty} \left| \frac{(-1)^n \cdot \ln n}{n} \right|
 = \sum\limits_{n=2}^{\infty} \frac{\ln n}{n} $ mamy z kryterium porównawczego $0 < \frac{0,5}{n} < \frac{\ln n}{n}$,
 a szereg $ \sum\limits_{n=2}^{\infty} \frac{0,5}{n} $ jest rozbieżny.
 
