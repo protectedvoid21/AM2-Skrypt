@@ -37,7 +37,7 @@ Terminologia dotycząca sumy $S$ jest taka, jak dla ciągów. Są 3 przypadki :
     \item $ S = \lim_{n \to \infty} S_n $ nie istnieje. Wtedy dany szereg jest \underline{rozbieżny}. \\
 \end{enumerate}
 
-Przykłady
+\textbf{Przykłady}
 
 $$ \frac{1}{2^1} + \frac{1}{2^2} + \frac{1}{2^3} + ... + \frac{1}{2^n} + ... = \suminfty{1} \frac{1}{2^n} 
 \textrm { - szereg zbieżny do 1}$$
@@ -92,7 +92,7 @@ Niektóre przypadki szczególne.
     
     Takie szeregi to tzw. szeregi \underline{teleskopowe} (telescoping series).
 
-    Przykłady
+    \textbf{Przykłady}
 
     $$ \suminfty{1} \left( \frac{1}{n} - \frac{1}{n + 1} \right) \ \textrm{- tutaj} \ f(x) = \frac{1}{x} $$
 
@@ -105,7 +105,7 @@ Niektóre przypadki szczególne.
 
 \end{enumerate}
 
-Na przykład dla $ \suminfty{1} \left( f(n) - f(n + 1)) \right) $ mamy
+\textbf{Na przykład} dla $ \suminfty{1} \left( f(n) - f(n + 1)) \right) $ mamy
 
 $$ S_n = f(1) - \textcolor{red}{f(2)} + \textcolor{red}{f(2)} - \textcolor{blue}{f(3)} + \textcolor{blue}{f(3)} - 
 \textcolor{green}{f(4)} + ... + \textcolor{purple}{f(n)} - f(n + 1) = f(1) - f(n + 1) $$.
@@ -114,7 +114,9 @@ Jeżeli istnieje granica $ G = \lim_{x \to \infty} f(x) $ to mamy
 
 $$ S = \lim_{n \to \infty} S_n = \lim_{n \to \infty} \left( f(1) - f(n + 1) \right) = f(1) - G $$ \\
 
-Przykład. Wyznaczyć sumę $ \suminfty{1} \frac{1}{n^2 + n} $
+\textbf{Przykład}. 
+
+Wyznaczyć sumę $ \suminfty{1} \frac{1}{n^2 + n} $
 
 Wyraz ogólny nie ma postaci różnicy więc trzeba ją stworzyć.
 
@@ -247,7 +249,9 @@ $ \sum\limits_{n = n_0}^{\infty} a_n = \lim_{n \to \infty} S_n $ zawsze istnieje
 Podobnie dla szeregów o wyrazach niedodatnich $ \sum\limits_{n = n_0}^{\infty} a_n, \ a_n \leq 0 $, suma zawsze istnieje
 i rozbieżność oznacza rozbieżność do $-\infty$. \\
 
-Przykład. Następujące szeregi nie są zbieżne
+\textbf{Przykład} 
+
+Następujące szeregi nie są zbieżne
 
 $$ \suminfty{1} 1, \ \ \suminfty{1} (n^2 + 2n), \ \
 \suminfty{1} \frac{n+1}{n+2}, \ \ \suminfty{1} \left(1 + \frac{1}{n} \right)^n , \ \ 
@@ -309,7 +313,7 @@ jest rozbieżny \textcolor{red}{zatem szereg $\suminfty{1} \frac{1}{n + \sqrt{n}
 
 \textbf{GAME OVER...} To jest przypadek nr 3 (wątpliwy) \\
 
-Przykład
+\textbf{Przykład}
 
 $$ \sum\limits_{n = 4}^{\infty} \frac{2n - 3}{n^3 - 1} $$
 
@@ -367,7 +371,7 @@ Uwagi
     Np. \ $ \suminfty{1} \frac{2 + \sin n}{n} $.
 \end{itemize}
 
-Przykłady
+\textbf{Przykłady}
 
 Poprzedni przykład raz jeszcze 
 
@@ -399,7 +403,7 @@ $$ \lim_{n \to \infty} \frac{f(b_n)}{b_n} = \lim_{x=b \to 0^+} \frac{f(x)}{x} \l
 
 przy użyciu granic podstawowych lub reguły de l'Hospitala. \\
 
-Na przykład
+\textbf{Na przykład}
 
 $$ \suminfty{1} \left( \sqrt[n]{2} - 1 \right) $$
 
@@ -464,7 +468,7 @@ $ q = \lim_{n \to \infty} \left| \frac{a_{n + 1}}{a_n} \right| $. Wtedy
     \item W obu kryteriach szerergi $ \sum\limits_{n = n_0}^{\infty} \frac{1}{n^p} $ pokazują, że $ q = 1$ nic nie daje. \\
 \end{itemize}
 
-Przykłady
+\textbf{Przykłady}
 
 $$ \suminfty{1} \frac{20^n}{n!} $$
 
@@ -521,7 +525,7 @@ Uwagi do kryterium
     Opłaca się je stosować głównie wtedy, gdy szereg zawiera wyrażenie $\ln n$. \\
 \end{itemize}
 
-Przykład
+\textbf{Przykład}
 
 Dla ustalonego $ n_0 \in \mathbb{N}^+ $ i $p > 0$ dowodzimy znany już wynik dla szeregu $ \sum\limits_{n = n_0}^{\infty} \frac{1}{n^p} $
 zbieżny dla $p > 1$ oraz rozbieżny do $\infty$ dla $p \leq 1$. \\
@@ -560,7 +564,7 @@ Tutaj $ C = \frac{1}{p \cdot e} $, a dla $ p \geq \frac{1}{e} $ wystarczy wzią�
 Często to oszacowanie pozwala uniknąć kryterium całkowego i zastąpienie go porównawczym, potrzeba tylko wziąć
 odpowiednio małe p. \\
 
-Przykład
+\textbf{Przykład}
 
 Dla szeregu $ \sum\limits_{n = 2}^{\infty} \frac{\ln n}{n \sqrt[5]{n}} $ z kryterium porównawczego mamy
 
@@ -609,7 +613,7 @@ $ \sum\limits_{n=1}^{\infty} \frac{(-1)^n}{n} $. Takie szeregi to tzw. szeregi \
 
 \includegraphics[scale=0.6]{rozbiezneirozbiezne.png} \\
 
-Przykład 
+\textbf{Przykład} 
 
 Szereg $ \sum\limits_{n=1}^{\infty} \frac{\sin n}{\sqrt[3]{n^4}} $ jest zbieżny bezwzględnie, bo biorąc
 $ \sum\limits_{n=1}^{\infty} \left| \frac{\sin n}{\sqrt[3]{n^4}} \right| $ i używając kryterium porównwawczego mamy
@@ -635,7 +639,7 @@ Postać ogólna :
 
 $ \sum\limits_{n = n_0}^{\infty} (-1)^n \cdot a_n $ \ lub \ $ \sum\limits_{n = n_0}^{\infty} (-1)^{n+1} \cdot a_n $ \\
 
-Przykłady
+\textbf{Przykłady}
 
 $$ \sqrt{2} - \sqrt{3} + \sqrt{4} - \sqrt{5} + ... = \sum\limits_{n=2}^{\infty} (-1)^n \sqrt{n} $$
 
@@ -680,7 +684,7 @@ GAME OVER... \ Takie "rozwiązanie" jest jak \textbf{pisanie bajek} --- nie musi
 
 Dla powyższego ciągu mianownik rzeczywiście szybciej rośnie niż licznik (i to 1000 razy!), a mimo to ciąg ten jest rosnący. \\
 
-Przykład
+\textbf{Przykład}
 
 $$ \sum\limits_{n=2}^{\infty} \frac{(-1)^n \cdot \ln n}{n} $$
 

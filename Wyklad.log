@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2022.10.30)  17 APR 2023 00:56
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2022.10.30)  17 APR 2023 01:11
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -596,7 +596,7 @@ LaTeX Font Info:    ... okay on input line 27.
 * \paperheight=845.04684pt
 * \textwidth=480.0pt
 * \textheight=680.0pt
-* \oddsidemargin=0.0pt
+* \oddsidemargin=-5.0pt
 * \evensidemargin=9.67395pt
 * \topmargin=-2.51526pt
 * \headheight=12.0pt
@@ -921,152 +921,142 @@ Underfull \hbox (badness 10000) in paragraph at lines 115--116
  []
 
 
-Underfull \hbox (badness 3260) in paragraph at lines 141--143
+Underfull \hbox (badness 3260) in paragraph at lines 143--145
 []\OT4/cmr/m/n/12 Je»eli sze-re-gi $[] \OML/plm/m/it/12 a[]$ \OT4/cmr/m/n/12 oraz $[] \OML/plm/m/it/12 b[]$ \OT4/cmr/m/n/12 s¡ zbie»-ne to zbie»-ne s¡ sze-re-gi $[](\OML/plm/m/it/12 a[] \OT4/cmr/m/n/12 + \OML/plm/m/it/12 b[]\OT4/cmr/m/n/12 )$
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 141--143
+Underfull \hbox (badness 10000) in paragraph at lines 143--145
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 148--149
+Underfull \hbox (badness 10000) in paragraph at lines 150--151
 
  []
 
 [15]
-Underfull \hbox (badness 10000) in paragraph at lines 154--155
+Underfull \hbox (badness 10000) in paragraph at lines 156--157
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 159--160
+Underfull \hbox (badness 10000) in paragraph at lines 161--162
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 165--166
+Underfull \hbox (badness 10000) in paragraph at lines 167--168
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 172--173
+Underfull \hbox (badness 10000) in paragraph at lines 174--175
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 178--179
+Underfull \hbox (badness 10000) in paragraph at lines 180--181
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 182--184
+Underfull \hbox (badness 10000) in paragraph at lines 184--186
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 185--187
+Underfull \hbox (badness 10000) in paragraph at lines 187--189
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 188--190
+Underfull \hbox (badness 10000) in paragraph at lines 190--192
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 195--196
+Underfull \hbox (badness 10000) in paragraph at lines 197--198
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 200--201
+Underfull \hbox (badness 10000) in paragraph at lines 202--203
 
  []
 
 [16]
-Underfull \hbox (badness 10000) in paragraph at lines 204--205
+Underfull \hbox (badness 10000) in paragraph at lines 206--207
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 213--214
+Underfull \hbox (badness 10000) in paragraph at lines 215--216
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 218--219
+Underfull \hbox (badness 10000) in paragraph at lines 220--221
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 233--235
+Underfull \hbox (badness 10000) in paragraph at lines 235--237
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 238--239
+Underfull \hbox (badness 10000) in paragraph at lines 240--241
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 247--249
+Underfull \hbox (badness 10000) in paragraph at lines 249--251
 
  []
 
 [17]
-Underfull \hbox (badness 10000) in paragraph at lines 260--261
+Underfull \hbox (badness 10000) in paragraph at lines 264--265
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 281--283
+Underfull \hbox (badness 10000) in paragraph at lines 285--287
 
  []
 
 [18]
-Underfull \hbox (badness 10000) in paragraph at lines 307--309
+Underfull \hbox (badness 10000) in paragraph at lines 311--313
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 310--311
+Underfull \hbox (badness 10000) in paragraph at lines 314--315
 
  []
 
 [19]
-Underfull \hbox (badness 10000) in paragraph at lines 350--352
+Underfull \hbox (badness 10000) in paragraph at lines 354--356
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 379--380
+Underfull \hbox (badness 10000) in paragraph at lines 383--384
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 387--389
+Underfull \hbox (badness 10000) in paragraph at lines 391--393
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 387--389
+Underfull \hbox (badness 10000) in paragraph at lines 391--393
 
  []
 
 [20]
-Underfull \hbox (badness 10000) in paragraph at lines 400--401
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 412--413
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 416--417
+Underfull \hbox (badness 10000) in paragraph at lines 404--405
 
  []
 
@@ -1081,131 +1071,141 @@ Underfull \hbox (badness 10000) in paragraph at lines 420--421
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 433--434
+Underfull \hbox (badness 10000) in paragraph at lines 420--421
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 424--425
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 437--438
 
  []
 
 [21]
-Underfull \hbox (badness 10000) in paragraph at lines 458--459
+Underfull \hbox (badness 10000) in paragraph at lines 462--463
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 464--465
+Underfull \hbox (badness 10000) in paragraph at lines 468--469
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 473--474
+Underfull \hbox (badness 10000) in paragraph at lines 477--478
 
  []
 
 [22]
-Underfull \hbox (badness 10000) in paragraph at lines 503--505
+Underfull \hbox (badness 10000) in paragraph at lines 507--509
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 520--522
+Underfull \hbox (badness 10000) in paragraph at lines 524--526
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 526--528
+Underfull \hbox (badness 10000) in paragraph at lines 530--532
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 535--538
+Underfull \hbox (badness 10000) in paragraph at lines 539--542
 
  []
 
 [23]
-Underfull \hbox (badness 10000) in paragraph at lines 560--562
+Underfull \hbox (badness 10000) in paragraph at lines 564--566
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 580--582
+Underfull \hbox (badness 10000) in paragraph at lines 584--586
 
  []
 
 [24]
-Underfull \hbox (badness 10000) in paragraph at lines 595--596
+Underfull \hbox (badness 10000) in paragraph at lines 599--600
 
  []
 
 
-Overfull \hbox (4.33705pt too wide) in paragraph at lines 607--609
+Overfull \hbox (4.33705pt too wide) in paragraph at lines 611--613
 []\OT4/cmr/m/n/12 Twierdzenie od-wrot-ne nie jest praw-dzi-we. S¡ sze-re-gi zbie»-ne ale nie bez-wzgl¦d-nie, np. $[] []$.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 607--609
+Underfull \hbox (badness 10000) in paragraph at lines 611--613
 
  []
 
 File: rozbiezneirozbiezne.png Graphic file (type png)
 <use rozbiezneirozbiezne.png>
-Package pdftex.def Info: rozbiezneirozbiezne.png  used on input line 610.
+Package pdftex.def Info: rozbiezneirozbiezne.png  used on input line 614.
 (pdftex.def)             Requested size: 361.35278pt x 211.84306pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 610--611
+Underfull \hbox (badness 10000) in paragraph at lines 614--615
 
  []
 
 [25]
-Underfull \hbox (badness 10000) in paragraph at lines 631--633
+Underfull \hbox (badness 10000) in paragraph at lines 635--637
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 636--637
+Underfull \hbox (badness 10000) in paragraph at lines 640--641
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 642--643
+Underfull \hbox (badness 10000) in paragraph at lines 646--647
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 649--651
+Underfull \hbox (badness 10000) in paragraph at lines 653--655
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 654--655
+Underfull \hbox (badness 10000) in paragraph at lines 658--659
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 667--670
+Underfull \hbox (badness 10000) in paragraph at lines 671--674
 
  []
 
 [26]
-Underfull \hbox (badness 2735) in paragraph at lines 678--680
+Underfull \hbox (badness 2735) in paragraph at lines 682--684
 []\OT4/cmr/m/n/12 GAME OVER...  Ta-kie "roz-wi¡-za-nie" jest jak \OT4/cmr/bx/n/12 pi-sa-nie ba-jek \OT4/cmr/m/n/12 --- nie mu-si mie¢
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 681--682
+Underfull \hbox (badness 10000) in paragraph at lines 685--686
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 706--707
+Underfull \hbox (badness 10000) in paragraph at lines 710--711
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 717--718
+Underfull \hbox (badness 10000) in paragraph at lines 721--722
 
  []
 
 [27]
-Underfull \hbox (badness 10000) in paragraph at lines 741--742
+Underfull \hbox (badness 10000) in paragraph at lines 745--746
 
  []
 
@@ -1350,7 +1350,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 425--426
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 444--445
+Underfull \hbox (badness 10000) in paragraph at lines 446--447
 
  []
 
@@ -1365,12 +1365,13 @@ File: wykres_wieluzm1.png Graphic file (type png)
 <use wykres_wieluzm1.png>
 Package pdftex.def Info: wykres_wieluzm1.png  used on input line 35.
 (pdftex.def)             Requested size: 208.13919pt x 183.5672pt.
-<stozek_wlzm.png, id=383, 755.07094pt x 534.49687pt>
+ [40 <./wykres_wieluzm1.png>]
+<stozek_wlzm.png, id=388, 755.07094pt x 534.49687pt>
 File: stozek_wlzm.png Graphic file (type png)
 <use stozek_wlzm.png>
 Package pdftex.def Info: stozek_wlzm.png  used on input line 57.
 (pdftex.def)             Requested size: 377.53455pt x 267.24777pt.
- [40 <./wykres_wieluzm1.png>]
+
 Underfull \hbox (badness 10000) in paragraph at lines 60--61
 
  []
@@ -1385,12 +1386,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 77--78
 
  []
 
-<stozek_wlzm_2.png, id=389, 384.2355pt x 333.04425pt>
+[41 <./stozek_wlzm.png>]
+<stozek_wlzm_2.png, id=393, 384.2355pt x 333.04425pt>
 File: stozek_wlzm_2.png Graphic file (type png)
 <use stozek_wlzm_2.png>
 Package pdftex.def Info: stozek_wlzm_2.png  used on input line 84.
 (pdftex.def)             Requested size: 230.54308pt x 199.82808pt.
-[41 <./stozek_wlzm.png>]
+
 Underfull \hbox (badness 10000) in paragraph at lines 87--90
 
  []
@@ -1416,12 +1418,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 133--135
 
  []
 
-
+[43 <./paraboloida.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 145--146
 
  []
 
-[43 <./paraboloida.png>]
 <walec.png, id=408, 408.3255pt x 353.52075pt>
 File: walec.png Graphic file (type png)
 <use walec.png>
@@ -1608,13 +1609,13 @@ Package rerunfilecheck Info: File `Wyklad.out' has not changed.
 Here is how much of TeX's memory you used:
  15195 strings out of 475385
  261546 string characters out of 2776906
- 623466 words of memory out of 3000000
+ 623469 words of memory out of 3000000
  36189 multiletter control sequences out of 15000+600000
  482030 words of font info for 66 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  72i,14n,85p,484b,586s stack positions out of 10000i,1000n,20000p,200000b,80000s
 {C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/pl/plmi.enc}{C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/pl/plms.enc}{C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/pl/plrm.enc} <C:\Users\niezn\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk>{C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/pl/plme.enc}<C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plbx12.pfb><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plex10.pfb><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plmi10.pfb><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plmi12.pfb><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plmi6.pfb><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plmi8.pfb><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plr12.pfb><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plr17.pfb><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plr6.pfb><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plr8.pfb><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plsy10.pfb><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plsy6.pfb><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plsy8.pfb>
-Output written on Wyklad.pdf (53 pages, 1439327 bytes).
+Output written on Wyklad.pdf (53 pages, 1440324 bytes).
 PDF statistics:
  556 PDF objects out of 1000 (max. 8388607)
  134 named destinations out of 1000 (max. 500000)
