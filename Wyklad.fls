@@ -845,7 +845,6 @@ INPUT C:\Users\niezn\AppData\Local\Programs\MiKTeX\fonts\tfm\public\pl\plbx12.tf
 INPUT .\Wyklad.toc
 INPUT Wyklad.toc
 INPUT Wyklad.toc
-INPUT C:\Users\niezn\AppData\Local\Programs\MiKTeX\fonts\tfm\public\pl\plbx12.tfm
 INPUT C:\Users\niezn\AppData\Local\Programs\MiKTeX\fonts\tfm\public\pl\plr8.tfm
 INPUT C:\Users\niezn\AppData\Local\Programs\MiKTeX\fonts\tfm\public\pl\plr6.tfm
 INPUT C:\Users\niezn\AppData\Local\Programs\MiKTeX\fonts\tfm\public\pl\plmi12.tfm
@@ -860,13 +859,14 @@ INPUT C:\Users\niezn\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\sym
 INPUT C:\Users\niezn\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
 INPUT C:\Users\niezn\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
 INPUT C:\Users\niezn\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm7.tfm
+INPUT C:\Users\niezn\AppData\Local\Programs\MiKTeX\fonts\tfm\public\pl\plbx12.tfm
 OUTPUT Wyklad.toc
-INPUT .\1_Calki_niewlasciwe_I_rodzaju.tex
-INPUT 1_Calki_niewlasciwe_I_rodzaju.tex
-INPUT .\1_Calki_niewlasciwe_I_rodzaju.tex
-INPUT 1_Calki_niewlasciwe_I_rodzaju.tex
 INPUT C:\Users\niezn\AppData\Local\MiKTeX\fonts\map\pdftex\pdftex.map
 INPUT C:\Users\niezn\AppData\Local\Programs\MiKTeX\fonts\tfm\public\pl\plbx12.tfm
+INPUT .\1_Calki_niewlasciwe_I_rodzaju.tex
+INPUT 1_Calki_niewlasciwe_I_rodzaju.tex
+INPUT .\1_Calki_niewlasciwe_I_rodzaju.tex
+INPUT 1_Calki_niewlasciwe_I_rodzaju.tex
 INPUT C:\Users\niezn\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\tcrm1200.tfm
 INPUT .\2_Calki_niewlasciwe_II_rodzaju.tex
 INPUT 2_Calki_niewlasciwe_II_rodzaju.tex
