@@ -32,7 +32,7 @@ Dla takich funkcji można narysować wykres -- gdy $D$ jest otwarty to wykresem 
 $ (x, y, f(x,y)) $, gdzie $ (x,y) \in D_f $.
 
 \begin{center}
-\includegraphics[scale=0.6]{wykres_wieluzm1.png}
+\includegraphics[scale=0.6]{img/wykres_wieluzm1.png}
 
 Wykres funkcji $ f(x,y) = x^3 + 3xy^2 - 51x - 24y, \quad -5 \leq x \leq 5, \ -5 \leq y \leq 5 $
 \end{center}
@@ -47,14 +47,14 @@ Wykres funkcji $ f(x,y) = x^3 + 3xy^2 - 51x - 24y, \quad -5 \leq x \leq 5, \ -5 
     $ z = z_0 - \sqrt{r^2 - (x-x_0)^2 - (y-y_0)^2} $ -- analogiczna półsfera ale dolna.
 
     Obie pochodzą z równania całej sfery: $ (x - x_0)^2 + (y - y_0)^2 + (z - z_0)^2 = r^2 $.
-    \item $ z = z_0 + a\sqrt{r^2 - (x-x_0)^2 - (y-y_0)^2}, \ a \neq 0 $ -- powierzchnia stożkowa o wierzchołku w $ P = (x_0,y_0,z_0) $
+    \item $ z = z_0 + a\sqrt{(x-x_0)^2 + (y-y_0)^2}, \ a \neq 0 $ -- powierzchnia stożkowa o wierzchołku w $ P = (x_0,y_0,z_0) $
     i osi symetrii równoległej do osi $Z$.
 
     $a > 0$ -- wierzchołek w dół, $a < 0$ -- wierzchołek w górę.
 
     $|a| = \tan \alpha $, gdzie $\alpha$ jest kątem między prostą będącą tworzącą stożka
 
-    \includegraphics[scale=0.5]{stozek_wlzm.png}
+    \includegraphics[scale=0.5]{img/stozek_wlzm.png}
 \end{itemize}
 
 Powierzchnia stożkowa i półsfera są szczególnymi przypadkami tzw. \underline{powierzchni obrotowych} w $\mathbb{R}^3$. \\
@@ -81,7 +81,7 @@ Na przykład dla powierzchni stożkowej $ z = a\sqrt{x^2 + y^2}, \ a > 0 $, prze
 lub wierzchołkiem, a przecięcie płaszczyzną zawierającą oś $Z$ jest sumą dwóch półprostych wychodzących z wierzchołka.
 
 \begin{center}
-\includegraphics[scale=0.6]{stozek_wlzm_2.png}
+\includegraphics[scale=0.6]{img/stozek_wlzm_2.png}
 \end{center}
 
 Sposób rysowania takich powierzchni opiera się na spotstrzeżeniu, że dla $x = 0$ i $y \geq 0$ mamy $ r = \sqrt{y^2} = y \geq 0 $.
@@ -94,7 +94,7 @@ Tutaj dla $ r = \sqrt{x^2 + y^2} \geq 0 $ mamy $z =ar$. Zatem biorąc $ r = y \g
 funkcji liniowej $ z = f(0, y) = ay, \ y \geq 0 $. Jest to półprosta
 
 \begin{center}
-\includegraphics[scale=0.6]{stozek_wlzm_3.png}
+\includegraphics[scale=0.6]{img/stozek_wlzm_3.png}
 \end{center}
 
 Rozszerzanie powyższego przypadku -- powierzchnia obrotowa wokół osi równoległej do osi $Z$.
@@ -115,7 +115,7 @@ paraboli.
 Obracając ją następnie wokół osi $Z$ dostajemy powierzchnię zwaną paraboloidą.
 
 \begin{center}
-\includegraphics[scale=0.6]{paraboloida.png}
+\includegraphics[scale=0.6]{img/paraboloida.png}
 \end{center}
 
 Na koniec przesuwamy powyższą powierzchnię o wektor $ \vec{v} = [x_0, y_0, 0] = [-2, 1, 0] $ i to daje naszą powierzchnię.
@@ -156,7 +156,7 @@ Po przesunięciu tego okręgu wzdłuż osi $Z$ zostaje wygenerowana powierzchnia
 Stąd bierze się nazwa tego typu krzywych.
 
 \begin{center}
-\includegraphics[scale=0.6]{walec.png}
+\includegraphics[scale=0.6]{img/walec.png}
 \end{center}
 
 \textbf{Definicja}
@@ -209,7 +209,7 @@ Gdy płaszczyzna przekroju przechodzi przez punkt $ P=(x_0, y_0, f(x_0, y_0)) $ 
 \end{itemize}
 
 \begin{center}
-\includegraphics[scale=0.4]{interpretacja_geom.png}
+\includegraphics[scale=0.4]{img/interpretacja_geom.png}
 \end{center}
 
 \textbf{Sposób wyznaczania pochodnych cząstkowych w praktyce}
@@ -548,8 +548,8 @@ Zatem przy sprawdzaniu typu ekstremum (minimum/maksimum) możemy patrzeć na dow
     $$ f_{xx} = 4, \ f_{yy} = 6, \ f_{xy} = f_{yx} = 0 $$
     To daje
     $$ W = H(0,0) = \begin{vmatrix} 4 & 0 \\ 0 & 6 \end{vmatrix} = 24 > 0 \quad \textrm{-- jest ekstremum} $$
-    $ f_{xx}(0,0) = 4 > 0 $ więc w $(0,0)$ jest minimum $ f(0,0) = 0 $.
-
+    $ f_{xx}(0,0) = 4 > 0 $ więc w $(0,0)$ jest minimum $ f(0,0) = 0 $. 
+    \bigskip
     \item $ f(x,y) = (x^2 - y^2)e^x $
     
     Mamy $ D_f = \mathbb{R}^2 $ oraz
@@ -557,5 +557,202 @@ Zatem przy sprawdzaniu typu ekstremum (minimum/maksimum) możemy patrzeć na dow
     $$ f_y = -2ye^x $$
 
     Stąd
-    $$ f_x = f_y = 0 \ \Leftrightarrow \ \left\{ \begin{aligned}[flalign] x^2 - y^2 + 2x = 0 \\ y = 0 \end{aligned} \right. $$
+    $$ f_x = f_y = 0 \ \Leftrightarrow \ \begin{cases} x^2 - y^2 + 2x = 0 \\ y = 0 \end{cases} \Leftrightarrow \
+    \begin{cases} y = 0 \\ x^2 + 2x = 0 \end{cases} \Leftrightarrow \ \begin{cases} y = 0 \\ x = 0 \ \lor \ x=-2 \end{cases} $$
+
+    Czyli punkty stacjonarne to $ P_1 = (0,0), \ P_2 = (-2, 0) $.
+
+    Teraz
+    $$ f_{xx} = e^x(2x + 2) + e^x(x^2 - y^2 + 2x) $$
+    $$ f_{yy} = -2e^x $$
+    $$ f_{xy} = f_{yx} = -2ye^x $$
+
+    Dla $ P_1 = (0,0) $ mamy
+    $$ W = H(0,0) = \begin{vmatrix} 2 & 0 \\ 0 & -2 \end{vmatrix} = -4 < 0 \quad \textrm{Brak ekstremum w } P_1 $$
+
+    Dla $ P_2 = (-2, 0) $ mamy
+    $$ W = H(0,0) = \begin{vmatrix} -2e^2 & 0 \\ 0 & -2e^2 \end{vmatrix} = -4e^{-2} \cdot e^{-2} > 0 \quad \textrm{Jest ekstremum} $$
+
+    $ f_{xx}(-2, 0) = -2e^{-2} < 0 $ \ czyli mamy maksimum o wartości \ $ f(-2, 0) = 4e^{-2} $.
 \end{enumerate}
+
+
+\subsection*{Ekstrema warunkowe}
+\addcontentsline{toc}{subsection}{Ekstrema warunkowe}
+
+\textbf{Definicja}
+
+Funkcją warunkową nazwiemy \ $ f = f(x,y) $ \ gdzie dziedziną jest zbiór, który jest krzywą na płaszczyźnie $XY$ czyli ma postać zależności
+między $x$ i $y$: \ $F(x,y) = 0$.
+
+\underline{Interpretacja geometryczna:} taka funkcja $f$ to krzywa w przestrzeni $ \mathbb{R}^3 $ położona "pionowo pod/nad" krzywą na płaszczyźnie
+daną równaniem \ $F(x,y) = 0$.
+
+Zatem jest to zbiór punktów \ $ (x, y, f(x,y)) $, \ gdzie \ $ F(x,y) = 0 $.
+
+Rzutem tej krzywej na płaszczyznę $XY$ jest krzywa płaska o równaniu $F(x,y) = 0$
+
+\begin{center}
+\includegraphics[scale=0.4]{img/rzut_plaszczyznaXY.png}
+\end{center}
+
+\textbf{Przykład}
+
+\[ f(x,y) = -xy, \ F(x,y) = 2x + y = 0 \]
+
+\begin{center}To daje \ $ y = -2x $ \ czyli\end{center} 
+\[ f(x,y) = f(x, -2x) = 2x^2, \ y=-2x, \ x\in \mathbb{R} \]
+
+\begin{center}Czyli zbiór punktów\end{center}
+\[ (x, -2x, 2x^2), \ x \in \mathbb{R} \]
+
+Jest to paraboloida ustawiona "pionowo" ale nad prostą \ $ y= -2x $ \ (w płaszczyźnie równoległej do osi $Z$ i zawierającej tą prostą).
+
+\begin{center}
+\includegraphics[scale=0.5]{img/paraboloida_przyklad.png}
+\end{center}
+
+Ekstrema warunkowe to ekstrema takich funkcji. Liczymy je metodami poznanymi z Analizy Matematycznej 1 (mamy funkcję 1 zmiennej).
+
+W naszym przykładzie mamy do analizy funkcję \ $ f(x) = x^2, \ x \in \mathbb{R} $
+
+Nie trzeba pochodnych, ekstremum to punkt dla \ $x = 0$ -- jest to minimum.
+
+To daje \ $ y = -2 \cdot 0 = 0 $ \ oraz \ $ z = f(0,0) = 0 $ \ więc punkt $ (0,0,0) $.
+
+\subsection*{Wartości największe i najmniejsze funkcji na zadanych zbiorach}
+
+Mamy funkcję \ $ f(x,y), \ D_f = D $
+
+Interesuje nas wartość największa i wartość najmniejsza $f$ na $D$. Te wartości mogą istnieć lub nie. To zależy od funkcji i zbioru.
+\bigskip
+
+\textbf{Twierdzenie (Wersja tw. Weiertrassa (AM1) dla funkcji dwóch zmiennych)}
+
+Gdy $D$ jest domknięty (czyli cały brzeg $D$ jest zawarty w $D$) oraz ograniczony (czyli zawiera się w pewnym kole) i $f$ jest ciągła
+na $D$ to wartość największa i wartość najmniejsza $f$ na $D$ jest osiągana.
+\bigskip
+
+Gdzie te wartości mogą być osiągane dla funkcji różniczkowalnych?
+\begin{itemize}
+    \item W punktach stacjonarnych $f$: $ f_x = f_y = 0 $.
+    \item Na brzegu $D$: prowadzi to do funkcji warunkowych i ich wartości największych/najmniejszych -- jak dla funkcji jednej zmiennej w AM1
+\end{itemize}
+\bigskip
+
+Dla punktów z obu przypadków liczymy wartości $f$ i z tych wartości wybieramy najwiekszą i najmniejszą. To daje odpowiedź.
+
+\underline{Uwaga}: Dla punktów stacjonarnych \underline{nie trzeba sprawdzać czy jest to ekstremum}.
+
+Nie potrzeba hesjanu itd. Wystarczy policzyć wartość.
+\bigskip
+
+\textbf{Przykład}
+\[ f(x,y) = xy^2, \ x^2 + y^3 \leq 3 \]
+
+Punkty stacjonarne
+
+$ f_x = y^2 = 0 $
+
+$ f_y = 2xy = 0 $
+
+Wychodzą punkty $ (x, 0) $ oraz $ f(x,0) = \textcolor{magenta}{0} $
+
+Brzeg: \ $ x^2 + y^2 = 3 $. Wystarczy wyliczyć \ $ y^2 = 3 - x^2 $ \ i to daje
+\[f(x,y) = f(x) = x(3-x^2) = 3x - x^3, \ x\in \left[-\sqrt3, \sqrt3 \right] \]
+
+Zadanie staje się zadaniem z AM1: znaleźć wartość największą/najmniejszą tej funkcji.
+
+Zatem
+
+\[ f(\pm \sqrt3) = \textcolor{magenta}{0} \]
+\[ f' = 3 - 3x^2 = 0 \ \Leftrightarrow \ x = \pm 1 \in \left[ -\sqrt3, \sqrt3 \right] \]
+\[ f(-1) = \textcolor{magenta}{-2}, \ f(1) = \textcolor{magenta}{2} \]
+
+Stąd wartość największa to 2, jest osiągana w punktach \ $(1, \sqrt2) $ \ oraz \ $ (1, -\sqrt2) $.
+
+Najmniejsza wartość to -2, jest osiągana w punktach \ $(-1, \sqrt2) $ \ oraz \ $(-1, -\sqrt2) $.
+
+
+\subsection*{Zadania optymalizacyjne}
+\addcontentsline{toc}{subsection}{Zadania optymalizacyjne}
+
+Schemat taki jak w AM1.
+\begin{enumerate}
+    \item Ułożyć funkcję opisującą daną wielkość.
+    \item Znaleźć dziedzinę tej funkcji pasującą do zadania (niekoniecznie dziedzinę naturalną).
+    \item Znaleźć wartość największą lub najmniejszą tej funkcji na zadanej dziedzinie.
+\end{enumerate}
+\bigskip
+
+\textbf{Przykład}
+
+Spośród wszystkich trójkątów o obwodzie równym $3$ jednostki znaleźć ten trójkąt, który ma największe pole.
+\medskip
+
+1. Wzór funkcji.
+
+Jeśli boki tego trójkąta mają długości $a,b,c > 0$ to pole jest dane wzorem
+\[ S = \sqrt{p(p-a)(p-b)(p-c)} \textrm{ \ gdzie \ } p = \frac{a+b+c}{2} \quad \textrm{(wzór Herona)} \]
+\medskip
+
+2. Dziedzina $f$: $ a,b > 0, \ c = 3 - a - b > 0 $ \ oraz z warunku trójkąta
+
+\[ \begin{array}{ccc} 
+    a+b>c & \Leftrightarrow & b > 1,5 - a \\
+    a+c>b & \Leftrightarrow & 0 < b < 1,5 \\
+    b+c>a & \Leftrightarrow & 0 < a < 1,5
+\end{array} \]
+
+To daje trójkąt o wierzchołkach w punktach \ $(1.5, \ 0), (0, \ 1.5)$ oraz $(1.5, \ 1.5)$ \ ale bez brzegu.
+Aby mieć gwarancję istnienia wartości największej (twierdznie Weiertrassa) dołączamy brzeg do trójkąta i mamy $D_f$:
+
+\[ 0 \leq a \leq 1,5 \]
+\[ 1,5 - a \leq b \leq 1,5 \]
+
+\begin{center}
+    \includegraphics[scale=0.5]{img/trojkat.png}
+\end{center}
+\bigskip
+
+3.Wartość największa $f$ \bigskip
+
+a) Na brzegu
+
+Brzeg składa się z trzech boków o równaniach
+\[ \begin{array}{cc}
+    a = 1,5: & f \equiv \textcolor{magenta}{0} \\
+    b = 1,5: & f \equiv \textcolor{magenta}{0} \\
+    b = 1,5 - a: & f \equiv \textcolor{magenta}{0} \\
+\end{array}
+\]
+
+To na pewno nie jest wartość największa \bigskip
+
+b) W punktach stacjonarnych we wnętrzu
+
+\[ f(a,b) = \sqrt{1,5(1,5-a)(1,5-b)(a+b-1,5)} \quad \textrm{więc} \]
+\[ f_a = \frac{1}{2\sqrt{do poprawy}} \cdot 1,5 \cdot (1,5 - b) \cdot (-(a+b - 1,5) + 1(1,5 - a)) = 0 \]
+
+To daje układ
+
+\[ \begin{cases} (1,5 - b) \cdot (3 - 2a - b) = 0 \\ (1,5 - a) \cdot (3 - 2b - a) = 0 \end{cases} \]
+
+Zatem 
+
+\[ \begin{cases} b = 1,5 \ \textrm{brzeg -- odrzucamy} \ \lor \ 3 - 2a - b = 0 \\
+    a = 1,5 \ \textrm{brzeg -- odrzucamy} \ \lor \ 3 - 2b - a = 0
+\end{cases} \]
+
+Dla punktów we wnętrzu trójkąta jest więc
+
+\[ 
+\begin{cases}
+    3 - 2a - b = 0 \\
+    3 - 2b - a = 0
+\end{cases}    
+\]
+
+To daje \ $ a = b = 1$ oraz \ $ f(1,1) = \textcolor{magenta}{\frac{\sqrt3}{4}} $. To jest wartość największa.
+
+Ponadto wtedy $c = 1$. Jest to więc trójkąt równoboczny.

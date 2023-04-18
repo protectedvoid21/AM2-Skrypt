@@ -1,6 +1,6 @@
 \contentsline {subsection}{\numberline {0.1}Mały wstęp}{2}{subsection.0.1}%
 \contentsline {section}{\numberline {1}Całki niewłaściwe I rodzaju}{2}{section.1}%
-\contentsline {subsection}{Twierdzenie(kryterium porównawcze)}{4}{section*.4}%
+\contentsline {subsection}{Twierdzenie(kryterium porównawcze)}{5}{section*.4}%
 \contentsline {subsection}{Twierdzenie(kryterium ilorazowe)}{6}{section*.5}%
 \contentsline {subsection}{Wartość główna całki niewłaściwej I rodzaju}{8}{section*.6}%
 \contentsline {section}{\numberline {2}Całki niewłaściwe II rodzaju}{9}{section.2}%
@@ -16,16 +16,19 @@
 \contentsline {subsection}{Twierdzenie (kryterium całkowe)}{23}{section*.15}%
 \contentsline {subsection}{Zbieżność bezwzględna szeregów}{25}{section*.16}%
 \contentsline {subsection}{Szeregi naprzemienne}{26}{section*.17}%
-\contentsline {section}{\numberline {4}Szeregi potęgowe}{29}{section.4}%
-\contentsline {subsection}{Zbieżność szeregów potęgowych}{29}{section*.18}%
-\contentsline {subsection}{Wyznaczanie promienia zbieżności i przedziału zbieżności}{30}{section*.19}%
-\contentsline {subsection}{Własności szeregów potęgowych}{33}{section*.20}%
-\contentsline {section}{\numberline {5}Funkcje wielu zmiennych}{40}{section.5}%
-\contentsline {subsection}{Powierzchnie walcowe}{44}{section*.21}%
-\contentsline {subsection}{Pochodne cząstkowe pierwszego rzędu funkcji wielu zmiennych}{45}{section*.22}%
-\contentsline {subsection}{Interpretacja geometryczna dla funkcji 2 zmiennych}{46}{section*.23}%
-\contentsline {subsection}{Pochodne drugiego rzędu}{47}{section*.24}%
-\contentsline {subsection}{Zbieżność w $R^k$ i granice funkcji wielu zmiennych}{49}{section*.25}%
-\contentsline {subsection}{Popularne techniki liczenia granic funkcji wielu zmiennych}{50}{section*.26}%
-\contentsline {subsection}{Ciągłość funkcji wielu zmiennych}{52}{section*.27}%
-\contentsline {subsection}{Ekstrema funkcji dwóch zmiennych}{53}{section*.28}%
+\contentsline {subsection}{Twierdzenie (Leibnitz)}{26}{section*.18}%
+\contentsline {section}{\numberline {4}Szeregi potęgowe}{30}{section.4}%
+\contentsline {subsection}{Zbieżność szeregów potęgowych}{30}{section*.19}%
+\contentsline {subsection}{Wyznaczanie promienia zbieżności i przedziału zbieżności}{31}{section*.20}%
+\contentsline {subsection}{Własności szeregów potęgowych}{34}{section*.21}%
+\contentsline {section}{\numberline {5}Funkcje wielu zmiennych}{41}{section.5}%
+\contentsline {subsection}{Powierzchnie walcowe}{45}{section*.22}%
+\contentsline {subsection}{Pochodne cząstkowe pierwszego rzędu funkcji wielu zmiennych}{46}{section*.23}%
+\contentsline {subsection}{Interpretacja geometryczna dla funkcji 2 zmiennych}{47}{section*.24}%
+\contentsline {subsection}{Pochodne drugiego rzędu}{48}{section*.25}%
+\contentsline {subsection}{Zbieżność w $R^k$ i granice funkcji wielu zmiennych}{50}{section*.26}%
+\contentsline {subsection}{Popularne techniki liczenia granic funkcji wielu zmiennych}{51}{section*.27}%
+\contentsline {subsection}{Ciągłość funkcji wielu zmiennych}{53}{section*.28}%
+\contentsline {subsection}{Ekstrema funkcji dwóch zmiennych}{54}{section*.29}%
+\contentsline {subsection}{Ekstrema warunkowe}{56}{section*.30}%
+\contentsline {subsection}{Zadania optymalizacyjne}{58}{section*.32}%

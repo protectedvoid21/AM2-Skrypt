@@ -618,7 +618,7 @@ $ \sum\limits_{n=n_0}^{\infty} |a_n| = \infty $.
 Twierdzenie odwrotne nie jest prawdziwe. Są szeregi zbieżne ale nie bezwzględnie, np.
 $ \sum\limits_{n=1}^{\infty} \frac{(-1)^n}{n} $. Takie szeregi to tzw. szeregi \underline{zbieżne warunkowo}. \\
 
-\includegraphics[scale=0.6]{rozbiezneirozbiezne.png} \\
+\includegraphics[scale=0.6]{img/rozbiezneirozbiezne.png} \\
 
 \textbf{Przykład} 
 
@@ -660,7 +660,8 @@ nazywany jest \underline{szeregiem Leibnitza}, jeżeli $a_n$ jest ciągiem niero
 Na przykład $ 1 - \frac{1}{2} + \frac{1}{3} - \frac{1}{4} + ... = \sum\limits_{n=1}^{\infty} \frac{(-1)^{n+1}}{n} $
 jest szeregiem Leibnitza, bo tutaj $ a_n = \frac{1}{n} $ jest malejący i zbieżny do 0. \\
 
-\textbf{Twierdzenie (Leibnitz)}
+\subsection*{Twierdzenie (Leibnitz)}
+\addcontentsline{toc}{subsection}{Twierdzenie (Leibnitz)}
 
 Każdy szereg Leibnitza jest zbieżny. \\
 
@@ -680,7 +681,68 @@ Uwagi
     Gdy szereg naprzemienny jest zbieżny bezwzględnie to tw. Leibnitza nie jest potrzebne. \\
 \end{itemize}
 
-\textbf{Popularny błąd : } opisowanie "badanie" monotoniczności ciągu, bez obliczeń.
+\textbf{Ważna uwaga}
+
+Poza twierdzeniem Leibnitza wszystkie pozostałe kryteria (porównawcze, ilorazowe, Cauchy'ego, d'Alemberta, całkowe, warunek konieczny) dają
+albo \underline{dwie zbieżności} (zwykłą oraz bezwzględną) albo \underline{dwie rozbieżności} (zwykłą oraz bezwzględną)..
+
+Nie pozwolą natomiast uzyskać zbieżności warunkowej. Tylko twierdzenie Leibnitza pozwoli taką zbieżność wykryć.
+
+W przypadku kryterium porównawczego, ilorazowego lub całkowego wynika to z faktu, że działamy na szeregach o wyrazach nieujemnych, a więc
+$ \suminfty{n_0} a_n = \suminfty{n_0} |a_n| $ \ i zbieżność bezwzględna jest równoważna zwykłej zbieżności.
+
+W przypadku warunku koniecznego możemy jedynie wywnioskować rozbieżność a to oznacza też rozbieżność bezwzględną.
+
+W przypadku kryterium Cauchy'ego lub d'Alemberta wynika to z własności modułu i faktu, że w obu tych kryteriach dla szeregów
+\ $ \suminfty{n_0} |a_n| $ \ oraz \ $ \suminfty{n_0} a_n $ \ liczymy granicę tego samego wyrażenia :
+$ \sqrt[n]{||a_n||} = \sqrt[n]{|a_n|} $ \ i podobnie \ $ \left| \frac{|a_{n+1}|}{|a_n|} \right| = \left| \frac{a_{n+1}}{a_n} \right| $
+\vspace{20pt}
+
+Dla $ a_n = \frac{(-3)^n}{n^3} $ \ i szeregu \ $ \suminfty{1} \frac{(-3)^n}{n^3} $ \ zarówno kryterium Cauchy'ego jak i d'Alemberta daje granicę
+\[ \lim_{n \to \infty} \left| \frac{a_{n+1}}{a_n} \right| = \lim_{n \to \infty} \sqrt[n]{|a_n|} = 3 > 1 \]
+
+Zatem ten szereg jest rozbieżny bezwzględnie i rozbieżny w zwykłym sensie.
+
+Oznacza to także, że \ $ \suminfty{1} |a_n| = \infty $ \ natomiast jeśli chodzi o sumę \ $ \suminfty{1} a_n $ \ to nie mamy pewności czy istnieje
+(wtedy jest nieskończona) czy też nie istnieje.
+
+W powyższym przykładzie \ $ \suminfty{1} \frac{(-3)^n}{n^3} $ \ nie istnieje. Wynika to z ciekawej własności szeregów naprzemiennych i własność
+ta pokazuje różnicę między kryterium Cauchy'ego i d'Alemberta. 
+\vspace{20pt}
+
+\textbf{Twierdzenie}
+
+Jeśli mamy szereg naprzemienny \ $ \suminfty{n_0} (-1)^n a_n, \ a_n > 0 $ i kryterium d'Alemberta daje rozbieżność, tzn.
+$ \lim_{n \to \infty} \frac{a_{n+1}}{a_n} > 1 $ \ to suma \ $ \suminfty{n_0} (-1)^n a_n $ \ nie istnieje.
+\bigskip
+
+Dla kryterium Cauchy'ego powyższe twierdzenie nie musi zachodzić, są przykłady szeregów naprzemiennych dla których z kryterium Cauchy'ego otrzymujemy
+rozbieżność, a mimo to suma szeregu jest równa $\infty$.
+\vspace{20pt}
+
+\textbf{Popularny błąd:} użycie kryterium Cauchy'ego / d'Alemberta i badanie obu typów zbieżności osobno. \bigskip
+
+" ... z kryterium Cauchy'ego / d'Alemberta wynika więc, że \ $ \suminfty{1} \frac{(-3)^n}{n^3} $ \ jest rozbieżny bezwzględnie.
+
+\textcolor{red}{Ale może być jeszcze zbieżny normalnie. }
+
+\textcolor{red}{Badam zwykłą zbieżność z twierdzenia Leibnitza...}"
+\bigskip
+
+\textbf{STRATA CZASU I ENERGII}. Jak już pisaliśmy, dla tych kryteriów mając rozbieżność bezwzględną mamy też zwykłą rozbieżność.
+\vspace{20pt}
+
+\textbf{Popularny błąd: } niepewne/błędne wnioski co do sumy szeregu rozbieżnego.
+
+"... z kryterium Cauchy'ego / d'Alemberta wynika więc, że $ \suminfty{1} \frac{(-3)^n}{n^3} $ jest rozbieżny \textcolor{red}{do $\infty$}"
+
+\textbf{Niepewny wniosek}. Jeżeli szereg zawiera nieskończenie wiele wyrazów dodatnich i nieskończenie wiele wyrazów ujemnych to kryteria te
+\textbf{nie gwarantują} istnienia sumy szeregu.
+
+A poza tym w zadaniach typu "zbadać zbieżność szeregu" mamy jedynie określić czy suma jest skończona czy nie.
+
+\vspace{20pt}
+\textbf{Popularny błąd: } opisowanie "badanie" monotoniczności ciągu, bez obliczeń.
 
 Na przykład dla ciągu $ a_n = \frac{n}{1000n + 1} $ :
 
@@ -689,7 +751,7 @@ Na przykład dla ciągu $ a_n = \frac{n}{1000n + 1} $ :
 GAME OVER... \ Takie "rozwiązanie" jest jak \textbf{pisanie bajek} --- nie musi mieć \linebreak
 \textbf{nic wspólnego z prawdą}.
 
-Dla powyższego ciągu mianownik rzeczywiście szybciej rośnie niż licznik (i to 1000 razy!), a mimo to ciąg ten jest rosnący. \\
+Dla powyższego ciągu mianownik rzeczywiście szybciej rośnie niż licznik (i to 1000 razy!), a mimo to ciąg ten jest rosnący. \vspace{20pt}
 
 \textbf{Przykład}
 
