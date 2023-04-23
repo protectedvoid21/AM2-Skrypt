@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2022.10.30)  18 APR 2023 13:59
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2022.10.30)  23 APR 2023 21:06
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -885,7 +885,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 113--114
 
  []
 
-<img/rozbiezneirozbiezne.png, id=248, 602.25pt x 353.06906pt>
+<img/rozbiezneirozbiezne.png, id=253, 602.25pt x 353.06906pt>
 File: img/rozbiezneirozbiezne.png Graphic file (type png)
 <use img/rozbiezneirozbiezne.png>
 Package pdftex.def Info: img/rozbiezneirozbiezne.png  used on input line 121.
@@ -1374,13 +1374,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 16--17
 
  []
 
-<img/wykres_wieluzm1.png, id=401, 346.896pt x 305.943pt>
+<img/wykres_wieluzm1.png, id=406, 346.896pt x 305.943pt>
 File: img/wykres_wieluzm1.png Graphic file (type png)
 <use img/wykres_wieluzm1.png>
 Package pdftex.def Info: img/wykres_wieluzm1.png  used on input line 35.
 (pdftex.def)             Requested size: 208.13919pt x 183.5672pt.
 [41]
-<img/stozek_wlzm.png, id=406, 755.07094pt x 534.49687pt>
+<img/stozek_wlzm.png, id=411, 755.07094pt x 534.49687pt>
 File: img/stozek_wlzm.png Graphic file (type png)
 <use img/stozek_wlzm.png>
 Package pdftex.def Info: img/stozek_wlzm.png  used on input line 57.
@@ -1400,7 +1400,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 77--78
 
  []
 
-<img/stozek_wlzm_2.png, id=412, 384.2355pt x 333.04425pt>
+<img/stozek_wlzm_2.png, id=417, 384.2355pt x 333.04425pt>
 File: img/stozek_wlzm_2.png Graphic file (type png)
 <use img/stozek_wlzm_2.png>
 Package pdftex.def Info: img/stozek_wlzm_2.png  used on input line 84.
@@ -1410,7 +1410,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 87--90
 
  []
 
-<img/stozek_wlzm_3.png, id=418, 424.58624pt x 341.47575pt>
+<img/stozek_wlzm_3.png, id=423, 424.58624pt x 341.47575pt>
 File: img/stozek_wlzm_3.png Graphic file (type png)
 <use img/stozek_wlzm_3.png>
 Package pdftex.def Info: img/stozek_wlzm_3.png  used on input line 97.
@@ -1421,7 +1421,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 106--107
  []
 
 [44 <./img/stozek_wlzm_2.png> <./img/stozek_wlzm_3.png>]
-<img/paraboloida.png, id=425, 639.5895pt x 377.61075pt>
+<img/paraboloida.png, id=430, 639.5895pt x 377.61075pt>
 File: img/paraboloida.png Graphic file (type png)
 <use img/paraboloida.png>
 Package pdftex.def Info: img/paraboloida.png  used on input line 118.
@@ -1437,7 +1437,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 145--146
  []
 
 [45 <./img/paraboloida.png>]
-<img/walec.png, id=431, 408.3255pt x 353.52075pt>
+<img/walec.png, id=436, 408.3255pt x 353.52075pt>
 File: img/walec.png Graphic file (type png)
 <use img/walec.png>
 Package pdftex.def Info: img/walec.png  used on input line 159.
@@ -1457,7 +1457,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 199--201
 
  []
 
-<img/interpretacja_geom.png, id=437, 850.67813pt x 602.25pt>
+<img/interpretacja_geom.png, id=442, 850.67813pt x 602.25pt>
 File: img/interpretacja_geom.png Graphic file (type png)
 <use img/interpretacja_geom.png>
 Package pdftex.def Info: img/interpretacja_geom.png  used on input line 212.
@@ -1611,13 +1611,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 536--537
  []
 
 [55]
-<img/rzut_plaszczyznaXY.png, id=482, 703.12688pt x 505.13719pt>
+<img/rzut_plaszczyznaXY.png, id=487, 703.12688pt x 505.13719pt>
 File: img/rzut_plaszczyznaXY.png Graphic file (type png)
 <use img/rzut_plaszczyznaXY.png>
 Package pdftex.def Info: img/rzut_plaszczyznaXY.png  used on input line 596.
 (pdftex.def)             Requested size: 281.24576pt x 202.05128pt.
  [56 <./img/rzut_plaszczyznaXY.png>]
-<img/paraboloida_przyklad.png, id=488, 586.44093pt x 441.14813pt>
+<img/paraboloida_przyklad.png, id=493, 586.44093pt x 441.14813pt>
 File: img/paraboloida_przyklad.png Graphic file (type png)
 <use img/paraboloida_przyklad.png>
 Package pdftex.def Info: img/paraboloida_przyklad.png  used on input line 612.
@@ -1628,27 +1628,45 @@ Overfull \hbox (18.22403pt too wide) in paragraph at lines 639--640
  []
 
 [57 <./img/paraboloida_przyklad.png>] [58]
-<img/trojkat.png, id=501, 408.02437pt x 396.7322pt>
+<img/trojkat.png, id=506, 408.02437pt x 396.7322pt>
 File: img/trojkat.png Graphic file (type png)
 <use img/trojkat.png>
 Package pdftex.def Info: img/trojkat.png  used on input line 714.
 (pdftex.def)             Requested size: 204.01169pt x 198.3656pt.
- [59 <./img/trojkat.png>]) [60] (Wyklad.aux)
+ [59 <./img/trojkat.png>]) (6_Calki_podwojne.tex
+<img/prostokat1.png, id=512, 334.24875pt x 255.95625pt>
+File: img/prostokat1.png Graphic file (type png)
+<use img/prostokat1.png>
+Package pdftex.def Info: img/prostokat1.png  used on input line 25.
+(pdftex.def)             Requested size: 267.39935pt x 204.76526pt.
+ [60]
+<img/prostowalec.png, id=517, 213.04594pt x 228.10219pt>
+File: img/prostowalec.png Graphic file (type png)
+<use img/prostowalec.png>
+Package pdftex.def Info: img/prostowalec.png  used on input line 43.
+(pdftex.def)             Requested size: 106.5227pt x 114.0508pt.
+ [61 <./img/prostokat1.png> <./img/prostowalec.png>]
+<img/krzywetrojkat.png, id=524, 293.59688pt x 301.125pt>
+File: img/krzywetrojkat.png Graphic file (type png)
+<use img/krzywetrojkat.png>
+Package pdftex.def Info: img/krzywetrojkat.png  used on input line 98.
+(pdftex.def)             Requested size: 205.5164pt x 210.78606pt.
+ [62]) [63 <./img/krzywetrojkat.png>] (Wyklad.aux)
 Package rerunfilecheck Info: File `Wyklad.out' has not changed.
-(rerunfilecheck)             Checksum: B87E33C36D7B301C91C287B8AAEF1CAB;7677.
+(rerunfilecheck)             Checksum: AFD79D4AA667F093C2A5AAF54AAEF86A;7800.
  ) 
 Here is how much of TeX's memory you used:
- 15782 strings out of 475385
- 272919 string characters out of 2776906
+ 15813 strings out of 475385
+ 273622 string characters out of 2776906
  636334 words of memory out of 3000000
- 36751 multiletter control sequences out of 15000+600000
+ 36772 multiletter control sequences out of 15000+600000
  482030 words of font info for 66 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  72i,14n,85p,484b,543s stack positions out of 10000i,1000n,20000p,200000b,80000s
 {C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/pl/plmi.enc}{C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/pl/plms.enc}{C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/pl/plrm.enc} <C:\Users\niezn\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk>{C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/pl/plme.enc}<C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plbx12.pfb><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plex10.pfb><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plmi10.pfb><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plmi12.pfb><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plmi6.pfb><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plmi8.pfb><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plr12.pfb><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plr17.pfb><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plr6.pfb><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plr8.pfb><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plsy10.pfb><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plsy6.pfb><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plsy8.pfb>
-Output written on Wyklad.pdf (60 pages, 1560474 bytes).
+Output written on Wyklad.pdf (63 pages, 1638693 bytes).
 PDF statistics:
- 612 PDF objects out of 1000 (max. 8388607)
- 148 named destinations out of 1000 (max. 500000)
- 328 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 636 PDF objects out of 1000 (max. 8388607)
+ 152 named destinations out of 1000 (max. 500000)
+ 351 words of extra memory for PDF output out of 10000 (max. 10000000)
 
