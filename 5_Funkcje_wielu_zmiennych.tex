@@ -5,24 +5,25 @@ Na początek kilka definicji dotyczących zbiorów w $ \mathbb{R}^n $.
 \begin{itemize}
     \item \underline{Otoczenie} punktu $ P = (x_1, x_2, ..., x_n) \in \mathbb{R}^n $ to $n$ -- wymiarowa kula otwarta o środku
     w $P$ i promieniu $r > 0$, tzn. zbiór
-    $$ K(P, r) = \{ Q = (y_1, y_2, ..., y_n) \in \mathbb{R}^n : |PQ|^2 = (x_1 - y_1)^2 + (x_2 - y_2)^2 + ... + (x_n - y_n)^2 < r^2 \} $$
+    \[ K(P, r) = \{ Q = (y_1, y_2, ..., y_n) \in \mathbb{R}^n : |PQ|^2 = (x_1 - y_1)^2 + (x_2 - y_2)^2 + ... + (x_n - y_n)^2 < r^2 \} \]
 
     Dla $n=2$ jest to koło o środku w $P$ bez brzegowego okręgu.
 
     Dla $n=3$ jest to kula o środku w $P$ bez brzegowej sfery.
     \item \underline{Sąsiedztwo} punktu $x_0 \in \mathbb{R}^n$ to zbiór postaci $ S = S(P, r) = K(P,r) \backslash P $
     \item Zbiór $ A \subset \mathbb{R}^n $ jest zbiorem \underline{otwartym}, gdy każdy punkt z $A$ posiada pewne otoczenie zawarte w $A$, tzn.
-    $$ \forall P \!\in\! A \ \exists K(P, r) \quad P\in K(P,r) \subset A $$
-    \item Zbiór $ A \subset \mathbb{R}^n $ jest zbiorem \underline{domkniętym}, gdy jego dopełnienie $ A = \mathbb{R}^n \backslash A $ jest zbiorem otwartym. \\
+    \[ \forall P \!\in\! A \ \exists K(P, r) \quad P\in K(P,r) \subset A \]
+    \item Zbiór $ A \subset \mathbb{R}^n $ jest zbiorem \underline{domkniętym}, gdy jego dopełnienie $ A = \mathbb{R}^n \backslash A $ jest zbiorem otwartym. \bigskip
 \end{itemize}
 
-\textbf{Definicja}
+\begin{tw}{Definicja}
 
 Funkcja wielu zmiennych ma postać
 $$ f: D \to \mathbb{R} $$
 gdzie $ D \subset \mathbb{R}^n $ jest dziedziną $f$.
 
 Zatem dla $ (x_1, x_2, ..., x_n) \in D $ \quad $ f(x_1, x_2, ..., x_n) \in \mathbb{R} $
+\end{tw}
 
 Gdy mamy funkcje dwóch zmiennych to zwykle piszemy $ z = f(x, y) $ a dla trzech zmiennych $ t = f(x, y, z) $.
 
@@ -70,12 +71,14 @@ to podstawienie $ r = \sqrt{x^2 + y^2} $ usuwa wszystkie $x$ i $y$ i prowadzi do
 W szczególności gdy mamy $z = f(x,y)$ i podstawienie $r$ powoduje, że $f$ zależy tylko od $r$ to wykresem $f$ jest powierzchnia
 obrotowa wokół osi $Z$. \\
 
-\textbf{Geometryczne własności takiej powierzchni}
+\begin{tw}{Geometryczne własności takiej powierzchni}
 
 \begin{itemize}
     \item Niepuste przecięcie powierzchni z dowolną płaszczyzną prostopadłą do osi $Z$ jest punktem, okręgiem lub sumą tych zbiorów.
     \item Niepuste przecięcie powierzchni z dowolną płaszczyzną zawierającą oś $Z$ jest krzywą o tym samym kształcie. \\
 \end{itemize}
+
+\end{tw}
 
 Na przykład dla powierzchni stożkowej $ z = a\sqrt{x^2 + y^2}, \ a > 0 $, przecięcie płaszczyzną prostopadłą do osi $Z$ jest okręgiem
 lub wierzchołkiem, a przecięcie płaszczyzną zawierającą oś $Z$ jest sumą dwóch półprostych wychodzących z wierzchołka.
@@ -159,11 +162,12 @@ Stąd bierze się nazwa tego typu krzywych.
 \includegraphics[scale=0.6]{img/walec.png}
 \end{center}
 
-\textbf{Definicja}
+\begin{tw}{Definicja}
 
 Poziomica funkcji $ z = f(x,y) $ na wysokości $h$ to zbiór
 $$ D_h = \{ (x,y): f(x,y) = h \} $$
-Jest to rzut na płaszczyznę $XY$ zbioru -- najczęściej krzywej -- będącego przekrojem wykresu $f$ płaszczyzną o równaniu $z = h$. \\
+Jest to rzut na płaszczyznę $XY$ zbioru -- najczęściej krzywej -- będącego przekrojem wykresu $f$ płaszczyzną o równaniu $z = h$.
+\end{tw}
 
 \textbf{Interpretacja geograficzna}
 
@@ -273,13 +277,13 @@ Otrzymaliśmy $ f_{xy} = f_{yx} $.
 
 Jest to szczególny przypadek znanego twierdzenia. \\
 
-\textbf{Twierdzenie Schwarza o pochodnych mieszanych}
+\begin{tw}{Twierdzenie Schwarza o pochodnych mieszanych}
 
 Gdy pochodne mieszane drugiego rzędu są funkcjami ciągłymi w danym punkcie to są w tym punkcie równe.
 
 W praktyce dla funkcji regularnych warunek ciągłości drugiego rzędu występuje zawsze na całych dziedzinach
 stąd prawie zawsze zobaczymy równość wzorów pochodnych mieszanych.
-
+\end{tw}
 
 \subsection*{Zbieżność w $\mathbb{R}^k$ i granice funkcji wielu zmiennych}
 \addcontentsline{toc}{subsection}{Zbieżność w $R^k$  i granice funkcji wielu zmiennych}
@@ -305,12 +309,13 @@ Analogicznie rozszerzamy tę definicję na przypadek $k$ -- wymiarowy. \\
 
 Poniższe twierdzenie pokazuje, że zbieżność $ P_n \to P_0 $ może być zdefiniowana w równoważny sposób. \\
 
-\textbf{Twierdzenie(zbieżność po współrzędnych)}
+\begin{tw}{Twierdzenie -- zbieżność po współrzędnych }
 
 Gdy
-$$ P_n = (x_n, y_n) \in \mathbb{R}^2 \quad \textrm{i} \quad P_0 = (x_0, y_0) \in \mathbb{R}^2 $$
+\[ P_n = (x_n, y_n) \in \mathbb{R}^2 \quad \textrm{i} \quad P_0 = (x_0, y_0) \in \mathbb{R}^2 \]
 to mamy równoważność
-$$ \limn P_n = P_0 \ \Leftrightarrow \ \limn x_n = x_0 \ \land \ \limn y_n = y_0 $$ \\
+\[ \limn P_n = P_0 \ \Leftrightarrow \ \limn x_n = x_0 \ \land \ \limn y_n = y_0 \]
+\end{tw}
 
 Dowód 
 
@@ -335,7 +340,7 @@ Analogicznie otrzymujemy $ \limn y_n = y_0 $ \\
 
 Jak łatwo zauważyć, twierdzenie ma analogiczną postać w przypadku wyższych wymiarów. \\
 
-\textbf{Definicja granicy funkcji dwóch zmiennych w punkcie}
+\begin{tw}{Definicja -- granica funkcji dwóch zmiennych w punkcie}
 
 $ \lim_{(x,y) \to (x_0,y_0)} f(x,y) = L \ \Leftrightarrow $ dla dowolnych ciągów punktów $ (x_n, y_n) \neq (x_0, y_0) $
 i takich, że $ \limn (x_n, y_n) = (x_0, y_0) $ zachodzi równość $ \limn f(x_n, y_n) = L $. \\
@@ -346,6 +351,7 @@ Równoważny zapis tej granicy, zgodny ze znaczeniem twierdzenia o zbieżności 
 $$ \lim_{\substack{x \to x_0 \\ y \to y_0}} f(x,y) = L $$
 
 Twierdzenie o granicach znane dla funkcji jednej zmiennej (arytmetyka granic, symbole nieoznaczone itd.) pozostają prawdziwe.
+\end{tw}
 
 Główny problem -- nie da się bezpośrednio zastosować niektórych popularnych technik, np. reguły de l'Hospitala.
 
@@ -487,13 +493,14 @@ się w punkcie $(0, -1) $.
 \subsection*{Ekstrema funkcji dwóch zmiennych}
 \addcontentsline{toc}{subsection}{Ekstrema funkcji dwóch zmiennych}
 
-\textbf{Definicja}
+\begin{tw}{Definicja}
 
 $f$ ma w $ P = (x_0, y_0) \in D_f $ minimum lokalne gdy $ f(x_0, y_0) $ jest najmniejszą wartością $f$ na pewnym kole o środku w $P$.
 
 $f$ ma w $ P = (x_0, y_0) \in D_f $ minimum lokalne gdy $ f(x_0, y_0) $ jest największą wartością $f$ na pewnym kole o środku w $P$. \\
 
-Gdy ta wartość jest najmniejsza/największa na całej dziedzinie $f$ to mówimy o ekstremum (minimum, maksimum) \underline{globalnym}. \\
+Gdy ta wartość jest najmniejsza/największa na całej dziedzinie $f$ to mówimy o ekstremum (minimum, maksimum) \underline{globalnym}.
+\end{tw}
 
 Na przykład funkcja $ f(x,y) = x^4 + y^6 $ ma w $(0,0)$ minimum i jest ono globalne, bo
 $$ f(0,0) = 0 $$
@@ -516,7 +523,7 @@ $$ W = H(P) = H(x_0, y_0) = \begin{vmatrix} f_{xx}(x_0, y_0), & f_{xy}(x_0, y_0)
 
 Interpretacja: $H$ to "wykrywacz" ekstremum: mówi czy ekstremum jest czy nie. \\
 
-\textbf{Twierdzenie}
+\begin{tw}{Twierdzenie}
 
 Jeżeli w pewnym otoczeniu $ P = (x_0, y_0) $ pochodne pierwszego i drugiego rzędu funkcji $f$ istnieją i są ciągłe oraz
 $ f_x(x_0, y_0) = f_y(x_0, y_0) = 0 $ to zachodzą poniższe własności.
@@ -527,6 +534,7 @@ $ f_x(x_0, y_0) = f_y(x_0, y_0) = 0 $ to zachodzą poniższe własności.
     \item Gdy $ H(x_0, y_0) < 0 $ to \textbf{nie ma ekstremum}.
     \item Gdy $ H(x_0, y_0) = 0 $ to \textbf{nic nie wiemy} -- metoda nie działa.
 \end{itemize}
+\end{tw}
 
 \textbf{Uwaga}
 
@@ -580,7 +588,7 @@ Zatem przy sprawdzaniu typu ekstremum (minimum/maksimum) możemy patrzeć na dow
 \subsection*{Ekstrema warunkowe}
 \addcontentsline{toc}{subsection}{Ekstrema warunkowe}
 
-\textbf{Definicja}
+\begin{tw}{Definicja}
 
 Funkcją warunkową nazwiemy \ $ f = f(x,y) $ \ gdzie dziedziną jest zbiór, który jest krzywą na płaszczyźnie $XY$ czyli ma postać zależności
 między $x$ i $y$: \ $F(x,y) = 0$.
@@ -591,6 +599,7 @@ daną równaniem \ $F(x,y) = 0$.
 Zatem jest to zbiór punktów \ $ (x, y, f(x,y)) $, \ gdzie \ $ F(x,y) = 0 $.
 
 Rzutem tej krzywej na płaszczyznę $XY$ jest krzywa płaska o równaniu $F(x,y) = 0$
+\end{tw}
 
 \begin{center}
 \includegraphics[scale=0.4]{img/rzut_plaszczyznaXY.png}
@@ -627,10 +636,11 @@ Mamy funkcję \ $ f(x,y), \ D_f = D $
 Interesuje nas wartość największa i wartość najmniejsza $f$ na $D$. Te wartości mogą istnieć lub nie. To zależy od funkcji i zbioru.
 \bigskip
 
-\textbf{Twierdzenie (Wersja tw. Weiertrassa (AM1) dla funkcji dwóch zmiennych)}
+\begin{tw}{Twierdzenie (Wersja tw. Weiertrassa (AM1) dla funkcji dwóch zmiennych)}
 
 Gdy $D$ jest domknięty (czyli cały brzeg $D$ jest zawarty w $D$) oraz ograniczony (czyli zawiera się w pewnym kole) i $f$ jest ciągła
 na $D$ to wartość największa i wartość najmniejsza $f$ na $D$ jest osiągana.
+\end{tw}
 \bigskip
 
 Gdzie te wartości mogą być osiągane dla funkcji różniczkowalnych?

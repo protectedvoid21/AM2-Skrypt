@@ -41,17 +41,21 @@ $$ \int \frac{1}{x} \,dx = \ln |x| + C, \ \
 
 Udowodniliśmy zatem ważny wynik \\
 
-\textbf{Twierdzenie} 
+\begin{tw}{Twierdzenie} 
 
 Gdy $ a > 0 $ to całka $ \int\limits_{a}^{\infty} \frac{1}{x^p} \,dx $
 jest skończona dla $ p > 1 $ oraz nieskończona dla $ p \leq 1 $.
 
+\end{tw}
+
 Podobnie można łatwo pokazać poniższy wynik \\
 
-\textbf{Twierdzenie}
+\begin{tw}{Twierdzenie}
 
 Gdy $ a \in \mathbb{R} $ i $ A > 0 $ to całka $ \int\limits_{a}^{\infty} A^x \,dx $
 jest skończona dla $ 0 < A < 1 $ oraz nieskończona \linebreak dla $ A \geq 1 $ \\
+
+\end{tw}
 
 Gdy $ \int f(x) \,dx = F(x) + C $ \ to
 
@@ -154,7 +158,7 @@ Uwagi:
     udowodnić zbieżność czy rozbieżność. To pomaga skonstruować odpowiednią nierówność między $f$ i $g$.
 \end{itemize}
 
-\textbf{Popularny błąd} - odpowiedź na podstawie przypadku wątpliwego \\
+\begin{blad}{Popularny błąd - odpowiedź na podstawie przypadku wątpliwego}
 
 Na przykład dla całki $ \int\limits_1^\infty \frac{1}{x + \sqrt{x}} \,dx $ : 
 
@@ -162,6 +166,8 @@ Na przykład dla całki $ \int\limits_1^\infty \frac{1}{x + \sqrt{x}} \,dx $ :
 jest rozbieżna \textcolor{red}{zatem całka $ \int\limits_{1}^{\infty} \frac{1}{x + \sqrt{x}} \,dx $ jest rozbieżna.}"
 
 GAME OVER... To jest przypadek nr 3 (wątpliwy) \\
+
+\end{blad}
 
 \textbf{Przykład}
 
@@ -260,11 +266,13 @@ na + co na -", a więc wszystko powinno się wzajemnie zrównoważyć.
 
 Aby taka całka miała sens trzeba nieco zmodyfikować jej definicję i wprowadzić pojęcie wartości głównej całki niewłaściwej (obustronnej).
 
-Definicja. Wartość główna całki $ \int\limits_{-\infty}^{\infty} f(x) \,dx $ to wielkość
+\begin{tw}{Definicja}
+Wartość główna całki $ \int\limits_{-\infty}^{\infty} f(x) \,dx $ to wielkość
 
 $$ \textrm{P.V.} \int\limits_{-\infty}^{\infty} f(x) \,dx = \lim_{T \to \infty} \int\limits_{-T}^{T} f(x) \,dx $$
 
-o ile powyższa granica istnieje. \\
+o ile powyższa granica istnieje.
+\end{tw}
 
 Oznacza to, że przybliżamy całkę po $\mathbb{R}$ całkami po przedziale symetrycznym względem 0.
 

@@ -9,6 +9,15 @@
 \usepackage[dvipsnames]{xcolor} 
 \usepackage{polski}
 \usepackage[utf8]{inputenc}
+\usepackage{tcolorbox}
+
+\newtcolorbox{tw}[1]{colback=Green!5!white,
+colframe=Green!75!black,fonttitle=\bfseries,
+title={#1}}
+
+\newtcolorbox{blad}[1]{colback=red!5!white,
+colframe=red!75!black,fonttitle=\bfseries,
+title={#1}}
 
 \newcommand{\suminfty}[1]{\sum\limits_{n = #1}^{\infty}}
 \newcommand{\dpartial}[2]{\frac{\partial #1}{\partial #2}}
@@ -47,16 +56,24 @@ Wszelkie uwagi, błędy (na pewno jakieś są) można pisać priv na discordzie 
 
 Miłej nauki!
 
+\input{test.tex}
+
 \input{1_Calki_niewlasciwe_I_rodzaju.tex}
+\pagebreak
 
 \input{2_Calki_niewlasciwe_II_rodzaju.tex}
+\pagebreak
 
 \input{3_Szeregi_liczbowe.tex}
+\pagebreak
 
 \input{4_Szeregi_potegowe.tex}
+\pagebreak
 
 \input{5_Funkcje_wielu_zmiennych.tex}
+\pagebreak
 
 \input{6_Calki_podwojne.tex}
+\pagebreak
 
 \end{document}

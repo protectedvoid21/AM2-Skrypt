@@ -13,13 +13,14 @@ Przypadek podstawowy -- $D$ jest prostokątem
 \[ D = [a,b] \times [c,d] = \{ (x,y): a \leq x \leq b, \ c \leq y \leq d \} \]
 \medskip
 
-\textbf{Całka w sensie Riemanna}
+\begin{tw}{Całka w sensie Riemanna}
 
 Dzielimy $D$ na $n$ prostokątów o bokach poziomych o długości $\Delta X$ i bokach pionowych o długości $\Delta y_i, \ i = 1,2,...,n$.
 W każdym z prostokątów wybieramy dowolny punkt $P_i = (a_i, b_i)$.
 
-Sumę Riemanna ($n$ -- tą sumę całkową) funkcji $f$ na $D$ jest
+Sumą Riemanna ($n$ -- tą sumę całkową) funkcji $f$ na $D$ jest
 \[ S_n = \sum\limits_{n=1}^{n} \Delta x_i \cdot \Delta y_i \cdot f(a_i, b_i) \]
+\end{tw}
 
 \begin{center}
     \includegraphics[scale=0.8]{img/prostokat1.png}
@@ -29,13 +30,15 @@ Jeżeli dla $ n \to \infty, \ \Delta x_i \to 0, \ \Delta y_i \to 0 $ \ granica \
 od wyboru prostokątów oraz punktów $P_i$ to nazywamy ją całką podwójną z $f$ na prostokącie $D$ i oznaczamy przez \ $ \iint\limits_D f(x,y) \, dxdy $.
 \bigskip
 
-\textbf{Twierdzenie}
+\begin{tw}{Twierdzenie}
 
 Gdy $f$ jest ciągła na prostokącie $D$ to całka podwójna z $f$ na $D$ istnieje.
 \bigskip
 
 Interpretacja geometryczna dla $ f \geq 0 $ na $D$: $S_n$ to suma objętości prostopadłościanów o krawędziach $ \Delta x_i, \ \Delta y_i $ oraz $ f(a_i, b_i) $.
 Prostopadłościany te przybliżają bryłę o podstawie $D$, ścianach pionowych i ograniczonej z góry przez powierzchnię $f$.
+\end{tw}
+
 
 Granica $S_n$ daje objętość tej bryły.
 
@@ -49,11 +52,12 @@ Dla $ D = [a,b] \times [c,d] $ są to całki postaci
 \begin{center}oraz \end{center}
 \[ \int\limits_a^b dx \int\limits_{c}^{d} f(x,y) \, dy = \int\limits_{a}^{b} dx \left( \int\limits_{c}^{d} f(x,y) \, dy \right) \]
 
-\textbf{Twierdzenie}
+\begin{tw}{Twierdzenie}
 
 Gdy $f$ jest ciągła na $D$ to
 \[ \int\limits_{c}^{d} dy \int\limits_{a}^{b} f(x,y) \, dx = \int\limits_{a}^{b} dx \int\limits_{c}^{d} f(x,y) \, dy = \iint\limits_D f(x,y) \, dxdy \]
-\medskip
+
+\end{tw}
 
 \textbf{Przykład}
 
@@ -80,10 +84,11 @@ Definicja całki podwójnej w sensie Riemanna jest analogiczna jak dla prostoką
 \begin{center} lub \end{center}
 \[ \int\limits_{c}^{d} dy \int\limits_{d(x)}^{g(x)} f(x,y)\, dx = \int\limits_{a}^{b} dy \left( \ \int\limits_{d(x)}^{g(x)} f(x,y)\, dx \right) \]
 
-\textbf{Twierdzenie}
+\begin{tw}{Twierdzenie}
 
 Gdy $f$ jest ciągła na obszarze normalnym to całka podwójna $ \iint\limits_{D} f(x,y)\, dxdy $ istnieje i jest równa każdej z całek iterowanych. 
-\bigskip
+
+\end{tw}
 
 \textbf{Przykład}
 
@@ -118,10 +123,11 @@ Całość:
 \[ \iint\limits_D f(x,y) \, dxdy = \frac{1}{2} \left( \frac{3}{4}e^4 + \frac{1}{4} \right) - \frac{1}{2} \cdot 2 = \frac{3}{8}e^4 - \frac{7}{8} \]
 \bigskip
 
-\textbf{Własności całki podwójnej}
+\begin{tw}{Własności całki podwójnej}
 \begin{itemize}
     \item $ \iint\limits_D \left( f(x,y) \pm g(x,y) \right)\, dxdy = \iint\limits_D f(x,y)\, dxdy \pm \iint\limits_D g(x,y)\, dxdy $
     \item $ \iint\limits_D c \cdot f(x,y)\, dxdy = c \iint\limits_D f(x,y)\, dxdy $
     \item gdy \ $ D = D_1 \cup D_2 $ \ i \ $ D_1, D_2 $ \ są rozłączne to
     $ \iint\limits_D f(x,y)\, dxdy = \iint\limits_{D_1} f(x,y)\, dxdy + \iint\limits_{D_2} f(x,y)\, dxdy $
 \end{itemize}
+\end{tw}

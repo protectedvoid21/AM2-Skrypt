@@ -16,13 +16,13 @@ $$ S_n = a_{n_0}, \ \ S_{n_0 + 1} = a_{n_0} + a_{n_0 + 1}, \ \ S_n = a_{n_0} + a
 
 $ S = \lim_{n \to \infty} S_n $ jest oznaczana przez $ \sum\limits_{k = n_0}^{\infty} a_k $. \\
 
-\textbf{Definicja} 
+\begin{tw}{Definicja} 
 
 Dla ustalonego $ n_0 \in \mathbb{Z} $ obiekt $ \sum\limits_{k = n_0}^{\infty} a_k $ nazywamy \underline{szeregiem liczbowym},
 a wartość S (gdy istnieje) jego \underline{sumą}, oznaczaną także przez $ \sum\limits_{k = n_0}^{\infty} a_k $. Mamy wtedy
 
-$$ S_n = a_{n_0}, \ \ S_{n_0 + 1} = a_{n_0} + a_{n_0 + 1}. \ \ S_n = a_{n_0} + a_{n_0 + 1} + ... + a_n + ... = 
-\sum\limits_{k = n_0}^{\infty} a_k = \lim_{n \to \infty} \sum\limits_{k = n_0}^{n} a_k = \lim_{n \to \infty} S_n $$
+\[ S_n = a_{n_0}, \ \ S_{n_0 + 1} = a_{n_0} + a_{n_0 + 1}. \ \ S_n = a_{n_0} + a_{n_0 + 1} + ... + a_n + ... = \]
+\[ \sum\limits_{k = n_0}^{\infty} a_k = \lim_{n \to \infty} \sum\limits_{k = n_0}^{n} a_k = \lim_{n \to \infty} S_n \]
 
 gdzie
 
@@ -38,6 +38,8 @@ Terminologia dotycząca sumy $S$ jest taka, jak dla ciągów. Są 3 przypadki :
     \item $S = \infty$ lub $S = -\infty$. Wtedy dany szereg jest \underline{rozbieżny} (do $\infty$ lub $-\infty$).
     \item $ S = \lim_{n \to \infty} S_n $ nie istnieje. Wtedy dany szereg jest \underline{rozbieżny}. \\
 \end{enumerate}
+
+\end{tw}
 
 \textbf{Przykłady}
 
@@ -140,7 +142,7 @@ $$ \lim_{n \to \infty} S_n = 1 = \suminfty{1} \frac{1}{n^2 + n} $$
 \subsection*{Własności szeregów zbieżnych}
 \addcontentsline{toc}{subsection}{Własności szeregów zbieżnych}
 
-\textbf{Twierdzenie}
+\begin{tw}{Twierdzenie}
 
 Jeżeli szeregi $ \sum\limits_{n = n_0}^{\infty} a_n $ oraz $ \sum\limits_{n = n_0}^{\infty} b_n $ są zbieżne to zbieżne są szeregi
 $ \sum\limits_{n = n_0}^{\infty} (a_n + b_n) $ \linebreak oraz $ \sum\limits_{n = n_0}^{\infty} (c \cdot a_n), \ c \in \mathbb{R} $. \\
@@ -153,6 +155,7 @@ Ponadto
 \end{itemize}
 
 Prawdziwe są także analogiczne twierdzenia prowadzące do arytmetyki granic nieskończonych, gdy nie pojawiają się symbole nieoznaczone.
+\end{tw}
 
 Na przykład gdy $ \sum\limits_{n = n_0}^{\infty} a_n = \infty $ \ oraz \ $ \sum\limits_{n = n_0}^{\infty} b_n = b \in \mathbb{R} $ \ to 
 
@@ -163,11 +166,12 @@ $ \sum\limits_{n = n_0}^{\infty} (a_n - b_n) $ może być zarówno zbieżny jak 
 
 $$ \sum\limits_{n = n_0}^{\infty} (a_n - b_n) = \sum\limits_{n = n_0}^{\infty} a_n - \sum\limits_{n = n_0}^{\infty} b_n $$ \\
 
-\textbf{Twierdzenie}
+\begin{tw}{Twierdzenie}
 
 Zmiana wartości $n_0$ nie wpływa na zbieżność/rozbieżność szeregu $ \sum\limits_{n = n_0}^{\infty} a_n $.
 
-Może mieć wpływ na wartość jego sumy. \\
+Może mieć wpływ na wartość jego sumy.
+\end{tw}
 
 Stąd wynika np., że szeregi $ \suminfty{1} a_n $ i $ \sum\limits_{n = 100}^{\infty} a_n $ są albo oba zbieżne
 albo oba rozbieżne do $ \infty $ lub $-\infty$ albo oba rozbieżne.
@@ -176,13 +180,14 @@ To też oznacza, że na podstawie kilku pierwszych wyrazów ciągu/szeregu
 
 \textbf{NIC NIE MOŻNA POWIEDZIEĆ} o jego zbieżności \\
 
-\textbf{Popularny błąd}
+\begin{blad}{Popularny błąd}
 
 "Liczymy wartości $ a_1, a_2, a_3, a_4, a_5$ . Wychodzi ciąg malejący i dodatni.
 
-\textcolor{red}{Zatem szereg jest zbieżny}". \textbf{GAME OVER...} \\
+\textcolor{red}{Zatem szereg jest zbieżny}". \textbf{GAME OVER...} 
+\end{blad}
 
-\textbf{Twierdzenie}
+\begin{tw}{Twierdzenie}
 
 Dla ustalonego $ n_0 \in \mathbb{N}^+ $ i $ p \in \mathbb{R} $ szereg $ \sum\limits_{n = n_0}^{\infty} \frac{1}{n^p} $
 jest zbieżny dla $ p > 1 $ i rozbieżny do $\infty$ dla $p \leq 1$.  \\
@@ -197,16 +202,18 @@ Oznacza to zwykle własności postaci
 
 \quad warunek zachodzi $ \Rightarrow $ szereg jest zbieżny/rozbieżny,
 
-\quad warunek nie zachodzi $\Rightarrow$ nic nie wiemy o zbieżności/rozbieżności szeregu \\
+\quad warunek nie zachodzi $\Rightarrow$ nic nie wiemy o zbieżności/rozbieżności szeregu
+\end{tw}
 
 \subsection*{Popularne kryteria zbieżności szeregów}
 \addcontentsline{toc}{subsection}{Popularne kryteria zbieżności szeregów}
 
 0. Warunek konieczny zbieżności szeregów \\ 
 
-\textbf{Twierdzenie}
+\begin{tw}{Twierdzenie}
 
-Jeżeli szereg $ \sum\limits_{n = n_0}^{\infty} a_n $ jest zbieżny to $ \lim_{n \to \infty} a_n = 0 $. \\
+Jeżeli szereg $ \sum\limits_{n = n_0}^{\infty} a_n $ jest zbieżny to $ \lim_{n \to \infty} a_n = 0 $.
+\end{tw}
 
 Dowód 
 
@@ -224,7 +231,7 @@ $$ \lim_{n \to \infty} a_n = \lim_{n \to \infty} (S_n - S_{n - 1}) = \lim_{n \to
 
 Transpozycja tego twierdzenia daje warunek równoważny do zastosowania praktycznego :
 
-Jeżeli $ \lim_{n \to \infty} a_n \neq 0 $ to szereg $ \sum\limits_{n = n_0}^{\infty} a_n $ nie jest zbiezny przy czym
+Jeżeli $ \lim_{n \to \infty} a_n \neq 0 $ to szereg $ \sum\limits_{n = n_0}^{\infty} a_n $ nie jest zbieżny przy czym
 
 \begin{itemize}
     \item gdy $ \lim_{n \to \infty} a_n > 0 $ to $ \sum\limits_{n = n_0}^{\infty} a_n = \infty $
@@ -238,9 +245,10 @@ Jeżeli $ \lim_{n \to \infty} a_n = 0 $ to jeszcze \textbf{NIC NIE WIEMY} o szer
 Na przykład szeregi $ \sum\limits_{n = n_0}^{\infty} \frac{1}{n^p} $ mają $ \lim_{n \to \infty} \frac{1}{n^p} = 0 $
 dla wszystkich $ p > 0 $ ale niektóre z tych szeregów są zbieżne, a niektóre rozbieżne. \\
 
-\textbf{Popularny błąd}
+\begin{blad}{Popularny błąd}
 
-"$\lim_{n \to \infty} a_n = 0 $ \textcolor{red}{zatem szereg jest zbieżny}". \textbf{GAME OVER...} \\
+"$\lim_{n \to \infty} a_n = 0 $ \textcolor{red}{zatem szereg jest zbieżny}". \textbf{GAME OVER...}
+\end{blad}
 
 Szeregi o wyrazach nieujemnych
 
@@ -306,15 +314,17 @@ Uwagi
     \item Warto sprawdzić opisany wyżej iloraz najwyższych potęg i na tej podstawie przewidzieć czy chcemy udowodnić zbieżność
     czy rozbieżność. To pomaga skonstruować odpowiednią nierówność między $a_n$ i $b_n$.
 \end{itemize}
+\bigskip
 
-\textbf{Popularny błąd : } odpowiedź na podstawie przypadku wątpliwego
+\begin{blad}{Popularny błąd -- odpowiedź na podstawie przypadku wątpliwego } 
 
 Na przykład dla szeregu $ \suminfty{1} \frac{1}{n + \sqrt{n}} : $
 
 "Mamy $ 0 \leq \frac{1}{n + \sqrt{n}} \leq \frac{1}{n} $ i szereg $ \suminfty{1} \frac{1}{n} $
 jest rozbieżny \textcolor{red}{zatem szereg $\suminfty{1} \frac{1}{n + \sqrt{n}}$ jest rozbieżny}". \\
 
-\textbf{GAME OVER...} To jest przypadek nr 3 (wątpliwy) \\
+\textbf{GAME OVER...} To jest przypadek nr 3 (wątpliwy)
+\end{blad}
 
 \textbf{Przykład}
 
@@ -586,10 +596,11 @@ Zatem wyjściowy szereg jest zbieżny
 \subsection*{Zbieżność bezwzględna szeregów}
 \addcontentsline{toc}{subsection}{Zbieżność bezwzględna szeregów}
 
-\textbf{Definicja}
+\begin{tw}{Definicja}
 
 Szereg $ \sum\limits_{n=n_0}^{\infty} a_n$ jest \underline{zbieżny bezwzględnie}, gdy zbieżny jest szereg
-$ \sum\limits_{n=n_0}^{\infty} |a_n|$. \\
+$ \sum\limits_{n=n_0}^{\infty} |a_n|$.
+\end{tw}
 
 Uwagi
 
@@ -606,7 +617,7 @@ Uwagi
     Zatem $ \left| \sum\limits_{n=n_0}^{\infty} a_n \right| $ \ i \ $ \sum\limits_{n=n_0}^{\infty} |a_n| $ \textbf{to nie to samo}. \\
 \end{itemize}
 
-\textbf{Twierdzenie}
+\begin{tw}{Twierdzenie}
 
 Jeżeli szereg jest bezwzględnie zbieżny to jest zbieżny (w zwykłym sensie).
 
@@ -614,6 +625,7 @@ Transpozycja tego twierdzenia daje warunek równoważny:
 
 Jeżeli szereg $ \sum\limits_{n = n_0}^{\infty} a_n $ nie jest zbieżny to również nie jest zbieżny bezwzględnie, co oznacza
 $ \sum\limits_{n=n_0}^{\infty} |a_n| = \infty $.
+\end{tw}
 
 Twierdzenie odwrotne nie jest prawdziwe. Są szeregi zbieżne ale nie bezwzględnie, np.
 $ \sum\limits_{n=1}^{\infty} \frac{(-1)^n}{n} $. Takie szeregi to tzw. szeregi \underline{zbieżne warunkowo}. \\
@@ -652,10 +664,11 @@ $$ \sqrt{2} - \sqrt{3} + \sqrt{4} - \sqrt{5} + ... = \sum\limits_{n=2}^{\infty} 
 
 $$ 1 - \frac{1}{2} + \frac{1}{3} - \frac{1}{4} + ... = \sum\limits_{n=1}^{\infty} \frac{(-1)^{n+1}}{n} $$ \\
 
-\textbf{Definicja}
+\begin{tw}{Twierdzenie}
 
 Szereg naprzemienny $ \sum\limits_{n = n_0}^{\infty} (-1)^n \cdot a_n $ \ lub \ $ \sum\limits_{n = n_0}^{\infty} (-1)^{n+1} \cdot a_n $
 nazywany jest \underline{szeregiem Leibnitza}, jeżeli $a_n$ jest ciągiem nierosnącym i zbieżnym do 0.
+\end{tw}
 
 Na przykład $ 1 - \frac{1}{2} + \frac{1}{3} - \frac{1}{4} + ... = \sum\limits_{n=1}^{\infty} \frac{(-1)^{n+1}}{n} $
 jest szeregiem Leibnitza, bo tutaj $ a_n = \frac{1}{n} $ jest malejący i zbieżny do 0. \\
@@ -710,17 +723,19 @@ W powyższym przykładzie \ $ \suminfty{1} \frac{(-3)^n}{n^3} $ \ nie istnieje. 
 ta pokazuje różnicę między kryterium Cauchy'ego i d'Alemberta. 
 \vspace{20pt}
 
-\textbf{Twierdzenie}
+\begin{tw}{Twierdzenie}
 
 Jeśli mamy szereg naprzemienny \ $ \suminfty{n_0} (-1)^n a_n, \ a_n > 0 $ i kryterium d'Alemberta daje rozbieżność, tzn.
 $ \lim_{n \to \infty} \frac{a_{n+1}}{a_n} > 1 $ \ to suma \ $ \suminfty{n_0} (-1)^n a_n $ \ nie istnieje.
+\end{tw}
+
 \bigskip
 
 Dla kryterium Cauchy'ego powyższe twierdzenie nie musi zachodzić, są przykłady szeregów naprzemiennych dla których z kryterium Cauchy'ego otrzymujemy
 rozbieżność, a mimo to suma szeregu jest równa $\infty$.
 \vspace{20pt}
 
-\textbf{Popularny błąd:} użycie kryterium Cauchy'ego / d'Alemberta i badanie obu typów zbieżności osobno. \bigskip
+\begin{blad}{Popularny błąd -- użycie kryterium Cauchy'ego / d'Alemberta i badanie obu typów zbieżności osobno}
 
 " ... z kryterium Cauchy'ego / d'Alemberta wynika więc, że \ $ \suminfty{1} \frac{(-3)^n}{n^3} $ \ jest rozbieżny bezwzględnie.
 
@@ -730,9 +745,9 @@ rozbieżność, a mimo to suma szeregu jest równa $\infty$.
 \bigskip
 
 \textbf{STRATA CZASU I ENERGII}. Jak już pisaliśmy, dla tych kryteriów mając rozbieżność bezwzględną mamy też zwykłą rozbieżność.
-\vspace{20pt}
+\end{blad}
 
-\textbf{Popularny błąd: } niepewne/błędne wnioski co do sumy szeregu rozbieżnego.
+\begin{blad}{Popularny błąd -- niepewne/błędne wnioski co do sumy szeregu rozbieżnego} 
 
 "... z kryterium Cauchy'ego / d'Alemberta wynika więc, że $ \suminfty{1} \frac{(-3)^n}{n^3} $ jest rozbieżny \textcolor{red}{do $\infty$}"
 
@@ -740,9 +755,9 @@ rozbieżność, a mimo to suma szeregu jest równa $\infty$.
 \textbf{nie gwarantują} istnienia sumy szeregu.
 
 A poza tym w zadaniach typu "zbadać zbieżność szeregu" mamy jedynie określić czy suma jest skończona czy nie.
+\end{blad}
 
-\vspace{20pt}
-\textbf{Popularny błąd: } opisowanie "badanie" monotoniczności ciągu, bez obliczeń.
+\begin{blad}{Popularny błąd -- opisowne "badanie" monotoniczności ciągu, bez obliczeń}
 
 Na przykład dla ciągu $ a_n = \frac{n}{1000n + 1} $ :
 
@@ -751,7 +766,8 @@ Na przykład dla ciągu $ a_n = \frac{n}{1000n + 1} $ :
 GAME OVER... \ Takie "rozwiązanie" jest jak \textbf{pisanie bajek} --- nie musi mieć \linebreak
 \textbf{nic wspólnego z prawdą}.
 
-Dla powyższego ciągu mianownik rzeczywiście szybciej rośnie niż licznik (i to 1000 razy!), a mimo to ciąg ten jest rosnący. \vspace{20pt}
+Dla powyższego ciągu mianownik rzeczywiście szybciej rośnie niż licznik (i to 1000 razy!), a mimo to ciąg ten jest rosnący.
+\end{blad}
 
 \textbf{Przykład}
 

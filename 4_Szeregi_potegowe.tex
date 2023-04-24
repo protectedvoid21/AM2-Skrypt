@@ -1,6 +1,6 @@
 \section{Szeregi potęgowe}
 
-\textbf{Definicja}
+\begin{tw}{Definicja}
 
 Szereg potęgowy zmiennej $x$ to szereg postaci
 
@@ -8,11 +8,14 @@ $$ c_0 + c_1(x - x_0) + c_2(x- x_0)^2 + ... + c_n(x - x_0)^n + ... $$
 
 gdzie $x_0 \in \mathbb{R} $ to tzw. środek/centrum a $ c_1, c_2, ..., c_n, ... $ to \underline{współczynniki} szeregu.
 
-Dla $x \neq x_0$ mamy zapis sumy jako $ \sum\limits_{n = 0}^{\infty} c_n(x - x_0)^n $. Dla $x = x_0$ przyjmujemy
+Dla $x \neq x_0$ mamy zapis sumy jako $ \sum\limits_{n = 0}^{\infty} c_n(x - x_0)^n $. 
+
+Dla $x = x_0$ przyjmujemy
 $ \sum\limits_{n = 0}^{\infty} c_n(x - x_0)^n = c_0 $ i wtedy wyjściowa suma jest równa $ \sum\limits_{n = 0}^{\infty} c_n(x - x_0)^n $
 dla wszystkich $x$
 
-Gdy $x_0 = 0$ to szereg nazywamy \underline{szeregiem Maclaurina}. \\
+Gdy $x_0 = 0$ to szereg nazywamy \underline{szeregiem Maclaurina}.
+\end{tw}
 
 \textbf{Przykłady}
 
@@ -102,14 +105,15 @@ W zdecydowanej większości przypadków granica ta istnieje i prowadzi do najcz�
     ale \textbf{NIGDY} z kryterium Cauchy'ego lub d'Alemberta bo \textbf{ZAWSZE wyjdzie $q = 1$}. \\
 \end{itemize}
 
-\textbf{Popularny błąd :} \\
+\begin{blad}{Popularny błąd}
 
 " ... wstępny przedział zbieżności to $(-1, 1)$.
 
-Badam zbieżność dla $x=1$ z \textcolor{red}{kryterium d'Alemberta}"
+Badam zbieżność dla $x=1$ z \textcolor{red}{kryterium d'Alemberta}" \bigskip
 
 \textbf{STRATA CZASU I ENERGII}. Będzie przypadek wątpliwy i $q = 1$ a jeżeli przypadkiem wyjdzie
 $q \neq 1$ to na pewno \textbf{gdzieś jest błąd}.
+\end{blad}
 
 \textbf{Przykłady}
 
@@ -156,7 +160,7 @@ $x = 0$ daje $ \sum\limits_{n = 1}^{\infty} \frac{(0 - 1)^n}{\sqrt{n}} = \sum\li
 
 Zatem przedział zbieżności tego szeregu to $[0, 2)$. \\
 
-\textbf{Twierdzenie}
+\begin{tw}{Twierdzenie}
 
 Gdy szereg $ \sum\limits_{n = 0}^{\infty} c_n(x - x_0)^n $ ma wszystkie współczynnki $ c_n \neq 0 $ i istnieje granica
 
@@ -168,13 +172,14 @@ to promień zbieżności wynosi
     \item $ R = 0$, gdy $q = \infty$,
     \item $ R = \infty $, gdy $ q = 0 $. \\
 \end{itemize}
+\end{tw}
 
 Uwaga. Twierdzenie to bywa \textbf{źle stosowane.}
 
 Nie można go bezpośrednio stosować do np. szeregów potęgowych gdzie występują tylko potęgi parzyste lub tylko
 potęgi nieparzyste, bo wtedy \textbf{$q$ nie istnieje}. \\
 
-\textbf{Popularny błąd:}
+\begin{blad}{Popularny błąd}
 
 "Dla szeregu $ \sum\limits_{n = 0}^{\infty} \frac{1}{2^n} \cdot x^{2n + 1} $ mamy 
 $ \lim_{n \to \infty} \sqrt[n]{|c_n|} = \lim_{n \to \infty} \sqrt[n]{ \left| \textcolor{red}{\frac{1}{2^n}} \right| } $
@@ -185,13 +190,15 @@ Stąd \textcolor{red}{$ R = 2, \ x \in (-2, 2) $}" \\
 $ \lim_{n \to \infty} \sqrt[n]{|c_n|} $ nie istnieje.
 
 Ten szereg jest szeregiem geometrycznym o ilorazie $ \frac{x^2}{2} $ i jest zbieżny dla $ x \in (-\sqrt{2}, \sqrt{2}) $
-czyli $ R = \sqrt{2} $. \\
+czyli $ R = \sqrt{2} $.
+\end{blad}
 
-\textbf{Definicja}
+\begin{tw}{Definicja}
 
 Jeżeli szereg $ \sum\limits_{n = 0}^{\infty} c_n(x - x_0)^n $ jest zbieżny przynajmniej na $ (x_0 - R, x_0 + R), \ R > 0 $ to
 jego sumę $ f(x) = \sum\limits_{n = 0}^{\infty} c_n(x - x_0)^n $ nazywamy rzeczywistą \underline{funkcją analityczną}, a szereg
 -- szeregiem Taylora.
+\end{tw}
 
 
 \subsection*{Własności szeregów potęgowych}
