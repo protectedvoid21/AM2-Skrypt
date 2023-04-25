@@ -20,18 +20,19 @@ Terminologia dotycząca takich całek jest taka, jak dla ciągów. Są 3 przypad
 
 Analogicznie dla $ \int\limits_{\infty}^{b} f(x)\,dx $
 
-\textbf{Przykłady :}
-
+\begin{przyklad}
 $$ \int\limits_{0}^{\infty} \sin x \,dx = \lim_{T \to \infty} \int\limits_{0}^{T} \sin x \,dx = 
 \lim_{T \to \infty} [-\cos x]_0^T = \lim_{T \to \infty} (-\cos T - (- \cos 0)) = \lim_{T \to \infty} (1 - \cos T) $$
 
-Granica ta nie istnieje więc całka jest rozbieżna. \\
+Granica ta nie istnieje więc całka jest rozbieżna. 
+\end{przyklad}
 
+\begin{przyklad}
 $$ \int\limits_{-\infty}^{0} 2^x \,dx = \lim_{T \to -\infty} \int\limits_{T}^{0} 2^x \,dx = 
 \lim_{T \to -\infty} \left[ \frac{2^x}{\ln 2} \right]_T^0 = \lim_{T \to -\infty} 
 \left( \frac{1}{\ln 2} - \frac{2^T}{\ln 2} \right) = \frac{1}{\ln 2} $$
 
-Całka jest zbieżna do $ \frac{1}{\ln 2} $. \\
+Całka jest zbieżna do $ \frac{1}{\ln 2} $.
 
 Pozostaje przypadek $ p = 1 $. Wtedy
 
@@ -39,7 +40,8 @@ $$ \int \frac{1}{x} \,dx = \ln |x| + C, \ \
 \int\limits_{a}^{T} \frac{1}{x} \,dx = [\ln |x|]_a^T = \ln |T| - \ln |a|, \ \
 \int\limits_{a}^{\infty} \frac{1}{x} \,dx = \lim_{T \to \infty} (\ln |T| - \ln |a|) = \infty $$
 
-Udowodniliśmy zatem ważny wynik \\
+Udowodniliśmy zatem ważny wynik
+\end{przyklad}
 
 \begin{tw}{Twierdzenie} 
 
@@ -169,7 +171,7 @@ GAME OVER... To jest przypadek nr 3 (wątpliwy) \\
 
 \end{blad}
 
-\textbf{Przykład}
+\begin{przyklad}
 
 $$ \int\limits_4^\infty \frac{2x - 3}{x^3 - 1} \,dx $$
 
@@ -188,6 +190,7 @@ $$ 0 \leq \frac{2x}{x^3 - \frac{1}{2}x^3} = 4 \cdot \frac{x}{x^3} = 4 \cdot \fra
 
 $$ \int\limits_4^\infty \frac{4}{x^2} \,dx = 4 \int\limits_4^\infty \frac{1}{x^2} \,dx < \infty
 \quad \left(\frac{1}{2}x^3 > 1 \ \mathrm{dla} \ x \geq 4 \right) $$
+\end{przyklad}
 
 
 \subsection*{Twierdzenie(kryterium ilorazowe)}
@@ -213,7 +216,7 @@ Uwagi
     Np. $ \int\limits_{1}^{\infty} \frac{2 + \sin x}{x} \,dx $
 \end{itemize}
 
-\textbf{Przykłady} \\
+\begin{przyklad}
 
 Poprzedni przykład raz jeszcze 
 
@@ -225,7 +228,8 @@ $$ g(x) = \frac{x}{x^3} = \frac{1}{x^2} > 0 $$
 
 $$ \lim_{x \to \infty} = \frac{f(x)}{g(x)} = \lim_{x \to \infty} \frac{x^2(2x - 3)}{x^3 - 1} = 2 $$
 
-Obie całki zbieżne lub obie rozbieżne do $\infty$ \\
+Obie całki zbieżne lub obie rozbieżne do $\infty$
+\end{przyklad}
 
 Przykłady o postaci funkcji złożonej $ \int\limits_{a}^{\infty} f(g(x)) \,dx $
 gdzie $ \lim_{x \to \infty} g(x) = 0^+ $ oraz $ \lim_{x \to 0^+} f(x) = 0^+ $
@@ -238,7 +242,7 @@ $$ \lim_{x \to \infty} \frac{f(g(x))}{g(x)} = \lim_{t = g(x) \to 0^+} \frac{f(t)
 
 przy użyciu granic podstawowych lub reguły de l'Hospitala. \\
 
-\textbf{Na przykład}
+\begin{przyklad}
 
 $$ \int\limits_{1}^{\infty} \left( 2^{\frac{1}{\sqrt{x}}} - 1 \right) \,dx $$
 
@@ -253,11 +257,12 @@ Obie całki zbieżne lub obie rozbieżne
 
 $$ \int\limits_1^\infty \frac{1}{\sqrt{x}} \,dx = \int\limits_1^\infty \frac{1}{x^{\frac{1}{2}}} \,dx = \infty\ \quad
 \textrm{bo} \quad \frac{1}{2} \leq 1 $$
+\end{przyklad}
 
 \subsection*{Wartość główna całki niewłaściwej I rodzaju}
 \addcontentsline{toc}{subsection}{Wartość główna całki niewłaściwej I rodzaju}
 
-Całka $ \int\limits_{-\infty}^{\infty} x \,dx $ jest rozbiezna, gdyż jako suma całek prowadzi do symbolu $ \infty - \infty $:
+Całka $ \int\limits_{-\infty}^{\infty} x \,dx $ jest rozbieżna, gdyż jako suma całek prowadzi do symbolu $ \infty - \infty $:
 
 $$ \int\limits_{-\infty}^{\infty} x \,dx = \int\limits_{-\infty}^{0} x \,dx + \int\limits_{0}^{\infty} x \,dx = -\infty + \infty $$
 
@@ -278,7 +283,7 @@ Oznacza to, że przybliżamy całkę po $\mathbb{R}$ całkami po przedziale syme
 
 P.V. jest skrótem od angielskiego "Principal Value". \\
 
-\textbf{Na przykład} 
+\begin{przyklad}
 
 $$ \textrm{P.V.} \int\limits_{-\infty}^{\infty} x \,dx = \lim_{T \to \infty} \int\limits_{-T}^{T} x\,dx
 = \lim_{T \to \infty} 0 = 0 $$
@@ -293,11 +298,14 @@ Jeżeli teraz ma sens wyrażenie $ \lim_{T \to \infty} F(T ) - \lim_{T \to \inft
 $$ \textrm{P.V.} \int\limits_{-\infty}^{\infty} f(x) \,dx = \lim_{T \to \infty} (F(T) - F(-T)) = 
 \lim_{T \to \infty} F(T) - \lim_{T \to \infty} F(-T) = $$ $$ =  \lim_{T \to \infty} F(T) - \lim_{S \to -\infty} F(S)
 = \int\limits_{-\infty}^{\infty} f(x) \,dx $$
+\end{przyklad}
 
-Udowodniliśmy zatem poniższe twierdzenie. \\
+Udowodniliśmy zatem poniższe twierdzenie. 
 
+\begin{tw}{Twierdzenie}
 Jeżeli całka $ \int\limits_{-\infty}^{\infty} f(x) \,dx $ istnieje w zwykłym sensie (jako suma odpowiednich całek jednostronnych
 jest liczbą lub jedną z nieskończoności) to również jej wartość główna istnieje i jest równa tej całce.
+\end{tw}
 
 Natomiast może się zdarzyć, że wartość główna całki istnieje ale sama całka jest rozbieżna (był przykład).
 

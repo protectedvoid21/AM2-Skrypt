@@ -43,6 +43,7 @@ Terminologia dotycząca sumy $S$ jest taka, jak dla ciągów. Są 3 przypadki :
 
 \textbf{Przykłady}
 
+\begin{przyklad}
 $$ \frac{1}{2^1} + \frac{1}{2^2} + \frac{1}{2^3} + ... + \frac{1}{2^n} + ... = \suminfty{1} \frac{1}{2^n} 
 \textrm { - szereg zbieżny do 1}$$
 
@@ -50,6 +51,7 @@ $$ \frac{1}{2} + \frac{1}{3} + ... + \frac{1}{n} + ... = \sum\limits_{n = 2}^{\i
 \textrm { - szereg rozbieżny do } \infty$$
 
 $$ 1 - 1 + 1 - 1 + 1 - 1 + ... = \sum\limits_{n = 0}^{\infty} (-1)^n \textrm{ - szereg rozbieżny} $$
+\end{przyklad}
 
 Uwaga. Każdy szereg zaczynający się od indeksu $ n_0 \in \mathbb{Z} $ można przekształcić tak, by zaczynał się od indeksu 1.
 Wynika to z równości
@@ -98,27 +100,32 @@ Niektóre przypadki szczególne.
 
     \textbf{Przykłady}
 
+    \begin{przyklad}
+
     $$ \suminfty{1} \left( \frac{1}{n} - \frac{1}{n + 1} \right) \ \textrm{- tutaj} \ f(x) = \frac{1}{x} $$
 
     $$ \suminfty{1} \left( \sqrt{n + 1} - \sqrt{n} \right) \ \textrm{- tutaj} \ f(x) = \sqrt{x} $$
 
     $$ \suminfty{1} \left( \arctan(n) - \arctan(n+2) \right) \ \textrm{- tutaj} \ f(x) = \arctan x $$
+    \end{przyklad}
 
     Dla takich szeregów łatwo wyznacza się wzór na $S_n$. Wyrazy wewnętrzne się upraszczają i zostaje: \\
     suma $k$ pierwszych wartości, \ $f$ suma $k$ ostatnich wartości $f$ (lub na odwrót) \\
 
 \end{enumerate}
 
-\textbf{Na przykład} dla $ \suminfty{1} \left( f(n) - f(n + 1)) \right) $ mamy
+\begin{przyklad} D
+Dla $ \suminfty{1} \left( f(n) - f(n + 1)) \right) $ mamy
 
 $$ S_n = f(1) - \textcolor{red}{f(2)} + \textcolor{red}{f(2)} - \textcolor{blue}{f(3)} + \textcolor{blue}{f(3)} - 
 \textcolor{green}{f(4)} + ... + \textcolor{purple}{f(n)} - f(n + 1) = f(1) - f(n + 1) $$
 
 Jeżeli istnieje granica $ G = \lim_{x \to \infty} f(x) $ to mamy
 
-$$ S = \lim_{n \to \infty} S_n = \lim_{n \to \infty} \left( f(1) - f(n + 1) \right) = f(1) - G $$ \\
+$$ S = \lim_{n \to \infty} S_n = \lim_{n \to \infty} \left( f(1) - f(n + 1) \right) = f(1) - G $$
+\end{przyklad}
 
-\textbf{Przykład} 
+\begin{przyklad}
 
 Wyznaczyć sumę $ \suminfty{1} \frac{1}{n^2 + n} $
 
@@ -138,6 +145,7 @@ $$ S_n = \left( \frac{1}{1} - \frac{1}{2} \right) + \left( \frac{1}{2} - \frac{1
 + ... + \left( \frac{1}{n} - \frac{1}{n+1} \right) = \frac{1}{1} - \frac{1}{n+1}  $$ 
 
 $$ \lim_{n \to \infty} S_n = 1 = \suminfty{1} \frac{1}{n^2 + n} $$
+\end{przyklad}
 
 \subsection*{Własności szeregów zbieżnych}
 \addcontentsline{toc}{subsection}{Własności szeregów zbieżnych}
@@ -260,13 +268,13 @@ $ \sum\limits_{n = n_0}^{\infty} a_n = \lim_{n \to \infty} S_n $ zawsze istnieje
 Podobnie dla szeregów o wyrazach niedodatnich $ \sum\limits_{n = n_0}^{\infty} a_n, \ a_n \leq 0 $, suma zawsze istnieje
 i rozbieżność oznacza rozbieżność do $-\infty$. \\
 
-\textbf{Przykład} 
-
+\begin{przyklad}
 Następujące szeregi nie są zbieżne
 
 $$ \suminfty{1} 1, \ \ \suminfty{1} (n^2 + 2n), \ \
 \suminfty{1} \frac{n+1}{n+2}, \ \ \suminfty{1} \left(1 + \frac{1}{n} \right)^n , \ \ 
 \suminfty{1} (-1)^n , \ \ \suminfty{1} \sin n$$
+\end{przyklad}
 
 Dla szeregów o wyrazach nieujemnych mamy dwa kolejne kryteria zbieżności.
 
@@ -326,7 +334,7 @@ jest rozbieżny \textcolor{red}{zatem szereg $\suminfty{1} \frac{1}{n + \sqrt{n}
 \textbf{GAME OVER...} To jest przypadek nr 3 (wątpliwy)
 \end{blad}
 
-\textbf{Przykład}
+\begin{przyklad}
 
 $$ \sum\limits_{n = 4}^{\infty} \frac{2n - 3}{n^3 - 1} $$
 
@@ -357,6 +365,7 @@ Czyli
 $$ b_n = \frac{2n}{n^3 - \frac{1}{2}n^3} = 4 \cdot \frac{1}{n^2} $$
 
 \textbf{DZIURA W SKRYPCIE}
+\end{przyklad}
 
 \subsection*{Twierdzenie (kryterium ilorazowe)}
 \addcontentsline{toc}{subsection}{Twierdzenie (kryterium ilorazowe)}
@@ -384,7 +393,7 @@ Uwagi
     Np. \ $ \suminfty{1} \frac{2 + \sin n}{n} $.
 \end{itemize}
 
-\textbf{Przykłady}
+\begin{przyklad}
 
 Poprzedni przykład raz jeszcze 
 
@@ -402,7 +411,8 @@ Zatem oba szeregi są zbieżne lub oba są rozbieżne.
 Dalej już analiza $ \sum\limits_{n = 4}^{\infty} \frac{1}{n^2} $ i wniosek jak w kryterium porównawczym :
 
 $ \sum\limits_{n = 4}^{\infty} b_n = \sum\limits_{n = 4}^{\infty} \frac{1}{n^2} $ jest zbieżny bo $ 2 > 1 $.
-Zatem $ \sum\limits_{n = 4}^{\infty} \frac{2n - 3}{n^3 - 1} $ też jest zbieżny. \\\\
+Zatem $ \sum\limits_{n = 4}^{\infty} \frac{2n - 3}{n^3 - 1} $ też jest zbieżny.
+\end{przyklad}
 
 Przykłady o postaci funkcji złożonej $ \sum\limits_{n = n_0}^{\infty} f(b_n) $,
 
@@ -416,7 +426,7 @@ $$ \lim_{n \to \infty} \frac{f(b_n)}{b_n} = \lim_{x=b \to 0^+} \frac{f(x)}{x} \l
 
 przy użyciu granic podstawowych lub reguły de l'Hospitala. \\
 
-\textbf{Na przykład}
+\begin{przyklad}
 
 $$ \suminfty{1} \left( \sqrt[n]{2} - 1 \right) $$
 
@@ -430,7 +440,8 @@ $$ \lim_{n \to \infty} \frac{2^{\frac{1}{n}} - 1}{\frac{1}{n}} = \lim_{x = \frac
 
 Jest to liczba dodatnia więc oba szeregi są zbieżne lub oba są rozbieżne.
 
-$ \suminfty{1} \frac{1}{n} = \infty $ więc $ \suminfty{1} \left( \sqrt[n]{2} - 1 \right) = \infty $. \\ \\
+$ \suminfty{1} \frac{1}{n} = \infty $ więc $ \suminfty{1} \left( \sqrt[n]{2} - 1 \right) = \infty $.
+\end{przyklad}
 
 3. Kryterium Cauchy'ego.
 
@@ -481,23 +492,24 @@ $ q = \lim_{n \to \infty} \left| \frac{a_{n + 1}}{a_n} \right| $. Wtedy
     \item W obu kryteriach szerergi $ \sum\limits_{n = n_0}^{\infty} \frac{1}{n^p} $ pokazują, że $ q = 1$ nic nie daje. \\
 \end{itemize}
 
-\textbf{Przykłady}
+\begin{przyklad}
 
 $$ \suminfty{1} \frac{20^n}{n!} $$
 
 Tutaj $ a_n = \frac{20^n}{n!} > 0 $ oraz $ a_{n + 1} = \frac{20^{n + 1}}{(n + 1)!} $. Zatem z kryterium d'Alemberta
 
-$$ q = \lim_{n \to \infty} \left| \frac{a_{n + 1}}{a_n} \right| = \frac{ \dfrac{20^{n + 1}}{(n+1)!} }{ \dfrac{20^n}{n!} } $$ \\
+$$ q = \lim_{n \to \infty} \left| \frac{a_{n + 1}}{a_n} \right| = \frac{ \dfrac{20^{n + 1}}{(n+1)!} }{ \dfrac{20^n}{n!} } $$
+\end{przyklad}
 
-\textbf{Kolejny przykład}
+\begin{przyklad}
 
 $$ \suminfty{1} \left( 2\arcsin \frac{1 - n}{2n + 1} \right)^n $$
 
 Tutaj chcemy użyć kryterium Cauchy'ego.
 
 $$ \sqrt[n]{|a_n|} = \sqrt[n]{ \left| \left( 2\arcsin \frac{1-n}{2n+1} \right)^n \right| } 
-= \sqrt[n]{ \left| 2\arcsin \frac{1-n}{2n+1} \right|^n } = \left| 2\arcsin \frac{1-n}{2n+1} \right|
-= \left| 2\arcsin \frac{ \dfrac{1}{n} - 1  }{ 2 + \dfrac{1}{n} } \right| $$
+= \sqrt[n]{ \left| 2\arcsin \frac{1-n}{2n+1} \right|^n } = \left| 2\arcsin \frac{1-n}{2n+1} \right| $$
+$$= \left| 2\arcsin \frac{ \dfrac{1}{n} - 1  }{ 2 + \dfrac{1}{n} } \right| $$
 
 Stąd 
 
@@ -505,6 +517,7 @@ $$ q = \lim_{n \to \infty} \sqrt[n]{|a_n|} = \left| 2\arcsin \left( -\frac{1}{2}
 = \left| 2 \left( - \frac{\pi}{6} \right) \right| = \frac{\pi}{3} $$
 
 $q > 1$ więc szereg jest rozbieżny.
+\end{przyklad}
 
 
 \subsection*{Twierdzenie (kryterium całkowe)}
@@ -540,7 +553,7 @@ Uwagi do kryterium
     Opłaca się je stosować głównie wtedy, gdy szereg zawiera wyrażenie $\ln n$. \\
 \end{itemize}
 
-\textbf{Przykład}
+\begin{przyklad}
 
 Dla ustalonego $ n_0 \in \mathbb{N}^+ $ i $p > 0$ dowodzimy znany już wynik dla szeregu $ \sum\limits_{n = n_0}^{\infty} \frac{1}{n^p} $
 zbieżny dla $p > 1$ oraz rozbieżny do $\infty$ dla $p \leq 1$. \\
@@ -553,7 +566,8 @@ Spełnione są wiec warunki użycia kryterium. Liczymy całkę $ \int\limits_{n_
 
 Było to już robione wcześniej i wiemy, że dla $p > 1$ jest liczbą, a dla $p \leq 1$ jest równa $\infty$.
 Stąd szereg jest zbieżny dla $p > 1$ oraz rozbieżny do $\infty$ dla $0 < p \leq 1$. Dla $p \leq 0$ szereg jest rozbieżny,
-bo nie spełnia warunku koniecznego zbieżności. \\
+bo nie spełnia warunku koniecznego zbieżności.
+\end{przyklad}
 
 Uwaga do szeregów z wyrażeniem $\ln n$.
 
@@ -579,7 +593,7 @@ Tutaj $ C = \frac{1}{p \cdot e} $, a dla $ p \geq \frac{1}{e} $ wystarczy wzią�
 Często to oszacowanie pozwala uniknąć kryterium całkowego i zastąpienie go porównawczym, potrzeba tylko wziąć
 odpowiednio małe p. \\
 
-\textbf{Przykład}
+\begin{przyklad}
 
 Dla szeregu $ \sum\limits_{n = 2}^{\infty} \frac{\ln n}{n \sqrt[5]{n}} $ z kryterium porównawczego mamy
 
@@ -591,6 +605,7 @@ $$ \sum\limits_{n=2}^{\infty} \frac{C}{n^{1,2 - 0,1}} = C \sum\limits_{n=2}^{\in
 \ \ \textrm{--- zbieżny, bo} \ 1,1 > 1$$
 
 Zatem wyjściowy szereg jest zbieżny
+\end{przyklad}
 
 
 \subsection*{Zbieżność bezwzględna szeregów}
@@ -632,7 +647,7 @@ $ \sum\limits_{n=1}^{\infty} \frac{(-1)^n}{n} $. Takie szeregi to tzw. szeregi \
 
 \includegraphics[scale=0.6]{img/rozbiezneirozbiezne.png} \\
 
-\textbf{Przykład} 
+\begin{przyklad}
 
 Szereg $ \sum\limits_{n=1}^{\infty} \frac{\sin n}{\sqrt[3]{n^4}} $ jest zbieżny bezwzględnie, bo biorąc
 $ \sum\limits_{n=1}^{\infty} \left| \frac{\sin n}{\sqrt[3]{n^4}} \right| $ i używając kryterium porównwawczego mamy
@@ -644,6 +659,7 @@ a szereg $ \sum\limits_{n=1}^{\infty} \frac{1}{n^{\frac{4}{3}}} $ jest zbieżny,
 Zatem
 $ \sum\limits_{n=1}^{\infty} \left| \frac{\sin n}{\sqrt[3]{n^4}} \right| $, a stąd
 $\sum\limits_{n=1}^{\infty} \frac{\sin n}{\sqrt[3]{n^4}}$ też jest zbieżny.
+\end{przyklad}
 
 
 \subsection*{Szeregi naprzemienne}
@@ -658,11 +674,12 @@ Postać ogólna :
 
 $ \sum\limits_{n = n_0}^{\infty} (-1)^n \cdot a_n $ \ lub \ $ \sum\limits_{n = n_0}^{\infty} (-1)^{n+1} \cdot a_n $ \\
 
-\textbf{Przykłady}
+\begin{przyklad}
 
 $$ \sqrt{2} - \sqrt{3} + \sqrt{4} - \sqrt{5} + ... = \sum\limits_{n=2}^{\infty} (-1)^n \sqrt{n} $$
 
-$$ 1 - \frac{1}{2} + \frac{1}{3} - \frac{1}{4} + ... = \sum\limits_{n=1}^{\infty} \frac{(-1)^{n+1}}{n} $$ \\
+$$ 1 - \frac{1}{2} + \frac{1}{3} - \frac{1}{4} + ... = \sum\limits_{n=1}^{\infty} \frac{(-1)^{n+1}}{n} $$
+\end{przyklad}
 
 \begin{tw}{Twierdzenie}
 
@@ -769,7 +786,7 @@ GAME OVER... \ Takie "rozwiązanie" jest jak \textbf{pisanie bajek} --- nie musi
 Dla powyższego ciągu mianownik rzeczywiście szybciej rośnie niż licznik (i to 1000 razy!), a mimo to ciąg ten jest rosnący.
 \end{blad}
 
-\textbf{Przykład}
+\begin{przyklad}
 
 $$ \sum\limits_{n=2}^{\infty} \frac{(-1)^n \cdot \ln n}{n} $$
 
@@ -792,7 +809,8 @@ Nie jest jednak zbieżny bezwzględnie bo dla $ \sum\limits_{n=2}^{\infty} \left
 = \sum\limits_{n=2}^{\infty} \frac{\ln n}{n} $ mamy z kryterium porównawczego $0 < \frac{0,5}{n} < \frac{\ln n}{n}$,
 a szereg $ \sum\limits_{n=2}^{\infty} \frac{0,5}{n} $ jest rozbieżny.
 
-Jest to więc szereg zbieżny warunkowo. \\
+Jest to więc szereg zbieżny warunkowo.
+\end{przyklad}
 
 Podsumowanie : które kryterium zbieżności kiedy?
 

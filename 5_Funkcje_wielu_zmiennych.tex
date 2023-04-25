@@ -108,8 +108,7 @@ $ L : x = x_0, \ y = y_0, \ z\in \mathbb{R} $.
 
 Jest to zatem przypadek powierczhni opisanej poprzednio (czyli dla $x_0 = y_0 = 0$) ale przesunięty następnie o wektor $ \vec{v} = [x_0, y_0, 0] $. \\
 
-\textbf{Przykład}
-
+\begin{przyklad}
 Powierzchnia dana równaniem $ z = (x+2)^2 + (y-1)^2 $
 Tutaj mamy $ x_0 = -2 $ oraz $ y_0 = 1 $ i podstawienie $ r = \sqrt{(x+2)^2 + (y-1)^2} $ daje równanie $ z = r^2, \ r \geq 0 $.
 Zatem biorąc $ r = y \geq 0 $ w płaszczyźnie $YZ$ dostajemy wykres funkcji $ z = f(0, y) = y^2, \ y \geq 0 $. Jest to prawa gałąź
@@ -122,6 +121,7 @@ Obracając ją następnie wokół osi $Z$ dostajemy powierzchnię zwaną parabol
 \end{center}
 
 Na koniec przesuwamy powyższą powierzchnię o wektor $ \vec{v} = [x_0, y_0, 0] = [-2, 1, 0] $ i to daje naszą powierzchnię.
+\end{przyklad}
 
 \subsection*{Inny typ powierzchni -- tzw. powierzchnie walcowe}
 \addcontentsline{toc}{subsection}{Powierzchnie walcowe}
@@ -147,7 +147,7 @@ Dwa pozostałe przypadki są analogiczne:
 
 Stąd prosta reguła -- odpowiednią krzywą przesuwamy zawsze wzdłuż tej osi, która odpowiada zmiennej \textbf{nieobecnej} w równaniu. \\
 
-\textbf{Przykład}
+\begin{przyklad}
 
 Powierzchnia o równaniu $ x^2 + y^2 = 1 $.
 
@@ -159,8 +159,11 @@ Po przesunięciu tego okręgu wzdłuż osi $Z$ zostaje wygenerowana powierzchnia
 Stąd bierze się nazwa tego typu krzywych.
 
 \begin{center}
-\includegraphics[scale=0.6]{img/walec.png}
+    \includegraphics[scale=0.6]{img/walec.png}
 \end{center}
+
+\end{przyklad}
+
 
 \begin{tw}{Definicja}
 
@@ -227,11 +230,12 @@ po wybranej zmiennej jest \textbf{równa 0}.
 Czyli np.
 $$ \dpartial{}{y} (4x^2 + 3 \sin x + 5) = 0, \quad \dpartial{}{x} (ye^{z + 2y}) = 0 \quad \textrm{itd.} $$ \\
 
-\textbf{Przykład}
+\begin{przyklad}
 
 $$ f(x,y) = x \sin (xy^3) $$
 Wtedy różniczkując po $x$ mamy pochodną iloczynu:
-$$ \dpartial{f}{x} = f_x = ((x)_x \cdot \sin(xy^3))_y = x \cdot (\sin(xy^3))_y = x \cdot \cos(xy^3) \cdot 3y^2 x$$ \\
+$$ \dpartial{f}{x} = f_x = ((x)_x \cdot \sin(xy^3))_y = x \cdot (\sin(xy^3))_y = x \cdot \cos(xy^3) \cdot 3y^2 x$$
+\end{przyklad}
 
 
 \subsection*{Pochodne drugiego rzędu}
@@ -259,7 +263,7 @@ co oznacza, że $ \frac{\partial^2 f}{\partial y \partial x} = f_{xy} $ \ i \ $ 
 Dla funkcji $n$ zmiennych $ f = f(x_1, x_2, ..., x_n) $:
 $$ \frac{\partial^2 f}{\partial x_j \partial x_i} = \dpartial{}{x_j} \left( \dpartial{f}{x_i} \right) = (f_{x_i})_{x_j} = f_{x_i x_j} $$ \\
 
-\textbf{Przykład}
+\begin{przyklad}
 
 $$ f(x,y) = \frac{2^y}{x+1} $$
 
@@ -275,7 +279,8 @@ $$ f_{yx} = (f_y)_x = \left( \frac{2^y \ln2}{x+1} \right)_x = 2^y \ln2 \left( \f
 
 Otrzymaliśmy $ f_{xy} = f_{yx} $.
 
-Jest to szczególny przypadek znanego twierdzenia. \\
+Jest to szczególny przypadek znanego twierdzenia.
+\end{przyklad}
 
 \begin{tw}{Twierdzenie Schwarza o pochodnych mieszanych}
 
@@ -384,7 +389,7 @@ Obie krzywe muszą spotykać się w punkcie granicznym $P_0$.
 
 Wtedy granice \ $ \lim_{P \to P_0} f(P) $ \quad i \quad $ \lim_{Q \to P_0} f(Q) $ \ stają się granicami funkcji jednej zmiennej. \\
 
-\textbf{Przykłady}
+\begin{przyklad}
 
 $$ \lim_{\substack{x \to 0 \\ y \to 0}} (x^2 + 4y^2) \cos \left( x - 5y + \frac{2}{x} \right) $$
 
@@ -403,9 +408,10 @@ Tutaj możemy podstawić $ t = 2x - y + z $. Wtedy $ \lim_{\substack{x \to 1 \\ 
 i mamy
 
 $$ \lim_{\substack{x \to 1 \\ y \to 1 \\ z \to 0}} \frac{2x - y + z - 1 - \ln(2x - y + z)}{(2x - y + z - 1)^2}
-= \lim_{t \to 1} \frac{t - 1 - \ln t}{(t-1)^2} \left[ \frac{0}{0} \right] \stackrel{[H]}{=} \frac{1}{2}$$ \\
+= \lim_{t \to 1} \frac{t - 1 - \ln t}{(t-1)^2} \left[ \frac{0}{0} \right] \stackrel{[H]}{=} \frac{1}{2}$$
+\end{przyklad}
 
-\textbf{Kolejny przykład}
+\begin{przyklad}
 
 $$ \lim_{\substack{x \to 0 \\ y \to 0}} \frac{\tan (x^2 - y^2)}{x - y} $$
 
@@ -422,9 +428,10 @@ $$ \lim_{\substack{x \to 0 \\ y \to 0}} \frac{x^2 - y^2}{x - y} = \lim_{\substac
 = \lim_{\substack{x \to 0 \\ y \to 0}} (x + y) = 0 $$
 
 Stąd 
-$$ \lim_{\substack{x \to 0 \\ y \to 0}} \frac{\tan (x^2 - y^2)}{x - y} = 1 \cdot 0 = 0 $$ \\
+$$ \lim_{\substack{x \to 0 \\ y \to 0}} \frac{\tan (x^2 - y^2)}{x - y} = 1 \cdot 0 = 0 $$
+\end{przyklad}
 
-\textbf{Kolejny przykład}
+\begin{przyklad}
 
 $$ \lim_{\substack{x \to 0 \\ y \to 0}} \frac{x}{y} $$
 
@@ -436,7 +443,8 @@ Biorąc \ $ y = x $ \ mamy
 $$ \lim_{\substack{x \to 0 \\ y \to 0}} \frac{x}{y} = \lim_{x \to 0} \frac{x}{x} = 1 $$
 Natomiast dla \ $ y = 2x $ mamy
 $$ \lim_{\substack{x \to 0 \\ y \to 0}} \frac{x}{y} = \lim_{x \to 0} \frac{x}{2x} = \frac{1}{2} \neq 1 $$
-Zatem granica nie istnieje \\
+Zatem granica nie istnieje
+\end{przyklad}
 
 \subsection*{Ciągłość funkcji wielu zmiennych}
 \addcontentsline{toc}{subsection}{Ciągłość funkcji wielu zmiennych}
@@ -451,7 +459,7 @@ $f$ jest ciągła na zbiorze $ A \subset D_f $ jeżeli jest ciągła we wszystki
 
 Twierdzenia dotyczące arytmetyki funkcji ciągłych są analogiczne jak w przypadku jednej zmiennej. \\
 
-\textbf{Przykład}
+\begin{przyklad}
 
 Wyznaczyć zbiór punktów ciągłości funkcji
 
@@ -488,6 +496,7 @@ $$ D = \{ (x,y) : x \neq 0 \} \cup \{ (0,-1) \} $$
 
 Interpretacja geometryczna wykresu -- składa się z dwóch osobnych ukośnych półpłaszczyzn, które spotykają
 się w punkcie $(0, -1) $.
+\end{przyklad}
 
 
 \subsection*{Ekstrema funkcji dwóch zmiennych}
@@ -543,10 +552,8 @@ lub obie ujemne.
 
 Zatem przy sprawdzaniu typu ekstremum (minimum/maksimum) możemy patrzeć na dowolną z tych pochodnych. \\
 
-\textbf{Przykłady}
-
-\begin{enumerate}
-    \item $ f(x,y) = 2x^2 + 3y^2 $
+\begin{przyklad}
+ $ f(x,y) = 2x^2 + 3y^2 $
     
     Mamy $ D_f = \mathbb{R}^2 $ oraz
     $$ f_x = 4x, \quad f_y = 6y $$
@@ -557,8 +564,10 @@ Zatem przy sprawdzaniu typu ekstremum (minimum/maksimum) możemy patrzeć na dow
     To daje
     $$ W = H(0,0) = \begin{vmatrix} 4 & 0 \\ 0 & 6 \end{vmatrix} = 24 > 0 \quad \textrm{-- jest ekstremum} $$
     $ f_{xx}(0,0) = 4 > 0 $ więc w $(0,0)$ jest minimum $ f(0,0) = 0 $. 
-    \bigskip
-    \item $ f(x,y) = (x^2 - y^2)e^x $
+\end{przyklad}
+
+\begin{przyklad}
+    $ f(x,y) = (x^2 - y^2)e^x $
     
     Mamy $ D_f = \mathbb{R}^2 $ oraz
     $$ f_x = 2xe^x + (x^2 - y^2)e^x = e^x(x^2 - y^2 + 2x) $$
@@ -582,8 +591,7 @@ Zatem przy sprawdzaniu typu ekstremum (minimum/maksimum) możemy patrzeć na dow
     $$ W = H(0,0) = \begin{vmatrix} -2e^2 & 0 \\ 0 & -2e^2 \end{vmatrix} = -4e^{-2} \cdot e^{-2} > 0 \quad \textrm{Jest ekstremum} $$
 
     $ f_{xx}(-2, 0) = -2e^{-2} < 0 $ \ czyli mamy maksimum o wartości \ $ f(-2, 0) = 4e^{-2} $.
-\end{enumerate}
-
+\end{przyklad}
 
 \subsection*{Ekstrema warunkowe}
 \addcontentsline{toc}{subsection}{Ekstrema warunkowe}
@@ -592,6 +600,7 @@ Zatem przy sprawdzaniu typu ekstremum (minimum/maksimum) możemy patrzeć na dow
 
 Funkcją warunkową nazwiemy \ $ f = f(x,y) $ \ gdzie dziedziną jest zbiór, który jest krzywą na płaszczyźnie $XY$ czyli ma postać zależności
 między $x$ i $y$: \ $F(x,y) = 0$.
+\end{tw}
 
 \underline{Interpretacja geometryczna:} taka funkcja $f$ to krzywa w przestrzeni $ \mathbb{R}^3 $ położona "pionowo pod/nad" krzywą na płaszczyźnie
 daną równaniem \ $F(x,y) = 0$.
@@ -599,13 +608,12 @@ daną równaniem \ $F(x,y) = 0$.
 Zatem jest to zbiór punktów \ $ (x, y, f(x,y)) $, \ gdzie \ $ F(x,y) = 0 $.
 
 Rzutem tej krzywej na płaszczyznę $XY$ jest krzywa płaska o równaniu $F(x,y) = 0$
-\end{tw}
 
 \begin{center}
 \includegraphics[scale=0.4]{img/rzut_plaszczyznaXY.png}
 \end{center}
 
-\textbf{Przykład}
+\begin{przyklad}
 
 \[ f(x,y) = -xy, \ F(x,y) = 2x + y = 0 \]
 
@@ -621,6 +629,7 @@ Jest to paraboloida ustawiona "pionowo" ale nad prostą \ $ y= -2x $ \ (w płasz
 \includegraphics[scale=0.5]{img/paraboloida_przyklad.png}
 \end{center}
 
+
 Ekstrema warunkowe to ekstrema takich funkcji. Liczymy je metodami poznanymi z Analizy Matematycznej 1 (mamy funkcję 1 zmiennej).
 
 W naszym przykładzie mamy do analizy funkcję \ $ f(x) = x^2, \ x \in \mathbb{R} $
@@ -628,6 +637,7 @@ W naszym przykładzie mamy do analizy funkcję \ $ f(x) = x^2, \ x \in \mathbb{R
 Nie trzeba pochodnych, ekstremum to punkt dla \ $x = 0$ -- jest to minimum.
 
 To daje \ $ y = -2 \cdot 0 = 0 $ \ oraz \ $ z = f(0,0) = 0 $ \ więc punkt $ (0,0,0) $.
+\end{przyklad}
 
 \subsection*{Wartości największe i najmniejsze funkcji na zadanych zbiorach}
 
@@ -657,7 +667,7 @@ Dla punktów z obu przypadków liczymy wartości $f$ i z tych wartości wybieram
 Nie potrzeba hesjanu itd. Wystarczy policzyć wartość.
 \bigskip
 
-\textbf{Przykład}
+\begin{przyklad}
 \[ f(x,y) = xy^2, \ x^2 + y^3 \leq 3 \]
 
 Punkty stacjonarne
@@ -682,6 +692,7 @@ Zatem
 Stąd wartość największa to 2, jest osiągana w punktach \ $(1, \sqrt2) $ \ oraz \ $ (1, -\sqrt2) $.
 
 Najmniejsza wartość to -2, jest osiągana w punktach \ $(-1, \sqrt2) $ \ oraz \ $(-1, -\sqrt2) $.
+\end{przyklad}
 
 
 \subsection*{Zadania optymalizacyjne}

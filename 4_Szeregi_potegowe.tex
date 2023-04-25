@@ -17,16 +17,19 @@ dla wszystkich $x$
 Gdy $x_0 = 0$ to szereg nazywamy \underline{szeregiem Maclaurina}.
 \end{tw}
 
-\textbf{Przykłady}
+\begin{przyklad}
 
 $$ 1 + x + x^2 + x^3 + ... + x^n + ... = \sum\limits_{n = 0}^{\infty} x^n $$
 
 Jest to szereg geometryczny o ilorazie $x$. Tutaj $ \forall \, n \in \mathbb{N} \quad c_n = 1 $ oraz $x_0 = 0$.
+\end{przyklad}
 
+\begin{przyklad}
 $$ (x - 1) - \frac{(x-1)^3}{3} + \frac{(x-1)^5}{5} - \frac{(x-1)^7}{7} + ... 
 = \suminfty{0} \frac{ (-1)^n }{ 2n+1 } \cdot (x-1)^{2n+1} $$
 
-Tutaj $x_0 = 1$ oraz $ c_{2n+1} = \frac{ (-1)^n }{ 2n+1 }, \quad c_{2n} = 0 $ \\
+Tutaj $x_0 = 1$ oraz $ c_{2n+1} = \frac{ (-1)^n }{ 2n+1 }, \quad c_{2n} = 0 $
+\end{przyklad}
 
 Uwaga. Indeks współcznynnika \textbf{musi się zgadzać} (być równy) z wykładnikiem potęgi o podstawie $x-x_0$.
 
@@ -115,7 +118,7 @@ Badam zbieżność dla $x=1$ z \textcolor{red}{kryterium d'Alemberta}" \bigskip
 $q \neq 1$ to na pewno \textbf{gdzieś jest błąd}.
 \end{blad}
 
-\textbf{Przykłady}
+\begin{przyklad}
 
 $$ \suminfty{0} \frac{x^n}{n!} $$
 
@@ -129,9 +132,10 @@ Stąd
 
 $$ q = \lim_{n \to \infty} \left| \frac{a_{n+1}}{a_n} \right| = 0 < 1 $$ \\
 
-Szereg jest więc zbieżny dla wszystkich $ x \in \mathbb{R} $ \\
+Szereg jest więc zbieżny dla wszystkich $ x \in \mathbb{R} $
+\end{przyklad}
 
-\textbf{Kolejny przykład}
+\begin{przyklad}
 
 $$ \sum\limits_{n = 1}^{\infty} \frac{(x - 1)^n}{\sqrt{n}} $$
 
@@ -159,6 +163,7 @@ $x = 0$ daje $ \sum\limits_{n = 1}^{\infty} \frac{(0 - 1)^n}{\sqrt{n}} = \sum\li
 -- zbieżny z twierdzeniem Leibnitza, bo jest naprzemienny a ciąg $ \frac{1}{\sqrt{n}} $ jest malejący i dąży do $0$. \\
 
 Zatem przedział zbieżności tego szeregu to $[0, 2)$. \\
+\end{przyklad}
 
 \begin{tw}{Twierdzenie}
 
@@ -258,7 +263,7 @@ jego sumę $ f(x) = \sum\limits_{n = 0}^{\infty} c_n(x - x_0)^n $ nazywamy rzecz
     Daje to nowy szereg nowej funkcji z nowym przedziałem zbieżności. Ten nowy przedział można wyznaczyć na podstawie
     przedziału zbieżności wyjściowego szeregu \\
 
-    \textbf{Przykłady} 
+    \begin{przyklad}
 
     a) Szereg Maclaurina dla funkcji $ \ln (1+3x) $.
 
@@ -271,8 +276,10 @@ jego sumę $ f(x) = \sum\limits_{n = 0}^{\infty} c_n(x - x_0)^n $ nazywamy rzecz
     Po uproszczeniu 
     $$ \ln(1+3x) = \suminfty{0} \frac{(-1)^n \cdot 3^{n+1}}{n+1} x^{n+1} $$
 
-    $$ 3x \in (-1, 1] \Leftrightarrow -1 < 3x \leq 1 \Leftrightarrow -\frac{1}{3} < x \leq \frac{1}{3} \Leftrightarrow x \in \left( -\frac{1}{3}, \frac{1}{3} \right] $$ \\
+    $$ 3x \in (-1, 1] \Leftrightarrow -1 < 3x \leq 1 \Leftrightarrow -\frac{1}{3} < x \leq \frac{1}{3} \Leftrightarrow x \in \left( -\frac{1}{3}, \frac{1}{3} \right] $$
+    \end{przyklad}
 
+    \begin{przyklad}
     b) Szereg Maclaurina dla funkcji $ \sinh x = \frac{e^x - e^{-x}}{2} $
 
     Używamy rozwinięcia
@@ -293,8 +300,10 @@ jego sumę $ f(x) = \sum\limits_{n = 0}^{\infty} c_n(x - x_0)^n $ nazywamy rzecz
     \end{array} \right. $$
 
     Stąd
-    $$ \sinh x = \suminfty{0} \frac{1}{(2k+1)!} x^{2k+1} = x + \frac{x^3}{3!} + \frac{x^5}{5!} + ..., \ x \in \mathbb{R} $$ \\
+    $$ \sinh x = \suminfty{0} \frac{1}{(2k+1)!} x^{2k+1} = x + \frac{x^3}{3!} + \frac{x^5}{5!} + ..., \ x \in \mathbb{R} $$
+    \end{przyklad}
 
+    \begin{przyklad}
     c) Szereg Maclaurina dla funkcji $ \frac{x}{3 + x^4} $
 
     W przypadku funkcji wymiernej \textbf{zawsze} korzystamy z szeregu geometrycznego
@@ -315,7 +324,8 @@ jego sumę $ f(x) = \sum\limits_{n = 0}^{\infty} c_n(x - x_0)^n $ nazywamy rzecz
     $$ -1 < -\frac{x^4}{3} < 1 \Leftrightarrow -3 < x^4 < 3 \Leftrightarrow -3 < x^4 \ \land \ x^4 < 3 $$
 
     Pierwsza z tych nierówności jest zawsze prawdziwa. Rozwiązanie drugiej daje $ -\sqrt[4]{3} < x < \sqrt[4]{3} $.
-    Czyli przedział zbieżności to $ (-\sqrt[4]{3}, \sqrt[4]{3}) $. \\
+    Czyli przedział zbieżności to $ (-\sqrt[4]{3}, \sqrt[4]{3}) $.
+    \end{przyklad}
 
     \item Gdy $ f(x) = \suminfty{0} c_n(x - x_0)^n, \ x \in (x_0 - R, x_0 + R) $ to $f$ ma pochodną
     dowolnego rzędu i zachodzi wzór
@@ -355,7 +365,7 @@ jego sumę $ f(x) = \sum\limits_{n = 0}^{\infty} c_n(x - x_0)^n $ nazywamy rzecz
 
     $$ F(x) = F(x_0) + \suminfty{0} c_n \frac{(x - x_0)^{n+1}}{n+1}, \ x\in (x_0 - R, x_0 + R) $$ \\
 
-    \textbf{Przykład}
+    \begin{przyklad}
 
     Wyprowadzić wzór na szereg Maclaurina dla $\arctan x$ na przedziale $(-1, 1)$. \\
 
@@ -370,9 +380,11 @@ jego sumę $ f(x) = \sum\limits_{n = 0}^{\infty} c_n(x - x_0)^n $ nazywamy rzecz
 
     $$ \arctan x = \int \frac{1}{1+x^2} \,dx = \arctan 0 + \suminfty{0} \int (-1)^n x^{2n} \,dx
     = \suminfty{0} (-1)^n \frac{x^{2n+1}}{2n+1}, \ x\in(-1, 1) $$
+    \end{przyklad}
 
-    \item Twierdzenie Abela o rozszerzaniu szeregu na końce przedziału zbieżności
+    \item 
     
+    \begin{tw}{Twierdzenie Abela o rozszerzaniu szeregu na końce przedziału zbieżności}
     Niech
     $$ f(x) = \suminfty{0} c_n (x - x_0)^n, \ x\in (x_0 - R, x_0 + R)$$
 
@@ -386,8 +398,9 @@ jego sumę $ f(x) = \sum\limits_{n = 0}^{\infty} c_n(x - x_0)^n $ nazywamy rzecz
     $$ f(x) = \suminfty{0} c_n (x - x_0)^n, \ x\in (x_0 - R, x_0 + R] $$
 
     Analogicznie dla $ x = x_0 - R $
+    \end{tw}
 
-    \textbf{Przykład}
+    \begin{przyklad}
 
     Pokazaliśmy, że $ \arctan x = \suminfty{0} (-1)^n \frac{x^{2n+1}}{2n+1}, \ x\in (-1, 1) $
 
@@ -401,7 +414,8 @@ jego sumę $ f(x) = \sum\limits_{n = 0}^{\infty} c_n(x - x_0)^n $ nazywamy rzecz
     Analogicznie dla $ x = -1$.
 
     Zatem rozwinięcie jest prawdziwe również dla $x \pm 1$ czyli
-    $$ \arctan x = \suminfty{0} (-1)^n \frac{x^{2n+1}}{2n+1}, \ x\in [-1, 1] $$ \\
+    $$ \arctan x = \suminfty{0} (-1)^n \frac{x^{2n+1}}{2n+1}, \ x\in [-1, 1] $$
+    \end{przyklad}
 \end{enumerate}
 
 Inne zastosowania szeregów potęgowych:
@@ -412,7 +426,7 @@ Inne zastosowania szeregów potęgowych:
     \item wyznaczanie sum niektórych szeregów oraz wartości pochodnych wysokiego rzędu.
 \end{itemize}
 
-\textbf{Przykłady}
+\begin{przyklad}
 
 Jaka jest siedemdziesiąta piąta pochodna $\arctan x$ w $x = 0$? \\
 
@@ -429,9 +443,12 @@ $$ c_{75} x^{75} = (-1)^n \frac{x^{2n+1}}{2n+1} $$
 Stąd
 $$ n = 37, \ c_{75} = \frac{(-1)^{37}}{2 \cdot 37 + 1} = - \frac{1}{75} $$
 Oraz
-$$ f^{(75)}(0) = 75! \cdot \left( - \frac{1}{75} \right) = -74! $$ \\
+$$ f^{(75)}(0) = 75! \cdot \left( - \frac{1}{75} \right) = -74! $$
+\end{przyklad}
 
-\textbf{Kolejny przykład}
+\begin{adjustbox}{height=0.8\pdfpageheight}
+
+\begin{przyklad}
 
 Wyznaczyć sumę $ \suminfty{1} \frac{n}{2^{n + 1}} $
 
@@ -470,3 +487,6 @@ I na koniec
 $$ \suminfty{1} nx^{n+1} = \suminfty{1} nx^{n-1} \cdot x^2 = x^2 \suminfty{1} nx^{n-1} = \frac{x^2}{(1-x)^2} $$
 Dla $ x = \frac{1}{2} $ to daje
 $$ \suminfty{1} n \left( \frac{1}{2} \right)^{n+1} = 1 = \suminfty{1} \frac{n}{2^{n+1}} $$
+\end{przyklad}
+
+\end{adjustbox}

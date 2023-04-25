@@ -3,12 +3,12 @@
 Ustalamy liczby $ a,b \in \mathbb{R}, \ a < b $. Niech $f$ będzie funkcją całkowalną na każdym przedziale postaci $[a, T] $,
 gdzie $ a < T < b $. Definiujemy \underline{całkę niewłaściwą drugiego rodzaju} z $f$ na przedziale $[a, b)$ jako
 
-$$ \int\limits_{a}^{b} f(x) \,dx = \lim_{T \to b^+} \int\limits_{a}^{T} f(x) \,dx, \quad \textrm{gdy granica po prawej stronie istnieje.}$$
+\[ \int\limits_{a}^{b} f(x) \,dx = \lim_{T \to b^+} \int\limits_{a}^{T} f(x) \,dx, \quad \textrm{gdy granica po prawej stronie istnieje.}\]
 
 Analogicznie, gdy $f$ jest całkowalna na każdym przedziale postaci $[T,b]$, gdzie $ a < T < b $. to definiujemy
 \underline{całkę niewłaściwą pierwszego rodzaju} z $f$ na przedziale $(a, b]$ jako
 
-$$ \int\limits_{a}^{b} f(x) \,dx = \lim_{T \to a^+} \int\limits_{T}^{b} f(x) \,dx, \quad \textrm{gdy granica po prawej stronie istnieje.}$$\\
+\[ \int\limits_{a}^{b} f(x) \,dx = \lim_{T \to a^+} \int\limits_{T}^{b} f(x) \,dx, \quad \textrm{gdy granica po prawej stronie istnieje.}\]\\
 
 Terminologia dotycząca takich całek jest taka, jak dla całek niewłaściwych 1 rodzaju. Są 3 przypadki : 
 
@@ -26,27 +26,29 @@ $ \int\limits_{a}^{b} f(x) \,dx $ daje pole obszaru ograniczonego osią X, wykre
 Najczęściej definiujemy tego typu całkę w przypadku gdy $f$ ma asymptotę pionową $x=a$ lub $x=b$. Wtedy ten obszar
 nie jest ograniczony z góry bądź z dołu. \\
 
-\textbf{Na przykład}
+\begin{przyklad}
 
-$$ \int\limits_{0}^{1} \frac{1}{\sqrt{x}} \,dx = \lim_{T \to 0^+} \int\limits_{T}^{1} \frac{1}{\sqrt{x}} \,dx
-\lim_{T \to 0^+} [2\sqrt{x}]_T^1 = \lim_{T \to 0^+} (2 - 2\sqrt{T}) = 2 $$
+\[ \int\limits_{0}^{1} \frac{1}{\sqrt{x}} \,dx = \lim_{T \to 0^+} \int\limits_{T}^{1} \frac{1}{\sqrt{x}} \,dx
+\lim_{T \to 0^+} [2\sqrt{x}]_T^1 = \lim_{T \to 0^+} (2 - 2\sqrt{T}) = 2 \]
 
-Całka jest zbieżna do 2. \\
+Całka jest zbieżna do 2.
+\end{przyklad}
 
-\underline{Wersja całki obustronnej} \\
+\begin{tw}{Wersja całki obustronnej}
 
 Ustalamy liczby $ a,b,c \in \mathbb{R}, \ a < c < b $. Niech $f$ będzie funkcją całkowalną na każdym przedziale postaci
 $[a,T]$, $T < c$, oraz $ [T, b] $, $ T > c $. Definiujemy całkę niewłaściwą 2 rodzaju z $f$ na zbiorze $[a, c)\cup(c, b] $
 jako sumę dwóch całek niewłaściwych. tzn.
 
-$$ \int\limits_{a}^{b} f(x) \,dx = \int\limits_{a}^{c} f(x) \,dx + \int\limits_{c}^{b} f(x) \,dx $$
+\[ \int\limits_{a}^{b} f(x) \,dx = \int\limits_{a}^{c} f(x) \,dx + \int\limits_{c}^{b} f(x) \,dx \]
 
 przy czym gdy przynajmniej jedna z całek z prawej strony nie istnieje lub zachodzi przypadek $ \infty - \infty $ to
-$ \int\limits_{a}^{b} f(x) \,dx $ jest rozbieżna, a w pozostałych przypadkach całka ma wartość wynikającą z arytmetyki granic. \\
+$ \int\limits_{a}^{b} f(x) \,dx $ jest rozbieżna, a w pozostałych przypadkach całka ma wartość wynikającą z arytmetyki granic.
+\end{tw}
 
 Najczęściej takie całki pojawiają się, gdy $f$ ma asymptotę w $x = c$. \\
 
-\textbf{Twierdzenie}
+\begin{tw}{Twierdzenie}
 
 Istnieją podstawienia, które każdą całkę niewłaściwą 2 rodzaju sprowadzają do przypadku całki niewłaściwej 1 rodzaju.
 
@@ -59,8 +61,9 @@ W szczególności
 
     \item dla całki na $[a,b)$ możemy wziąć $t = \frac{1}{b - x}$ co daje $ t = b - \frac{1}{t} $ oraz
     $$ \int\limits_{a}^{b} f(x) \,dx = \int\limits_{C}^{\infty} \frac{1}{t^2} f \left(b - \frac{1}{t} \right) dt \quad
-    \textrm{, gdzie} \quad C = \frac{1}{b - a} $$ \\
+    \textrm{, gdzie} \quad C = \frac{1}{b - a} $$
 \end{itemize}
+\end{tw}
 
 Na przykład dla $ p > 0 $ biorąc $ t = \frac{1}{x} $ mamy 
 
@@ -82,8 +85,10 @@ Oznacza to, że odpowiednie końce przedziałów całkowania są w jednakowej od
 \subsection*{Zbieżność bezwzględna całek niewłaściwych}
 \addcontentsline{toc}{subsection}{Zbieżność bezwzględna całek niewłaściwych}
 
-Definicja. Całka $ \int\limits_{a}^{\infty} f(x) \,dx $ jest \underline{zbieżna bezwzględnie}, gdy zbieżna jest całka
+\begin{tw}{Definicja}
+Całka $ \int\limits_{a}^{\infty} f(x) \,dx $ jest \underline{zbieżna bezwzględnie}, gdy zbieżna jest całka
 $ \int\limits_{a}^{\infty} |f(x)| \,dx $.
+\end{tw}
 
 Analogiczne definicje mamy dla pozostałych całek 1 rodzaju oraz dla całek 2 rodzaju. \\
 
@@ -122,7 +127,7 @@ Są więc 3 możliwe sytuacje - 3 rozłączne podzbiory całek niewłaściwych:
 \includegraphics[scale=0.6]{img/rozbiezneirozbiezne.png}
 \end{center}
 
-\textbf{Przykład} 
+\begin{przyklad}
 
 Całka $ \int\limits_{1}^{\infty} \frac{\sin x}{\sqrt[3]{x^4}} \,dx $ jest zbieżna bezwzględnie, bo biorąc
 $ \int\limits_{1}^{\infty} \left| \frac{\sin x}{\sqrt[3]{x^4}} \right| \,dx $ i używając kryterium porównawczego mamy
@@ -132,3 +137,4 @@ $$ 0 \leq \left| \frac{\sin x}{\sqrt[3]{x^4}} \right| = \frac{|\sin x|}{x^{\frac
 a całka $ \int\limits_{1}^{\infty} \frac{1}{x^{\frac{4}{3}}} \,dx $ jest zbieżna bo $ \frac{4}{3} > 1 $.
 Zatem $ \int\limits_{1}^{\infty} \left| \frac{\sin x}{\sqrt[3]{x^4}} \right| \,dx $ jest zbieżna, a stąd
 $ \int\limits_{1}^{\infty} \frac{\sin x}{\sqrt[3]{x^4}} \,dx $ też jest zbieżna.
+\end{przyklad}
