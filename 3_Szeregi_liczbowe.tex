@@ -41,8 +41,6 @@ Terminologia dotycząca sumy $S$ jest taka, jak dla ciągów. Są 3 przypadki :
 
 \end{tw}
 
-\textbf{Przykłady}
-
 \begin{przyklad}
 $$ \frac{1}{2^1} + \frac{1}{2^2} + \frac{1}{2^3} + ... + \frac{1}{2^n} + ... = \suminfty{1} \frac{1}{2^n} 
 \textrm { - szereg zbieżny do 1}$$
@@ -76,7 +74,7 @@ Niektóre przypadki szczególne.
         
         Wtedy
 
-        $$ S_n = a_1 + a_2 + ... + a_n = a_1 \cdot \frac{1 - q^n}{1 - q}, q \neq 1 \ oraz \ S_n = na_1, \ q = 1 $$
+        $$ S_n = a_1 + a_2 + ... + a_n = a_1 \cdot \frac{1 - q^n}{1 - q}, q \neq 1 \ \textrm{oraz} \ S_n = na_1, \ q = 1 $$
 
         To oznacza, że dla $ a_1 \neq 0 $,
 
@@ -98,8 +96,6 @@ Niektóre przypadki szczególne.
     
     Takie szeregi to tzw. szeregi \underline{teleskopowe} (telescoping series).
 
-    \textbf{Przykłady}
-
     \begin{przyklad}
 
     $$ \suminfty{1} \left( \frac{1}{n} - \frac{1}{n + 1} \right) \ \textrm{- tutaj} \ f(x) = \frac{1}{x} $$
@@ -114,7 +110,7 @@ Niektóre przypadki szczególne.
 
 \end{enumerate}
 
-\begin{przyklad} D
+\begin{przyklad}
 Dla $ \suminfty{1} \left( f(n) - f(n + 1)) \right) $ mamy
 
 $$ S_n = f(1) - \textcolor{red}{f(2)} + \textcolor{red}{f(2)} - \textcolor{blue}{f(3)} + \textcolor{blue}{f(3)} - 
@@ -690,10 +686,11 @@ nazywany jest \underline{szeregiem Leibnitza}, jeżeli $a_n$ jest ciągiem niero
 Na przykład $ 1 - \frac{1}{2} + \frac{1}{3} - \frac{1}{4} + ... = \sum\limits_{n=1}^{\infty} \frac{(-1)^{n+1}}{n} $
 jest szeregiem Leibnitza, bo tutaj $ a_n = \frac{1}{n} $ jest malejący i zbieżny do 0. \\
 
-\subsection*{Twierdzenie (Leibnitz)}
+\begin{tw}{\subsection*{Twierdzenie (Leibnitz)}}
 \addcontentsline{toc}{subsection}{Twierdzenie (Leibnitz)}
 
-Każdy szereg Leibnitza jest zbieżny. \\
+Każdy szereg Leibnitza jest zbieżny.
+\end{tw}
 
 Uwagi
 
@@ -714,9 +711,10 @@ Uwagi
 \textbf{Ważna uwaga}
 
 Poza twierdzeniem Leibnitza wszystkie pozostałe kryteria (porównawcze, ilorazowe, Cauchy'ego, d'Alemberta, całkowe, warunek konieczny) dają
-albo \underline{dwie zbieżności} (zwykłą oraz bezwzględną) albo \underline{dwie rozbieżności} (zwykłą oraz bezwzględną)..
+albo \underline{dwie zbieżności} (zwykłą oraz bezwzględną) albo \underline{dwie rozbieżności} (zwykłą oraz bezwzględną).
 
 Nie pozwolą natomiast uzyskać zbieżności warunkowej. Tylko twierdzenie Leibnitza pozwoli taką zbieżność wykryć.
+\medskip
 
 W przypadku kryterium porównawczego, ilorazowego lub całkowego wynika to z faktu, że działamy na szeregach o wyrazach nieujemnych, a więc
 $ \suminfty{n_0} a_n = \suminfty{n_0} |a_n| $ \ i zbieżność bezwzględna jest równoważna zwykłej zbieżności.
@@ -730,6 +728,7 @@ $ \sqrt[n]{||a_n||} = \sqrt[n]{|a_n|} $ \ i podobnie \ $ \left| \frac{|a_{n+1}|}
 
 Dla $ a_n = \frac{(-3)^n}{n^3} $ \ i szeregu \ $ \suminfty{1} \frac{(-3)^n}{n^3} $ \ zarówno kryterium Cauchy'ego jak i d'Alemberta daje granicę
 \[ \lim_{n \to \infty} \left| \frac{a_{n+1}}{a_n} \right| = \lim_{n \to \infty} \sqrt[n]{|a_n|} = 3 > 1 \]
+\medskip
 
 Zatem ten szereg jest rozbieżny bezwzględnie i rozbieżny w zwykłym sensie.
 
@@ -812,6 +811,8 @@ a szereg $ \sum\limits_{n=2}^{\infty} \frac{0,5}{n} $ jest rozbieżny.
 Jest to więc szereg zbieżny warunkowo.
 \end{przyklad}
 
+\pagebreak
+
 Podsumowanie : które kryterium zbieżności kiedy?
 
 \begin{itemize}
@@ -843,17 +844,19 @@ Podsumowanie : które kryterium zbieżności kiedy?
 \end{adjustbox}
 \end{table}
 
-\pagebreak
 
-Przykłady do samodzielnego policzenia : \\
+\begin{center}
+    Przykłady do samodzielnego policzenia : 
+    \bigskip
 
-\begin{adjustbox}{width=0.7\textwidth}
-    \begin{tabular}{ccc}
-        $ \suminfty{1} \frac{\sqrt{n^2 + 3}}{n^3 + 2} $ & $ \suminfty{1} \frac{n^3 + 5}{n!} $ & $ \suminfty{1} \frac{2^n + 3^n}{n^2 \cdot 3^n + 1} $ \\
+    \begin{adjustbox}{width=0.5\textwidth}
+    \begin{tabular}{l c l c l}
+        $ \suminfty{1} \frac{\sqrt{n^2 + 3}}{n^3 + 2} $ && $ \suminfty{1} \frac{n^3 + 5}{n!} $ && $ \suminfty{1} \frac{2^n + 3^n}{n^2 \cdot 3^n + 1} $ \\
         \\
-        $ \suminfty{1} \frac{2^n + 7 \cdot 3^n}{5^n - 4^n} $ & $ \suminfty{1} \left( \frac{2n+3}{3n+2} \right)^n $ & $ \suminfty{1} \arctan \frac{1}{\sqrt{n}} $ \\
+        $ \suminfty{1} \frac{2^n + 7 \cdot 3^n}{5^n - 4^n} $ && $ \suminfty{1} \left( \frac{2n+3}{3n+2} \right)^n $ && $ \suminfty{1} \arctan \frac{1}{\sqrt{n}} $ \\
         \\
-        $ \suminfty{1} \frac{3 + \cos (n^2)}{\sqrt[3]{n}} $ & $ \suminfty{1} \frac{(-1)^n \cdot n}{n^2 + 2} $ & $ \suminfty{1} \frac{\cos (n^2)}{2^n} $
+        $ \suminfty{1} \frac{3 + \cos (n^2)}{\sqrt[3]{n}} $ && $ \suminfty{1} \frac{(-1)^n \cdot n}{n^2 + 2} $ && $ \suminfty{1} \frac{\cos (n^2)}{2^n} $
         \\
     \end{tabular}    
 \end{adjustbox}
+\end{center}

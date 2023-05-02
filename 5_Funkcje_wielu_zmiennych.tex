@@ -2,19 +2,22 @@
 
 Na początek kilka definicji dotyczących zbiorów w $ \mathbb{R}^n $.
 
-\begin{itemize}
-    \item \underline{Otoczenie} punktu $ P = (x_1, x_2, ..., x_n) \in \mathbb{R}^n $ to $n$ -- wymiarowa kula otwarta o środku
+\begin{tw}{Definicja}
+    \underline{Otoczenie} punktu $ P = (x_1, x_2, ..., x_n) \in \mathbb{R}^n $ to $n$ -- wymiarowa kula otwarta o środku
     w $P$ i promieniu $r > 0$, tzn. zbiór
     \[ K(P, r) = \{ Q = (y_1, y_2, ..., y_n) \in \mathbb{R}^n : |PQ|^2 = (x_1 - y_1)^2 + (x_2 - y_2)^2 + ... + (x_n - y_n)^2 < r^2 \} \]
-
+    
     Dla $n=2$ jest to koło o środku w $P$ bez brzegowego okręgu.
-
+    
     Dla $n=3$ jest to kula o środku w $P$ bez brzegowej sfery.
-    \item \underline{Sąsiedztwo} punktu $x_0 \in \mathbb{R}^n$ to zbiór postaci $ S = S(P, r) = K(P,r) \backslash P $
-    \item Zbiór $ A \subset \mathbb{R}^n $ jest zbiorem \underline{otwartym}, gdy każdy punkt z $A$ posiada pewne otoczenie zawarte w $A$, tzn.
+\end{tw}
+\begin{tw}{Definicja}
+    
+\underline{Sąsiedztwo} punktu $x_0 \in \mathbb{R}^n$ to zbiór postaci $ S = S(P, r) = K(P,r) \backslash P $
+    Zbiór $ A \subset \mathbb{R}^n $ jest zbiorem \underline{otwartym}, gdy każdy punkt z $A$ posiada pewne otoczenie zawarte w $A$, tzn.
     \[ \forall P \!\in\! A \ \exists K(P, r) \quad P\in K(P,r) \subset A \]
-    \item Zbiór $ A \subset \mathbb{R}^n $ jest zbiorem \underline{domkniętym}, gdy jego dopełnienie $ A = \mathbb{R}^n \backslash A $ jest zbiorem otwartym. \bigskip
-\end{itemize}
+    Zbiór $ A \subset \mathbb{R}^n $ jest zbiorem \underline{domkniętym}, gdy jego dopełnienie $ A = \mathbb{R}^n \backslash A $ jest zbiorem otwartym.
+\end{tw}
 
 \begin{tw}{Definicja}
 
@@ -33,7 +36,17 @@ Dla takich funkcji można narysować wykres -- gdy $D$ jest otwarty to wykresem 
 $ (x, y, f(x,y)) $, gdzie $ (x,y) \in D_f $.
 
 \begin{center}
-\includegraphics[scale=0.6]{img/wykres_wieluzm1.png}
+    \begin{tikzpicture}
+        \begin{axis}[
+            width=12cm, height=9cm,
+            view={45}{30},
+            xlabel={$x$}, ylabel={$y$}, zlabel={$z$},
+            xmin=-5, xmax=5,
+            ymin=-5, ymax=5,
+            ]
+            \addplot3[surf]{x^3 + 3*x*y^2 - 51*x - 24*y};            
+        \end{axis}
+    \end{tikzpicture}
 
 Wykres funkcji $ f(x,y) = x^3 + 3xy^2 - 51x - 24y, \quad -5 \leq x \leq 5, \ -5 \leq y \leq 5 $
 \end{center}
@@ -191,9 +204,9 @@ $$ \dpartial{f}{x} \ \textrm{lub} \ f_x \ \textrm{-- pochodna po} \ x $$
 $$ \dpartial{f}{y} \ \textrm{lub} \ f_y \ \textrm{-- pochodna po} \ y $$
 
 Formalna definicja: 
-$$ \dpartial{f}{x} (x_0,y_0) = \lim_{h \to 0} \frac{f(x_0 + h, y_0) - f(x_0, y_0)}{h} $$
+$$ \dpartial{f}{x} (x_0,y_0) = \lim_{h \to 0} \frac{f(x_0 + h, y_0) - \fzero}{h} $$
 
-$$ \dpartial{f}{y} (x_0,y_0) = \lim_{h \to 0} \frac{f(x_0, y_0 + h) - f(x_0, y_0)}{h} $$
+$$ \dpartial{f}{y} (x_0,y_0) = \lim_{h \to 0} \frac{f(x_0, y_0 + h) - \fzero}{h} $$
 
 Dla funkcji $n$ zmiennych $ f = f(x_1, x_2, ..., x_n) $:
 $$ \dpartial{f}{x_i} (x_1, x_2, ..., x_n) = \lim_{h \to 0} \frac{f(x_1, x_2, ..., x_{i - 1}, 
@@ -208,7 +221,7 @@ oraz płaszczyzny. Jest to szczególny przypadek tzw. funkcji \underline{warunko
 
 Gdy taka krzywa jest regularna to możemy liczyć dla niej pochodną.
 
-Gdy płaszczyzna przekroju przechodzi przez punkt $ P=(x_0, y_0, f(x_0, y_0)) $ to pochodna tej krzywej jest równa
+Gdy płaszczyzna przekroju przechodzi przez punkt $ P=(x_0, y_0, \fzero) $ to pochodna tej krzywej jest równa
 
 \begin{itemize}
     \item $ \dpartial{f}{x} (x_0, y_0) $, gdy płaszczyzna jest $\parallel XZ $,
@@ -234,7 +247,10 @@ $$ \dpartial{}{y} (4x^2 + 3 \sin x + 5) = 0, \quad \dpartial{}{x} (ye^{z + 2y}) 
 
 $$ f(x,y) = x \sin (xy^3) $$
 Wtedy różniczkując po $x$ mamy pochodną iloczynu:
-$$ \dpartial{f}{x} = f_x = ((x)_x \cdot \sin(xy^3))_y = x \cdot (\sin(xy^3))_y = x \cdot \cos(xy^3) \cdot 3y^2 x$$
+\[ \dpartial{f}{x} = f_x = (x)_x \cdot \sin(xy^3) + x \cdot (\sin (xy^3))_x = \sin(xy^3) + x \cdot \cos(xy^3) \cdot y^3 \]
+
+Natomiast różniczkując po $y$ mamy mnożenie $\sin (xy^3)$ przez stałą dla $y$ (czyli $x$) i nie trzeba stosować pochodnej iloczynu
+\[ \dpartial{f}{y} = f_y = (x \cdot \sin (xy^3))_y = x \cdot (\sin (xy^3))_y = x \cdot \cos(xy^3) \cdot 3y^2x \]
 \end{przyklad}
 
 
@@ -248,6 +264,11 @@ Pochodne \underline{jednorodne} po danej zmiennej:
 \begin{itemize}
     \item $ \frac{\partial^2 f}{\partial x^2} = \dpartial{}{x} \left( \dpartial{f}{x} \right) $ -- dwukrotne różniczkowanie $f$ po $x$,
     \item $ \frac{\partial^2 f}{\partial y^2} = \dpartial{}{y} \left( \dpartial{f}{y} \right) $ -- dwukrotne różniczkowanie $f$ po $y$,
+\end{itemize}
+
+Pochodne \underline{mieszane}:
+
+\begin{itemize}
     \item $ \frac{\partial^2 f}{\partial y \partial x} = \dpartial{}{y} \left( \dpartial{f}{x} \right) $ -- różniczkowanie wpierw po $x$, potem po $y$,
     \item $ \frac{\partial^2 f}{\partial x \partial y} = \dpartial{}{x} \left( \dpartial{f}{y} \right) $ -- różniczkowanie wpierw po $y$, potem po $x$, \\
 \end{itemize}
@@ -258,7 +279,9 @@ W przypadku pochodnych mieszanych $ f_{xy}, f_{yx} $, trzeba ustalić kolejnoś�
 
 Przyjmujemy naturalną kolejność, wtedy mamy $ f_{xy} = (f_x)_y $ \ oraz \ $ f_{yx} = (f_y)_x $,
 
-co oznacza, że $ \frac{\partial^2 f}{\partial y \partial x} = f_{xy} $ \ i \ $ \frac{\partial^2 f}{\partial x \partial y} = f_{yx} $. \\
+co oznacza, że 
+
+$ \frac{\partial^2 f}{\partial y \partial x} = f_{xy} $ \ i \ $ \frac{\partial^2 f}{\partial x \partial y} = f_{yx} $. \\
 
 Dla funkcji $n$ zmiennych $ f = f(x_1, x_2, ..., x_n) $:
 $$ \frac{\partial^2 f}{\partial x_j \partial x_i} = \dpartial{}{x_j} \left( \dpartial{f}{x_i} \right) = (f_{x_i})_{x_j} = f_{x_i x_j} $$ \\
@@ -289,6 +312,352 @@ Gdy pochodne mieszane drugiego rzędu są funkcjami ciągłymi w danym punkcie t
 W praktyce dla funkcji regularnych warunek ciągłości drugiego rzędu występuje zawsze na całych dziedzinach
 stąd prawie zawsze zobaczymy równość wzorów pochodnych mieszanych.
 \end{tw}
+
+\begin{tw}{Definicja}
+Niech $k \in \mathbb{N}^+$ \ oraz \ $ f = f(x_1, x_2, ..., x_n) $. Pochodna rzędu $k$ funkcji $f$ to funkcja
+\[ \frac{\partial^k f}{\partial x_{n_1}... \partial x_{n_2} \partial x_{n_k}} = \dpartial{}{x_{n_k}}
+= \left( ... \left( \dpartial{}{x_{n_2}} \left( \dpartial{f}{x_{n_1}} \right) \right) ... \right) = f_{x_{n_1}, x_{n_2}, ..., x_{n_k}} \]
+
+gdzie zmienne \ $ x_{n_1}, x_{n_2}, ..., x_{n_k} $ są dowolnymi ze zmiennych \ $x_1, x_2, ..., x_n$. \bigskip
+
+Oznacza to różniczkowanie funkcji $k$ razy, po kolei po zmiennych
+\[ x_{n_1}, x_{n_2}, ..., x_{n_k} \]
+
+\end{tw}
+
+Pochodne jednorodne to te, w których różniczkujemy po tej samej zmiennej $k$ razy, np. $f_{xxx}$.
+
+Pochodne mieszane to te pochodne, w których różniczkujemy przynajmniej po dwóch różnych zmiennych np. $ \frac{\partial^4 f}{\partial x \partial x \partial y \partial x} = f_{xyxx} $
+
+Twierdzenie Schwarza pozostaje prawdziwe dla pochodnych mieszanych rzędu $k$.
+
+\subsection*{Płaszczyzna styczna do funkcji dwóch zmiennych}
+\addcontentsline{toc}{subsection}{Płaszczyzna styczna do funkcji dwóch zmiennych}
+
+\begin{tw}{Definicja}
+Niech \ $ R = (x,y,z) $ \ oraz \ $ P = (x_0, y_0, z_0) $. Definiujemy zbieżność
+\[ R \to P \ \Leftrightarrow \ x \to x_0 \ \land \ y \to y_0 \ \land \ z \to z_0 \]
+Nazywamy to zbieżnością po współrzędnych.
+
+\end{tw}
+
+\begin{tw}{Definicja}
+
+Niech teraz $P$ i $R$ należą do wykresu funkcji $f$. 
+
+Czyli 
+\[ z = f(x,y), \quad z_0 = \fzero \]
+Ponadto niech $ \Pi $ będzie płaszczyzną przechodzącą przez $P$.
+
+$\Pi$ nazywamy \underline{płaszczyzną styczną} do wykresu $f$ w punkcie $P$ jeżeli kąt między prostą $PR$ oraz płaszczyzną $\Pi$ dąży do 0, gdy $R \to P$.
+
+Jest to uogólnienie prostej stycznej do wykresu funkcji jednej zmiennej.
+\end{tw}
+
+\begin{tw}{Definicja}
+$ f = f(x,y) $ jest funkcją \underline{różniczkowalną} w punkcie \ $(x_0, y_0) \in D_f$, \ gdy istnieje płaszczyzna styczna do wykresu $f$
+w punkcie \ $ P = (x_0, y_0, \fzero) $.
+\end{tw}
+
+Przykład funkcji nieróżniczkowalnej w pewnym punkcie: powierzchnia stożkowa w wierzchołku (zobacz rysunek powierzchni stożkowych str. 50)
+
+\begin{tw}{Twierdzenie}
+Gdy na pewnym kole bez brzegu zawierającym \ $(x_0, y_0) \in D_f $ \ $f$ ma ciągłe pochodne cząstkowe pierwszego rzędu to $f$ jest różniczkowalna w punkcie $(x_0, y_0)$.
+\end{tw}
+
+\begin{tw}{Twierdzenie -- wzór na płaszczyznę styczną do $f$}
+    Jeżeli $f$ jest różniczkowalna w punkcie $(x_0, y_0)$ to płaszczyzna styczna do wykresu $f$ w $P = (x_0, y_0, \fzero)$ jest dana wzorem
+    \[ z - \fzero = f_x(x_0, y_0) \cdot (x - x_0) + f_y(x_0, y_0) \cdot (y - y_0) \]
+\end{tw}
+
+Uwagi 
+\begin{itemize}
+    \item Warunek ciągłości pochodnych na kole jest spełniony dla zdecydowanej większości funkcji elemetnarnych na całej dziedzinie funkcji.
+    \item Wzór na płaszczyznę styczną jest analogiczny do wzoru na prostą styczną do funkcji jednej zmiennej.
+    \item Płaszczyznę styczną można zapisać w postaci ogólnej
+    \[ A(x - x_0) + B(y - y_0) - 1(z - z_0) = 0 \]
+    gdzie
+    \[ z_0 = \fzero, \quad A = f_x(x_0, y_0), \quad B = f_y(x_0, y_0) \]
+    Stąd wektorem normalnym jest
+    \[ \vec{n} = [A, B, -1] = [f_x(x_0, y_0), f_y(x_0, y_0), -1] \] 
+\end{itemize}
+
+\begin{przykladbig}
+    Dana jest funkcja \ $ f(x,y) = x^2 - 2y^2 $
+
+    a) Znaleźć płaszczyznę styczną do wykresu $f$ w punkcie \ $ P = (1, 2, z_0) $.
+
+    b) Znaleźć wszystkie punkty wykresu $f$ w których płaszczyzna styczna jest równoległa do płaszczyzny \ $ \Pi_1: x - 2y + 2z + 5 = 0 $
+    \bigskip
+
+    a) $ \Pi_s $ w $ P = (1, 2, z_0)$
+
+    $ z_0 = f(1,2) = -7 $
+
+    \[ \begin{array}{cc}
+        f_x = 2x & A = f_x(1,2) = 2 \\
+        f_y = -4y & B = f_y(1,2) = -8
+    \end{array} \]
+
+    Wzór 
+    \[ z - (-7) = 2(x-1) - 8(x-2) \quad \text{lub} \quad \ 2(x-1) - 8(y-2) - (z+7) = 0 \]
+
+    b)
+    \[ \Pi_s \ \| \ \Pi : x - 2y + 2z + 5 = 0 \]
+    \[ \vec{n} = [-1,-2,2] \ \bot \ \Pi \]
+    \[ \vec{n_s} = [f_x, f_y, -1] \ \bot \ \Pi_s \]
+
+    \[ \Pi \ \| \ \Pi_s \ \Leftrightarrow \ \vec{n} \ \| \ \vec{n_s} \ \Leftrightarrow \ \frac{f_x}{1} = \frac{f_y}{-2} = \frac{-1}{2} \]
+
+    Trzeba zatem rozwiązać układ równań
+    \[ \begin{cases}
+        f_x = -\frac{1}{2} = 2x \\
+        f_y = 1 = -4y
+    \end{cases} \]
+
+    Rozwiązanie to
+    \[ x = x_0 = -\frac{1}{4} \]
+    \[ y = y_0 = -\frac{1}{4} \]
+
+    Stąd
+    \[ z_0 = f(-\frac{1}{4}, -\frac{1}{4}) = -\frac{1}{16} \]
+    I punkt to jest
+    \[ P = (-\frac{1}{4}, -\frac{1}{4}, -\frac{1}{16}) \]
+\end{przykladbig}
+
+Bezpośrednie zastosowanie: \underline{przybliżanie funkcji płaszczyzą styczną}
+
+Równanie płaszczyzny stycznej $\Pi$ do wykresu $f$ w $P = (x_0, y_0, \fzero)$ można zapisać wzorem
+
+\[ z = \fzero + f_x(x_0, y_0) \cdot (x - x_0) + f_y(x_0, y_0) \cdot (y - y_0) \]
+
+Gdy teraz \ $ R = (x, y, f(x,y)), \ Q = (x,y,z) \in \Pi $ \ i \ $ x \approx x_0 $ oraz \ $ y \approx y_0 $ to 
+\ $ R \approx P \approx Q $, \ a więc \ $ R \approx Q $ \ i \ $ z \approx f(x,y) $.
+
+To daje wzór na przybliżoną wartość \ $f(x,y)$:
+
+\[ f(x,y) \approx f(x_0,y_0) + f_x(x_0, y_0) \cdot (x - x_0 ) + f_y(x_0, y_0) \cdot (y - y_0) \]
+
+Zastosowanie:
+\begin{itemize}
+    \item $ x_0, y_0 $ -- "ładne": łatwe do obliczenia,
+    \item $ x,y $ -- to co mamy w zadaniu.
+\end{itemize}
+
+\begin{przyklad}
+    Obliczyć w przybliżeniu i bez kalkulatora $ (2,005)^5 \ln(0,98) $ \medskip
+
+    Mamy \ $ (2,005)^5 \ln(0,98) = f(2.005, 0.98) $.
+
+    Zatem
+    \[ f(x,y) = x^5 \ln y, \ x = 2,005, \ y = 0,98 \]
+
+    Bierzemy \ $x_0 = 2$ \ oraz \ $ y_0 = 1 $.
+
+    To daje
+    \[ f_x = 5x^4 \ln y, \quad f_y = \frac{x^5}{y}, \quad f_x(2,1) = 0, \quad f_y(2,1) = 32 \quad \text{oraz} \quad f(2,1) = 0 \]
+
+    Zatem
+    \[ (2,005)^5 \ln (0,98) \approx 0 + 0 \cdot (2,005 - 2) + 32 \cdot(0,98 - 1) = -0,64 \]
+
+    Dokładna wartość: $ -0,65461 $. Błąd wynosi ok. 0,015 czyli 2,34\%.
+\end{przyklad}
+
+Dalsze zastosowanie wzoru
+
+Biorąc \ $ x - x_0 = \Delta x, \quad y - y_0 = \Delta y $ \ mamy \ $ x = \Delta x + x_0, \quad y = \Delta y + y_0 $.
+\medskip
+
+To daje wzór
+\[ f(x_0 + \Delta x, y_0 + \Delta y) \approx \fzero + f_x(x_0, y_0) \cdot \Delta x + f_y(x_0, y_0) \cdot \Delta y \]
+Czyli
+\[ f(x_0 + \Delta x, y_0 + \Delta y) - \fzero \approx f_x(x_0, y_0) \cdot \Delta x + f_y(x_0, y_0) \cdot \Delta y \]
+
+Oznaczając przez $ \Delta f $ "błąd bezwzględny funkcji" mamy
+\[ \Delta f  = | f(x_0 + \Delta x ,y_0 + \Delta y) - \fzero | \ \approx f_x(x_0, y_0) \cdot \Delta x + f_y(x_0, y_0) \cdot \Delta y \]
+
+Gdy oba iloczyny pod modułem z prawej strony mają ten sam znak błędy kumulują się i mamy
+\[ \Delta f \approx | f_x(x_0, y_0) | \ \cdot \ | \Delta x | \ + \ | f_y(x_0, y_0) | \ \cdot \ | \Delta y | \]
+
+To jest wzór na tzw. \underline{różniczkę zupełną}.
+
+Jest to uogólnienie wzoru z AM1 dla funkcji jednej zmiennej \ $ f = f(x) $:
+\[ \Delta f \approx | f'(x_0) | \ \cdot \ | \Delta x | \]
+
+Zastosowania -- przy pomiarach z błędem
+
+Mierzymy $x$ z dokładnością $ | \Delta x| \approx 0 $.
+
+Wówczas błąd bezwzględny pomiaru $f$ wynosi w przybliżeniu $ \Delta f $.
+
+\begin{przyklad}
+    W obwodzie zmierzono wartość prądu stałego \ $ I = 3 \ A \pm 0,1 \ A $ oraz rezystancję \ $ R = 2 \ \Omega \pm 0,01 \Omega $.
+
+    Z jaką w przybliżeniu dokładnością zmierzymy wydzieloną moc? \bigskip
+
+    Mamy
+    \[ P = P(I, R) = I^2 R, \quad I_0 = 3, \quad R_0 = 2, \quad, \Delta I = \pm 0,1, \quad \Delta R = \pm 0,01 \]
+
+    Czyli
+    \[ P_I = 2 IR, \quad P_R = I^2, \quad P_I(3,2) = 12, \quad P_R(3,2) = 9 \]
+    A więc
+    \[ \Delta P = |12| \ \cdot 0,1 + |9| \ \cdot 0,01 = 1,29 [\textrm{W}] \]
+\end{przyklad}
+
+
+\subsection*{Pochodna kierunkowa}
+\addcontentsline{toc}{subsection}{Pochodna kierunkowa}
+
+\begin{tw}{Definicja}
+    Dla funkcji 2 zmiennych \ $ f = f(x,y) $ \ pochodna ta mierzy zmienność $f$ w zadanym kierunku \ $ \vec{v} = [a,b] $.
+
+    Geometrycznie, jest to wersja pochodnej jednostronnej krzywej, która jest częścią wspólną wykresu $f$ oraz płaszczyzny równoległej
+    do osi $Z$ i do wektora $\vec{v}$.
+
+    Oznaczenie :
+    \[ \dpartial{f}{\vec{v}}(x,y) \quad \text{lub} \quad f_{\vec{v}}(x,y) \]
+\end{tw}
+
+\textbf{Uwaga! Do definicji będziemy zawsze używać wektorów jednostkowych:}
+\[ |\vec{v}| = 1 \]
+
+\begin{tw}{Ogólna definicja dla funkcji $n$ zmiennych}
+    Ustalamy punkt $P$ w $\mathbb{R}^n$ i rozpatrujemy półprostą o początku w $P$ i o kierunku zgodnym z $\vec{v}$ czyli zbiór tych punktów
+    $R$ dla których $\overrightarrow{PR}$ i $\vec{v}$ mają zgodne kierunki.
+
+    Badamy proporcję różnicy wartości $f$ w punktach $R$ i $P$ do odległości $R$ od $P$ przy przejściu granicznym $ R \to P $.
+
+    Daje to definicję
+    \[ \dpartial{f}{\vec{v}}(P) = \lim_{R \to P} \frac{f(R) - f(P)}{|\overrightarrow{PR}|} \]
+
+    \begin{center}
+        \includegraphics[scale=0.5]{img/pochodnakierunkowa.png}
+    \end{center}
+    \[ \dpartial{f}{\vec{v}}(P) = \tan \alpha \]
+\end{tw}
+
+W przypadku funkcji 2 zmiennych dla \ $ P = (x_0, y_0) $ \ i \ $ \vec{v} = [a,b] $ \ równanie parametryczne powyższej półprostej ma postać
+\[ \begin{cases} 
+    x = x_0 + at \\
+    y = y_0 + bt
+\end{cases} \quad \text{dla} \ t > 0 \]
+
+To oznacza, że
+\[ R = (x,y) = (x_0 + at, y_0 + bt) \quad \text{oraz} \quad \overrightarrow{PR} = t \cdot \vec{v} \]
+A stąd
+\[ |\overrightarrow{PR}| = |t \cdot \vec{v}| = |t| \cdot |\vec{v}| = t \cdot 1 = t \]
+
+Ponieważ \ $ R \to P \ \Leftrightarrow \ t \to 0^+ $ \ oznacza, że
+\[ \lim_{R \to P} \frac{f(R) - f(P)}{|\overrightarrow{PR}|} = \lim_{t \to 0^+} \frac{f(x_0 + at, y_0 + bt) - \fzero}{t} \]
+a to daje równoważną definicję pochodnej kierunkowej:
+\[ \dpartial{f}{\vec{v}} (x_0, y_0) = \lim_{t \to 0^+} \frac{f(x_0 + at, y_0 + bt) - \fzero}{t}, \quad \text{gdzie} \ \vec{v} = [a,b], \ |\vec{v}| = 1 \]
+
+\begin{przyklad}
+    \[ \dpartial{f}{\vec{v}} (0,1) = \lim_{t \to 0^+} \frac{f \left( 0 - \frac{\sqrt{2}}{2}t, 1 + \frac{\sqrt{2}}{2}t \right) - f(0,1)}{t}
+    = \lim_{t \to 0^+} \frac{ \left| -\frac{\sqrt{2}}{2}t \right| + 3 \left| 1 + \frac{\sqrt{2}}{2}t \right| - 3 }{t} = \]
+    \[ \lim_{t \to 0^+} \frac{ \frac{\sqrt{2}}{2}t + 3 \left( 1 + \frac{\sqrt{2}}{2}t \right) - 3 }{t} = \lim_{t \to 0^+} \frac{4 \cdot \frac{\sqrt{2}}{2}t}{t} = 2 \sqrt{2} \]
+\end{przyklad}
+
+Z definicji liczymy tylko dla funkcji mało regularnych. Gdy pochodne cząstkowe $f$ są ciągle to mamy lepszy wzór z użyciem \underline{gradientu}.
+
+\subsection*{Gradient}
+\addcontentsline{toc}{subsection}{Gradient}
+
+\begin{tw}{Definicja}
+    Gradient funkcji w danym punkcie -- wektor pochodnych cząstkowych pierwszego rzędu funkcji $f$ w danym punkcie.
+
+    Oznaczenie: $ \text{grad}\, f$ \ lub \ $ \nabla f $.
+
+    Dla funkcji 2 zmiennych i punktu $ P = (x_0, y_0) $
+    \[ \text{grad}\, \fzero = [f_x(x_0, y_0), f_y(x_0, y_0)] \]
+
+    Dla funkcji $n$ zmiennych \ $ f = f(x_1, x_2, ..., x_n) $ \ i punktu \ $ P = (a_1, a_2, ..., a_n) \in \mathbb{R}^n $
+    \[ \text{grad} \, f(P) = [f_{x_1}(P), f_{x_2}(P), ..., f_{x_n}(P)] \]
+\end{tw}
+
+\begin{tw}{Twierdzenie}
+    Gdy pochodne cząstkowe $f$ są ciągłe w \ $ (x_0, y_0) $ \ i \ $ \vec{v} = [a,b] $ \ oraz \ $ |\vec{v}| = 1 $ \ to
+    \[ \dpartial{f}{\vec{v}} (x_0, y_0) = \vec{v} \circ (\text{grad} \, \fzero) = a \cdot f_x(x_0, y_0) + b \cdot f_y(x_0, y_0) \]
+    Wzór rozszerza się do funkcji większej ilości zmiennych.    
+\end{tw}
+
+\begin{przyklad}
+    \[ f(x,y) = x^2 \cdot y^3, \quad \vec{v} =\left[ -\frac{1}{2}, \frac{\sqrt{3}}{2} \right] \]
+    Obliczyć $ f_{\vec{v}} (-1, 1) $. \bigskip
+
+    Mamy
+    \[ f_x = 2xy^3, \quad f_y = 3x^2 y^2 \]
+    \[ f_x(-1, 1) = -2, \quad f_y(-1, 1) = 3, \quad \text{grad}\, f(-1, 1) = [-2, 3] \]
+    \[ f_{\vec{v}} = [-2, 3] \circ \left[ -\frac{1}{2}, \frac{\sqrt{3}}{2} \right] = 1 + \frac{3 \sqrt{3}}{2} \]
+\end{przyklad}
+
+Dalej,
+\[ \vec{v} \circ \text{grad}\, \fzero = 1 \cdot | \text{grad}\ \fzero | \cdot \cos \alpha \]
+gdzie $\alpha$ jest kątem między tymi dwoma wektorami.
+
+To daje następujące wnioski:
+
+\begin{tw}{Twierdzenie}
+    Gdy \ $ \text{grad} \, \fzero = \vec{0} $
+    \quad to \quad
+    $ \dpartial{f}{\vec{v}} (x_0, y_0) = 0 $
+    \quad dla dowolnego $ \vec{v} $.
+\end{tw}
+
+\begin{tw}{Twierdzenie}
+    $ \dpartial{f}{\vec{v}} (x_0, y_0) $ ma wartość największą kiedy $\vec{v}$ i grad $\ \fzero $ mają zgodne kierunki.
+
+    Ta największa wartość to \ $ | \text{grad}\, \fzero | $.
+\end{tw}
+
+\begin{tw}{Twierdzenie}
+    $ \dpartial{f}{\vec{v}} (x_0, y_0) $ ma wartość najmniejszą kiedy $\vec{v}$ i grad $\ \fzero $ mają przeciwne kierunki.
+
+    Ta najmniejsza wartość to \ $ -| \text{grad}\, \fzero | $.
+\end{tw}
+
+\begin{tw}{Twierdzenie}
+    $ \dpartial{f}{\vec{v}} (x_0, y_0) = 0 $ \quad dla \quad $ \text{grad} \, \fzero \neq \vec{0} $
+    \quad kiedy \quad
+    $ \text{grad} \, \fzero \perp \vec{v} $
+\end{tw}
+
+\begin{tw}{Twierdzenie}
+    Zbiór wartości \ $ \dpartial{f}{\vec{v}} (x_0, y_0) $ \ w zależności od $\vec{v}$ to przedział
+    \[ [ -|\text{grad} \, \fzero|, |\text{grad} \, \fzero | ] \]
+    Skrajne wartości są osiągane dla dokładnie jednego wektora (zob. punkty 2 i 3), a pozostałe -- dla dokładnie dwóch wektorów $\vec{v}$.
+\end{tw}
+
+\begin{przyklad}
+    Dana jest funkcja \ \[ f(x,y) = (x^2 + y^2)e^{x-y} \]
+
+    1.Znaleźć wszystkie wersory $\vec{v}$ dla których \ $ f_{\vec{v}} (-1, 1) $
+    
+    a) jest największa
+
+    b) jest najmniejsza \medskip
+
+    2. Wyznaczyć zbiór wszystkich punktów (x,y) dla których pochodna kierunkowa w kierunku wersora \ $ \vec{v} = \left[ \frac{3}{5}, \frac{4}{5} \right] $ \ jest równa 0.
+    \bigskip
+
+    Wprowadzić wektor $ \vec{v} = [a,b] $ \ co daje
+    \[ f_{\vec{v}} (-1, 1) = [a,b] \circ [3e^{-3}, -e^{-3}] = 3e^{-3} a - e^{-3}b \]
+    Następnie trzeba analizować tę funkcję \textbf{nie zapominając o dodatkowym warunku}
+    \[ \vec{v} = 1 \ \Leftrightarrow \ a^2 + b^2 = 1 \]
+    Prowadzi to do układu równań, jest dłuższe i bardziej skomplikowane
+
+    W części 2 potrzebna jest metoda analityczna.
+    
+    Korzystając ze wzoru na gradient z części a) Mamy
+    \[ f_{\vec{v}} = (x,y) = grad\, f(x,y) \circ \vec{v} = [e^{x-y} (2x + x^2 + y^2), e^{x-y}(2y - x^2 - y^2)] \circ \left[ \frac{3}{5}, \frac{4}{5} \right] = \]
+    \[ \frac{3}{5} e^{x-y} (2x + x^2 + y^2) + \frac{4}{5} e^{x-y} (2y - x^2 - y^2) = \frac{1}{5} e^{x-y} (6x + 8y - x^2 - y^2) = 0 \]
+
+    To oznacza, że \ $ 6x + 8y - x^2 - y^2 = 0 $
+
+    Jest to równanie okręgu -- po sprowadzeniu do postaci kanonicznej mamy \bigskip
+
+    \textbf{Ciąg dalszy nastąpi po wykładzie w dniu 8.05.2023}
+\end{przyklad}
 
 \subsection*{Zbieżność w $\mathbb{R}^k$ i granice funkcji wielu zmiennych}
 \addcontentsline{toc}{subsection}{Zbieżność w $R^k$  i granice funkcji wielu zmiennych}
@@ -504,16 +873,18 @@ się w punkcie $(0, -1) $.
 
 \begin{tw}{Definicja}
 
-$f$ ma w $ P = (x_0, y_0) \in D_f $ minimum lokalne gdy $ f(x_0, y_0) $ jest najmniejszą wartością $f$ na pewnym kole o środku w $P$.
+$f$ ma w $ P = (x_0, y_0) \in D_f $ minimum lokalne gdy $ \fzero $ jest najmniejszą wartością $f$ na pewnym kole o środku w $P$.
 
-$f$ ma w $ P = (x_0, y_0) \in D_f $ minimum lokalne gdy $ f(x_0, y_0) $ jest największą wartością $f$ na pewnym kole o środku w $P$. \\
+$f$ ma w $ P = (x_0, y_0) \in D_f $ minimum lokalne gdy $ \fzero $ jest największą wartością $f$ na pewnym kole o środku w $P$. \\
 
 Gdy ta wartość jest najmniejsza/największa na całej dziedzinie $f$ to mówimy o ekstremum (minimum, maksimum) \underline{globalnym}.
 \end{tw}
 
-Na przykład funkcja $ f(x,y) = x^4 + y^6 $ ma w $(0,0)$ minimum i jest ono globalne, bo
+\begin{przyklad}
+Funkcja $ f(x,y) = x^4 + y^6 $ ma w $(0,0)$ minimum i jest ono globalne, bo
 $$ f(0,0) = 0 $$
-a dla dowolnego $ (x,y) \neq (0,0) $ mamy $ f(x,y) = x^4 + y^6 > 0 $. \\
+a dla dowolnego $ (x,y) \neq (0,0) $ mamy $ f(x,y) = x^4 + y^6 > 0 $.
+\end{przyklad}
 
 Wyznaczenie ekstremów z definicji rzadko kiedy się udaje, najczęściej szukamy ich z użyciem pochodnych cząstkowych.
 

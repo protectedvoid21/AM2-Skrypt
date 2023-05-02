@@ -1,7 +1,7 @@
 \contentsline {subsection}{\numberline {0.1}Mały wstęp}{2}{subsection.0.1}%
 \contentsline {section}{\numberline {1}Całki niewłaściwe I rodzaju}{2}{section.1}%
 \contentsline {subsection}{Twierdzenie(kryterium porównawcze)}{5}{section*.4}%
-\contentsline {subsection}{Twierdzenie(kryterium ilorazowe)}{6}{section*.5}%
+\contentsline {subsection}{Twierdzenie(kryterium ilorazowe)}{7}{section*.5}%
 \contentsline {subsection}{Wartość główna całki niewłaściwej I rodzaju}{8}{section*.6}%
 \contentsline {section}{\numberline {2}Całki niewłaściwe II rodzaju}{10}{section.2}%
 \contentsline {subsection}{Zbieżność bezwzględna całek niewłaściwych}{12}{section*.7}%
@@ -26,10 +26,15 @@
 \contentsline {subsection}{Pochodne cząstkowe pierwszego rzędu funkcji wielu zmiennych}{53}{section*.23}%
 \contentsline {subsection}{Interpretacja geometryczna dla funkcji 2 zmiennych}{53}{section*.24}%
 \contentsline {subsection}{Pochodne drugiego rzędu}{54}{section*.25}%
-\contentsline {subsection}{Zbieżność w $R^k$ i granice funkcji wielu zmiennych}{56}{section*.26}%
-\contentsline {subsection}{Popularne techniki liczenia granic funkcji wielu zmiennych}{57}{section*.27}%
-\contentsline {subsection}{Ciągłość funkcji wielu zmiennych}{59}{section*.28}%
-\contentsline {subsection}{Ekstrema funkcji dwóch zmiennych}{61}{section*.29}%
-\contentsline {subsection}{Ekstrema warunkowe}{63}{section*.30}%
-\contentsline {subsection}{Zadania optymalizacyjne}{66}{section*.32}%
-\contentsline {section}{\numberline {6}Całki podwójne}{69}{section.6}%
+\contentsline {subsection}{Płaszczyzna styczna do funkcji dwóch zmiennych}{57}{section*.26}%
+\contentsline {subsection}{Pochodna kierunkowa}{60}{section*.27}%
+\contentsline {subsection}{Gradient}{62}{section*.28}%
+\contentsline {subsection}{Zbieżność w $R^k$ i granice funkcji wielu zmiennych}{64}{section*.29}%
+\contentsline {subsection}{Popularne techniki liczenia granic funkcji wielu zmiennych}{66}{section*.30}%
+\contentsline {subsection}{Ciągłość funkcji wielu zmiennych}{68}{section*.31}%
+\contentsline {subsection}{Ekstrema funkcji dwóch zmiennych}{70}{section*.32}%
+\contentsline {subsection}{Ekstrema warunkowe}{72}{section*.33}%
+\contentsline {subsection}{Zadania optymalizacyjne}{75}{section*.35}%
+\contentsline {section}{\numberline {6}Całki podwójne}{78}{section.6}%
+\contentsline {subsection}{Zmiana zmiennych w całce podwójnej}{85}{section*.36}%
+\contentsline {subsection}{Współrzędne biegunowe}{86}{section*.37}%

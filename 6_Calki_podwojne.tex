@@ -9,11 +9,9 @@ Definicja może być skonstruowana poprzez:
 \end{itemize}
 \bigskip
 
+\begin{tw}{Całka w sensie Riemanna}
 Przypadek podstawowy -- $D$ jest prostokątem
 \[ D = [a,b] \times [c,d] = \{ (x,y): a \leq x \leq b, \ c \leq y \leq d \} \]
-\medskip
-
-\begin{tw}{Całka w sensie Riemanna}
 
 Dzielimy $D$ na $n$ prostokątów o bokach poziomych o długości $\Delta X$ i bokach pionowych o długości $\Delta y_i, \ i = 1,2,...,n$.
 W każdym z prostokątów wybieramy dowolny punkt $P_i = (a_i, b_i)$.
@@ -78,11 +76,13 @@ Są to zbiory postaci:
 Ponadto funkcje $d$ i $g$ są ciągłe.
 \end{przyklad}
 
+\begin{tw}{Definicja}
 Definicja całki podwójnej w sensie Riemanna jest analogiczna jak dla prostokąta.
 
 \[ \int\limits_{a}^{b} dx \int\limits_{d(x)}^{g(x)} f(x,y)\, dy = \int\limits_{a}^{b} dx \left( \ \int\limits_{d(x)}^{g(x)} f(x,y)\, dy \right) \]
 \begin{center} lub \end{center}
 \[ \int\limits_{c}^{d} dy \int\limits_{d(x)}^{g(x)} f(x,y)\, dx = \int\limits_{a}^{b} dy \left( \ \int\limits_{d(x)}^{g(x)} f(x,y)\, dx \right) \]
+\end{tw}
 
 \begin{tw}{Twierdzenie}
 
@@ -128,6 +128,268 @@ Całość:
     \item $ \iint\limits_D \left( f(x,y) \pm g(x,y) \right)\, dxdy = \iint\limits_D f(x,y)\, dxdy \pm \iint\limits_D g(x,y)\, dxdy $
     \item $ \iint\limits_D c \cdot f(x,y)\, dxdy = c \iint\limits_D f(x,y)\, dxdy $
     \item gdy \ $ D = D_1 \cup D_2 $ \ i \ $ D_1, D_2 $ \ są rozłączne to
-    $ \iint\limits_D f(x,y)\, dxdy = \iint\limits_{D_1} f(x,y)\, dxdy + \iint\limits_{D_2} f(x,y)\, dxdy $
+    \[ \iint\limits_D f(x,y)\, dxdy = \iint\limits_{D_1} f(x,y)\, dxdy + \iint\limits_{D_2} f(x,y)\, dxdy \]
 \end{itemize}
 \end{tw}
+
+\begin{tw}{Zmiana kolejności całkowania}
+    \[ \iint\limits_D f(x,y)\, dxdy = \int\limits_{c}^{d} dy \int\limits_{d_1(y)}^{g_1(y)} f(x,y)\, dx \]
+    będzie dawała jeden obszar i jedną całkę.
+\end{tw}
+
+Pytanie: jak mając obszar normalny względem $x$ zmienić go na obszar/obszary względem $y$?
+
+Zmiana kolejności całkowania wymaga zmiany roli argumentu i wartości czyli np. mając funkcję brzegową $ y = f(x) $ trzeba wyliczyć ją względem $y$
+czyli $x = g(y)$.
+
+Związane jest to z wyznaczaniem \underline{funkcji odwrotnej}.
+
+Stąd wniosek: zmiana kolejności całkowania jest związana z \textbf{odbiciem obszaru względem prostej $ y = x $}.
+
+Funkcja/krzywa "prawa" staje się "górną", a "lewa" - "dolną".
+
+Praktyczna uwaga: symetria względem prostej $y = x$ jest równoważna obrotowi względem $(0,0)$ w lewo o kąt $90^{\circ}$, a potem symetrii
+względem osi pionowej.
+
+W praktyce wystarczy sam obrót by zobaczyć funkcje górne i dolne.
+
+\begin{przykladbig}
+Zapisać, jako całkę iterowaną, $ \iint\limits_D f(x,y)\, dxdy $, gdzie $D$ jest obszarem na rysunku poniżej.
+
+Następnie zmienić kolejność całkowania.
+
+\begin{center}
+    \includegraphics[scale=0.5]{img/2x.png}
+\end{center}
+
+Widać, że funkcją dolną jest funkcja stała $y=1$, a górną $y = 2^x$. Zmienność $x$ można odczytać poprzez rzut obszaru na oś $X$.
+
+Zatem
+\[ D: \ 0 \leq x \leq 2, \quad 1 \leq y \leq 2^x \]
+To daje całkę 
+\[ \int\limits_{0}^{2} dx \int\limits_{1}^{2^x} f(x,y)\, dy \]
+
+\textbf{Ważna uwaga}
+
+Jeżeli zarówno $x$ jak i $y$ są ograniczone przez liczby to obszar jest prostokątem lub sumą prostokątów. Zatem każdy zbiór,
+który nie jest prostokątem/sumą prostokątów będzie zawierał \textbf{zależność jednej zmiennej od drugiej}.
+
+\begin{blad}{Popularny błąd}
+Obie zmienne między liczbami dla obszarów innych niż prostkąty
+
+Na przykład dla naszego obszaru
+\[ D : \ 0 \leq x \leq 2, \quad \textcolor{red}{1 \leq y \leq 4} \]
+GAME OVER... To jest opis prostokąta
+\end{blad}
+
+Teraz zmiana kolejności całkowania.
+
+Funkcją górną staje się krzywa prawa (prosta pionowa), a dolną -- lewa $(y=2^x)$.
+
+Widać to po obrocie rysunku względem (0,0) w lewo o kąt $90^{\circ}$.
+
+\begin{center}
+\includegraphics[scale=0.45]{img/2xzlewej.png}
+\includegraphics[scale=0.45]{img/2xzprawej.png}
+\end{center}
+
+Zatem dostaniemy
+\[ y = 2^x \ \Leftrightarrow \ x = \log_2 y \ \textrm{-- funkcja dolna} \]
+\[ x = 2 \ \textrm{-- funkcja górna} \]
+
+Warunki opisujące $D: \ 1 \leq y \leq 4, \quad \log_2 y \leq x \leq 2$
+
+Całka: $ \int\limits_{1}^{4} dy \int\limits_{\log_2 y}^{2} f(x,y)\, dx $
+\end{przykladbig}
+
+Praktyczna uwaga.
+
+Opłaca się zmieniać kolejność całkowania, gdy w podstawowym zapisie trzeba dzielić obszar na kilka fragmentów, a po zmianie dostajemy jeden
+obszar (między jedną funkcją górną i jedną dolną).
+\begin{przyklad}
+    Na przykład poniższy w postaci $ D = \{(x,y): \ a \leq x \leq b, \ d(x) \leq y \leq g(x) \} $
+    
+    \includegraphics[scale=0.65]{img/obszar1.png}
+
+    trzeba rozbić na sumę 2 obszarów i będą 2 całki
+
+    Po zmianie kolejności całkowania mamy obszar w postaci
+
+    $ D = \{(x,y): \ c \leq y \leq d, \ d_1(y) \leq x \leq g_1(y) \} $
+
+    \includegraphics[scale=0.6]{img/obszar2.png}
+
+    Będzie to całka po tylko jednym obszarze.
+\end{przyklad}
+
+\subsection*{Zmiana zmiennych w całce podwójnej}
+\addcontentsline{toc}{subsection}{Zmiana zmiennych w całce podwójnej}
+
+Chodzi o metodę podstawienia
+
+Wyprowadzamy wzory
+
+$ x = x(s,t) $
+
+$ y = y(s,t) $
+
+Zakładamy, że są to różniczkowalne funkcje zmiennych $s$ i $t$.
+
+$s$, $t$ -- nowe współrzędne,
+
+$x$, $y$ -- stare współrzędne.
+
+Definiujemy wyznacznik
+
+\[ J = J(s,t) = \begin{vmatrix}
+    \frac{dx}{ds} & \frac{dx}{dt} \\
+    \frac{dy}{ds} & \frac{dy}{dt}
+\end{vmatrix} \textrm{\quad -- \underline{jakobian} przekształcenia} \]
+
+$A$ - obraz $D$ w nowych współrzędnych tzn. \ $ (x,y) \in D \ \Leftrightarrow \ (s,t) \in A $.
+
+Wtedy mamy wzór
+\[ \iint\limits_D f(x,y) \, dxdy = \iint\limits_A f(x(s,t), y(s,t)) \cdot |J|\, dsdt \]
+
+Jest to metoda podstawienia w całce podwójnej.
+
+
+\subsection*{Współrzędne biegunowe}
+\addcontentsline{toc}{subsection}{Współrzędne biegunowe}
+
+Jest to szczególny przypadek podstawienia.
+
+Współrzędne biegunowe \underline{centralne} -- mają środek w (0,0).
+
+Jest to odpowiednik postaci trygonometrycznej dla liczb zespolonych:
+\begin{itemize}
+    \item $r$ -- odległość punktu $(x,y)$ od środka (0,0)
+    \item $\varphi$ -- kąt między dodatnią częścią osi X oraz półprostą łączącą środek z $(x,y)$
+\end{itemize}
+
+\begin{tw}{Formalne wzory}
+\[ x = r \cos \varphi \]
+\[ y = r \sin \varphi \]
+\[ J = r \geq 0 \]
+\[ 0 \leq \varphi < 2 \pi \quad \textrm{lub} \quad -\pi < \varphi \leq \pi \]
+
+Obliczenie jakobianu:
+\[ J = J(r, \varphi) = \begin{vmatrix}
+    \cos \varphi & -r \sin \varphi \\
+    \sin \varphi & r \cos \varphi
+\end{vmatrix} = r \cos^2 \varphi - (- r \sin^2 \varphi) = r(\cos^2 \varphi + \sin^2 \varphi) = r \geq 0 \]
+
+\end{tw}
+
+Zatem $ |J| = r $.
+
+Stosujemy gdy jest dużo wyrażeń typu $x^2 + y^2 = R^2 $.
+
+Obraz zbioru $D$ we współrzędnych biegunowych zwykle ma postać
+\[ A = A(r, \varphi) = \{ (r, \varphi): \ a \leq \varphi \leq \beta, \ d(\alpha) \leq r \leq g(\alpha) \} \]
+
+Warunek \ $ a \leq \varphi \leq \beta $ \ zwykle można wywnioskować z rysunku.
+
+Warunek \ $ d(\alpha) \leq r \leq g(\alpha) $ \ zwykle wymaga obliczeń, bo najczęściej promień zależy od kąta.
+
+\textbf{Praktyczna obserwacja:} promień nie zależy od kąta, gdy obszar jest
+\begin{itemize}
+    \item kołem lub wycinkiem kątowym o wierzchołku w (0,0)
+    \item pierścieniem kołowym o środku w (0,0)
+    \item sumą lub przekrojem powyższych zbiorów
+\end{itemize}
+
+\textbf{Inny środek niż w (0,0) powoduje, że promień zależy od kąta}
+
+\subsection*{Współrzędne biegunowe przesunięte -- o środku w $(x_0, y_0)$}
+\begin{itemize}
+    \item r -- odległość punktu $(x,y)$ od środka $(x_0, y_0)$,
+    \item $\varphi$ -- kąt między półprostą $ y = y_0, \ x \geq x_0 $ \ oraz półprostą łączącą środek z $(x,y)$.
+\end{itemize}
+
+\begin{center}
+\includegraphics[scale=0.5]{img/katbiegun.png}
+\end{center}
+
+\begin{tw}{Formalne wzory}
+\[ x = x_0 + r \cos \varphi \]
+\[ y = y_0 + r \sin \varphi \]
+\[ J = r \geq 0 \]
+\[ 0 \leq \varphi < 2 \pi \quad \textrm{lub} \quad -\pi < \varphi \leq \pi \]
+\end{tw}
+
+Stosujemy, gdy jest dużo wyrażeń typu \ $ (x - x_0)^2 + (y - y_0)^2 = R^2 $
+
+Postać obrazu zbioru $D$ oraz praktyczne uwagi są analogiczne do przypadku centralnego, jednak wszystko odnosimy do środka $(x_0, y_0)$, a nie (0,0).
+
+\begin{przykladbig}
+    \[ \iint\limits_D xy^2, \quad D: \ x^2 + y^2 \leq 4, \quad x \geq 0 \]
+
+    Rysunek obszaru
+    
+    \includegraphics[scale=0.4]{img/polokrag.png}
+
+    Wyznaczenie $r$ i $\varphi$
+
+    a) Z rysunku $ -\frac{\pi}{2} \leq \varphi \leq \frac{\pi}{2}, \ 0 \leq r \leq 2$
+
+    b) Z obliczeń
+
+    $ r^2 \leq 4 $ \ oraz \ $ r \cos \varphi \geq 0 \ \Leftrightarrow \ 0 \leq r \leq 2 $ \ oraz \ $ \cos \varphi \geq 0 $.
+
+    Dla cosinusa wygodniej brać \ $ -\pi < \varphi \leq \pi $ \ zamiast \ $ 0 \leq \varphi < 2\pi $.
+
+    Wtedy
+
+    $ \cos \varphi \geq 0 \ \Leftrightarrow \ -\frac{\pi}{2} \leq \varphi \leq \frac{\pi}{2} $
+
+    \[ \iint\limits_D xy^2 = \int\limits_{-\frac{\pi}{2}}^{\frac{\pi}{2}} d\varphi \int\limits_{0}^{2} r \, dr \cdot r \cos \varphi \cdot (r \sin \varphi)^2 
+    = \int\limits_{-\frac{\pi}{2}}^{\frac{\pi}{2}} d \varphi \, \cos \varphi \sin^2 \varphi \int\limits_{0}^{2} r^4 \, dr \]
+    \[ = \frac{32}{5} \int\limits_{-\frac{\pi}{2}}^{\frac{\pi}{2}} d \varphi \, \cos \varphi \sin^2 \varphi = [t = \sin \varphi] \ \frac{32}{5} \int\limits_{-1}^{1} t^2 \, dt = \frac{64}{15} \]
+\end{przykladbig}
+
+\begin{przykladbig}
+    \[ \iint\limits_D (x^2 + y^2) \, dxdy, \quad D: \ x^2 + y^2 + 2y \leq 0 \]
+
+    $D$ -- koło o środku w (0, -1) i promieniu 1: $ x^2 (y+1)^2 \leq 1 $.
+
+    Zastosujemy 2 metody. \bigskip
+
+    a) Współrzędne centralne
+
+    Z rysunku widać, że \ $ \pi \leq \varphi < 2\pi $:
+
+    \includegraphics[scale=0.5]{img/kolkakat.png}
+
+    Promień zależy od kąta bo nasze koło nie ma środka w (0,0).
+
+    Po wstawieniu warunku na $D$:
+    \[ r^2 + 2r \sin \varphi \leq 0 \ \Leftrightarrow \ r \leq -2 \sin \varphi \quad (\textrm{bo} \ r \geq 0) \ \textrm{czyli} \ 0 \leq r \leq -2 \sin \varphi \]
+
+    Jeżeli chcemy potwierdzić zasięg kąta obliczeniami to pojawia się pytanie: skąd wziąć warunek na kąt? \bigskip
+
+    \textbf{Zawsze jest dodatkowy (pośredni) warunek: funkcja dolna $ \leq $ funkcja górna}
+
+    U nas to daje
+    \[ 0 \leq -2 \sin \varphi \quad \textrm{czyli} \quad \sin \varphi \leq 0 \quad \textrm{a stąd} \quad \pi \leq \varphi < 2 \pi \] \bigskip
+
+    b) Przesunięte współrzędne: środek to (0, -1).
+
+    Wtedy
+    \[ x = r \cos \varphi, \quad y = -1 + r \sin \varphi, \quad x^2 + (y+1)^2 = r^2 \]
+
+    $r$ -- odległość od (0, -1),
+    $\varphi $ -- kąt względem półprostej \ $ y = -1, \ x \geq 0 $.
+
+    \includegraphics[scale=0.6]{img/okragikat.png}
+
+    To daje \ $ 0 \leq \varphi < 2\pi, \ 0 \leq r \leq 1 $.
+
+    Dostajemy
+    \[ \int\limits_{0}^{2\pi} d \varphi \int\limits_{0}^{1} r \, dr \cdot (r^2 \cos^2 \varphi + (-1 + r \sin \varphi)^2) 
+    = \int\limits_{0}^{2\pi} d \varphi \int\limits_{0}^{1} r \, dr \cdot (r^2 - 2r \sin \varphi + 1) \]
+    \[ = \int\limits_{0}^{2\pi} d \varphi \left[ \frac{1}{4} r^2 - 2 \frac{r^3}{3} \sin \varphi + \frac{r^2}{2} \right]_0^1
+    = \int\limits_{0}^{2\pi} d \varphi \left( \frac{3}{4} - \frac{2}{3} \sin \varphi \right) = \frac{3}{2} \pi \]
+
+    Ten sam wynik co poprzednio ale całka łatwiejsza.
+\end{przykladbig}

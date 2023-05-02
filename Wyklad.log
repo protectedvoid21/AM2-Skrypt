@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2022.10.30)  25 APR 2023 02:20
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2022.10.30)  2 MAY 2023 14:39
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -525,8 +525,8 @@ Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1373.
 Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1374.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1375.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1376.
- (C:\Users\niezn\AppData\Local\Programs\MiKTeX\tex/latex/graphics\dvipsnam.def
-File: dvipsnam.def 2016/06/17 v3.0m Driver-dependent file (DPC,SPQR)
+ (C:\Users\niezn\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\x11nam.def
+File: x11nam.def 2022/06/12 v2.14 Predefined colors according to Unix/X11 (UK)
 )) (C:\Users\niezn\AppData\Local\Programs\MiKTeX\tex/latex/polski\polski.sty
 Package: polski 2021/08/25 v1.3.6 Polish language package
 
@@ -739,29 +739,152 @@ Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
 \tcb@temp=\box99
 \tcb@temp=\box100
 \tcb@temp=\box101
-) (Wyklad.aux)
+) (C:\Users\niezn\AppData\Local\Programs\MiKTeX\tex/latex/pgfplots\pgfplots.sty (C:\Users\niezn\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplots.revision.tex)
+Package: pgfplots 2021/05/15 v1.18.1 Data Visualization (1.18.1)
+ (C:\Users\niezn\AppData\Local\Programs\MiKTeX\tex/latex/pgf/frontendlayer\tikz.sty (C:\Users\niezn\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgffor.sty (C:\Users\niezn\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgfkeys.sty (C:\Users\niezn\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeys.code.tex)) (C:\Users\niezn\AppData\Local\Programs\MiKTeX\tex/latex/pgf/math\pgfmath.sty (C:\Users\niezn\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath.code.tex)) (C:\Users\niezn\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgffor.code.tex
+Package: pgffor 2021/05/15 v3.1.9a (3.1.9a)
+ (C:\Users\niezn\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath.code.tex)
+\pgffor@iter=\dimen349
+\pgffor@skip=\dimen350
+\pgffor@stack=\toks43
+\pgffor@toks=\toks44
+)) (C:\Users\niezn\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz\tikz.code.tex
+Package: tikz 2021/05/15 v3.1.9a (3.1.9a)
+ (C:\Users\niezn\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibraryplothandlers.code.tex
+File: pgflibraryplothandlers.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@plot@mark@count=\count347
+\pgfplotmarksize=\dimen351
+)
+\tikz@lastx=\dimen352
+\tikz@lasty=\dimen353
+\tikz@lastxsaved=\dimen354
+\tikz@lastysaved=\dimen355
+\tikz@lastmovetox=\dimen356
+\tikz@lastmovetoy=\dimen357
+\tikzleveldistance=\dimen358
+\tikzsiblingdistance=\dimen359
+\tikz@figbox=\box102
+\tikz@figbox@bg=\box103
+\tikz@tempbox=\box104
+\tikz@tempbox@bg=\box105
+\tikztreelevel=\count348
+\tikznumberofchildren=\count349
+\tikznumberofcurrentchild=\count350
+\tikz@fig@count=\count351
+ (C:\Users\niezn\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodulematrix.code.tex
+File: pgfmodulematrix.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfmatrixcurrentrow=\count352
+\pgfmatrixcurrentcolumn=\count353
+\pgf@matrix@numberofcolumns=\count354
+)
+\tikz@expandcount=\count355
+ (C:\Users\niezn\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+))) (C:\Users\niezn\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplots.code.tex (C:\Users\niezn\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplotscore.code.tex
+\t@pgfplots@toka=\toks45
+\t@pgfplots@tokb=\toks46
+\t@pgfplots@tokc=\toks47
+\pgfplots@tmpa=\dimen360
+\c@pgfplots@coordindex=\count356
+\c@pgfplots@scanlineindex=\count357
+ (C:\Users\niezn\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/sys\pgfplotssysgeneric.code.tex)) (C:\Users\niezn\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/libs\pgfplotslibrary.code.tex) (C:\Users\niezn\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/oldpgfcompatib\pgfplotsoldpgfsupp_loader.code.tex (C:\Users\niezn\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibraryfpu.code.tex)) (C:\Users\niezn\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/util\pgfplotsutil.code.tex (C:\Users\niezn\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/liststructure\pgfplotsliststructure.code.tex) (C:\Users\niezn\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/liststructure\pgfplotsliststructureext.code.tex) (C:\Users\niezn\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/liststructure\pgfplotsarray.code.tex
+\c@pgfplotsarray@tmp=\count358
+) (C:\Users\niezn\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/liststructure\pgfplotsmatrix.code.tex) (C:\Users\niezn\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/numtable\pgfplotstableshared.code.tex
+\c@pgfplotstable@counta=\count359
+\t@pgfplotstable@a=\toks48
+) (C:\Users\niezn\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/liststructure\pgfplotsdeque.code.tex) (C:\Users\niezn\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/util\pgfplotsbinary.code.tex (C:\Users\niezn\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/util\pgfplotsbinary.data.code.tex)) (C:\Users\niezn\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/util\pgfplotsutil.verb.code.tex) (C:\Users\niezn\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/libs\pgflibrarypgfplots.surfshading.code.tex
+\c@pgfplotslibrarysurf@no=\count360
+ (C:\Users\niezn\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/sys\pgflibrarypgfplots.surfshading.pgfsys-pdftex.def))) (C:\Users\niezn\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/util\pgfplotscolormap.code.tex (C:\Users\niezn\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/util\pgfplotscolor.code.tex)) (C:\Users\niezn\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplotsstackedplots.code.tex) (C:\Users\niezn\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplotsplothandlers.code.tex (C:\Users\niezn\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplotsmeshplothandler.code.tex (C:\Users\niezn\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplotsmeshplotimage.code.tex))) (C:\Users\niezn\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplots.scaling.code.tex) (C:\Users\niezn\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplotscoordprocessing.code.tex) (C:\Users\niezn\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplots.errorbars.code.tex) (C:\Users\niezn\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplots.markers.code.tex) (C:\Users\niezn\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplotsticks.code.tex)
+(C:\Users\niezn\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplots.paths.code.tex) (C:\Users\niezn\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarydecorations.code.tex (C:\Users\niezn\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmoduledecorations.code.tex
+\pgfdecoratedcompleteddistance=\dimen361
+\pgfdecoratedremainingdistance=\dimen362
+\pgfdecoratedinputsegmentcompleteddistance=\dimen363
+\pgfdecoratedinputsegmentremainingdistance=\dimen364
+\pgf@decorate@distancetomove=\dimen365
+\pgf@decorate@repeatstate=\count361
+\pgfdecorationsegmentamplitude=\dimen366
+\pgfdecorationsegmentlength=\dimen367
+)
+\tikz@lib@dec@box=\box106
+) (C:\Users\niezn\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarydecorations.pathmorphing.code.tex (C:\Users\niezn\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/decorations\pgflibrarydecorations.pathmorphing.code.tex)) (C:\Users\niezn\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarydecorations.pathreplacing.code.tex (C:\Users\niezn\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/decorations\pgflibrarydecorations.pathreplacing.code.tex)) (C:\Users\niezn\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/libs\tikzlibrarypgfplots.contourlua.code.tex)
+\pgfplots@numplots=\count362
+\pgfplots@xmin@reg=\dimen368
+\pgfplots@xmax@reg=\dimen369
+\pgfplots@ymin@reg=\dimen370
+\pgfplots@ymax@reg=\dimen371
+\pgfplots@zmin@reg=\dimen372
+\pgfplots@zmax@reg=\dimen373
+) (C:\Users\niezn\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryplotmarks.code.tex
+File: tikzlibraryplotmarks.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+ (C:\Users\niezn\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibraryplotmarks.code.tex
+File: pgflibraryplotmarks.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+))) (C:\Users\niezn\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcblistings.code.tex
+Library (tcolorbox): 'tcblistings.code.tex' version '5.1.1'
+(C:\Users\niezn\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.sty
+\lst@mode=\count363
+\lst@gtempboxa=\box107
+\lst@token=\toks49
+\lst@length=\count364
+\lst@currlwidth=\dimen374
+\lst@column=\count365
+\lst@pos=\count366
+\lst@lostspace=\dimen375
+\lst@width=\dimen376
+\lst@newlines=\count367
+\lst@lineno=\count368
+\lst@maxwidth=\dimen377
+ (C:\Users\niezn\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstmisc.sty
+File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
+\c@lstnumber=\count369
+\lst@skipnumbers=\count370
+\lst@framebox=\box108
+) (C:\Users\niezn\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.cfg
+File: listings.cfg 2020/03/24 1.8d listings configuration
+))
+Package: listings 2020/03/24 1.8d (Carsten Heinz)
+ (C:\Users\niezn\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcblistingscore.code.tex
+Library (tcolorbox): 'tcblistingscore.code.tex' version '5.1.1'
+(C:\Users\niezn\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcbprocessing.code.tex
+Library (tcolorbox): 'tcbprocessing.code.tex' version '5.1.1'
+(C:\Users\niezn\AppData\Local\Programs\MiKTeX\tex/latex/tools\shellesc.sty
+Package: shellesc 2019/11/08 v1.0c unified shell escape interface for LaTeX
+Package shellesc Info: Restricted shell escape enabled on input line 77.
+))
+\c@tcblisting=\count371
+)) (C:\Users\niezn\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcbbreakable.code.tex
+Library (tcolorbox): 'tcbbreakable.code.tex' version '5.1.1'
+(C:\Users\niezn\AppData\Local\Programs\MiKTeX\tex/latex/pdfcol\pdfcol.sty
+Package: pdfcol 2022-09-21 v1.7 Handle new color stacks for pdfTeX (HO)
+)
+Package pdfcol Info: New color stack `tcb@breakable' = 1 on input line 23.
+\tcb@testbox=\box109
+\tcb@totalupperbox=\box110
+\tcb@totallowerbox=\box111
+) (C:\Users\niezn\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/libs\tikzlibrarypgfplots.fillbetween.code.tex (C:\Users\niezn\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/pgfcontrib\tikzlibraryfillbetween.code.tex (C:\Users\niezn\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryintersections.code.tex (C:\Users\niezn\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibraryintersections.code.tex
+\pgf@intersect@solutions=\count372
+)) (C:\Users\niezn\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/pgfcontrib\tikzlibrarydecorations.softclip.code.tex (C:\Users\niezn\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/pgfcontrib\pgflibraryfillbetween.code.tex))) (C:\Users\niezn\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/libs\tikzlibrarypgfplots.decorations.softclip.code.tex)) (Wyklad.aux)
 \openout1 = `Wyklad.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for OT4/cmr/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for OT4/cmr/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -799,24 +922,24 @@ LaTeX Font Info:    ... okay on input line 40.
 
 (C:\Users\niezn\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count347
-\scratchdimen=\dimen349
-\scratchbox=\box102
-\nofMPsegments=\count348
-\nofMParguments=\count349
-\everyMPshowfont=\toks43
-\MPscratchCnt=\count350
-\MPscratchDim=\dimen350
-\MPnumerator=\count351
-\makeMPintoPDFobject=\count352
-\everyMPtoPDFconversion=\toks44
+\scratchcounter=\count373
+\scratchdimen=\dimen378
+\scratchbox=\box112
+\nofMPsegments=\count374
+\nofMParguments=\count375
+\everyMPshowfont=\toks50
+\MPscratchCnt=\count376
+\MPscratchDim=\dimen379
+\MPnumerator=\count377
+\makeMPintoPDFobject=\count378
+\everyMPtoPDFconversion=\toks51
 ) (C:\Users\niezn\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
  (C:\Users\niezn\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-Package hyperref Info: Link coloring OFF on input line 40.
+Package hyperref Info: Link coloring OFF on input line 46.
  (Wyklad.out) (Wyklad.out)
 \@outlinefile=\write4
 \openout4 = `Wyklad.out'.
@@ -826,29 +949,32 @@ Package: ninecolors 2022-02-13 vv2022D Select colors with proper color contrast
  (C:\Users\niezn\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/xparse\xparse.sty
 Package: xparse 2022-06-22 L3 Experimental document command parser
 ))
-LaTeX Font Info:    Trying to load font information for OML+plm on input line 42.
- (C:\Users\niezn\AppData\Local\Programs\MiKTeX\tex/latex/polski\omlplm.fd
+Package pgfplots notification 'compat/show suggested version=true': document has been generated with the most recent feature set (\pgfplotsset{compat=1.18}).
+
+\c@lstlisting=\count379
+LaTeX Font Info:    Trying to load font information for OML+plm on input line 48.
+(C:\Users\niezn\AppData\Local\Programs\MiKTeX\tex/latex/polski\omlplm.fd
 File: omlplm.fd 2008/02/24 v1.2.1 Font defs for fonts PL (MW)
 )
-LaTeX Font Info:    Trying to load font information for OMS+plsy on input line 42.
+LaTeX Font Info:    Trying to load font information for OMS+plsy on input line 48.
  (C:\Users\niezn\AppData\Local\Programs\MiKTeX\tex/latex/polski\omsplsy.fd
 File: omsplsy.fd 2008/02/24 v1.2.1 Font defs for fonts PL (MW)
 )
-LaTeX Font Info:    Trying to load font information for OMX+plex on input line 42.
+LaTeX Font Info:    Trying to load font information for OMX+plex on input line 48.
  (C:\Users\niezn\AppData\Local\Programs\MiKTeX\tex/latex/polski\omxplex.fd
 File: omxplex.fd 2008/02/24 v1.2.1 Font defs for fonts PL (MW)
 )
 LaTeX Font Info:    External font `plex10' loaded for size
-(Font)              <14.4> on input line 42.
+(Font)              <14.4> on input line 48.
 LaTeX Font Info:    External font `plex10' loaded for size
-(Font)              <10> on input line 42.
+(Font)              <10> on input line 48.
 LaTeX Font Info:    External font `plex10' loaded for size
-(Font)              <7> on input line 42.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 42.
+(Font)              <7> on input line 48.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 48.
  (C:\Users\niezn\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 42.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 48.
  (C:\Users\niezn\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) (Wyklad.toc
@@ -874,12 +1000,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 11--12
 
  []
 
-
+[2]
 Overfull \hbox (8.4401pt too wide) detected at line 25
 [] [] \OML/plm/m/it/12 x dx \OT4/cmr/m/n/12 = [] [] [] \OML/plm/m/it/12 x dx \OT4/cmr/m/n/12 = [][\OMS/plsy/m/n/12 ^^@ [] \OML/plm/m/it/12 x\OT4/cmr/m/n/12 ][] = [](\OMS/plsy/m/n/12 ^^@ [] \OML/plm/m/it/12 T \OMS/plsy/m/n/12 ^^@ \OT4/cmr/m/n/12 (\OMS/plsy/m/n/12 ^^@ [] \OT4/cmr/m/n/12 0)) = [](1 \OMS/plsy/m/n/12 ^^@ [] \OML/plm/m/it/12 T\OT4/cmr/m/n/12 )
  []
 
-[2]
+
 Underfull \hbox (badness 10000) in paragraph at lines 53--54
 
  []
@@ -909,27 +1035,27 @@ Underfull \hbox (badness 10000) in paragraph at lines 103--106
 
  []
 
-
+[4]
 Underfull \hbox (badness 10000) in paragraph at lines 115--116
 
  []
 
-[4] [5]
+[5]
 Underfull \hbox (badness 10000) in paragraph at lines 170--171
 
  []
 
-
+[6]
 Underfull \hbox (badness 10000) in paragraph at lines 203--205
 
  []
 
-[6]
+
 Underfull \hbox (badness 10000) in paragraph at lines 237--238
 
  []
 
-
+[7]
 Underfull \hbox (badness 10000) in paragraph at lines 241--242
 
  []
@@ -939,60 +1065,55 @@ Underfull \hbox (badness 10000) in paragraph at lines 243--244
 
  []
 
-[7]
+[8]
 Underfull \hbox (badness 10000) in paragraph at lines 284--285
 
  []
 
-[8]) [9] (2_Calki_niewlasciwe_II_rodzaju.tex
-Underfull \hbox (badness 10000) in paragraph at lines 11--12
+) [9] (2_Calki_niewlasciwe_II_rodzaju.tex
+Underfull \hbox (badness 10000) in paragraph at lines 24--25
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 18--19
+Underfull \hbox (badness 10000) in paragraph at lines 27--28
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 21--22
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 26--28
+Underfull \hbox (badness 10000) in paragraph at lines 32--34
 
  []
 
 [10]
-Underfull \hbox (badness 10000) in paragraph at lines 49--50
+Underfull \hbox (badness 10000) in paragraph at lines 55--56
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 73--75
+Underfull \hbox (badness 10000) in paragraph at lines 79--81
 
  []
 
 [11]
-Underfull \hbox (badness 10000) in paragraph at lines 93--94
+Underfull \hbox (badness 10000) in paragraph at lines 99--100
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 101--106
+Underfull \hbox (badness 10000) in paragraph at lines 107--112
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 118--119
+Underfull \hbox (badness 10000) in paragraph at lines 124--125
 
  []
 
-<img/rozbiezneirozbiezne.png, id=256, 602.25pt x 353.06906pt>
+<img/rozbiezneirozbiezne.png, id=281, 602.25pt x 353.06906pt>
 File: img/rozbiezneirozbiezne.png Graphic file (type png)
 <use img/rozbiezneirozbiezne.png>
-Package pdftex.def Info: img/rozbiezneirozbiezne.png  used on input line 127.
+Package pdftex.def Info: img/rozbiezneirozbiezne.png  used on input line 133.
 (pdftex.def)             Requested size: 361.35278pt x 211.84306pt.
 [12]) [13 <./img/rozbiezneirozbiezne.png>] (3_Szeregi_liczbowe.tex
 Underfull \hbox (badness 10000) in paragraph at lines 9--11
@@ -1015,231 +1136,221 @@ Underfull \hbox (badness 10000) in paragraph at lines 39--40
  []
 
 [14]
-Underfull \hbox (badness 10000) in paragraph at lines 67--68
+Underfull \hbox (badness 10000) in paragraph at lines 65--66
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 85--86
+Underfull \hbox (badness 10000) in paragraph at lines 83--84
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 96--98
+Underfull \hbox (badness 10000) in paragraph at lines 94--96
 
  []
 
 [15]
-Underfull \hbox (badness 10000) in paragraph at lines 112--114
+Underfull \hbox (badness 10000) in paragraph at lines 108--110
 
  []
 
 [16]
-Underfull \hbox (badness 10000) in paragraph at lines 155--157
+Underfull \hbox (badness 10000) in paragraph at lines 151--153
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 162--163
+Underfull \hbox (badness 10000) in paragraph at lines 158--159
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 170--171
+Underfull \hbox (badness 10000) in paragraph at lines 166--167
 
  []
 
 [17]
-Underfull \hbox (badness 10000) in paragraph at lines 175--176
+Underfull \hbox (badness 10000) in paragraph at lines 171--172
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 189--190
+Underfull \hbox (badness 10000) in paragraph at lines 185--186
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 200--202
+Underfull \hbox (badness 10000) in paragraph at lines 196--198
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 203--205
+Underfull \hbox (badness 10000) in paragraph at lines 199--201
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 206--208
+Underfull \hbox (badness 10000) in paragraph at lines 202--204
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 219--220
+Underfull \hbox (badness 10000) in paragraph at lines 215--216
 
  []
 
 [18]
-Underfull \hbox (badness 10000) in paragraph at lines 233--234
+Underfull \hbox (badness 10000) in paragraph at lines 229--230
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 238--239
+Underfull \hbox (badness 10000) in paragraph at lines 234--235
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 253--255
+Underfull \hbox (badness 10000) in paragraph at lines 249--251
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 268--270
+Underfull \hbox (badness 10000) in paragraph at lines 264--266
 
  []
 
 [19]
-Underfull \hbox (badness 10000) in paragraph at lines 283--284
+Underfull \hbox (badness 10000) in paragraph at lines 279--280
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 304--306
+Underfull \hbox (badness 10000) in paragraph at lines 300--302
 
  []
 
 [20]
-Underfull \hbox (badness 10000) in paragraph at lines 331--333
+Underfull \hbox (badness 10000) in paragraph at lines 327--329
 
  []
 
 [21]
-Underfull \hbox (badness 10000) in paragraph at lines 376--378
+Underfull \hbox (badness 10000) in paragraph at lines 372--374
 
  []
 
 [22]
-Underfull \hbox (badness 10000) in paragraph at lines 405--406
+Underfull \hbox (badness 10000) in paragraph at lines 401--402
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 427--428
+Underfull \hbox (badness 10000) in paragraph at lines 423--424
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 439--440
+Underfull \hbox (badness 10000) in paragraph at lines 435--436
 
  []
 
 [23]
-Underfull \hbox (badness 10000) in paragraph at lines 448--449
+Underfull \hbox (badness 10000) in paragraph at lines 444--445
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 461--462
+Underfull \hbox (badness 10000) in paragraph at lines 457--458
 
  []
 
 [24]
-Underfull \hbox (badness 10000) in paragraph at lines 486--487
+Underfull \hbox (badness 10000) in paragraph at lines 482--483
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 492--493
+Underfull \hbox (badness 10000) in paragraph at lines 488--489
 
  []
 
 [25]
-Underfull \hbox (badness 10000) in paragraph at lines 535--537
+Underfull \hbox (badness 10000) in paragraph at lines 531--533
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 552--554
+Underfull \hbox (badness 10000) in paragraph at lines 548--550
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 558--560
+Underfull \hbox (badness 10000) in paragraph at lines 554--556
 
  []
 
 [26]
-Underfull \hbox (badness 10000) in paragraph at lines 593--595
+Underfull \hbox (badness 10000) in paragraph at lines 589--591
 
  []
 
 [27]
-Underfull \hbox (badness 10000) in paragraph at lines 632--633
+Underfull \hbox (badness 10000) in paragraph at lines 628--629
 
  []
 
 
-Overfull \hbox (4.33705pt too wide) in paragraph at lines 645--647
+Overfull \hbox (4.33705pt too wide) in paragraph at lines 641--643
 []\OT4/cmr/m/n/12 Twierdzenie od-wrot-ne nie jest praw-dzi-we. S¡ sze-re-gi zbie»-ne ale nie bez-wzgl¦d-nie, np. $[] []$.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 645--647
+Underfull \hbox (badness 10000) in paragraph at lines 641--643
 
  []
 
 File: img/rozbiezneirozbiezne.png Graphic file (type png)
 <use img/rozbiezneirozbiezne.png>
-Package pdftex.def Info: img/rozbiezneirozbiezne.png  used on input line 648.
+Package pdftex.def Info: img/rozbiezneirozbiezne.png  used on input line 644.
 (pdftex.def)             Requested size: 361.35278pt x 211.84306pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 648--649
+Underfull \hbox (badness 10000) in paragraph at lines 644--645
 
  []
 
 [28]
-Underfull \hbox (badness 10000) in paragraph at lines 670--672
+Underfull \hbox (badness 10000) in paragraph at lines 666--668
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 675--676
+Underfull \hbox (badness 10000) in paragraph at lines 671--672
 
  []
 
 
-Underfull \hbox (badness 4531) in paragraph at lines 686--688
+Underfull \hbox (badness 4531) in paragraph at lines 682--684
 []\OT4/cmr/m/n/12 Szereg na-prze-mien-ny $[](\OMS/plsy/m/n/12 ^^@\OT4/cmr/m/n/12 1)[] \OMS/plsy/m/n/12 ^^A \OML/plm/m/it/12 a[]$  \OT4/cmr/m/n/12 lub  $[](\OMS/plsy/m/n/12 ^^@\OT4/cmr/m/n/12 1)[] \OMS/plsy/m/n/12 ^^A \OML/plm/m/it/12 a[]$ \OT4/cmr/m/n/12 na-zy-wa-ny jest
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 690--692
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 696--697
+Underfull \hbox (badness 10000) in paragraph at lines 686--688
 
  []
 
 [29]
-Underfull \hbox (badness 10000) in paragraph at lines 709--712
+Underfull \hbox (badness 10000) in paragraph at lines 706--709
 
  []
 
 
-Overfull \hbox (4.90941pt too wide) in paragraph at lines 716--718
+Overfull \hbox (4.90941pt too wide) in paragraph at lines 713--715
 []\OT4/cmr/m/n/12 Poza twier-dze-niem Le-ib-nit-za wszyst-kie po-zo-sta-ªe kry-te-ria (po-rów-naw-cze, ilo-ra-zo-we, Cau-chy'ego,
  []
 
-[30] [31]
-Underfull \hbox (badness 10000) in paragraph at lines 824--825
-
- []
-
-[32]
-Underfull \hbox (badness 10000) in paragraph at lines 848--849
+[30] [31] [32]
+Underfull \hbox (badness 10000) in paragraph at lines 825--826
 
  []
 
@@ -1313,295 +1424,338 @@ Underfull \hbox (badness 10000) in paragraph at lines 335--336
 
  []
 
+
+Overfull \hbox (10.53316pt too wide) detected at line 349
+[] \OT4/cmr/m/n/12 = \OMS/plsy/m/n/12 ^^@ []\OT4/cmr/m/n/12 (\OMS/plsy/m/n/12 ^^@\OT4/cmr/m/n/12 1)[]\OML/plm/m/it/12 nx[] \OT4/cmr/m/n/12 = [](\OMS/plsy/m/n/12 ^^@\OT4/cmr/m/n/12 1)[]\OML/plm/m/it/12 nx[] \OT4/cmr/m/n/12 = 1 \OMS/plsy/m/n/12 ^^@ \OT4/cmr/m/n/12 2\OML/plm/m/it/12 x \OT4/cmr/m/n/12 + 3\OML/plm/m/it/12 x[] \OMS/plsy/m/n/12 ^^@ \OT4/cmr/m/n/12 4\OML/plm/m/it/12 x[] \OT4/cmr/m/n/12 + \OML/plm/m/it/12 :::;  x \OMS/plsy/m/n/12 2 \OT4/cmr/m/n/12 (\OMS/plsy/m/n/12 ^^@\OT4/cmr/m/n/12 1\OML/plm/m/it/12 ; \OT4/cmr/m/n/12 1)
+ []
+
 [42]
-Underfull \hbox (badness 10000) in paragraph at lines 349--350
+Underfull \hbox (badness 10000) in paragraph at lines 367--368
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 366--367
+Underfull \hbox (badness 10000) in paragraph at lines 371--372
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 370--371
-
- []
-
-
-Overfull \hbox (7.03773pt too wide) detected at line 382
+Overfull \hbox (7.03773pt too wide) detected at line 383
 [] \OML/plm/m/it/12 x \OT4/cmr/m/n/12 = [] [] \OML/plm/m/it/12 dx \OT4/cmr/m/n/12 = [] 0 + [] [](\OMS/plsy/m/n/12 ^^@\OT4/cmr/m/n/12 1)[]\OML/plm/m/it/12 x[] dx \OT4/cmr/m/n/12 = [](\OMS/plsy/m/n/12 ^^@\OT4/cmr/m/n/12 1)[][]\OML/plm/m/it/12 ;  x \OMS/plsy/m/n/12 2 \OT4/cmr/m/n/12 (\OMS/plsy/m/n/12 ^^@\OT4/cmr/m/n/12 1\OML/plm/m/it/12 ; \OT4/cmr/m/n/12 1)
  []
 
 [43] [44]
-Underfull \hbox (badness 10000) in paragraph at lines 431--432
+Underfull \hbox (badness 10000) in paragraph at lines 432--433
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 470--471
+Underfull \hbox (badness 10000) in paragraph at lines 471--472
 
  []
 
-) [45] [46] (5_Funkcje_wielu_zmiennych.tex
-<img/wykres_wieluzm1.png, id=434, 346.896pt x 305.943pt>
-File: img/wykres_wieluzm1.png Graphic file (type png)
-<use img/wykres_wieluzm1.png>
-Package pdftex.def Info: img/wykres_wieluzm1.png  used on input line 36.
-(pdftex.def)             Requested size: 208.13919pt x 183.5672pt.
- [47 <./img/wykres_wieluzm1.png>]
-<img/stozek_wlzm.png, id=440, 755.07094pt x 534.49687pt>
+) [45]
+Overfull \vbox (12.95894pt too high) has occurred while \output is active []
+
+ [46] (5_Funkcje_wielu_zmiennych.tex [47]
+<img/stozek_wlzm.png, id=463, 755.07094pt x 534.49687pt>
 File: img/stozek_wlzm.png Graphic file (type png)
 <use img/stozek_wlzm.png>
-Package pdftex.def Info: img/stozek_wlzm.png  used on input line 58.
+Package pdftex.def Info: img/stozek_wlzm.png  used on input line 71.
 (pdftex.def)             Requested size: 377.53455pt x 267.24777pt.
+ [48]
+Underfull \hbox (badness 10000) in paragraph at lines 74--75
 
-Underfull \hbox (badness 10000) in paragraph at lines 61--62
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 84--86
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 71--73
+Underfull \hbox (badness 10000) in paragraph at lines 91--92
 
  []
 
-[48 <./img/stozek_wlzm.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 78--79
-
- []
-
-<img/stozek_wlzm_2.png, id=445, 384.2355pt x 333.04425pt>
+<img/stozek_wlzm_2.png, id=468, 384.2355pt x 333.04425pt>
 File: img/stozek_wlzm_2.png Graphic file (type png)
 <use img/stozek_wlzm_2.png>
-Package pdftex.def Info: img/stozek_wlzm_2.png  used on input line 87.
+Package pdftex.def Info: img/stozek_wlzm_2.png  used on input line 100.
 (pdftex.def)             Requested size: 230.54308pt x 199.82808pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 90--93
+[49 <./img/stozek_wlzm.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 103--106
 
  []
 
-<img/stozek_wlzm_3.png, id=446, 424.58624pt x 341.47575pt>
+<img/stozek_wlzm_3.png, id=474, 424.58624pt x 341.47575pt>
 File: img/stozek_wlzm_3.png Graphic file (type png)
 <use img/stozek_wlzm_3.png>
-Package pdftex.def Info: img/stozek_wlzm_3.png  used on input line 100.
+Package pdftex.def Info: img/stozek_wlzm_3.png  used on input line 113.
 (pdftex.def)             Requested size: 254.75371pt x 204.88702pt.
-[49 <./img/stozek_wlzm_2.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 109--110
+
+Underfull \hbox (badness 10000) in paragraph at lines 122--123
 
  []
 
-<img/paraboloida.png, id=453, 639.5895pt x 377.61075pt>
+<img/paraboloida.png, id=475, 639.5895pt x 377.61075pt>
 File: img/paraboloida.png Graphic file (type png)
 <use img/paraboloida.png>
-Package pdftex.def Info: img/paraboloida.png  used on input line 120.
+Package pdftex.def Info: img/paraboloida.png  used on input line 133.
 (pdftex.def)             Requested size: 383.75665pt x 226.56819pt.
-[50 <./img/stozek_wlzm_3.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 136--138
+[50 <./img/stozek_wlzm_2.png> <./img/stozek_wlzm_3.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 149--151
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 148--149
+Underfull \hbox (badness 10000) in paragraph at lines 161--162
 
  []
 
 [51 <./img/paraboloida.png>]
-<img/walec.png, id=464, 408.3255pt x 353.52075pt>
+<img/walec.png, id=487, 408.3255pt x 353.52075pt>
 File: img/walec.png Graphic file (type png)
 <use img/walec.png>
-Package pdftex.def Info: img/walec.png  used on input line 162.
+Package pdftex.def Info: img/walec.png  used on input line 175.
 (pdftex.def)             Requested size: 244.99718pt x 212.11407pt.
  [52 <./img/walec.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 200--201
+Underfull \hbox (badness 10000) in paragraph at lines 213--214
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 206--208
+Underfull \hbox (badness 10000) in paragraph at lines 219--221
 
  []
 
-<img/interpretacja_geom.png, id=470, 850.67813pt x 602.25pt>
+<img/interpretacja_geom.png, id=493, 850.67813pt x 602.25pt>
 File: img/interpretacja_geom.png Graphic file (type png)
 <use img/interpretacja_geom.png>
-Package pdftex.def Info: img/interpretacja_geom.png  used on input line 219.
+Package pdftex.def Info: img/interpretacja_geom.png  used on input line 232.
 (pdftex.def)             Requested size: 340.26523pt x 240.89572pt.
 [53]
-Underfull \hbox (badness 10000) in paragraph at lines 231--232
+Underfull \hbox (badness 10000) in paragraph at lines 244--245
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 244--246
+Underfull \hbox (badness 10000) in paragraph at lines 260--262
 
  []
 
 [54 <./img/interpretacja_geom.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 252--253
+Underfull \hbox (badness 10000) in paragraph at lines 273--274
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 261--262
+Underfull \hbox (badness 10000) in paragraph at lines 284--285
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 264--265
+Underfull \hbox (badness 10000) in paragraph at lines 287--288
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 278--279
+Underfull \hbox (badness 10000) in paragraph at lines 301--302
 
  []
 
-[55]
+[55] [56] [57] [58] [59]
+<img/pochodnakierunkowa.png, id=523, 602.25pt x 451.6875pt>
+File: img/pochodnakierunkowa.png Graphic file (type png)
+<use img/pochodnakierunkowa.png>
+Package pdftex.def Info: img/pochodnakierunkowa.png  used on input line 534.
+(pdftex.def)             Requested size: 301.12425pt x 225.84319pt.
+ [60] [61 <./img/pochodnakierunkowa.png>] [62] [63]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 294.
+(hyperref)                removing `math shift' on input line 663.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 294.
+(hyperref)                removing `math shift' on input line 663.
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 313--314
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 315--316
+[64]
+Underfull \hbox (badness 10000) in paragraph at lines 682--683
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 333--334
-
- []
-
-[56]
-Underfull \hbox (badness 10000) in paragraph at lines 344--345
+Underfull \hbox (badness 10000) in paragraph at lines 684--685
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 346--347
+Underfull \hbox (badness 10000) in paragraph at lines 702--703
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 350--352
-
- []
-
-[57]
-Underfull \hbox (badness 10000) in paragraph at lines 390--391
+Underfull \hbox (badness 10000) in paragraph at lines 713--714
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 402--403
-
- []
-
-[58]
-Underfull \hbox (badness 10000) in paragraph at lines 458--459
+Underfull \hbox (badness 10000) in paragraph at lines 715--716
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 460--461
+Underfull \hbox (badness 10000) in paragraph at lines 719--721
 
  []
 
-[59]
-Underfull \hbox (badness 10000) in paragraph at lines 509--510
-
- []
-
-[60]
-Underfull \hbox (badness 10000) in paragraph at lines 515--517
+[65]
+Underfull \hbox (badness 10000) in paragraph at lines 759--760
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 520--521
+Underfull \hbox (badness 10000) in paragraph at lines 771--772
+
+ []
+
+[66] [67]
+Underfull \hbox (badness 10000) in paragraph at lines 827--828
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 533--534
+Underfull \hbox (badness 10000) in paragraph at lines 829--830
 
  []
 
-[61]
-Underfull \hbox (badness 10000) in paragraph at lines 553--554
+[68]
+Underfull \hbox (badness 10000) in paragraph at lines 878--879
 
  []
 
-[62]
-<img/rzut_plaszczyznaXY.png, id=517, 703.12688pt x 505.13719pt>
+[69]
+Underfull \hbox (badness 10000) in paragraph at lines 891--892
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 904--905
+
+ []
+
+[70]
+Underfull \hbox (badness 10000) in paragraph at lines 924--925
+
+ []
+
+[71]
+<img/rzut_plaszczyznaXY.png, id=579, 703.12688pt x 505.13719pt>
 File: img/rzut_plaszczyznaXY.png Graphic file (type png)
 <use img/rzut_plaszczyznaXY.png>
-Package pdftex.def Info: img/rzut_plaszczyznaXY.png  used on input line 613.
+Package pdftex.def Info: img/rzut_plaszczyznaXY.png  used on input line 984.
 (pdftex.def)             Requested size: 281.24576pt x 202.05128pt.
- [63]
-<img/paraboloida_przyklad.png, id=522, 586.44093pt x 441.14813pt>
+ [72]
+<img/paraboloida_przyklad.png, id=584, 586.44093pt x 441.14813pt>
 File: img/paraboloida_przyklad.png Graphic file (type png)
 <use img/paraboloida_przyklad.png>
-Package pdftex.def Info: img/paraboloida_przyklad.png  used on input line 629.
+Package pdftex.def Info: img/paraboloida_przyklad.png  used on input line 1000.
 (pdftex.def)             Requested size: 293.21974pt x 220.57352pt.
- [64 <./img/rzut_plaszczyznaXY.png>] [65 <./img/paraboloida_przyklad.png>]
-Overfull \hbox (18.22403pt too wide) in paragraph at lines 659--660
-[]\OT4/cmr/m/n/12 Na brze-gu $\OML/plm/m/it/12 D$\OT4/cmr/m/n/12 : pro-wa-dzi to do funk-cji wa-run-ko-wych i ich war-to-±ci naj-wi¦k-szych/najmniejszych
- []
-
-[66]
-<img/trojkat.png, id=539, 408.02437pt x 396.7322pt>
+ [73 <./img/rzut_plaszczyznaXY.png>] [74 <./img/paraboloida_przyklad.png>] [75]
+<img/trojkat.png, id=602, 408.02437pt x 396.7322pt>
 File: img/trojkat.png Graphic file (type png)
 <use img/trojkat.png>
-Package pdftex.def Info: img/trojkat.png  used on input line 735.
+Package pdftex.def Info: img/trojkat.png  used on input line 1106.
 (pdftex.def)             Requested size: 204.01169pt x 198.3656pt.
- [67 <./img/trojkat.png>]) [68] (6_Calki_podwojne.tex
-<img/prostokat1.png, id=551, 334.24875pt x 255.95625pt>
+ [76 <./img/trojkat.png>]) [77] (6_Calki_podwojne.tex
+<img/prostokat1.png, id=613, 334.24875pt x 255.95625pt>
 File: img/prostokat1.png Graphic file (type png)
 <use img/prostokat1.png>
-Package pdftex.def Info: img/prostokat1.png  used on input line 26.
+Package pdftex.def Info: img/prostokat1.png  used on input line 24.
 (pdftex.def)             Requested size: 267.39935pt x 204.76526pt.
- [69 <./img/prostokat1.png>]
-<img/prostowalec.png, id=556, 213.04594pt x 228.10219pt>
+ [78 <./img/prostokat1.png>]
+<img/prostowalec.png, id=618, 213.04594pt x 228.10219pt>
 File: img/prostowalec.png Graphic file (type png)
 <use img/prostowalec.png>
-Package pdftex.def Info: img/prostowalec.png  used on input line 46.
+Package pdftex.def Info: img/prostowalec.png  used on input line 44.
 (pdftex.def)             Requested size: 106.5227pt x 114.0508pt.
 
-Overfull \hbox (19.53485pt too wide) detected at line 76
+Overfull \hbox (19.53485pt too wide) detected at line 74
 \OML/plm/m/it/12 D \OT4/cmr/m/n/12 = \OMS/plsy/m/n/12 f\OT4/cmr/m/n/12 (\OML/plm/m/it/12 x; y\OT4/cmr/m/n/12 ) : \OML/plm/m/it/12 a \OMS/plsy/m/n/12 ¬ \OML/plm/m/it/12 x \OMS/plsy/m/n/12 ¬ \OML/plm/m/it/12 b;  d\OT4/cmr/m/n/12 (\OML/plm/m/it/12 x\OT4/cmr/m/n/12 ) \OMS/plsy/m/n/12 ¬ \OML/plm/m/it/12 y \OMS/plsy/m/n/12 ¬ \OML/plm/m/it/12 g\OT4/cmr/m/n/12 (\OML/plm/m/it/12 x\OT4/cmr/m/n/12 )\OMS/plsy/m/n/12 g [] \OML/plm/m/it/12 D \OT4/cmr/m/n/12 = \OMS/plsy/m/n/12 f\OT4/cmr/m/n/12 (\OML/plm/m/it/12 x; y\OT4/cmr/m/n/12 ) : \OML/plm/m/it/12 a \OMS/plsy/m/n/12 ¬ \OML/plm/m/it/12 y \OMS/plsy/m/n/12 ¬ \OML/plm/m/it/12 b;  d\OT4/cmr/m/n/12 (\OML/plm/m/it/12 y\OT4/cmr/m/n/12 ) \OMS/plsy/m/n/12 ¬ \OML/plm/m/it/12 x \OMS/plsy/m/n/12 ¬ \OML/plm/m/it/12 g\OT4/cmr/m/n/12 (\OML/plm/m/it/12 y\OT4/cmr/m/n/12 )\OMS/plsy/m/n/12 g
  []
 
-[70 <./img/prostowalec.png>]
-<img/krzywetrojkat.png, id=562, 293.59688pt x 301.125pt>
+[79 <./img/prostowalec.png>]
+<img/krzywetrojkat.png, id=625, 293.59688pt x 301.125pt>
 File: img/krzywetrojkat.png Graphic file (type png)
 <use img/krzywetrojkat.png>
 Package pdftex.def Info: img/krzywetrojkat.png  used on input line 103.
 (pdftex.def)             Requested size: 205.5164pt x 210.78606pt.
- [71]) [72 <./img/krzywetrojkat.png>] [73] (Wyklad.aux)
+ [80] [81 <./img/krzywetrojkat.png>]
+<img/2x.png, id=635, 379.4175pt x 390.70969pt>
+File: img/2x.png Graphic file (type png)
+<use img/2x.png>
+Package pdftex.def Info: img/2x.png  used on input line 162.
+(pdftex.def)             Requested size: 189.70828pt x 195.35435pt.
+<img/2xzlewej.png, id=636, 373.395pt x 297.36093pt>
+File: img/2xzlewej.png Graphic file (type png)
+<use img/2xzlewej.png>
+Package pdftex.def Info: img/2xzlewej.png  used on input line 192.
+(pdftex.def)             Requested size: 168.0262pt x 133.81117pt.
+<img/2xzprawej.png, id=637, 347.79938pt x 278.54062pt>
+File: img/2xzprawej.png Graphic file (type png)
+<use img/2xzprawej.png>
+Package pdftex.def Info: img/2xzprawej.png  used on input line 193.
+(pdftex.def)             Requested size: 156.50827pt x 125.34212pt.
+ [82] [83 <./img/2x.png>]
+<img/obszar1.png, id=647, 243.91125pt x 166.37157pt>
+File: img/obszar1.png Graphic file (type png)
+<use img/obszar1.png>
+Package pdftex.def Info: img/obszar1.png  used on input line 212.
+(pdftex.def)             Requested size: 158.54042pt x 108.14021pt.
+<img/obszar2.png, id=648, 285.31593pt x 179.92218pt>
+File: img/obszar2.png Graphic file (type png)
+<use img/obszar2.png>
+Package pdftex.def Info: img/obszar2.png  used on input line 220.
+(pdftex.def)             Requested size: 171.19087pt x 107.95413pt.
+ [84 <./img/2xzlewej.png> <./img/2xzprawej.png>] [85 <./img/obszar1.png> <./img/obszar2.png>]
+<img/katbiegun.png, id=660, 437.38406pt x 298.86656pt>
+File: img/katbiegun.png Graphic file (type png)
+<use img/katbiegun.png>
+Package pdftex.def Info: img/katbiegun.png  used on input line 311.
+(pdftex.def)             Requested size: 218.69148pt x 149.4329pt.
+ [86]
+<img/polokrag.png, id=667, 327.47343pt x 242.40562pt>
+File: img/polokrag.png Graphic file (type png)
+<use img/polokrag.png>
+Package pdftex.def Info: img/polokrag.png  used on input line 330.
+(pdftex.def)             Requested size: 130.98705pt x 96.96053pt.
+ [87 <./img/katbiegun.png> <./img/polokrag.png>]
+<img/kolkakat.png, id=674, 304.13625pt x 219.06844pt>
+File: img/kolkakat.png Graphic file (type png)
+<use img/kolkakat.png>
+Package pdftex.def Info: img/kolkakat.png  used on input line 362.
+(pdftex.def)             Requested size: 152.06775pt x 109.53394pt.
+<img/okragikat.png, id=675, 292.84406pt x 210.03468pt>
+File: img/okragikat.png Graphic file (type png)
+<use img/okragikat.png>
+Package pdftex.def Info: img/okragikat.png  used on input line 384.
+(pdftex.def)             Requested size: 175.70778pt x 126.02177pt.
+ [88 <./img/kolkakat.png>]) [89 <./img/okragikat.png>] (Wyklad.aux)
 Package rerunfilecheck Info: File `Wyklad.out' has not changed.
-(rerunfilecheck)             Checksum: AFD79D4AA667F093C2A5AAF54AAEF86A;7800.
+(rerunfilecheck)             Checksum: 34CD98808C69DAF7394A0D950C9D77B3;8769.
  ) 
 Here is how much of TeX's memory you used:
- 25654 strings out of 475385
- 491469 string characters out of 2776906
- 826467 words of memory out of 3000000
- 46417 multiletter control sequences out of 15000+600000
+ 41496 strings out of 475385
+ 965779 string characters out of 2776906
+ 1745176 words of memory out of 3000000
+ 62004 multiletter control sequences out of 15000+600000
  482030 words of font info for 66 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 83i,14n,85p,486b,592s stack positions out of 10000i,1000n,20000p,200000b,80000s
-{C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/pl/plmi.enc}{C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/pl/plms.enc}{C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/pl/plrm.enc} <C:\Users\niezn\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk>{C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/pl/plme.enc}<C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plbx12.pfb><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plex10.pfb><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plmi10.pfb><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plmi12.pfb><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plmi6.pfb><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plmi8.pfb><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plr12.pfb><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plr17.pfb><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plr6.pfb><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plr8.pfb><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plsy10.pfb><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plsy6.pfb><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plsy8.pfb>
-Output written on Wyklad.pdf (73 pages, 1674232 bytes).
+ 83i,14n,85p,803b,2136s stack positions out of 10000i,1000n,20000p,200000b,80000s
+{C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/pl/plrm.enc}{C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/pl/plmi.enc}{C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/pl/plms.enc} <C:\Users\niezn\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk>{C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/pl/plme.enc}<C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plbx12.pfb><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plex10.pfb><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plmi10.pfb><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plmi12.pfb><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plmi6.pfb><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plmi8.pfb><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plr10.pfb><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plr12.pfb><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plr17.pfb><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plr6.pfb><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plr8.pfb><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plsy10.pfb><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plsy6.pfb><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plsy8.pfb>
+Output written on Wyklad.pdf (89 pages, 1595787 bytes).
 PDF statistics:
- 681 PDF objects out of 1000 (max. 8388607)
- 160 named destinations out of 1000 (max. 500000)
- 363 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 799 PDF objects out of 1000 (max. 8388607)
+ 182 named destinations out of 1000 (max. 500000)
+ 448 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -6,28 +6,34 @@
 \usepackage{mathtools}
 \usepackage{hyperref}
 \usepackage{tabularray}
-\usepackage[dvipsnames]{xcolor} 
+\usepackage[x11names]{xcolor}
 \usepackage{polski}
 \usepackage[utf8]{inputenc}
 \usepackage{tcolorbox}
+\usepackage{pgfplots}
+\tcbuselibrary{listings,breakable}
+\usepgfplotslibrary{fillbetween}
+\pgfplotsset{compat=1.18}
 
-\newtcolorbox{tw}[1]{colback=Green!5!white,
-colframe=Green!75!black,fonttitle=\bfseries,
+
+\newtcolorbox{tw}[1]{colback=Green4!5!white,
+colframe=Green4!75!black,fonttitle=\bfseries,
 title={#1}}
 
 \newtcolorbox{blad}[1]{colback=red!5!white,
 colframe=red!75!black,fonttitle=\bfseries,
 title={#1}}
 
-\newtcolorbox{przyklad}{colback=white, title={Przykład}}
+\newtcolorbox{przyklad}{colback=white, fonttitle=\bfseries, title={Przykład}}
+\newtcolorbox{przykladbig}{colback=white, fonttitle=\bfseries, breakable, title={Przykład}}
     
 
 \newcommand{\suminfty}[1]{\sum\limits_{n = #1}^{\infty}}
 \newcommand{\dpartial}[2]{\frac{\partial #1}{\partial #2}}
 \newcommand{\limn}{\lim_{n \to \infty}}
+\newcommand{\fzero}{f(x_0, y_0)}
 
-
-\setlength{\parindent}{0pt}
+\setlength{\parindent}{0pt} 
 \setlength{\textheight}{680pt}
 \setlength{\oddsidemargin}{-5pt}
 \setlength{\textwidth}{480pt}
