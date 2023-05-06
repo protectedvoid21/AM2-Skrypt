@@ -371,8 +371,12 @@ Postać obrazu zbioru $D$ oraz praktyczne uwagi są analogiczne do przypadku cen
     \textbf{Zawsze jest dodatkowy (pośredni) warunek: funkcja dolna $ \leq $ funkcja górna}
 
     U nas to daje
-    \[ 0 \leq -2 \sin \varphi \quad \textrm{czyli} \quad \sin \varphi \leq 0 \quad \textrm{a stąd} \quad \pi \leq \varphi < 2 \pi \] \bigskip
+    \[ 0 \leq -2 \sin \varphi \quad \textrm{czyli} \quad \sin \varphi \leq 0 \quad \textrm{a stąd} \quad \pi \leq \varphi < 2 \pi \]
+    \[ \int\limits_{\pi}^{2\pi} d \varphi \int\limits_{0}^{-2\sin\varphi} rdr \cdot r^2 = \int\limits_{\pi}^{2\pi} d \varphi 4 \sin^4 \varphi = 
+    ...[\text{dość długa całka}]... = \]
+    \[ 4 \left[ \frac{3}{8}\varphi - \frac{1}{4}\sin(2\varphi) + \frac{1}{32}\sin(4\varphi) \right]_{\pi}^{2\pi} = \frac{3}{2}\pi \]
 
+    \bigskip
     b) Przesunięte współrzędne: środek to (0, -1).
 
     Wtedy
@@ -393,3 +397,177 @@ Postać obrazu zbioru $D$ oraz praktyczne uwagi są analogiczne do przypadku cen
 
     Ten sam wynik co poprzednio ale całka łatwiejsza.
 \end{przykladbig}
+
+\textbf{Uwaga}
+
+Szczególny przypadek występuje, gdy w wewnętrznej całce (po $r$) ani funkcja ani granice całkowania nie zależą od kąta $\varphi$.
+Wtedy jest ona stała względem $\varphi$ i można ją wyciągnąć na zewnątrz.
+
+Daje to wzór typu
+
+\begin{center}
+"długość przedziału dla kąta $\cdot$ całka wewnętrzna"
+\end{center}
+
+i pozwala uprościć rachunki.
+
+\begin{przyklad}
+    \[ \int\limits_{\frac{\pi}{3}}^{\pi} \, d\varphi \int\limits_{1}^{2} r\, dr = \frac{2}{3} \pi \int\limits_{1}^{2} r\, dr = \frac{2}{3}\pi \cdot \frac{3}{2} = \pi \]
+\end{przyklad}
+
+Pole $D$: $ |D| = \iint\limits_D 1 \, dxdy $
+
+Gdy $D$ jest dany warunkami
+\[ D : a \leq x \leq b, \quad d(x) \leq y \leq g(x) \]
+to dostajemy
+\[ \iint\limits_D \, dxdy = \int\limits_{a}^{b} dx \int\limits_{d(x)}^{g(x)} dy = \int\limits_{a}^{b} dx (g(x) - d(x)) \quad \text{-- wzór z AM1} \]
+Zatem wzór \ $ |D| = \iint\limits_D 1 \, dxdy $ \ daje coś nowego, gdy chcemy wprowadzić nowe zmienne, np. przejść na współrzędne biegunowe.
+
+\begin{przykladbig}
+    \textit{Wersja zadania egzaminacyjnego z 1997 roku} \medskip
+
+    Na poniższym rysunku zaznaczony jest obszar pomiędzy dwoma okręgami stycznymi i linią prostą.
+    Przy pomocy całki podwójnej obliczyć jego pole.
+
+    \begin{center}
+        \includegraphics[scale=0.5]{img/egzamokrag.png}
+    \end{center}
+
+    Okrąg zewnętrzny ma równanie \ $ x^2 + y^2 = 4 $
+
+    Okrąg wewnętrzny ma równanie \ $ (x-1)^2 + y^2 = 1 \ \Leftrightarrow \ x^2 + y^2 = 2x $
+
+    Dowolny punkt $(x,y)$ z danego obszaru spełnia zatem następujące warunki:
+    \begin{itemize}
+        \item leży po zewnętrznej stronie okręgu wewnętrznego, a stąd \ $ x^2 + y^2 \geq 2x $
+        \item leży po wewnętrznej stronie okręgu zewnętrznego, a stąd \ $ x^2 + y^2 \leq 4 $
+        \item leży pomiędzy osią $X$ oraz prostą \ $ y = 2x $ \ a stąd \ $ 0 \leq y \leq 2x $
+    \end{itemize}
+
+    We współrzędnych kartezjańskich nasz obszar jest zatem zbiorem
+    \[ D = \{ (x,y): 2x \leq x^2 + y^2 \leq 4, \ \ 0 \leq y \leq 2x \} \]
+
+    Wprowadzamy współrzędne biegunowe $r$ i $\varphi$.
+    
+    Pierwszy z warunków na $D$ prowadzi do nierówności \ $ 2r \cos \varphi \leq r^2 \leq 4 $
+
+    Stąd \ $ 2 \cos \varphi \leq r \ \leq 2 $
+
+    Ten warunek zachodzi dla wszystkich wartości kąta $\varphi$, bo zawsze \ $ 2\cos \varphi \leq 2 $.
+
+    Drugi warunek oznacza, że \ $ 0 \leq r \sin \varphi \leq 2r \cos \varphi $.
+
+    Stąd wynika, że \ $ \sin \varphi \geq 0 $ \ oraz \ $ \cos \varphi \geq 0 $, \ a więc na pewno \ $ \varphi \in \left[ -\frac{\pi}{2}, \frac{\pi}{2} \right] $,
+    co widać od razu z rysunku.
+
+    Ponieważ \ $ \cos \varphi \geq 0 $, \ powyższą podwójną nierówność można podzielić przez \ $ r \cos \varphi $ tak, by sprowadzić ją do funkcji $\tan$:
+    \[ 0 \leq \frac{r \sin \varphi}{r \cos \varphi} \leq 2 \ \Leftrightarrow \ 0 \leq \tan \varphi \leq 2 \]
+
+    Ponieważ \ $ \varphi \in \left[ -\frac{\pi}{2}, \frac{\pi}{2} \right] $, \ oznacza to, że \ $ 0 \leq \varphi \leq \arctan 2 $
+
+    To jest ostateczny warunek na kąt.
+
+    Można go także wywnioskować bezpośrednio z rysunku.
+
+    Zaznaczony na rysunku kąt $\alpha$ jest kątem nachylenia prostej $y = 2x$ do osi $X$ zatem ma miarę $\arctan 2$.
+    Jest to największa możliwa wartość $\varphi$.
+
+    Najmniejsza występuje dla punktu (2,0) i wynosi 0.
+
+    Ostatecznie, $D$ jest obrazem zbioru
+    \[ A = \{ (r, \varphi): 0 \leq \varphi \leq \alpha = \arctan 2, \ \ 2 \cos \varphi \leq r \leq 2 \} \]
+
+    To daje
+    \[ |D| = \iint\limits_D 1\, dxdy = \int\limits_{0}^{a} d \varphi \iint\limits_{2 \cos \varphi}^{2} r\, dr \cdot 1 =
+    \int\limits_{0}^{\alpha} d\varphi \left[ \frac{r^2}{2} \right]_{2 \cos \varphi}^{2} = \int\limits_{0}^{\alpha} d\varphi (2 - 2\cos^2 \varphi) = \]
+    \[ 2 \int\limits_{0}^{\alpha} (1 - \cos^2 \varphi) \, d\varphi = 2 \int\limits_{0}^{\alpha} \sin^2 \varphi \, d \varphi =
+    2 \left[ \frac{1}{2} \varphi - \frac{1}{4} \sin (2\varphi) \right]_{0}^{\alpha} = \alpha  - \frac{1}{2} \sin (2\alpha) = \]
+    \[ \arctan 2 - \frac{1}{2} \sin(2 \arctan 2) \]
+    
+    Wynik ten można nieco uprościć wiedząc, że \ $\tan \alpha = 2$ i korzystając z tożsamości $ \sin (2\alpha) = \frac{2 \tan \alpha}{1 + \tan^2 \alpha} $,
+    co daje $ \sin (2\alpha) = \frac{4}{5} $. \medskip
+
+    Ostatecznie
+    \[ |D| = \arctan 2 - \frac{2}{5} \]
+\end{przykladbig}
+
+Zadanie dodatkowe: obliczyć to pole korzystając bezpośrednio z geometrii, analizując pola odpowiednich wycinków kołowych oraz trójkątów.
+
+\begin{tw}{Definicja}
+    Wartość średnia funkcji na zbiorze $D$:
+    \[ f_{\text{śr}} = \frac{\displaystyle\iint\limits_D  f(x,y) \, dxdy }{\text{pole } D} \]
+
+    Gdy wybierzemy $n$ punktów \ $ P_1, P_2, ..., P_n \in D $ \ to średnia arytmetyczna wartości funkcji $f$ w tych punktach dąży do $ f_{\text{śr}} $
+    jeżeli \ $ n \to \infty $.
+
+    Stąd dla dużych $n$ mamy przybliżenie
+    \[ \frac{f(P_1) + f(P_2) + ... + f(P_n)}{n} \approx f_{\text{śr}} \]
+\end{tw}
+
+Stosuje się to w statystyce oraz przy próbkowaniu wartości funkcji.
+
+\begin{tw}{Definicja}
+    Objętość bryły $U$ danej warunkami
+    \[ U : (x,y) \in D, \ d(x,y) \leq z \leq g(x,y) \]
+
+    Interpretacja -- bryła o ścianach "pionowych" (równoległych do osi $Z$), o "suficie" danym przez funkcję $g$ oraz "podłodze" danej przez funkcję $d$.
+
+    Zbiór $D$ to \textbf{rzut bryły na płaszczyznę $XY$}.
+
+    Wtedy objętość $U$ dana jest wzorem
+    \[ |U| = \iint\limits_D (g(x,y) - d(x,y)) \, dxdy \quad \text{-- analogicznie jak dla pola w AM1} \]
+\end{tw}
+
+\begin{przyklad}
+    Objętość bryły danej warunkiem
+    \[ U = \left\{ (x,y,z): x^2 + y^2 \leq 4, \ y \geq 2x, \ 0 \leq z \leq \frac{1}{(5 + \sqrt{x^2 + y^2})^2} \right\} \]
+
+    Rzut bryły na $XY$:
+
+    \begin{center}
+        \includegraphics[scale=0.5]{img/rzutbrylyXY.png}
+    \end{center}
+
+    Zaznaczony na rysunku kąt $\alpha$ ma miarę $\arctan 2$.
+
+    Współrzędne biegunowe centralne dają zatem:
+    \[ 0 \leq r \leq 2, \quad \arctan 2 \leq \varphi \leq \arctan 2 + \pi \]
+
+    Dostajemy
+    \[ |U| = \iint\limits_D \left( \frac{1}{\left( 5 + \sqrt{x^2 + y^2}\right)^2} - 0 \right) \, dxdy = 
+    \int\limits_{\arctan 2}^{\arctan 2 + \pi} d\varphi \int\limits_{0}^{2} r \, dr \cdot \frac{1}{(5 + r)^2} = \]
+    \[ \pi \int\limits_{0}^{2} \frac{r}{(5+r)^2} \, dr = \pi \int\limits_{0}^{2} \frac{r + 5 - 5}{(5 + r)^2} \, dr = 
+    \pi \int\limits_{0}^{2} \frac{1}{(5+r)} - \frac{5}{(5+r)^2} \, dr = \] 
+    \[ \pi \left[ \ln |r + 5| + \frac{5}{r + 5} \right]_{0}^{2} = \pi \left( \ln 7 + \frac{5}{7} - \ln 5 - 1 \right) \]
+\end{przyklad}
+
+\begin{tw}{Definicja}
+    Pole powierzchni płata krzywoliniowego
+    \[ z = f(x,y), \quad (x,y) \in D \]
+
+    Wzór jest analogiczny do długości krzywej \ $ y = f(x), \ a \leq x \leq b $ \ (AM1)
+    \[ \text{Pole} = |\sum| = \iint\limits_D \sqrt{1 + f_x^2 + f_y^2} \, dxdy \]
+\end{tw}
+
+\begin{przyklad}
+    Powierzchnia boczna stożka o promieniu podstawy $r$ i wysokości $h$.
+
+    Sami ustawiamy stożek w układzie współrzędnych.
+
+    Najłatwiejsze rozwiązania wychodzą, gdy wierzchołek będzie w początku układu współrzędnych, a oś symetrii stożka pokryje się z dodatnią częścią osi $Z$.
+
+    Wtedy powierzchnia boczna będzie dana równaniem
+    \[ z = f(x,y) = \frac{h}{r} \sqrt{x^2 + y^2} \]
+
+    Zatem
+    \[ f_x = \frac{h}{r} \cdot \frac{1}{2 \sqrt{x^2 + y^2}} \cdot 2x = \frac{h}{r} \cdot \frac{x}{\sqrt{x^2 + y^2}} \quad \text{oraz} \quad f_y = \frac{h}{r} \cdot \frac{y}{\sqrt{x^2 + y^2}} \]
+
+    To daje
+    \[ \sqrt{1 + f_x^2 + f_y^2} = \sqrt{1 + \frac{h^2}{r^2} \cdot \frac{x^2}{x^2 + y^2} + \frac{h^2}{r^2} \cdot \frac{y^2}{x^2 + y^2}} = \]
+    \[ \sqrt{1 + \frac{h^2}{r^2}} = \frac{\sqrt{r^2 + h^2}}{r} = \frac{t}{r}, \quad \text{gdzie} \quad t = \sqrt{r^2 + h^2} \]
+
+    Rzutem tej powierzchni na płaszczyznę jest $D$ -- koło o środku w (0,0) i promieniu $r$.
+
+    Pole tej powierzchni wynosi zatem 
+    \[ |\sum| = \iint\limits_D = \frac{l}{r} \, dxdy = \frac{l}{r} \iint\limits_D 1 \, dxdy = \frac{l}{r}|D| = \frac{l}{r} \cdot \pi r^2 = \pi r l \]
+\end{przyklad}

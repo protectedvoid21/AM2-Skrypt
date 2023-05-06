@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2022.10.30)  2 MAY 2023 14:39
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2022.10.30)  6 MAY 2023 14:36
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1535,32 +1535,27 @@ File: img/interpretacja_geom.png Graphic file (type png)
 Package pdftex.def Info: img/interpretacja_geom.png  used on input line 232.
 (pdftex.def)             Requested size: 340.26523pt x 240.89572pt.
 [53]
-Underfull \hbox (badness 10000) in paragraph at lines 244--245
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 260--262
+Underfull \hbox (badness 10000) in paragraph at lines 261--263
 
  []
 
 [54 <./img/interpretacja_geom.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 273--274
+Underfull \hbox (badness 10000) in paragraph at lines 274--275
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 284--285
+Underfull \hbox (badness 10000) in paragraph at lines 285--286
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 287--288
+Underfull \hbox (badness 10000) in paragraph at lines 288--289
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 301--302
+Underfull \hbox (badness 10000) in paragraph at lines 302--303
 
  []
 
@@ -1568,84 +1563,84 @@ Underfull \hbox (badness 10000) in paragraph at lines 301--302
 <img/pochodnakierunkowa.png, id=523, 602.25pt x 451.6875pt>
 File: img/pochodnakierunkowa.png Graphic file (type png)
 <use img/pochodnakierunkowa.png>
-Package pdftex.def Info: img/pochodnakierunkowa.png  used on input line 534.
+Package pdftex.def Info: img/pochodnakierunkowa.png  used on input line 535.
 (pdftex.def)             Requested size: 301.12425pt x 225.84319pt.
  [60] [61 <./img/pochodnakierunkowa.png>] [62] [63]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 663.
+(hyperref)                removing `math shift' on input line 664.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 663.
+(hyperref)                removing `math shift' on input line 664.
 
 [64]
-Underfull \hbox (badness 10000) in paragraph at lines 682--683
+Underfull \hbox (badness 10000) in paragraph at lines 683--684
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 684--685
+Underfull \hbox (badness 10000) in paragraph at lines 685--686
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 702--703
+Underfull \hbox (badness 10000) in paragraph at lines 703--704
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 713--714
+Underfull \hbox (badness 10000) in paragraph at lines 714--715
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 715--716
+Underfull \hbox (badness 10000) in paragraph at lines 716--717
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 719--721
+Underfull \hbox (badness 10000) in paragraph at lines 720--722
 
  []
 
 [65]
-Underfull \hbox (badness 10000) in paragraph at lines 759--760
+Underfull \hbox (badness 10000) in paragraph at lines 760--761
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 771--772
+Underfull \hbox (badness 10000) in paragraph at lines 772--773
 
  []
 
 [66] [67]
-Underfull \hbox (badness 10000) in paragraph at lines 827--828
+Underfull \hbox (badness 10000) in paragraph at lines 828--829
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 829--830
+Underfull \hbox (badness 10000) in paragraph at lines 830--831
 
  []
 
 [68]
-Underfull \hbox (badness 10000) in paragraph at lines 878--879
+Underfull \hbox (badness 10000) in paragraph at lines 879--880
 
  []
 
 [69]
-Underfull \hbox (badness 10000) in paragraph at lines 891--892
+Underfull \hbox (badness 10000) in paragraph at lines 892--893
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 904--905
+Underfull \hbox (badness 10000) in paragraph at lines 905--906
 
  []
 
 [70]
-Underfull \hbox (badness 10000) in paragraph at lines 924--925
+Underfull \hbox (badness 10000) in paragraph at lines 925--926
 
  []
 
@@ -1653,21 +1648,21 @@ Underfull \hbox (badness 10000) in paragraph at lines 924--925
 <img/rzut_plaszczyznaXY.png, id=579, 703.12688pt x 505.13719pt>
 File: img/rzut_plaszczyznaXY.png Graphic file (type png)
 <use img/rzut_plaszczyznaXY.png>
-Package pdftex.def Info: img/rzut_plaszczyznaXY.png  used on input line 984.
+Package pdftex.def Info: img/rzut_plaszczyznaXY.png  used on input line 985.
 (pdftex.def)             Requested size: 281.24576pt x 202.05128pt.
  [72]
 <img/paraboloida_przyklad.png, id=584, 586.44093pt x 441.14813pt>
 File: img/paraboloida_przyklad.png Graphic file (type png)
 <use img/paraboloida_przyklad.png>
-Package pdftex.def Info: img/paraboloida_przyklad.png  used on input line 1000.
+Package pdftex.def Info: img/paraboloida_przyklad.png  used on input line 1001.
 (pdftex.def)             Requested size: 293.21974pt x 220.57352pt.
- [73 <./img/rzut_plaszczyznaXY.png>] [74 <./img/paraboloida_przyklad.png>] [75]
-<img/trojkat.png, id=602, 408.02437pt x 396.7322pt>
+ [73 <./img/rzut_plaszczyznaXY.png>] [74 <./img/paraboloida_przyklad.png>]
+<img/trojkat.png, id=596, 408.02437pt x 396.7322pt>
 File: img/trojkat.png Graphic file (type png)
 <use img/trojkat.png>
-Package pdftex.def Info: img/trojkat.png  used on input line 1106.
+Package pdftex.def Info: img/trojkat.png  used on input line 1107.
 (pdftex.def)             Requested size: 204.01169pt x 198.3656pt.
- [76 <./img/trojkat.png>]) [77] (6_Calki_podwojne.tex
+ [75] [76 <./img/trojkat.png>]) [77] (6_Calki_podwojne.tex
 <img/prostokat1.png, id=613, 334.24875pt x 255.95625pt>
 File: img/prostokat1.png Graphic file (type png)
 <use img/prostokat1.png>
@@ -1738,24 +1733,36 @@ Package pdftex.def Info: img/kolkakat.png  used on input line 362.
 <img/okragikat.png, id=675, 292.84406pt x 210.03468pt>
 File: img/okragikat.png Graphic file (type png)
 <use img/okragikat.png>
-Package pdftex.def Info: img/okragikat.png  used on input line 384.
+Package pdftex.def Info: img/okragikat.png  used on input line 388.
 (pdftex.def)             Requested size: 175.70778pt x 126.02177pt.
- [88 <./img/kolkakat.png>]) [89 <./img/okragikat.png>] (Wyklad.aux)
+ [88 <./img/kolkakat.png>] [89 <./img/okragikat.png>]
+<img/egzamokrag.png, id=686, 236.68425pt x 202.356pt>
+File: img/egzamokrag.png Graphic file (type png)
+<use img/egzamokrag.png>
+Package pdftex.def Info: img/egzamokrag.png  used on input line 433.
+(pdftex.def)             Requested size: 118.34183pt x 101.17775pt.
+ [90 <./img/egzamokrag.png>] [91]
+<img/rzutbrylyXY.png, id=698, 187.29974pt x 118.64325pt>
+File: img/rzutbrylyXY.png Graphic file (type png)
+<use img/rzutbrylyXY.png>
+Package pdftex.def Info: img/rzutbrylyXY.png  used on input line 528.
+(pdftex.def)             Requested size: 93.64963pt x 59.32147pt.
+ [92 <./img/rzutbrylyXY.png>]) [93] (Wyklad.aux)
 Package rerunfilecheck Info: File `Wyklad.out' has not changed.
 (rerunfilecheck)             Checksum: 34CD98808C69DAF7394A0D950C9D77B3;8769.
  ) 
 Here is how much of TeX's memory you used:
- 41496 strings out of 475385
- 965779 string characters out of 2776906
+ 41527 strings out of 475385
+ 966328 string characters out of 2776906
  1745176 words of memory out of 3000000
- 62004 multiletter control sequences out of 15000+600000
- 482030 words of font info for 66 fonts, out of 8000000 for 9000
+ 62028 multiletter control sequences out of 15000+600000
+ 482568 words of font info for 67 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  83i,14n,85p,803b,2136s stack positions out of 10000i,1000n,20000p,200000b,80000s
-{C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/pl/plrm.enc}{C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/pl/plmi.enc}{C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/pl/plms.enc} <C:\Users\niezn\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk>{C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/pl/plme.enc}<C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plbx12.pfb><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plex10.pfb><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plmi10.pfb><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plmi12.pfb><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plmi6.pfb><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plmi8.pfb><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plr10.pfb><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plr12.pfb><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plr17.pfb><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plr6.pfb><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plr8.pfb><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plsy10.pfb><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plsy6.pfb><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plsy8.pfb>
-Output written on Wyklad.pdf (89 pages, 1595787 bytes).
+{C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/pl/plit.enc}{C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/pl/plrm.enc}{C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/pl/plmi.enc}{C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/pl/plms.enc} <C:\Users\niezn\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk>{C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/pl/plme.enc}<C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plbx12.pfb><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plex10.pfb><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plmi10.pfb><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plmi12.pfb><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plmi6.pfb><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plmi8.pfb><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plr10.pfb><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plr12.pfb><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plr17.pfb><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plr6.pfb><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plr8.pfb><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plsy10.pfb><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plsy6.pfb><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plsy8.pfb><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plti12.pfb>
+Output written on Wyklad.pdf (93 pages, 1660198 bytes).
 PDF statistics:
- 799 PDF objects out of 1000 (max. 8388607)
- 182 named destinations out of 1000 (max. 500000)
- 448 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 826 PDF objects out of 1000 (max. 8388607)
+ 186 named destinations out of 1000 (max. 500000)
+ 458 words of extra memory for PDF output out of 10000 (max. 10000000)
 
