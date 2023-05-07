@@ -1,7 +1,6 @@
 \documentclass[12pt]{article}
 \usepackage[a4paper, total={6in, 8in}]{geometry}
 \usepackage{amsfonts}
-\usepackage{fancyhdr}   
 \usepackage{amsmath,amssymb,trimclip,adjustbox}
 \usepackage{breqn}
 \usepackage{mathtools}
@@ -12,6 +11,7 @@
 \usepackage[utf8]{inputenc}
 \usepackage{tcolorbox}
 \usepackage{pgfplots}
+\usepackage{fancyhdr}   
 \tcbuselibrary{listings,breakable}
 \usepgfplotslibrary{fillbetween}
 \pgfplotsset{compat=1.18}
@@ -19,12 +19,10 @@
 \fancypagestyle{titlepagestyle}{
 
 \fancyhf{}
-
-\fancyhead[L]{\textsl{\footnotesize{Abstract}}}
+\fancyhead[L]{\rightmark}
+\fancyhead[R]{\leftmark}
 
 }
-
-
 
 \fancypagestyle{main}{
 
@@ -36,15 +34,17 @@
 
 \renewcommand{\subsubsectionmark}[1]{\markright{\thesubsubsection\ ##1}}
 
-\fancyhead[L]{\textsl{\footnotesize{\rightmark}}}
-
+\fancyhead[L]{\textsl{\footnotesize{\leftmark}}}
 \renewcommand{\footrulewidth}{0.4pt}% default is 0pt
 
 \fancyfoot[R]{\textsl{\footnotesize{page \thepage{} of \pageref{LastPage}}}}
 
 }
-\pagestyle{fancy} % Set default style for all content pages (not TOC, etc)
+\pagestyle{fancy}
+\addtolength{\headwidth}{0pt}
+\setlength{\fancyheadoffset}{1cm}
 
+\setcounter{secnumdepth}{1}
 
 \newtcolorbox{tw}[1]{colback=Green4!5!white,
 colframe=Green4!75!black,fonttitle=\bfseries,
@@ -70,33 +70,35 @@ title={#1}}
 
 \everymath{\displaystyle}
 
-\author{(nieoficjalny) Skrypt wykładu Krzysztofa Michalika}
+\author{(nieoficjalny) Skrypt wykładu Krzysztofa Michalika \\ \\ Data ostatniej aktualizacji: \today}
+\date{}
 \title{Wykład - Analiza matematyczna II}
 
 \begin{document}
 \maketitle
 \tableofcontents
 
-\subsection{Mały wstęp}
+\pagebreak
+
+\subsection{Wstęp}
 
 Skrypt jest w większości przepisywany ze zdjęć zrobionych w wordzie z dysku ale w przypadku jakichś braków wykorzystywana jest
-prezka dr. Michalika. 
+prezentacja dr. Michalika. 
 
-W skrypcie mogą pojawić się błędy stąd najlepiej przed nauką pobrać z dysku google (Informatyka Stosowana 2020) najbardziej aktualną wersję
+W skrypcie mogą pojawić się błędy stąd najlepiej przed nauką pobrać z dysku google \linebreak (Informatyka Stosowana 2020) najbardziej aktualną wersję
 zamieszczoną w folderze 
 
-Semestr II $\rightarrow$ Analiza Matematyczna II $\rightarrow$ michalik wykłady $\rightarrow$ Skrypt $\rightarrow$ Skrypt\_Wykład.pdf. 
+Semestr II $\rightarrow$ Analiza Matematyczna II $\rightarrow$ michalik wykłady $\rightarrow$ Skrypt $\rightarrow$ Skrypt\_Wykład.pdf.
 
-Data którą można zobaczyć na samym górze jest \textbf{datą ostatniej aktualizacji skryptu}.
-Skrypt jest średnio aktualizowany co 2-3 dni -- dopóki nie zostanie przepisane \textbf{wszystko}.
+Skrypt jest średnio aktualizowany co 2-3 dni -- dopóki nie zostanie przepisane \textbf{wszystko}. \medskip
 
-Wszelkie uwagi, błędy (na pewno jakieś są) można pisać priv na discordzie : 
+Wszelkie uwagi, błędy (na pewno jakieś są), zdjęcia z brakujących tematów można pisać priv na discordzie : 
 
 \textbf{Tomasz Strzelba\#1454}
 
 Miłej nauki!
 
-\input{test.tex}
+\pagebreak
 
 \input{1_Calki_niewlasciwe_I_rodzaju.tex}
 \pagebreak
