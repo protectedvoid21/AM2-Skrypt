@@ -1,6 +1,7 @@
 \documentclass[12pt]{article}
 \usepackage[a4paper, total={6in, 8in}]{geometry}
 \usepackage{amsfonts}
+\usepackage{fancyhdr}   
 \usepackage{amsmath,amssymb,trimclip,adjustbox}
 \usepackage{breqn}
 \usepackage{mathtools}
@@ -14,6 +15,35 @@
 \tcbuselibrary{listings,breakable}
 \usepgfplotslibrary{fillbetween}
 \pgfplotsset{compat=1.18}
+
+\fancypagestyle{titlepagestyle}{
+
+\fancyhf{}
+
+\fancyhead[L]{\textsl{\footnotesize{Abstract}}}
+
+}
+
+
+
+\fancypagestyle{main}{
+
+\fancyhf{}
+
+\renewcommand{\sectionmark}[1]{\markright{\thesection\ ##1}}
+
+\renewcommand{\subsectionmark}[1]{\markright{\thesubsection\ ##1}}
+
+\renewcommand{\subsubsectionmark}[1]{\markright{\thesubsubsection\ ##1}}
+
+\fancyhead[L]{\textsl{\footnotesize{\rightmark}}}
+
+\renewcommand{\footrulewidth}{0.4pt}% default is 0pt
+
+\fancyfoot[R]{\textsl{\footnotesize{page \thepage{} of \pageref{LastPage}}}}
+
+}
+\pagestyle{fancy} % Set default style for all content pages (not TOC, etc)
 
 
 \newtcolorbox{tw}[1]{colback=Green4!5!white,
@@ -52,12 +82,13 @@ title={#1}}
 Skrypt jest w większości przepisywany ze zdjęć zrobionych w wordzie z dysku ale w przypadku jakichś braków wykorzystywana jest
 prezka dr. Michalika. 
 
-W skrypcie mogą pojawić się błędy stąd najlepiej przed nauką pobrać z dysku najbardziej aktualną wersję
+W skrypcie mogą pojawić się błędy stąd najlepiej przed nauką pobrać z dysku google (Informatyka Stosowana 2020) najbardziej aktualną wersję
 zamieszczoną w folderze 
 
-Semestr II $->$ Analiza Matematyczna2 $->$ Michalik wykłady $->$ Skrypt\_Wykład.pdf.
+Semestr II $\rightarrow$ Analiza Matematyczna II $\rightarrow$ michalik wykłady $\rightarrow$ Skrypt $\rightarrow$ Skrypt\_Wykład.pdf. 
 
 Data którą można zobaczyć na samym górze jest \textbf{datą ostatniej aktualizacji skryptu}.
+Skrypt jest średnio aktualizowany co 2-3 dni -- dopóki nie zostanie przepisane \textbf{wszystko}.
 
 Wszelkie uwagi, błędy (na pewno jakieś są) można pisać priv na discordzie : 
 

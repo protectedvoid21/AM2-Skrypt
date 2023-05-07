@@ -1,14 +1,17 @@
 \section{Całki niewłaściwe I rodzaju}
 
-Ustalamy liczbę $a \in \mathbb{R}$. Niech $f$ będzie funkcją całkowalną na każdym przedziale \linebreak w postaci $[a, T]$
-gdzie $T > a$. Definiujemy \underline{całkę niewłaściwą pierwszego rodzaju} z $f$ na półprostej $[a, \infty]$ jako
+\begin{tw}{Definicja}
+    Ustalamy liczbę $a \in \mathbb{R}$. Niech $f$ będzie funkcją całkowalną na każdym przedziale \linebreak w postaci $[a, T]$
+    gdzie $T > a$. Definiujemy \underline{całkę niewłaściwą pierwszego rodzaju} z $f$ na półprostej $[a, \infty]$ jako
 
-$$ \int\limits_{a}^{\infty} f(x) \,dx = \lim_{T \to \infty} \int\limits_{a}^{T} f(x) \,dx \ \text{,  gdy granica po prawej stronie istnieje} $$
+    \[ \int\limits_{a}^{\infty} f(x) \,dx = \lim_{T \to \infty} \int\limits_{a}^{T} f(x) \,dx \ \text{,  gdy granica po prawej stronie istnieje} \]
 
-Analogicznie, gdy $f$ jest całkowalna na każdym przedziale postaci $[T, b]$, gdzie $T < b$. Definiujemy całkę niewłaściwą
-pierwszego rodzaju z $f$ na półprostej [$-\infty$, b] jako
+    Analogicznie, gdy $f$ jest całkowalna na każdym przedziale postaci $[T, b]$, gdzie $T < b$. Definiujemy całkę niewłaściwą
+    pierwszego rodzaju z $f$ na półprostej [$-\infty$, b] jako
 
-$$ \int\limits_{-\infty}^{b} f(x) \,dx = \lim_{T \to -\infty} \int\limits_{T}^{b} f(x) \,dx \ \text{,  gdy granica po prawej stronie istnieje} $$\\
+    \[ \int\limits_{-\infty}^{b} f(x) \,dx = \lim_{T \to -\infty} \int\limits_{T}^{b} f(x) \,dx \ \text{,  gdy granica po prawej stronie istnieje} \]
+
+\end{tw}
 
 Terminologia dotycząca takich całek jest taka, jak dla ciągów. Są 3 przypadki :
 
@@ -81,13 +84,16 @@ Oznacza to zwykle własności postaci
 
 \subsection*{Popularne kryteria zbieżności całek z $\infty$}
 
-0. Warunek konieczny zbieżności całki
+Warunek konieczny zbieżności całki
 
+\begin{tw}{Twierdzenie}
 Jeżeli całka $ \int\limits_{a}^{\infty} f(x) \,dx $ jest zbieżna to 
-$ \lim\limits_{x \to \infty} f(x) $ jest równa 0 lub nie istnieje. \\
+$ \lim\limits_{x \to \infty} f(x) $ jest równa 0 lub nie istnieje.
+\end{tw}
 
 Transpozycja twierdzenia daje następujący wynik:
 
+\begin{tw}{Twierdzenie}
 Jeżeli $ \lim\limits_{x \to \infty} f(x) $ istnieje i jest różna od 0 to całka 
 $ \int\limits_{a}^{\infty} f(x) \, dx $ nie jest zbieżna, przy czym
 
@@ -95,6 +101,8 @@ $ \int\limits_{a}^{\infty} f(x) \, dx $ nie jest zbieżna, przy czym
     \item gdy $ \lim\limits_{x \to \infty} f(x) > 0 $ to $ \int\limits_{a}^{\infty} f(x) \,dx = \infty $,
     \item gdy $ \lim\limits_{x \to \infty} f(x) < 0 $ to $ \int\limits_{a}^{\infty} f(x) \,dx = -\infty $,
 \end{itemize}
+
+\end{tw}
 
 \textbf{Uwaga. Warunek konieczny to tylko implikacja!}
 
