@@ -326,7 +326,7 @@ jego sumę $ f(x) = \sum\limits_{n = 0}^{\infty} c_n(x - x_0)^n $ nazywamy rzecz
 
     \item Gdy $ f(x) = \suminfty{0} c_n(x - x_0)^n, \ x \in (x_0 - R, x_0 + R) $ to $f$ ma pochodną
     dowolnego rzędu i zachodzi wzór
-    $$ f'(x) = \left( \suminfty{0} c_n(x - x_0)^n \right) = \suminfty{0} \left( c_n \left( x - x_0 \right)^{n} \right) 
+    $$ f'(x) = \left( \suminfty{0} c_n(x - x_0)^n \right)' = \suminfty{0} \left( c_n \left( x - x_0 \right)^{n} \right)' 
     = \suminfty{0} c_n n (x - x_0)^{n - 1} = \suminfty{1} c_n n (x - x_0)^{n - 1}$$
 
     Jest to rozszerzenie wzoru "pochodna sumy = suma pochodnych" na nieskończoną ilość składników \\
@@ -339,7 +339,7 @@ jego sumę $ f(x) = \sum\limits_{n = 0}^{\infty} c_n(x - x_0)^n $ nazywamy rzecz
     
     Mamy
     $$ \frac{1}{1+x} = \frac{1}{1-(-x)} = \suminfty{0} (-x)^n = \suminfty{0} (-1)^n x^n $$
-    $$ \left( \frac{1}{1+x} \right)' = - \frac{1}{(1+x)^2} = \suminfty{1} ((-1)^n n x^{n-1}) = \suminfty{1} (-1)^n n x^{n-1} $$
+    $$ \left( \frac{1}{1+x} \right)' = - \frac{1}{(1+x)^2} = \suminfty{0} ((-1)^n x^n)' = \suminfty{1} (-1)^n n x^{n-1} $$
 
     Stąd
 
@@ -359,7 +359,7 @@ jego sumę $ f(x) = \sum\limits_{n = 0}^{\infty} c_n(x - x_0)^n $ nazywamy rzecz
 
     Dostajemy ten wzór z całką nieoznaczoną
 
-    $$ F(x) = \int f(x) \,dx = F(x) + \suminfty{0} c_n \int (x - x_0)^n \,dx, \quad \textrm{a więc} $$
+    $$ F(x) = \int f(x) \,dx = F(x_0) + \suminfty{0} c_n \int (x - x_0)^n \,dx, \quad \textrm{a więc} $$
 
     $$ F(x) = F(x_0) + \suminfty{0} c_n \frac{(x - x_0)^{n+1}}{n+1}, \ x\in (x_0 - R, x_0 + R) $$ \\
 
@@ -468,7 +468,7 @@ Stąd drugie pytanie:
 Jaką wziąć potęgę $nx^p$ aby po scałkowaniu uprościł się współczynnik $n$? \\
 
 Potrzeba
-$$ x^{n-1}, \quad bo \quad \int nx^{n-1} \,dx = \frac{n}{n} x^n + C = x^n + C $$
+$$ x^{n-1}, \quad \text{bo} \quad \int nx^{n-1} \,dx = \frac{n}{n} x^n + C = x^n + C $$
 Zatem bierzemy
 $$ f(x) = \suminfty{1} nx^{n-1}, \ x\in (-1, 1) $$
 Całkując obie strony mamy
@@ -477,7 +477,7 @@ $$ F(x) = \int f(x) \,dx = F(0) + \suminfty{1} x^n $$
 Szereg $ \suminfty{1} x^n $ jest szeregiem geometrycznym o sumie $ \frac{x}{1-x}, \ x\in (-1, 1) $.
 
 Stąd aby odzyskać $f$ liczymy pochodną obu stron:
-$$ F(x) = f(x) = \left( \frac{x}{1-x} \right) = \frac{1}{(1-x)^2} $$
+$$ F(x) = f(x) = \left( \frac{x}{1-x} \right)' = \frac{1}{(1-x)^2} $$
 
 Czyli
 $$ \suminfty{1} nx^{n-1} = \frac{1}{(1-x)^2} $$

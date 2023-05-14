@@ -1,10 +1,10 @@
 # Fdb version 3
-["pdflatex"] 1683471110 "c:/Users/niezn/OneDrive/Pulpit/Studia/AnalizaMatematycznaII-Skrypt/Wyklad.tex" "Wyklad.pdf" "Wyklad" 1683471115
+["pdflatex"] 1684090966 "c:/Users/niezn/OneDrive/Pulpit/Studia/AnalizaMatematycznaII-Skrypt/Wyklad.tex" "Wyklad.pdf" "Wyklad" 1684090972
   "1_Calki_niewlasciwe_I_rodzaju.tex" 1683468992 14125 72cf3878849864aaa9275bcb808862e1 ""
   "2_Calki_niewlasciwe_II_rodzaju.tex" 1683471003 7204 e5e6a79389d7fdd4e2ab4742f4ad140f ""
   "3_Szeregi_liczbowe.tex" 1683468927 37564 310ea5743e2a2aae29dfe8e35a90087c ""
-  "4_Szeregi_potegowe.tex" 1683469027 21274 59f2c10588da591757746cb0adde3852 ""
-  "5_Funkcje_wielu_zmiennych.tex" 1683468981 49433 abb8fba8060c58d76e8b1bba062110f5 ""
+  "4_Szeregi_potegowe.tex" 1684090965 21281 7cd89bede08a117456d504b59ec5a327 ""
+  "5_Funkcje_wielu_zmiennych.tex" 1683568610 49591 4fda81892ab51f7d3583f4f988c31857 ""
   "6_Calki_podwojne.tex" 1683469000 24280 d457f5ab8d0101675167497a1234cd30 ""
   "C:/Users/niezn/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1683467988 86553 91af261fa287312f2fb1f66a097366be ""
   "C:/Users/niezn/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1200.pk" 1668179638 14064 955ff3e66d356ed127f306eca2052983 ""
@@ -269,10 +269,10 @@
   "C:/Users/niezn/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/x11nam.def" 1656236890 9124 8aaebcf7eff7655936dd67b677fbd2b0 ""
   "C:/Users/niezn/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1656236890 56148 51a9a8571c07b9921892ae11063ae853 ""
   "C:/Users/niezn/AppData/Local/Programs/MiKTeX/tex/latex/xkeyval/xkeyval.sty" 1656236919 4937 4ce600ce9bd4ec84d0250eb6892fcf4f ""
-  "Wyklad.aux" 1683471115 5902 449191f0bd1b72a99cb38fa0e69b05c1 "pdflatex"
-  "Wyklad.out" 1683471115 9783 cb71c660bf232493632cab7af0cb6a41 "pdflatex"
+  "Wyklad.aux" 1684090971 5902 449191f0bd1b72a99cb38fa0e69b05c1 "pdflatex"
+  "Wyklad.out" 1684090971 9783 cb71c660bf232493632cab7af0cb6a41 "pdflatex"
   "Wyklad.tex" 1683470906 3266 650a76424a2b1b1e9fef9af2558fa930 ""
-  "Wyklad.toc" 1683471115 3546 1a005b4304a76cef32bb9c277be344d6 "pdflatex"
+  "Wyklad.toc" 1684090971 3546 1a005b4304a76cef32bb9c277be344d6 "pdflatex"
   "c:/Users/niezn/OneDrive/Pulpit/Studia/AnalizaMatematycznaII-Skrypt/Wyklad.tex" 1683470906 3266 650a76424a2b1b1e9fef9af2558fa930 ""
   "img/2x.png" 1682527065 25014 eb6b39f2ba82878893da09e62b989bd1 ""
   "img/2xzlewej.png" 1682527557 9742 3e038763e8fe4f837aaa30841630c3d7 ""

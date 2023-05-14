@@ -390,9 +390,9 @@ Uwagi
 
     $ z_0 = f(1,2) = -7 $
 
-    \[ \begin{array}{cc}
-        f_x = 2x & A = f_x(1,2) = 2 \\
-        f_y = -4y & B = f_y(1,2) = -8
+    \[ \begin{array}{lll}
+        f_x = 2x && A = f_x(1,2) = 2 \\
+        f_y = -4y && B = f_y(1,2) = -8
     \end{array} \]
 
     Wzór 
@@ -416,9 +416,9 @@ Uwagi
     \[ y = y_0 = -\frac{1}{4} \]
 
     Stąd
-    \[ z_0 = f(-\frac{1}{4}, -\frac{1}{4}) = -\frac{1}{16} \]
+    \[ z_0 = f\left(-\frac{1}{4}, -\frac{1}{4}\right) = -\frac{1}{16} \]
     I punkt to jest
-    \[ P = (-\frac{1}{4}, -\frac{1}{4}, -\frac{1}{16}) \]
+    \[ P = \left(-\frac{1}{4}, -\frac{1}{4}, -\frac{1}{16}\right) \]
 \end{przykladbig}
 
 Bezpośrednie zastosowanie: \underline{przybliżanie funkcji płaszczyzą styczną}
@@ -548,6 +548,7 @@ a to daje równoważną definicję pochodnej kierunkowej:
 \[ \dpartial{f}{\vec{v}} (x_0, y_0) = \lim_{t \to 0^+} \frac{f(x_0 + at, y_0 + bt) - \fzero}{t}, \quad \text{gdzie} \ \vec{v} = [a,b], \ |\vec{v}| = 1 \]
 
 \begin{przyklad}
+    Dla \ $ f(x,y) = |x| + 3|y| $ \ i \ $ \vec{v} = \left[ -\frac{\sqrt{2}}{2}, \frac{\sqrt{2}}{2} \right] $ \ mamy w punkcie (0,1)
     \[ \dpartial{f}{\vec{v}} (0,1) = \lim_{t \to 0^+} \frac{f \left( 0 - \frac{\sqrt{2}}{2}t, 1 + \frac{\sqrt{2}}{2}t \right) - f(0,1)}{t}
     = \lim_{t \to 0^+} \frac{ \left| -\frac{\sqrt{2}}{2}t \right| + 3 \left| 1 + \frac{\sqrt{2}}{2}t \right| - 3 }{t} = \]
     \[ \lim_{t \to 0^+} \frac{ \frac{\sqrt{2}}{2}t + 3 \left( 1 + \frac{\sqrt{2}}{2}t \right) - 3 }{t} = \lim_{t \to 0^+} \frac{4 \cdot \frac{\sqrt{2}}{2}t}{t} = 2 \sqrt{2} \]
