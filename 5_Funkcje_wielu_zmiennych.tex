@@ -864,9 +864,11 @@ się w punkcie $(0, -1) $.
 
 \begin{tw}{Definicja}
 
-$f$ ma w $ P = (x_0, y_0) \in D_f $ minimum lokalne gdy $ \fzero $ jest najmniejszą wartością $f$ na pewnym kole o środku w $P$.
+$f$ ma w $ P = (x_0, y_0) \in D_f $ minimum lokalne gdy $ \fzero $ jest najmniejszą wartością $f$ na pewnym kole o środku w $P$ tzn.
+\[ \forall(x,y) \in K \ f(x,y) > f(x_0, y_0) \]
 
-$f$ ma w $ P = (x_0, y_0) \in D_f $ minimum lokalne gdy $ \fzero $ jest największą wartością $f$ na pewnym kole o środku w $P$. \\
+$f$ ma w $ P = (x_0, y_0) \in D_f $ minimum lokalne gdy $ \fzero $ jest największą wartością $f$ na pewnym kole o środku w $P$ tzn.
+\[ \forall(x,y) \in K \ f(x,y) < f(x_0, y_0) \]
 
 Gdy ta wartość jest najmniejsza/największa na całej dziedzinie $f$ to mówimy o ekstremum (minimum, maksimum) \underline{globalnym}.
 \end{tw}
@@ -955,6 +957,42 @@ Zatem przy sprawdzaniu typu ekstremum (minimum/maksimum) możemy patrzeć na dow
     $ f_{xx}(-2, 0) = -2e^{-2} < 0 $ \ czyli mamy maksimum o wartości \ $ f(-2, 0) = 4e^{-2} $.
 \end{przyklad}
 
+\begin{przykladbig}
+    $ f(x,y) = 4x^2 + 7y^2 - 4x - 4\ln x + 3 $ \medskip
+
+    Tutaj mamy \ $ D_f = \{ (x,y): x > 0 \} $. \ Jest to więc obszar na prawo od osi $Y$.
+
+    Dalej,
+    \[ f_x = 8x - 4 - \frac{4}{x} \]
+    \[ f_y = 14y \]
+
+    Stąd
+    \[ f_x = f_y = 0 \ \Leftrightarrow \ \begin{cases}
+        8x - 4 - \frac{4}{x} = 0 \\
+        14y = 0
+    \end{cases} \Leftrightarrow \ \begin{cases}
+        y = 0 \\
+        2x^2 - x - 1 = 0
+    \end{cases} \]
+
+    Pierwiastki równania \ $ 2x^2 - x - 1 = 0 $ \ to liczby \ $ x_1 = 1, \ x_2 = -\frac{1}{2} $.
+
+    Jedynie \ $ x_1 > 0 $ \ co daje jeden punkt stacjonarny funkcji $f: \ P = (1,0)$.
+    
+    Dalej mamy
+    \[ f_{xx} = 8 + \frac{4}{x^2} \]
+    \[ f_{yy} = 14 \]
+    \[ f_{xy} = f_{yx} = 0 \]
+
+    To daje
+    \[ W = H(1,0) = \begin{vmatrix}
+        12 & 0 \\
+        0 & 14
+    \end{vmatrix} = 12 \cdot 14 > 0 \quad \text{-- jest ekstremum} \]
+    \[ f_{xx}(1,0) = 12 > 0 \quad \text{więc w (1,0) jest minimum} \]
+    \[ f(1,0) = 3 \]
+\end{przykladbig}
+
 \subsection{Ekstrema warunkowe}
 
 \begin{tw}{Definicja}
@@ -1010,7 +1048,7 @@ Interesuje nas wartość największa i wartość najmniejsza $f$ na $D$. Te wart
 \begin{tw}{Twierdzenie (Wersja tw. Weiertrassa (AM1) dla funkcji dwóch zmiennych)}
 
 Gdy $D$ jest domknięty (czyli cały brzeg $D$ jest zawarty w $D$) oraz ograniczony (czyli zawiera się w pewnym kole) i $f$ jest ciągła
-na $D$ to wartość największa i wartość najmniejsza $f$ na $D$ jest osiągana.
+na $D$ to wartość największa i wartość najmniejsza $f$ na $D$ są osiągane.
 \end{tw}
 \bigskip
 

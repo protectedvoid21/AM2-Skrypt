@@ -34,7 +34,7 @@
 \contentsline {subsection}{Popularne techniki liczenia granic funkcji wielu zmiennych}{68}{section*.31}%
 \contentsline {subsection}{Ciągłość funkcji wielu zmiennych}{70}{section*.32}%
 \contentsline {subsection}{Ekstrema funkcji dwóch zmiennych}{72}{section*.33}%
-\contentsline {subsection}{Ekstrema warunkowe}{74}{section*.34}%
+\contentsline {subsection}{Ekstrema warunkowe}{75}{section*.34}%
 \contentsline {subsection}{Wartości największe i najmniejsze funkcji na zadanych zbiorach}{76}{section*.35}%
 \contentsline {subsection}{Zadania optymalizacyjne}{77}{section*.36}%
 \contentsline {section}{\numberline {6}Całki podwójne}{80}{section.6}%
