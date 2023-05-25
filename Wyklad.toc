@@ -1,15 +1,15 @@
 \contentsline {subsection}{Wstęp}{3}{section*.2}%
-\contentsline {chapter}{\numberline {1}Całki niewłaściwe I rodzaju}{4}{chapter.1}%
+\contentsline {section}{\numberline {1}Całki niewłaściwe I rodzaju}{4}{section.1}%
 \contentsline {subsection}{Popularne kryteria zbieżności całek z $\infty $}{6}{section*.3}%
 \contentsline {subsection}{Twierdzenie(kryterium porównawcze)}{7}{section*.5}%
 \contentsline {subsection}{Twierdzenie(kryterium ilorazowe)}{8}{section*.6}%
 \contentsline {subsection}{Wartość główna całki niewłaściwej I rodzaju}{10}{section*.7}%
-\contentsline {chapter}{\numberline {2}Całki niewłaściwe II rodzaju}{12}{chapter.2}%
+\contentsline {section}{\numberline {2}Całki niewłaściwe II rodzaju}{12}{section.2}%
 \contentsline {subsection}{Zbieżność bezwzględna całek niewłaściwych}{14}{section*.8}%
-\contentsline {chapter}{\numberline {3}Szeregi liczbowe}{16}{chapter.3}%
-\contentsline {subsection}{Obliczanie sum szeregów}{18}{section*.9}%
-\contentsline {subsection}{Własności szeregów zbieżnych}{20}{section*.10}%
-\contentsline {subsection}{Popularne kryteria zbieżności szeregów}{21}{section*.11}%
+\contentsline {section}{\numberline {3}Szeregi liczbowe}{16}{section.3}%
+\contentsline {subsection}{Obliczanie sum szeregów}{17}{section*.9}%
+\contentsline {subsection}{Własności szeregów zbieżnych}{19}{section*.10}%
+\contentsline {subsection}{Popularne kryteria zbieżności szeregów}{20}{section*.11}%
 \contentsline {subsection}{Twierdzenie (kryterium porównawcze)}{22}{section*.12}%
 \contentsline {subsection}{Twierdzenie (kryterium ilorazowe)}{24}{section*.13}%
 \contentsline {subsection}{Twierdzenie (kryterium Cauchy'ego)}{26}{section*.14}%
@@ -18,11 +18,11 @@
 \contentsline {subsection}{Zbieżność bezwzględna szeregów}{29}{section*.17}%
 \contentsline {subsection}{Szeregi naprzemienne}{31}{section*.18}%
 \contentsline {subsection}{Twierdzenie (Leibnitz)}{31}{section*.19}%
-\contentsline {chapter}{\numberline {4}Szeregi potęgowe}{36}{chapter.4}%
-\contentsline {subsection}{Zbieżność szeregów potęgowych}{37}{section*.20}%
+\contentsline {section}{\numberline {4}Szeregi potęgowe}{36}{section.4}%
+\contentsline {subsection}{Zbieżność szeregów potęgowych}{36}{section*.20}%
 \contentsline {subsection}{Wyznaczanie promienia zbieżności i przedziału zbieżności}{37}{section*.21}%
 \contentsline {subsection}{Własności szeregów potęgowych}{40}{section*.22}%
-\contentsline {chapter}{\numberline {5}Funkcje wielu zmiennych}{49}{chapter.5}%
+\contentsline {section}{\numberline {5}Funkcje wielu zmiennych}{49}{section.5}%
 \contentsline {subsection}{Powierzchnie walcowe}{53}{section*.23}%
 \contentsline {subsection}{Pochodne cząstkowe pierwszego rzędu funkcji wielu zmiennych}{55}{section*.24}%
 \contentsline {subsection}{Interpretacja geometryczna dla funkcji 2 zmiennych}{55}{section*.25}%
@@ -37,7 +37,7 @@
 \contentsline {subsection}{Ekstrema warunkowe}{75}{section*.34}%
 \contentsline {subsection}{Wartości największe i najmniejsze funkcji na zadanych zbiorach}{76}{section*.35}%
 \contentsline {subsection}{Zadania optymalizacyjne}{77}{section*.36}%
-\contentsline {chapter}{\numberline {6}Całki podwójne}{80}{chapter.6}%
-\contentsline {subsection}{Zmiana zmiennych w całce podwójnej}{88}{section*.37}%
-\contentsline {subsection}{Współrzędne biegunowe}{89}{section*.38}%
-\contentsline {subsection}{Współrzędne biegunowe przesunięte -- o środku w $(x_0, y_0)$}{89}{section*.39}%
+\contentsline {section}{\numberline {6}Całki podwójne}{80}{section.6}%
+\contentsline {subsection}{Zmiana zmiennych w całce podwójnej}{87}{section*.37}%
+\contentsline {subsection}{Współrzędne biegunowe}{88}{section*.38}%
+\contentsline {subsection}{Współrzędne biegunowe przesunięte -- o środku w $(x_0, y_0)$}{88}{section*.39}%
