@@ -1,4 +1,4 @@
-\section{Funkcje wielu zmiennych}
+\chapter{Funkcje wielu zmiennych}
 
 Na początek kilka definicji dotyczących zbiorów w $ \mathbb{R}^n $.
 
@@ -400,7 +400,7 @@ Uwagi
 
     b)
     \[ \Pi_s \ \| \ \Pi : x - 2y + 2z + 5 = 0 \]
-    \[ \vec{n} = [-1,-2,2] \ \bot \ \Pi \]
+    \[ \vec{n} = [1,-2,2] \ \bot \ \Pi \]
     \[ \vec{n_s} = [f_x, f_y, -1] \ \bot \ \Pi_s \]
 
     \[ \Pi \ \| \ \Pi_s \ \Leftrightarrow \ \vec{n} \ \| \ \vec{n_s} \ \Leftrightarrow \ \frac{f_x}{1} = \frac{f_y}{-2} = \frac{-1}{2} \]
@@ -867,7 +867,7 @@ się w punkcie $(0, -1) $.
 $f$ ma w $ P = (x_0, y_0) \in D_f $ minimum lokalne gdy $ \fzero $ jest najmniejszą wartością $f$ na pewnym kole o środku w $P$ tzn.
 \[ \forall(x,y) \in K \ f(x,y) > f(x_0, y_0) \]
 
-$f$ ma w $ P = (x_0, y_0) \in D_f $ minimum lokalne gdy $ \fzero $ jest największą wartością $f$ na pewnym kole o środku w $P$ tzn.
+$f$ ma w $ P = (x_0, y_0) \in D_f $ maksimum lokalne gdy $ \fzero $ jest największą wartością $f$ na pewnym kole o środku w $P$ tzn.
 \[ \forall(x,y) \in K \ f(x,y) < f(x_0, y_0) \]
 
 Gdy ta wartość jest najmniejsza/największa na całej dziedzinie $f$ to mówimy o ekstremum (minimum, maksimum) \underline{globalnym}.
@@ -952,7 +952,7 @@ Zatem przy sprawdzaniu typu ekstremum (minimum/maksimum) możemy patrzeć na dow
     $$ W = H(0,0) = \begin{vmatrix} 2 & 0 \\ 0 & -2 \end{vmatrix} = -4 < 0 \quad \textrm{Brak ekstremum w } P_1 $$
 
     Dla $ P_2 = (-2, 0) $ mamy
-    $$ W = H(0,0) = \begin{vmatrix} -2e^2 & 0 \\ 0 & -2e^2 \end{vmatrix} = -4e^{-2} \cdot e^{-2} > 0 \quad \textrm{Jest ekstremum} $$
+    $$ W = H(-2,0) = \begin{vmatrix} -2e^{-2} & 0 \\ 0 & -2e^{-2} \end{vmatrix} = 4e^{-2} \cdot e^{-2} > 0 \quad \textrm{Jest ekstremum} $$
 
     $ f_{xx}(-2, 0) = -2e^{-2} < 0 $ \ czyli mamy maksimum o wartości \ $ f(-2, 0) = 4e^{-2} $.
 \end{przyklad}
