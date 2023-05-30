@@ -1,0 +1,91 @@
+\section{Transformata Laplace'a}
+
+\begin{tw}{Definicja}
+    Dana jest funkcja $f$ określona i całkowalna na półprostej $ [0, \infty) $.
+
+    \underline{Transformata Laplace'a} funkcji $f$ to funkcja
+    \[ F(s) = \laplace \{ f(t) \} = \int\limits_{0}^{\infty} e^{-st} f(t) \, dt \]
+
+    a jej dziedziną jest zbiór tych $s$ dla których powyższa całka jest zbieżna.
+\end{tw}
+
+\begin{przyklad}
+    Dla funkcji stałej $f = 1$ mamy dla $s > 0$
+    \[ F(s) = \int\limits_{0}^{\infty} e^{-st} \cdot 1 \, dt = \lim_{T \to \infty} \int\limits_{0}^{T} e^{-st} \, dt =
+    \lim_{T \to \infty} \left[ \frac{e^{-st}}{-s} \right]_{0}^{T} = \lim_{T \to \infty} \left( \frac{e^{-sT}}{-s} + \frac{1}{s} \right) = \frac{1}{s} \]
+
+    Natomiast dla $s \leq 0$ ta całka jest rozbieżna. Stąd $ D_F = (0, \infty) $.
+
+    Z kolei funkcja $f(t) = e^{t^2}$ nie posiada transformaty Laplace'a, gdyż "rośnie zbyt szybko" - całka
+
+    \[ \int\limits_{0}^{\infty} e^{-st} \cdot e^{t^2} \, dt = \int\limits_{0}^{\infty} e^{t^2 - st} \, dt \]
+    jest rozbieżna do $\infty$ dla wszystkich $s$.
+\end{przyklad}
+
+Popularnymi funkcjami dla których transformata Laplace'a istnieje są funkcje spełniające warunki poniższego twierdzenia.
+
+\begin{tw}{Twierdzenie}
+    Zakładamy, że funkcja $f$ określona na półprostej $ [0, \infty) $ spełnia poniższe warunki.
+    \begin{enumerate}
+        \item Na każdym przedziale postaci $ [0,T] $ jest ciągła lub ma skończoną ilośc punktów nieciągłości i nieciągłości te są pierwszego rodzaju
+        \item $ \exists C, \ \alpha > 0 \ \forall t \geq 0 \quad |f(t)| \leq Ce^{\alpha i} $      
+    \end{enumerate}
+    Wtedy dla $s > \alpha$ istnieje transformata Laplace'a funkcji $f$.
+
+    Funkcja spełniająca powyższe dwa warunki jest nazywana \underline{oryginałem}, a jej transformata -- \underline{obrazem} $f$.
+\end{tw}
+
+\pagebreak
+
+Popularne funkcje i ich transformaty Laplace'a
+
+\begin{table}[!htbp]
+    \centering
+    \begin{tabularx}{\linewidth}{|C|C|}
+        \hline
+        $f$ & $\laplace$ \\[15pt] \hline
+        $ C, \ C \in \mathbb{R} $ & $ \frac{C}{s} $ \\[15pt] \hline
+        $ t^n, \ n \in \mathbb{N} $ & $ \frac{n!}{s^{n+1}} $ \\[15pt] \hline
+        $ e^{\alpha t} $ & $ \frac{1}{s - \alpha} $ \\[15pt] \hline
+        $ \sin(\beta t) $ & $ \frac{\beta}{s^2 + \beta^2} $ \\[15pt] \hline
+        $ \cos(\beta t) $ & $ \frac{s}{s^2 + \beta^2} $ \\[15pt] \hline
+        $ \sinh(\beta t) $ & $ \frac{\beta}{s^2 - \beta^2} $ \\[15pt] \hline
+        $ \cosh(\beta t) $ & $ \frac{s}{s^2 - \beta^2} $ \\[15pt] \hline
+        $ t^n e^{\alpha t}, \ n \in \mathbb{N} $ & $ \frac{n!}{(s-\alpha)^{n+1}} $ \\[15pt] \hline
+        $ e^{\alpha t} \sin(\beta t) $ & $ \frac{\beta}{(s - \alpha)^2 + \beta^2} $ \\[15pt] \hline
+        $ e^{\alpha t} \cos(\beta t) $ & $ \frac{s - \alpha}{(s - \alpha)^2 + \beta^2} $ \\[15pt] \hline
+    \end{tabularx}
+\end{table} \medskip
+
+Dziedziny tych transformat to odpowiednie półproste
+
+\pagebreak
+
+\subsection{Podstawowe własności transformaty Laplace'a}
+
+\begin{tw}{Własności}
+    Zakładamy, że dla funkcji $f$ i $g$ istnieją ich obrazy $Lf = L\{ f \} = \laplace \{ f(t) \} $ 
+
+    oraz $ Lg = L\{ g \} = \laplace \{ g(t) \} $.
+
+    Wtedy zachodzą własności opisane poniżej
+
+    \begin{enumerate}
+        \item (jednoznaczność) Gdy $f$ i $g$ są ciągłe i $Lf = Lg$ to $f = g$.
+        \item (liniowość) $ L\{ f \pm g \} = Lf \pm Lg $ oraz $ L \{ c \cdot f \} = c \cdot Lf, \ c\in \mathbb{R} $.
+        \item (skalowanie) Jeżeli $ g(t) = f(at), \ a \neq 0, $ to $ Lg(s) = \frac{1}{a} Lf \left( \frac{s}{a} \right) $.
+        \item (przesunięcie obrazu) Jeżeli $ g(t) = e^{at} $ to $ L \{ f \cdot g \}(s) = Lf(s - a)$.
+        \item (przesunięcie oryginału) Jeżeli dla $a > 0$
+        
+        \[ g(t) = \begin{cases}
+            f(t - a), t \geq a \\ 0, \ t < a
+        \end{cases} \]
+
+        to $Lg(s) = e^{-as} Lf(s) $
+
+        \item (pochodna obrazu) Jeżeli $g(t) = t^n \cdot f(t), \ n \in \mathbb{N}^+$ to $Lg(s) = (-1)^n (Lf)^{(n)}(s)$.
+        \item (transformata całki) Jeżeli $ g(t) = \int\limits_{0}^{t} f(u) \, du $ to $ Lg(s) = \frac{1}{s} Lf(s) $.
+        \item (transformata pochodnej) Opisana jest poniżej, jako osobne twierdzenie
+    \end{enumerate}
+
+\end{tw}

@@ -41,3 +41,6 @@
 \contentsline {subsection}{Zmiana zmiennych w całce podwójnej}{87}{section*.37}%
 \contentsline {subsection}{Współrzędne biegunowe}{88}{section*.38}%
 \contentsline {subsection}{Współrzędne biegunowe przesunięte -- o środku w $(x_0, y_0)$}{88}{section*.39}%
+\contentsline {subsection}{Zastosowania całek podwójnych w mechanice}{95}{section*.40}%
+\contentsline {section}{\numberline {7}Transformata Laplace'a}{98}{section.7}%
+\contentsline {subsection}{Podstawowe własności transformaty Laplace'a}{100}{section*.41}%

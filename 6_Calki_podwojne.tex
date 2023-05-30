@@ -349,7 +349,7 @@ Postać obrazu zbioru $D$ oraz praktyczne uwagi są analogiczne do przypadku cen
 \begin{przykladbig}
     \[ \iint\limits_D (x^2 + y^2) \, dxdy, \quad D: \ x^2 + y^2 + 2y \leq 0 \]
 
-    $D$ -- koło o środku w (0, -1) i promieniu 1: $ x^2 (y+1)^2 \leq 1 $.
+    $D$ -- koło o środku w (0, -1) i promieniu 1: $ x^2 + (y+1)^2 \leq 1 $.
 
     Zastosujemy 2 metody. \bigskip
 
@@ -562,10 +562,106 @@ Stosuje się to w statystyce oraz przy próbkowaniu wartości funkcji.
 
     To daje
     \[ \sqrt{1 + f_x^2 + f_y^2} = \sqrt{1 + \frac{h^2}{r^2} \cdot \frac{x^2}{x^2 + y^2} + \frac{h^2}{r^2} \cdot \frac{y^2}{x^2 + y^2}} = \]
-    \[ \sqrt{1 + \frac{h^2}{r^2}} = \frac{\sqrt{r^2 + h^2}}{r} = \frac{t}{r}, \quad \text{gdzie} \quad t = \sqrt{r^2 + h^2} \]
+    \[ \sqrt{1 + \frac{h^2}{r^2}} = \frac{\sqrt{r^2 + h^2}}{r} = \frac{l}{r}, \quad \text{gdzie} \quad t = \sqrt{r^2 + h^2} \]
 
     Rzutem tej powierzchni na płaszczyznę jest $D$ -- koło o środku w (0,0) i promieniu $r$.
 
     Pole tej powierzchni wynosi zatem 
-    \[ |\sum| = \iint\limits_D = \frac{l}{r} \, dxdy = \frac{l}{r} \iint\limits_D 1 \, dxdy = \frac{l}{r}|D| = \frac{l}{r} \cdot \pi r^2 = \pi r l \]
+    \[ |\sum| = \iint\limits_D \frac{l}{r} \, dxdy = \frac{l}{r} \iint\limits_D 1 \, dxdy = \frac{l}{r}|D| = \frac{l}{r} \cdot \pi r^2 = \pi r l \]
+\end{przyklad}
+
+\subsection{Zastosowania całek podwójnych w mechanice}
+
+Środek masy (ciężkości) obszaru jednorodnego.
+
+Gęstość obszaru jest stała i jest to masa / pole.
+Ten środek to punkt \ $ S = (x_c, y_c) $.
+
+Wypadkowy moment statyczny względem tego środka wynosi 0.
+
+To prowadzi do wzorów dla obszaru płaskiego $D$:
+
+\[  x_c = \dfrac{ \displaystyle\iint\limits_D x \, dxdy}{ \text{pole } D }, \quad y_c = \dfrac{\displaystyle\iint\limits_D y \, dx dy}{\text{pole } D} \]
+\smallskip
+
+Dodatkowo, gdy obszar ma oś symetrii to środek masy leży na tej osi.
+
+\begin{przyklad}
+    Środek masy jednorodnego półkoła o promienu $R$.
+
+    $|D| = \frac{1}{2} \pi R^2$, \ a z symetrii mamy $x_c = 0$.
+
+    Liczymy
+
+    \[ \iint\limits_D y \, dxdy = \int\limits_{-R}^{R} dx \int\limits_{0}^{\sqrt{R^2 - x^2}} y \, dy = \int\limits_{-R}^{R} dx \left[ \frac{1}{2}y^2 \right]_{0}^{\sqrt{R^2 - r^2}} 
+    = \int\limits_{-R}^{R} dx \left(\frac{1}{2}(R^2 - x^2) \right) = \] 
+    \[ \left[ \frac{1}{2}R^2 x - \frac{1}{6}x^3 \right]_{-R}^{R} = \frac{2}{3}R^3 \]
+
+    Stąd
+    \[ y_c = \frac{\dfrac{2}{3}R^3}{\dfrac{1}{2}\pi R^2} = \frac{4}{3\pi}R = 0,4244 R \]
+\end{przyklad}
+
+Moment bezwładności obszarów jednorodnych o masie $M$.
+\medskip
+
+Jest to wielkość fizyczna wiążąca prędkość kątową w ruchu obrotowym obszaru wokół osi / punktu oraz energię kinetyczną tego obszaru.
+
+Dla masy punktowej $m$ jest to wielkość:
+
+\textbf{m $\cdot$ (odległość od osi obrotu/środka obrotu)$^2$} \medskip
+
+Dla obszaru płaskiego $D$ o masie $M$ dostajemy wzory
+
+\[ I_X = \frac{M}{\text{pole } D} \iint\limits_D y^2 \, dxdy \quad \text{-- moment względem osi} X\]
+
+\[ I_Y = \frac{M}{\text{pole } D} \iint\limits_D x^2 \, dxdy \quad \text{-- moment względem osi} Y\]
+
+\[ I_O = \frac{M}{\text{pole } D} \iint\limits_D (x^2 + y^2) \, dxdy \quad \text{-- względem środka układu}\]
+
+Uzasadnienie wzoru na $I_X$. \bigskip
+
+Przybliżamy $D$ poprzez $n$ rozłącznych prostokątów o bokach poziomych o długości $\Delta x_i$ i bokach pionowych o długościach $\Delta y_i, \ i = 1, 2, ..., n$.
+Prostokąty te przybliżają masę punktową \linebreak \ $ m = m(x_i, y_i) $ \ skupioną w punkcie $(x_i, y_i)$. \bigskip
+
+Ponieważ obszar jest jednorodny to masa jest proporcjonalna do pola prostokąta i wynosi gęstość $\cdot$ pole prostokąta czyli
+
+\[ m(x_i, y_i) = \frac{M}{|D|} \cdot \Delta x_i \cdot \Delta y_i \]
+
+Odległość punktu $(x_i, y_i)$ od osi $X$ jest równa $|y_i|$ czyli kwadrat odległości to $y_i^2$.
+
+Stąd moment bezwładności tego prostokąta względem osi $X$ to 
+
+\[ I_i = \frac{M}{|D|} \cdot \Delta x_i \cdot \Delta y_i \cdot y_i^2 \]
+
+Wypadkowy moment bezwładności dla sumy prostokątów jest sumą takich iloczynów dla prostokątów przybliżających $D$. Wynosi zatem
+
+\[ S_n = \sum\limits_{i = 1}^{n} \frac{M}{|D|} \cdot \Delta x_i \cdot \Delta y_i \cdot y_i^2 = \sum\limits_{i = 1}^{n} \Delta x_i, \cdot \Delta y_i \cdot f(x_i, y_i)
+\quad \text{gdzie} \quad f(x_i, y_i) = \frac{M}{|D|} \cdot y_i^2 \]
+
+Jest to suma Riemanna dla funkcji \ $ f(x,y) = \frac{M}{|D|} \cdot y^2 $ \ na obszarze $D$.
+
+Biorąc zatem $ n \to \infty, \ \Delta x_i \to 0, \ \Delta y_i \to 0 $, \ w granicy dostajemy moment bezwładności obszaru $D$ i jest on równy 
+\[ I_X = \lim_{n \to \infty} S_n =\iint\limits_D \frac{M}{|D|} y^2 \, dxdy \]
+
+\begin{przyklad}
+    Moment bezwładności jednorodnego trójkąta o bokach 2, 3, 3, masie $M$, względem jego osi symetrii. \bigskip
+
+    Sami umieszczamy trójkąt w układzie.
+
+    Najprostsze równania boków będą dla wierzchołka w początku układu i wysokości wzdłuż osi X.
+
+    Równania odcinków ukośnych dla brzegu:
+    \[ y = \pm \frac{1}{2\sqrt2}x, \quad 0 \leq x \leq 2\sqrt2 \]
+
+    Zatem
+    \[ D: 0 \leq x \leq 2\sqrt2, \quad -\frac{1}{2\sqrt2} \leq y \leq \frac{1}{2\sqrt2}x \]
+
+    Stąd
+    \[ \iint\limits_D y^2 \, dxdy = \int\limits_{0}^{2\sqrt2} dx \int\limits_{-\frac{1}{2\sqrt2}x}^{\frac{1}{2\sqrt2}x} y^2 \, dy = \int\limits_{0}^{2\sqrt2} dx \cdot \frac{1}{3 \cdot 8\sqrt2} x^3
+    = \frac{1}{3 \cdot 8\sqrt2} \cdot \frac{1}{4} \cdot 64 = \frac{2}{3\sqrt2} \]
+
+    Czyli
+    \[ I_X = \frac{M}{2\sqrt2} \cdot \frac{2}{3\sqrt2} = \frac{1}{6}M \]
+
+    \it{Zadanie dodatkowe: obliczyć moment bezwładności dla tego samego trójkąta ale tym razem względem boku o długości 2.}
 \end{przyklad}

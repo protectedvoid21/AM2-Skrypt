@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2022.10.30)  25 MAY 2023 10:40
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2022.10.30)  30 MAY 2023 13:30
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -818,37 +818,58 @@ File: tikzlibrarytopaths.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 File: tikzlibraryplotmarks.code.tex 2021/05/15 v3.1.9a (3.1.9a)
  (C:\Users\niezn\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibraryplotmarks.code.tex
 File: pgflibraryplotmarks.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-))) (C:\Users\niezn\AppData\Local\Programs\MiKTeX\tex/latex/fancyhdr\fancyhdr.sty
+))) (C:\Users\niezn\AppData\Local\Programs\MiKTeX\tex/latex/rsfso\rsfso.sty
+Package: rsfso 2013/11/02 v1.01 U/rsfso (Michael Sharpe)
+) (C:\Users\niezn\AppData\Local\Programs\MiKTeX\tex/latex/tools\tabularx.sty
+Package: tabularx 2020/01/15 v2.11c `tabularx' package (DPC)
+ (C:\Users\niezn\AppData\Local\Programs\MiKTeX\tex/latex/tools\array.sty
+Package: array 2022/03/10 v2.5f Tabular extension package (FMi)
+\col@sep=\dimen374
+\ar@mcellbox=\box107
+\extrarowheight=\dimen375
+\NC@list=\toks49
+\extratabsurround=\skip65
+\backup@length=\skip66
+\ar@cellbox=\box108
+)
+\TX@col@width=\dimen376
+\TX@old@table=\dimen377
+\TX@old@col=\dimen378
+\TX@target=\dimen379
+\TX@delta=\dimen380
+\TX@cols=\count363
+\TX@ftn=\toks50
+) (C:\Users\niezn\AppData\Local\Programs\MiKTeX\tex/latex/fancyhdr\fancyhdr.sty
 Package: fancyhdr 2022/11/09 v4.1 Extensive control of page headers and footers
-\f@nch@headwidth=\skip65
-\f@nch@O@elh=\skip66
-\f@nch@O@erh=\skip67
-\f@nch@O@olh=\skip68
-\f@nch@O@orh=\skip69
-\f@nch@O@elf=\skip70
-\f@nch@O@erf=\skip71
-\f@nch@O@olf=\skip72
-\f@nch@O@orf=\skip73
+\f@nch@headwidth=\skip67
+\f@nch@O@elh=\skip68
+\f@nch@O@erh=\skip69
+\f@nch@O@olh=\skip70
+\f@nch@O@orh=\skip71
+\f@nch@O@elf=\skip72
+\f@nch@O@erf=\skip73
+\f@nch@O@olf=\skip74
+\f@nch@O@orf=\skip75
 ) (C:\Users\niezn\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcblistings.code.tex
 Library (tcolorbox): 'tcblistings.code.tex' version '5.1.1'
 (C:\Users\niezn\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.sty
-\lst@mode=\count363
-\lst@gtempboxa=\box107
-\lst@token=\toks49
-\lst@length=\count364
-\lst@currlwidth=\dimen374
-\lst@column=\count365
-\lst@pos=\count366
-\lst@lostspace=\dimen375
-\lst@width=\dimen376
-\lst@newlines=\count367
-\lst@lineno=\count368
-\lst@maxwidth=\dimen377
+\lst@mode=\count364
+\lst@gtempboxa=\box109
+\lst@token=\toks51
+\lst@length=\count365
+\lst@currlwidth=\dimen381
+\lst@column=\count366
+\lst@pos=\count367
+\lst@lostspace=\dimen382
+\lst@width=\dimen383
+\lst@newlines=\count368
+\lst@lineno=\count369
+\lst@maxwidth=\dimen384
  (C:\Users\niezn\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstmisc.sty
 File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
-\c@lstnumber=\count369
-\lst@skipnumbers=\count370
-\lst@framebox=\box108
+\c@lstnumber=\count370
+\lst@skipnumbers=\count371
+\lst@framebox=\box110
 ) (C:\Users\niezn\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.cfg
 File: listings.cfg 2020/03/24 1.8d listings configuration
 ))
@@ -861,41 +882,41 @@ Library (tcolorbox): 'tcbprocessing.code.tex' version '5.1.1'
 Package: shellesc 2019/11/08 v1.0c unified shell escape interface for LaTeX
 Package shellesc Info: Restricted shell escape enabled on input line 77.
 ))
-\c@tcblisting=\count371
+\c@tcblisting=\count372
 )) (C:\Users\niezn\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcbbreakable.code.tex
 Library (tcolorbox): 'tcbbreakable.code.tex' version '5.1.1'
 (C:\Users\niezn\AppData\Local\Programs\MiKTeX\tex/latex/pdfcol\pdfcol.sty
 Package: pdfcol 2022-09-21 v1.7 Handle new color stacks for pdfTeX (HO)
 )
 Package pdfcol Info: New color stack `tcb@breakable' = 1 on input line 23.
-\tcb@testbox=\box109
-\tcb@totalupperbox=\box110
-\tcb@totallowerbox=\box111
+\tcb@testbox=\box111
+\tcb@totalupperbox=\box112
+\tcb@totallowerbox=\box113
 ) (C:\Users\niezn\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/libs\tikzlibrarypgfplots.fillbetween.code.tex (C:\Users\niezn\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/pgfcontrib\tikzlibraryfillbetween.code.tex (C:\Users\niezn\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryintersections.code.tex (C:\Users\niezn\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibraryintersections.code.tex
-\pgf@intersect@solutions=\count372
+\pgf@intersect@solutions=\count373
 )) (C:\Users\niezn\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/pgfcontrib\tikzlibrarydecorations.softclip.code.tex (C:\Users\niezn\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/pgfcontrib\pgflibraryfillbetween.code.tex))) (C:\Users\niezn\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/libs\tikzlibrarypgfplots.decorations.softclip.code.tex)) (Wyklad.aux)
 \openout1 = `Wyklad.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 77.
-LaTeX Font Info:    ... okay on input line 77.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 77.
-LaTeX Font Info:    ... okay on input line 77.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 77.
-LaTeX Font Info:    ... okay on input line 77.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 77.
-LaTeX Font Info:    ... okay on input line 77.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 77.
-LaTeX Font Info:    ... okay on input line 77.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 77.
-LaTeX Font Info:    ... okay on input line 77.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 77.
-LaTeX Font Info:    ... okay on input line 77.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 77.
-LaTeX Font Info:    ... okay on input line 77.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 77.
-LaTeX Font Info:    ... okay on input line 77.
-LaTeX Font Info:    Checking defaults for OT4/cmr/m/n on input line 77.
-LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for OT4/cmr/m/n on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -933,24 +954,24 @@ LaTeX Font Info:    ... okay on input line 77.
 
 (C:\Users\niezn\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count373
-\scratchdimen=\dimen378
-\scratchbox=\box112
-\nofMPsegments=\count374
-\nofMParguments=\count375
-\everyMPshowfont=\toks50
-\MPscratchCnt=\count376
-\MPscratchDim=\dimen379
-\MPnumerator=\count377
-\makeMPintoPDFobject=\count378
-\everyMPtoPDFconversion=\toks51
+\scratchcounter=\count374
+\scratchdimen=\dimen385
+\scratchbox=\box114
+\nofMPsegments=\count375
+\nofMParguments=\count376
+\everyMPshowfont=\toks52
+\MPscratchCnt=\count377
+\MPscratchDim=\dimen386
+\MPnumerator=\count378
+\makeMPintoPDFobject=\count379
+\everyMPtoPDFconversion=\toks53
 ) (C:\Users\niezn\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
  (C:\Users\niezn\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-Package hyperref Info: Link coloring OFF on input line 77.
+Package hyperref Info: Link coloring OFF on input line 83.
  (Wyklad.out) (Wyklad.out)
 \@outlinefile=\write4
 \openout4 = `Wyklad.out'.
@@ -962,30 +983,30 @@ Package: xparse 2022-06-22 L3 Experimental document command parser
 ))
 Package pgfplots notification 'compat/show suggested version=true': document has been generated with the most recent feature set (\pgfplotsset{compat=1.18}).
 
-\c@lstlisting=\count379
-LaTeX Font Info:    Trying to load font information for OML+plm on input line 79.
+\c@lstlisting=\count380
+LaTeX Font Info:    Trying to load font information for OML+plm on input line 85.
 (C:\Users\niezn\AppData\Local\Programs\MiKTeX\tex/latex/polski\omlplm.fd
 File: omlplm.fd 2008/02/24 v1.2.1 Font defs for fonts PL (MW)
 )
-LaTeX Font Info:    Trying to load font information for OMS+plsy on input line 79.
+LaTeX Font Info:    Trying to load font information for OMS+plsy on input line 85.
  (C:\Users\niezn\AppData\Local\Programs\MiKTeX\tex/latex/polski\omsplsy.fd
 File: omsplsy.fd 2008/02/24 v1.2.1 Font defs for fonts PL (MW)
 )
-LaTeX Font Info:    Trying to load font information for OMX+plex on input line 79.
+LaTeX Font Info:    Trying to load font information for OMX+plex on input line 85.
  (C:\Users\niezn\AppData\Local\Programs\MiKTeX\tex/latex/polski\omxplex.fd
 File: omxplex.fd 2008/02/24 v1.2.1 Font defs for fonts PL (MW)
 )
 LaTeX Font Info:    External font `plex10' loaded for size
-(Font)              <14.4> on input line 79.
+(Font)              <14.4> on input line 85.
 LaTeX Font Info:    External font `plex10' loaded for size
-(Font)              <10> on input line 79.
+(Font)              <10> on input line 85.
 LaTeX Font Info:    External font `plex10' loaded for size
-(Font)              <7> on input line 79.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 79.
+(Font)              <7> on input line 85.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 85.
  (C:\Users\niezn\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 79.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 85.
  (C:\Users\niezn\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) (Wyklad.toc
@@ -1009,7 +1030,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-3.2466pt}.
 
-[2]
+[2] (0_Wstep.tex)
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 15.2466pt, for example:
@@ -1206,7 +1227,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 123--124
 
  []
 
-<img/rozbiezneirozbiezne.png, id=305, 602.25pt x 353.06906pt>
+<img/rozbiezneirozbiezne.png, id=320, 602.25pt x 353.06906pt>
 File: img/rozbiezneirozbiezne.png Graphic file (type png)
 <use img/rozbiezneirozbiezne.png>
 Package pdftex.def Info: img/rozbiezneirozbiezne.png  used on input line 132.
@@ -1822,7 +1843,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [49]
-<img/stozek_wlzm.png, id=487, 755.07094pt x 534.49687pt>
+<img/stozek_wlzm.png, id=502, 755.07094pt x 534.49687pt>
 File: img/stozek_wlzm.png Graphic file (type png)
 <use img/stozek_wlzm.png>
 Package pdftex.def Info: img/stozek_wlzm.png  used on input line 71.
@@ -1850,7 +1871,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 91--92
 
  []
 
-<img/stozek_wlzm_2.png, id=492, 384.2355pt x 333.04425pt>
+<img/stozek_wlzm_2.png, id=507, 384.2355pt x 333.04425pt>
 File: img/stozek_wlzm_2.png Graphic file (type png)
 <use img/stozek_wlzm_2.png>
 Package pdftex.def Info: img/stozek_wlzm_2.png  used on input line 100.
@@ -1867,7 +1888,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 103--106
 
  []
 
-<img/stozek_wlzm_3.png, id=497, 424.58624pt x 341.47575pt>
+<img/stozek_wlzm_3.png, id=512, 424.58624pt x 341.47575pt>
 File: img/stozek_wlzm_3.png Graphic file (type png)
 <use img/stozek_wlzm_3.png>
 Package pdftex.def Info: img/stozek_wlzm_3.png  used on input line 113.
@@ -1877,7 +1898,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 122--123
 
  []
 
-<img/paraboloida.png, id=498, 639.5895pt x 377.61075pt>
+<img/paraboloida.png, id=513, 639.5895pt x 377.61075pt>
 File: img/paraboloida.png Graphic file (type png)
 <use img/paraboloida.png>
 Package pdftex.def Info: img/paraboloida.png  used on input line 133.
@@ -1907,7 +1928,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [53 <./img/paraboloida.png>]
-<img/walec.png, id=510, 408.3255pt x 353.52075pt>
+<img/walec.png, id=525, 408.3255pt x 353.52075pt>
 File: img/walec.png Graphic file (type png)
 <use img/walec.png>
 Package pdftex.def Info: img/walec.png  used on input line 174.
@@ -1930,7 +1951,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 216--218
 
  []
 
-<img/interpretacja_geom.png, id=516, 850.67813pt x 602.25pt>
+<img/interpretacja_geom.png, id=531, 850.67813pt x 602.25pt>
 File: img/interpretacja_geom.png Graphic file (type png)
 <use img/interpretacja_geom.png>
 Package pdftex.def Info: img/interpretacja_geom.png  used on input line 229.
@@ -2014,7 +2035,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [61]
-<img/pochodnakierunkowa.png, id=547, 602.25pt x 451.6875pt>
+<img/pochodnakierunkowa.png, id=562, 602.25pt x 451.6875pt>
 File: img/pochodnakierunkowa.png Graphic file (type png)
 <use img/pochodnakierunkowa.png>
 Package pdftex.def Info: img/pochodnakierunkowa.png  used on input line 529.
@@ -2192,12 +2213,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [74]
-<img/rzut_plaszczyznaXY.png, id=607, 703.12688pt x 505.13719pt>
+<img/rzut_plaszczyznaXY.png, id=622, 703.12688pt x 505.13719pt>
 File: img/rzut_plaszczyznaXY.png Graphic file (type png)
 <use img/rzut_plaszczyznaXY.png>
 Package pdftex.def Info: img/rzut_plaszczyznaXY.png  used on input line 1012.
 (pdftex.def)             Requested size: 281.24576pt x 202.05128pt.
-<img/paraboloida_przyklad.png, id=608, 586.44093pt x 441.14813pt>
+<img/paraboloida_przyklad.png, id=623, 586.44093pt x 441.14813pt>
 File: img/paraboloida_przyklad.png Graphic file (type png)
 <use img/paraboloida_przyklad.png>
 Package pdftex.def Info: img/paraboloida_przyklad.png  used on input line 1028.
@@ -2219,7 +2240,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [76 <./img/paraboloida_przyklad.png>]
-<img/trojkat.png, id=618, 408.02437pt x 396.7322pt>
+<img/trojkat.png, id=633, 408.02437pt x 396.7322pt>
 File: img/trojkat.png Graphic file (type png)
 <use img/trojkat.png>
 Package pdftex.def Info: img/trojkat.png  used on input line 1133.
@@ -2249,7 +2270,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [79] (6_Calki_podwojne.tex
-<img/prostokat1.png, id=636, 334.24875pt x 255.95625pt>
+<img/prostokat1.png, id=651, 334.24875pt x 255.95625pt>
 File: img/prostokat1.png Graphic file (type png)
 <use img/prostokat1.png>
 Package pdftex.def Info: img/prostokat1.png  used on input line 24.
@@ -2263,7 +2284,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-3.2466pt}.
 
 [80 <./img/prostokat1.png>]
-<img/prostowalec.png, id=641, 213.04594pt x 228.10219pt>
+<img/prostowalec.png, id=656, 213.04594pt x 228.10219pt>
 File: img/prostowalec.png Graphic file (type png)
 <use img/prostowalec.png>
 Package pdftex.def Info: img/prostowalec.png  used on input line 44.
@@ -2281,7 +2302,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-3.2466pt}.
 
 [81 <./img/prostowalec.png>]
-<img/krzywetrojkat.png, id=647, 293.59688pt x 301.125pt>
+<img/krzywetrojkat.png, id=662, 293.59688pt x 301.125pt>
 File: img/krzywetrojkat.png Graphic file (type png)
 <use img/krzywetrojkat.png>
 Package pdftex.def Info: img/krzywetrojkat.png  used on input line 103.
@@ -2303,17 +2324,17 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-3.2466pt}.
 
 [83 <./img/krzywetrojkat.png>]
-<img/2x.png, id=657, 379.4175pt x 390.70969pt>
+<img/2x.png, id=672, 379.4175pt x 390.70969pt>
 File: img/2x.png Graphic file (type png)
 <use img/2x.png>
 Package pdftex.def Info: img/2x.png  used on input line 162.
 (pdftex.def)             Requested size: 189.70828pt x 195.35435pt.
-<img/2xzlewej.png, id=658, 373.395pt x 297.36093pt>
+<img/2xzlewej.png, id=673, 373.395pt x 297.36093pt>
 File: img/2xzlewej.png Graphic file (type png)
 <use img/2xzlewej.png>
 Package pdftex.def Info: img/2xzlewej.png  used on input line 192.
 (pdftex.def)             Requested size: 168.0262pt x 133.81117pt.
-<img/2xzprawej.png, id=659, 347.79938pt x 278.54062pt>
+<img/2xzprawej.png, id=674, 347.79938pt x 278.54062pt>
 File: img/2xzprawej.png Graphic file (type png)
 <use img/2xzprawej.png>
 Package pdftex.def Info: img/2xzprawej.png  used on input line 193.
@@ -2335,12 +2356,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-3.2466pt}.
 
 [85 <./img/2x.png>]
-<img/obszar1.png, id=670, 243.91125pt x 166.37157pt>
+<img/obszar1.png, id=685, 243.91125pt x 166.37157pt>
 File: img/obszar1.png Graphic file (type png)
 <use img/obszar1.png>
 Package pdftex.def Info: img/obszar1.png  used on input line 212.
 (pdftex.def)             Requested size: 158.54042pt x 108.14021pt.
-<img/obszar2.png, id=671, 285.31593pt x 179.92218pt>
+<img/obszar2.png, id=686, 285.31593pt x 179.92218pt>
 File: img/obszar2.png Graphic file (type png)
 <use img/obszar2.png>
 Package pdftex.def Info: img/obszar2.png  used on input line 220.
@@ -2370,7 +2391,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 302.
 
-<img/katbiegun.png, id=682, 437.38406pt x 298.86656pt>
+<img/katbiegun.png, id=697, 437.38406pt x 298.86656pt>
 File: img/katbiegun.png Graphic file (type png)
 <use img/katbiegun.png>
 Package pdftex.def Info: img/katbiegun.png  used on input line 309.
@@ -2383,7 +2404,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-3.2466pt}.
 
 [88]
-<img/polokrag.png, id=688, 327.47343pt x 242.40562pt>
+<img/polokrag.png, id=703, 327.47343pt x 242.40562pt>
 File: img/polokrag.png Graphic file (type png)
 <use img/polokrag.png>
 Package pdftex.def Info: img/polokrag.png  used on input line 328.
@@ -2397,12 +2418,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-3.2466pt}.
 
 [89 <./img/katbiegun.png> <./img/polokrag.png>]
-<img/kolkakat.png, id=695, 304.13625pt x 219.06844pt>
+<img/kolkakat.png, id=710, 304.13625pt x 219.06844pt>
 File: img/kolkakat.png Graphic file (type png)
 <use img/kolkakat.png>
 Package pdftex.def Info: img/kolkakat.png  used on input line 360.
 (pdftex.def)             Requested size: 152.06775pt x 109.53394pt.
-<img/okragikat.png, id=696, 292.84406pt x 210.03468pt>
+<img/okragikat.png, id=711, 292.84406pt x 210.03468pt>
 File: img/okragikat.png Graphic file (type png)
 <use img/okragikat.png>
 Package pdftex.def Info: img/okragikat.png  used on input line 386.
@@ -2424,7 +2445,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-3.2466pt}.
 
 [91 <./img/okragikat.png>]
-<img/egzamokrag.png, id=708, 236.68425pt x 202.356pt>
+<img/egzamokrag.png, id=723, 236.68425pt x 202.356pt>
 File: img/egzamokrag.png Graphic file (type png)
 <use img/egzamokrag.png>
 Package pdftex.def Info: img/egzamokrag.png  used on input line 431.
@@ -2446,7 +2467,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-3.2466pt}.
 
 [93]
-<img/rzutbrylyXY.png, id=719, 187.29974pt x 118.64325pt>
+<img/rzutbrylyXY.png, id=734, 187.29974pt x 118.64325pt>
 File: img/rzutbrylyXY.png Graphic file (type png)
 <use img/rzutbrylyXY.png>
 Package pdftex.def Info: img/rzutbrylyXY.png  used on input line 526.
@@ -2459,7 +2480,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-3.2466pt}.
 
-[94 <./img/rzutbrylyXY.png>])
+[94 <./img/rzutbrylyXY.png>]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 15.2466pt, for example:
@@ -2467,22 +2488,73 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-3.2466pt}.
 
-[95] (Wyklad.aux)
+[95]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 15.2466pt, for example:
+(fancyhdr)                \setlength{\headheight}{15.2466pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-3.2466pt}.
+
+[96])
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 15.2466pt, for example:
+(fancyhdr)                \setlength{\headheight}{15.2466pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-3.2466pt}.
+
+[97] (7_Transformata_Laplacea.tex
+LaTeX Font Info:    Trying to load font information for U+rsfso on input line 7.
+ (C:\Users\niezn\AppData\Local\Programs\MiKTeX\tex/latex/rsfso\ursfso.fd
+File: ursfso.fd 2011/02/13 Fontinst v1.933 font definitions for U/rsfso.
+)
+LaTeX Font Info:    Font shape `U/rsfso/m/n' will be
+(Font)              scaled to size 12.0pt on input line 7.
+LaTeX Font Info:    Font shape `U/rsfso/m/n' will be
+(Font)              scaled to size 8.0pt on input line 7.
+LaTeX Font Info:    Font shape `U/rsfso/m/n' will be
+(Font)              scaled to size 6.0pt on input line 7.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[98]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[99])
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[100] (Wyklad.aux)
 Package rerunfilecheck Info: File `Wyklad.out' has not changed.
-(rerunfilecheck)             Checksum: CB71C660BF232493632CAB7AF0CB6A41;9783.
+(rerunfilecheck)             Checksum: 291A56CEE7F86FFFA7EEE7EDA0C2BF3B;10503.
  ) 
 Here is how much of TeX's memory you used:
- 41724 strings out of 475385
- 969171 string characters out of 2776906
- 1747754 words of memory out of 3000000
- 62221 multiletter control sequences out of 15000+600000
- 483117 words of font info for 68 fonts, out of 8000000 for 9000
+ 41933 strings out of 475385
+ 973006 string characters out of 2776906
+ 1749913 words of memory out of 3000000
+ 62391 multiletter control sequences out of 15000+600000
+ 484008 words of font info for 73 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 83i,14n,85p,790b,2136s stack positions out of 10000i,1000n,20000p,200000b,80000s
-{C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/pl/plit.enc}{C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/pl/plrm.enc}{C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/pl/plmi.enc}{C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/pl/plms.enc} <C:\Users\niezn\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk>{C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/pl/plme.enc}<C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plbx12.pfb><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plex10.pfb><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plmi10.pfb><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plmi12.pfb><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plmi6.pfb><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plmi8.pfb><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plr10.pfb><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plr12.pfb><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plr17.pfb><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plr6.pfb><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plr8.pfb><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plsl12.pfb><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plsy10.pfb><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plsy6.pfb><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plsy8.pfb><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plti12.pfb>
-Output written on Wyklad.pdf (95 pages, 1694839 bytes).
+ 83i,14n,85p,792b,2136s stack positions out of 10000i,1000n,20000p,200000b,80000s
+{C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/pl/plit.enc}{C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/pl/plrm.enc}{C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/pl/plmi.enc}{C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/pl/plms.enc}{C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/pl/plme.enc} <C:\Users\niezn\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plbx12.pfb><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plex10.pfb><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plmi10.pfb><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plmi12.pfb><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plmi6.pfb><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plmi8.pfb><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plr10.pfb><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plr12.pfb><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plr17.pfb><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plr6.pfb><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plr8.pfb><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plsl12.pfb><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plsy10.pfb><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plsy6.pfb><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plsy8.pfb><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plti12.pfb><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/rsfs/rsfs10.pfb>
+Output written on Wyklad.pdf (100 pages, 1723610 bytes).
 PDF statistics:
- 852 PDF objects out of 1000 (max. 8388607)
- 188 named destinations out of 1000 (max. 500000)
- 482 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 906 PDF objects out of 1000 (max. 8388607)
+ 206 named destinations out of 1000 (max. 500000)
+ 506 words of extra memory for PDF output out of 10000 (max. 10000000)
 

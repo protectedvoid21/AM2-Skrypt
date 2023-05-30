@@ -11,10 +11,15 @@
 \usepackage[utf8]{inputenc}
 \usepackage{tcolorbox}
 \usepackage{pgfplots}
+\usepackage[scr]{rsfso}
+\usepackage{tabularx}
 \usepackage{fancyhdr}   
 \tcbuselibrary{listings,breakable}
 \usepgfplotslibrary{fillbetween}
 \pgfplotsset{compat=1.18}
+
+\renewcommand\tabularxcolumn[1]{m{#1}}
+\newcolumntype{C}{>{\centering\arraybackslash}X}
 
 \fancypagestyle{titlepagestyle}{
 
@@ -62,6 +67,7 @@ title={#1}}
 \newcommand{\dpartial}[2]{\frac{\partial #1}{\partial #2}}
 \newcommand{\limn}{\lim_{n \to \infty}}
 \newcommand{\fzero}{f(x_0, y_0)}
+\newcommand{\laplace}{\mathscr{L}}
 
 \setlength{\parindent}{0pt} 
 \setlength{\textheight}{680pt}
@@ -80,24 +86,7 @@ title={#1}}
 
 \pagebreak
 
-\subsection{Wstęp}
-
-Skrypt jest w większości przepisywany ze zdjęć zrobionych w wordzie z dysku ale w przypadku jakichś braków wykorzystywana jest
-prezentacja dr. Michalika. 
-
-W skrypcie mogą pojawić się błędy stąd najlepiej przed nauką pobrać z dysku google \linebreak (Informatyka Stosowana 2020) najbardziej aktualną wersję
-zamieszczoną w folderze 
-
-Semestr II $\rightarrow$ Analiza Matematyczna II $\rightarrow$ michalik wykłady $\rightarrow$ Skrypt $\rightarrow$ Skrypt\_Wykład.pdf.
-
-Skrypt jest średnio aktualizowany co 2-3 dni -- dopóki nie zostanie przepisane \textbf{wszystko}. \medskip
-
-Wszelkie uwagi, błędy (na pewno jakieś są), zdjęcia z brakujących tematów można pisać priv na discordzie : 
-
-\textbf{Tomasz Strzelba\#1454}
-
-Miłej nauki!
-
+\input{0_Wstep.tex}
 \pagebreak
 
 \input{1_Calki_niewlasciwe_I_rodzaju.tex}
@@ -116,6 +105,9 @@ Miłej nauki!
 \pagebreak
 
 \input{6_Calki_podwojne.tex}
+\pagebreak
+
+\input{7_Transformata_Laplacea.tex}
 \pagebreak
 
 \end{document}
