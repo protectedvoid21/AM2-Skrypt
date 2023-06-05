@@ -1,0 +1,70 @@
+\section{Elementy teorii równań różniczkowych}
+
+\begin{tw}{Definicja}
+    Niech $ y = y(t), \ t \in [a,b] $. \underline{Równanie różniczkowe zwyczajne} zmiennej $y$ to równanie postaci
+    \[ F(t, y, y', y'', ..., y^{(n)}) = 0 \quad \text{gdzie} \quad n \in \mathbb{N}^{+} \]
+
+    Liczbę $n$ nazywamy \underline{rzędem równania}
+\end{tw}
+
+W najczęstszych przypadkach pochodną $ y^{(n)} $ potrafimy jawnie wyliczyć.
+
+\begin{przyklad}
+    $ y' = t $ \ -- \ równanie rzędu pierwszego.
+
+    W tym przypadku równanie można łatwo rozwiązać: $ y = \int t \, dt = \frac{1}{2} t^2 + C, \ C \in \mathbb{R} $
+\end{przyklad}
+
+\begin{przyklad}
+    $ y' = \alpha y, \ \alpha \neq 0 $ \ -- \ równanie rzędu pierwszego.
+
+    Opisuje wykładniczy wzrost/spadek liczebności populacji.
+\end{przyklad}
+
+\begin{przyklad}
+    $ y'' = -ky, \ k > 0 $ \ -- \ równanie rzędu drugiego.
+
+    Opisuje, w sposób uproszczony, tzw. drgania harmoniczne.
+\end{przyklad}
+
+\begin{tw}{Definicja}
+    \underline{Rozwiązanie ogólne} danego równania różniczkowego zmiennej $y$ to zbiór wszystkich funkcji $y$ spełniających to równanie.
+\end{tw}
+
+\begin{tw}{Definicja}
+    \underline{Równanie szczególne} danego równania różniczkowego to wybrana funkcja spełniająca to równanie.
+\end{tw}
+
+\begin{przyklad}
+    Rozwiązaniem ogólnym równania $ y' = t $ są funkcje 
+    \[ y = \frac{1}{2} t^2 + C, \ C \in \mathbb{R} \]
+
+    Rozwiązaniem szczególnym jest na przykład funkcja $ y = \frac{1}{2} t^2 $.
+\end{przyklad}
+
+Ważnym typem równań są tzw. \underline{równania liniowe rzędu $n$ o stałych współczynnikach}.
+
+Mają one postać
+\[ c_n y^{(n)} + c_{n - 1} y^{(n - 1)} + ... c_1 y' + c_0 y = h(t), \ t \in (a,b) \]
+gdzie
+\[ c_0, c_1, ..., c_n \in \mathbb{R} \quad \text{oraz} \quad c_n \neq 0 \]
+\bigskip
+
+Przykładowymi takimi równaniami są równania prezentowane wcześniej
+\[ y' = t \]
+\[ y' = \alpha y \ \Leftrightarrow \ y' - \alpha y = 0 \]
+\[ y'' = -ky \ \Leftrightarrow \ y'' + ky = 0 \]
+\medskip
+
+\begin{tw}{Definicja}
+    \underline{Warunkiem początkowym} równania
+    \[ c_n y^{(n)} + c_{n - 1} y^{(n - 1)} + ... c_1 y' + c_0 y = h(t), \ t \in (a,b) \]
+    nazywamy warunek
+    \[ y(t_0) = y_0, y'(t_0) = y_1, ..., y^{(n - 1)}(t_0) = y_{n - 1} \quad \text{gdzie} \quad t_0 \in (a,b) \quad \text{oraz} \quad y_0, y_1, ..., y_{n - 1} \in \mathbb{R} \] 
+    
+    Równanie wraz z warunkiem początkowym to tzw. \underline{zagadnienie początkowe}.
+\end{tw}
+
+Tego typu równania da się rozwiązywać przy pomocy transformaty Laplace'a jeżeli znamy wzór na transformatę prawej strony.
+
+Podstawowym przypadkiem jest warunek poczatkowy dla $ t_0 = 0 $ i funkcji $h$ ciągłej w 0.

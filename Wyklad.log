@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2022.10.30)  2 JUN 2023 13:59
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2022.10.30)  5 JUN 2023 11:07
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1227,7 +1227,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 123--124
 
  []
 
-<img/rozbiezneirozbiezne.png, id=320, 602.25pt x 353.06906pt>
+<img/rozbiezneirozbiezne.png, id=325, 602.25pt x 353.06906pt>
 File: img/rozbiezneirozbiezne.png Graphic file (type png)
 <use img/rozbiezneirozbiezne.png>
 Package pdftex.def Info: img/rozbiezneirozbiezne.png  used on input line 132.
@@ -1843,7 +1843,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [49]
-<img/stozek_wlzm.png, id=502, 755.07094pt x 534.49687pt>
+<img/stozek_wlzm.png, id=507, 755.07094pt x 534.49687pt>
 File: img/stozek_wlzm.png Graphic file (type png)
 <use img/stozek_wlzm.png>
 Package pdftex.def Info: img/stozek_wlzm.png  used on input line 71.
@@ -1871,7 +1871,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 91--92
 
  []
 
-<img/stozek_wlzm_2.png, id=507, 384.2355pt x 333.04425pt>
+<img/stozek_wlzm_2.png, id=512, 384.2355pt x 333.04425pt>
 File: img/stozek_wlzm_2.png Graphic file (type png)
 <use img/stozek_wlzm_2.png>
 Package pdftex.def Info: img/stozek_wlzm_2.png  used on input line 100.
@@ -1888,7 +1888,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 103--106
 
  []
 
-<img/stozek_wlzm_3.png, id=512, 424.58624pt x 341.47575pt>
+<img/stozek_wlzm_3.png, id=517, 424.58624pt x 341.47575pt>
 File: img/stozek_wlzm_3.png Graphic file (type png)
 <use img/stozek_wlzm_3.png>
 Package pdftex.def Info: img/stozek_wlzm_3.png  used on input line 113.
@@ -1898,7 +1898,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 122--123
 
  []
 
-<img/paraboloida.png, id=513, 639.5895pt x 377.61075pt>
+<img/paraboloida.png, id=518, 639.5895pt x 377.61075pt>
 File: img/paraboloida.png Graphic file (type png)
 <use img/paraboloida.png>
 Package pdftex.def Info: img/paraboloida.png  used on input line 133.
@@ -1928,7 +1928,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [53 <./img/paraboloida.png>]
-<img/walec.png, id=525, 408.3255pt x 353.52075pt>
+<img/walec.png, id=530, 408.3255pt x 353.52075pt>
 File: img/walec.png Graphic file (type png)
 <use img/walec.png>
 Package pdftex.def Info: img/walec.png  used on input line 174.
@@ -1951,7 +1951,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 216--218
 
  []
 
-<img/interpretacja_geom.png, id=531, 850.67813pt x 602.25pt>
+<img/interpretacja_geom.png, id=536, 850.67813pt x 602.25pt>
 File: img/interpretacja_geom.png Graphic file (type png)
 <use img/interpretacja_geom.png>
 Package pdftex.def Info: img/interpretacja_geom.png  used on input line 229.
@@ -2035,7 +2035,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [61]
-<img/pochodnakierunkowa.png, id=562, 602.25pt x 451.6875pt>
+<img/pochodnakierunkowa.png, id=567, 602.25pt x 451.6875pt>
 File: img/pochodnakierunkowa.png Graphic file (type png)
 <use img/pochodnakierunkowa.png>
 Package pdftex.def Info: img/pochodnakierunkowa.png  used on input line 529.
@@ -2213,12 +2213,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [74]
-<img/rzut_plaszczyznaXY.png, id=622, 703.12688pt x 505.13719pt>
+<img/rzut_plaszczyznaXY.png, id=627, 703.12688pt x 505.13719pt>
 File: img/rzut_plaszczyznaXY.png Graphic file (type png)
 <use img/rzut_plaszczyznaXY.png>
 Package pdftex.def Info: img/rzut_plaszczyznaXY.png  used on input line 1012.
 (pdftex.def)             Requested size: 281.24576pt x 202.05128pt.
-<img/paraboloida_przyklad.png, id=623, 586.44093pt x 441.14813pt>
+<img/paraboloida_przyklad.png, id=628, 586.44093pt x 441.14813pt>
 File: img/paraboloida_przyklad.png Graphic file (type png)
 <use img/paraboloida_przyklad.png>
 Package pdftex.def Info: img/paraboloida_przyklad.png  used on input line 1028.
@@ -2240,7 +2240,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [76 <./img/paraboloida_przyklad.png>]
-<img/trojkat.png, id=633, 408.02437pt x 396.7322pt>
+<img/trojkat.png, id=638, 408.02437pt x 396.7322pt>
 File: img/trojkat.png Graphic file (type png)
 <use img/trojkat.png>
 Package pdftex.def Info: img/trojkat.png  used on input line 1133.
@@ -2270,7 +2270,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [79] (6_Calki_podwojne.tex
-<img/prostokat1.png, id=651, 334.24875pt x 255.95625pt>
+<img/prostokat1.png, id=656, 334.24875pt x 255.95625pt>
 File: img/prostokat1.png Graphic file (type png)
 <use img/prostokat1.png>
 Package pdftex.def Info: img/prostokat1.png  used on input line 24.
@@ -2284,7 +2284,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-3.2466pt}.
 
 [80 <./img/prostokat1.png>]
-<img/prostowalec.png, id=656, 213.04594pt x 228.10219pt>
+<img/prostowalec.png, id=661, 213.04594pt x 228.10219pt>
 File: img/prostowalec.png Graphic file (type png)
 <use img/prostowalec.png>
 Package pdftex.def Info: img/prostowalec.png  used on input line 44.
@@ -2302,7 +2302,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-3.2466pt}.
 
 [81 <./img/prostowalec.png>]
-<img/krzywetrojkat.png, id=662, 293.59688pt x 301.125pt>
+<img/krzywetrojkat.png, id=667, 293.59688pt x 301.125pt>
 File: img/krzywetrojkat.png Graphic file (type png)
 <use img/krzywetrojkat.png>
 Package pdftex.def Info: img/krzywetrojkat.png  used on input line 103.
@@ -2324,17 +2324,17 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-3.2466pt}.
 
 [83 <./img/krzywetrojkat.png>]
-<img/2x.png, id=672, 379.4175pt x 390.70969pt>
+<img/2x.png, id=677, 379.4175pt x 390.70969pt>
 File: img/2x.png Graphic file (type png)
 <use img/2x.png>
 Package pdftex.def Info: img/2x.png  used on input line 162.
 (pdftex.def)             Requested size: 189.70828pt x 195.35435pt.
-<img/2xzlewej.png, id=673, 373.395pt x 297.36093pt>
+<img/2xzlewej.png, id=678, 373.395pt x 297.36093pt>
 File: img/2xzlewej.png Graphic file (type png)
 <use img/2xzlewej.png>
 Package pdftex.def Info: img/2xzlewej.png  used on input line 192.
 (pdftex.def)             Requested size: 168.0262pt x 133.81117pt.
-<img/2xzprawej.png, id=674, 347.79938pt x 278.54062pt>
+<img/2xzprawej.png, id=679, 347.79938pt x 278.54062pt>
 File: img/2xzprawej.png Graphic file (type png)
 <use img/2xzprawej.png>
 Package pdftex.def Info: img/2xzprawej.png  used on input line 193.
@@ -2356,12 +2356,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-3.2466pt}.
 
 [85 <./img/2x.png>]
-<img/obszar1.png, id=685, 243.91125pt x 166.37157pt>
+<img/obszar1.png, id=690, 243.91125pt x 166.37157pt>
 File: img/obszar1.png Graphic file (type png)
 <use img/obszar1.png>
 Package pdftex.def Info: img/obszar1.png  used on input line 212.
 (pdftex.def)             Requested size: 158.54042pt x 108.14021pt.
-<img/obszar2.png, id=686, 285.31593pt x 179.92218pt>
+<img/obszar2.png, id=691, 285.31593pt x 179.92218pt>
 File: img/obszar2.png Graphic file (type png)
 <use img/obszar2.png>
 Package pdftex.def Info: img/obszar2.png  used on input line 220.
@@ -2391,7 +2391,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 302.
 
-<img/katbiegun.png, id=697, 437.38406pt x 298.86656pt>
+<img/katbiegun.png, id=702, 437.38406pt x 298.86656pt>
 File: img/katbiegun.png Graphic file (type png)
 <use img/katbiegun.png>
 Package pdftex.def Info: img/katbiegun.png  used on input line 309.
@@ -2404,7 +2404,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-3.2466pt}.
 
 [88]
-<img/polokrag.png, id=703, 327.47343pt x 242.40562pt>
+<img/polokrag.png, id=708, 327.47343pt x 242.40562pt>
 File: img/polokrag.png Graphic file (type png)
 <use img/polokrag.png>
 Package pdftex.def Info: img/polokrag.png  used on input line 328.
@@ -2418,12 +2418,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-3.2466pt}.
 
 [89 <./img/katbiegun.png> <./img/polokrag.png>]
-<img/kolkakat.png, id=710, 304.13625pt x 219.06844pt>
+<img/kolkakat.png, id=715, 304.13625pt x 219.06844pt>
 File: img/kolkakat.png Graphic file (type png)
 <use img/kolkakat.png>
 Package pdftex.def Info: img/kolkakat.png  used on input line 360.
 (pdftex.def)             Requested size: 152.06775pt x 109.53394pt.
-<img/okragikat.png, id=711, 292.84406pt x 210.03468pt>
+<img/okragikat.png, id=716, 292.84406pt x 210.03468pt>
 File: img/okragikat.png Graphic file (type png)
 <use img/okragikat.png>
 Package pdftex.def Info: img/okragikat.png  used on input line 386.
@@ -2445,7 +2445,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-3.2466pt}.
 
 [91 <./img/okragikat.png>]
-<img/egzamokrag.png, id=723, 236.68425pt x 202.356pt>
+<img/egzamokrag.png, id=728, 236.68425pt x 202.356pt>
 File: img/egzamokrag.png Graphic file (type png)
 <use img/egzamokrag.png>
 Package pdftex.def Info: img/egzamokrag.png  used on input line 431.
@@ -2467,7 +2467,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-3.2466pt}.
 
 [93]
-<img/rzutbrylyXY.png, id=734, 187.29974pt x 118.64325pt>
+<img/rzutbrylyXY.png, id=739, 187.29974pt x 118.64325pt>
 File: img/rzutbrylyXY.png Graphic file (type png)
 <use img/rzutbrylyXY.png>
 Package pdftex.def Info: img/rzutbrylyXY.png  used on input line 526.
@@ -2575,22 +2575,43 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[104] (Wyklad.aux)
+[104] (8_Elementy_rozniczkowe.tex
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 15.2466pt, for example:
+(fancyhdr)                \setlength{\headheight}{15.2466pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-3.2466pt}.
+
+[105]
+Overfull \hbox (2.31352pt too wide) detected at line 63
+\OML/plm/m/it/12 y\OT4/cmr/m/n/12 (\OML/plm/m/it/12 t[]\OT4/cmr/m/n/12 ) = \OML/plm/m/it/12 y[]; y[]\OT4/cmr/m/n/12 (\OML/plm/m/it/12 t[]\OT4/cmr/m/n/12 ) = \OML/plm/m/it/12 y[]; :::; y[]\OT4/cmr/m/n/12 (\OML/plm/m/it/12 t[]\OT4/cmr/m/n/12 ) = \OML/plm/m/it/12 y[] [] t[] \OMS/plsy/m/n/12 2 \OT4/cmr/m/n/12 (\OML/plm/m/it/12 a; b\OT4/cmr/m/n/12 ) [] \OML/plm/m/it/12 y[]; y[]; :::; y[] \OMS/plsy/m/n/12 2 \U/msb/m/n/12 R
+ []
+
+)
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 15.2466pt, for example:
+(fancyhdr)                \setlength{\headheight}{15.2466pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-3.2466pt}.
+
+[106] (Wyklad.aux)
 Package rerunfilecheck Info: File `Wyklad.out' has not changed.
-(rerunfilecheck)             Checksum: 291A56CEE7F86FFFA7EEE7EDA0C2BF3B;10503.
+(rerunfilecheck)             Checksum: 2563BCEC2DF4148F1FB882701416185C;10748.
  ) 
 Here is how much of TeX's memory you used:
- 41949 strings out of 475385
- 973242 string characters out of 2776906
- 1749913 words of memory out of 3000000
- 62403 multiletter control sequences out of 15000+600000
+ 41966 strings out of 475385
+ 973619 string characters out of 2776906
+ 1750913 words of memory out of 3000000
+ 62414 multiletter control sequences out of 15000+600000
  484008 words of font info for 73 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  83i,14n,85p,792b,2136s stack positions out of 10000i,1000n,20000p,200000b,80000s
 {C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/pl/plit.enc}{C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/pl/plrm.enc}{C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/pl/plmi.enc}{C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/pl/plms.enc}{C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/pl/plme.enc} <C:\Users\niezn\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plbx12.pfb><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plex10.pfb><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plmi10.pfb><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plmi12.pfb><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plmi6.pfb><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plmi8.pfb><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plr10.pfb><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plr12.pfb><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plr17.pfb><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plr6.pfb><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plr8.pfb><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plsl12.pfb><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plsy10.pfb><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plsy6.pfb><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plsy8.pfb><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plti12.pfb><C:/Users/niezn/AppData/Local/Programs/MiKTeX/fonts/type1/public/rsfs/rsfs10.pfb>
-Output written on Wyklad.pdf (104 pages, 1737611 bytes).
+Output written on Wyklad.pdf (106 pages, 1744976 bytes).
 PDF statistics:
- 923 PDF objects out of 1000 (max. 8388607)
- 210 named destinations out of 1000 (max. 500000)
- 506 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 937 PDF objects out of 1000 (max. 8388607)
+ 213 named destinations out of 1000 (max. 500000)
+ 514 words of extra memory for PDF output out of 10000 (max. 10000000)
 

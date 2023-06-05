@@ -44,3 +44,4 @@
 \contentsline {subsection}{Zastosowania całek podwójnych w mechanice}{95}{section*.40}%
 \contentsline {section}{\numberline {7}Transformata Laplace'a}{98}{section.7}%
 \contentsline {subsection}{Podstawowe własności transformaty Laplace'a}{100}{section*.41}%
+\contentsline {section}{\numberline {8}Elementy teorii równań różniczkowych}{105}{section.8}%

@@ -1537,6 +1537,10 @@ INPUT C:\Users\niezn\AppData\Local\Programs\MiKTeX\fonts\tfm\public\rsfso\rsfso7
 INPUT C:\Users\niezn\AppData\Local\Programs\MiKTeX\fonts\vf\public\rsfso\rsfso10.vf
 INPUT C:\Users\niezn\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr10.tfm
 INPUT C:\Users\niezn\AppData\Local\Programs\MiKTeX\fonts\tfm\public\rsfso\rrsfso10.tfm
+INPUT .\8_Elementy_rozniczkowe.tex
+INPUT 8_Elementy_rozniczkowe.tex
+INPUT .\8_Elementy_rozniczkowe.tex
+INPUT 8_Elementy_rozniczkowe.tex
 INPUT Wyklad.aux
 INPUT .\Wyklad.out
 INPUT .\Wyklad.out
